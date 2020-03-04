@@ -78,4 +78,9 @@ public class FlammècheMouvement : MonoBehaviour
         yield return new WaitForSeconds(flameSpawnRate);
         lockGeneration = true;
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        lockGeneration = true;
+    }
 }
