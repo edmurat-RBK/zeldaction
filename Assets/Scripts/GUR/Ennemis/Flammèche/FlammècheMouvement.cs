@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Créateur : Guillaume Rogé 
 /// Ce script permet de :
-/// - faire bouger la flammèche dans 4 directions et ceci de façon aléatoire. 
+/// - Faire bouger la flammèche dans 4 directions et ceci de façon aléatoire. 
 /// - Lors d'une collision la flammèche par dans la direction opposé.
 /// - Génerer les flammes derière le passage de la flammèche.
 /// </summary>
@@ -100,7 +100,6 @@ public class FlammècheMouvement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
        if (direction == 1)
        {
             direction = 2;
