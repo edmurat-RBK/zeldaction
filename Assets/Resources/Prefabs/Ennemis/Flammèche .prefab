@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3009620996165859513}
   - component: {fileID: 3009620996165859510}
   - component: {fileID: 3009620996165859511}
+  - component: {fileID: 1346026333674627668}
   m_Layer: 0
   m_Name: "Flamm\xE8che "
   m_TagString: Untagged
@@ -121,3 +122,29 @@ MonoBehaviour:
   timeBtwDirection: 2
   flamePrefab: {fileID: 1075538181445301906, guid: 7d5720d5d3b387849b8a5b6e09fb3810,
     type: 3}
+--- !u!61 &1346026333674627668
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3009620996165859508}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.15170634, y: -2.0480654}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 9.58, y: 13.07}
+    newSize: {x: 9.58, y: 13.07}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.4560633, y: 7.153359}
+  m_EdgeRadius: 0
