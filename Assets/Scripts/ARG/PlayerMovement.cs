@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Game;
 
 namespace movementPlayer
 {
     public class PlayerMovement : MonoBehaviour
     {
         #region variable
-        public float horizontal;
-        public float vertical;
+        private float horizontal;
+        private float vertical;
         private Vector2 direction;
-        public Rigidbody2D playerRB;
 
         [SerializeField]
         [Range(100f, 1000f)]
@@ -19,15 +19,12 @@ namespace movementPlayer
 
         private void Start()
         {
-            playerRB = GetComponent<Rigidbody2D>();
-
         }
 
         void Update()
         {
-            //
-            horizontal = Input.GetAxis("Horizontal");
-            vertical = Input.GetAxis("Vertical");
+            horizontal = PlayerManager.Instance.horizontal;
+            vertical = PlayerManager.Instance.vertical;
             PlayerMove();
         }
 
@@ -37,40 +34,44 @@ namespace movementPlayer
         /// </summary>
         private void PlayerMove()
         {
-            if (vertical >= 0.01)
+            if (PlayerManager.Instance.playerCanMove == true)
             {
-                vertical = 1;
-                //space for animator
-            }
-            else if (vertical <= -0.01)
-            {
-                vertical = -1;
-                //space for animator
-            }
-            else
-            {
-                vertical = 0;
-                //space for animator
+                if (vertical >= 0.01)
+                {
+                    vertical = 1;
+                    //space for animator
+                }
+                else if (vertical <= -0.01)
+                {
+                    vertical = -1;
+                    //space for animator
+                }
+                else
+                {
+                    vertical = 0;
+                    //space for animator
+                }
+
+                if (horizontal >= 0.01)
+                {
+                    horizontal = 1;
+                    //space for animator
+                }
+                else if (horizontal <= -0.01)
+                {
+                    horizontal = -1;
+                    //space for animator
+                }
+                else
+                {
+                    horizontal = 0;
+                    //space for animator
+                }
+
+                direction = new Vector2(horizontal, vertical).normalized;
+                PlayerManager.Instance.playerRigidBody.velocity = direction * speed * Time.deltaTime;
             }
 
-            if (horizontal >= 0.01)
-            {
-                horizontal = 1;
-                //space for animator
-            }
-            else if (horizontal <= -0.01)
-            {
-                horizontal = -1;
-                //space for animator
-            }
-            else
-            {
-                horizontal = 0;
-                //space for animator
-            }
-
-            direction = new Vector2(horizontal, vertical).normalized;
-            playerRB.velocity = direction * speed * Time.deltaTime;
         }
         #endregion
     }
