@@ -43,6 +43,7 @@ public class FlammècheMouvement : MonoBehaviour
         FlameGeneration();
     }
 
+    #region Partie sur la gestion du mouvement 
     void Direction()
     {
         if (lockDirection == true)
@@ -50,6 +51,14 @@ public class FlammècheMouvement : MonoBehaviour
             StartCoroutine(ChangementDirection());
         }
     }  // Fonction qui lance la coroutine de changement de direction
+
+    IEnumerator ChangementDirection()
+    {
+        lockDirection = false;
+        direction = Random.Range(1, 5);
+        yield return new WaitForSeconds(timeBtwDirection);
+        lockDirection = true;
+    } // Coroutine qui génére aléatoirement une direction selon un temps donné
     
     void EnnemyMoving()
     {
@@ -75,29 +84,6 @@ public class FlammècheMouvement : MonoBehaviour
 
         GetComponent<Rigidbody2D>().velocity = (movement.normalized * speed * Time.fixedDeltaTime);
     } // Fonction qui applique le changement de direction
-    void FlameGeneration()
-    {
-        if (lockGeneration == true)
-        {
-            StartCoroutine(FlameCoolDown());
-        }
-    }      // Fonction qui lance la coroutine de génération de flamme
-
-    IEnumerator ChangementDirection()
-    {
-        lockDirection = false;
-        direction = Random.Range(1, 5);
-        yield return new WaitForSeconds(timeBtwDirection);
-        lockDirection = true;
-    } // Coroutine qui génére aléatoirement une direction selon un temps donné
-    IEnumerator FlameCoolDown()
-    {
-        lockGeneration = false;
-        GameObject flame = Instantiate(flamePrefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(flameSpawnRate);
-        lockGeneration = true;
-    } // Coroutine qui génére des flammes selon un temps donné
-
     void OnCollisionEnter2D(Collision2D collision)
     {
        if (direction == 1)
@@ -120,4 +106,24 @@ public class FlammècheMouvement : MonoBehaviour
             direction = 3;
        }
     } // Detecte la collision et fait partir la flammèche dans le sens opposé
+    #endregion
+
+    #region Partie sur la géneration des flammes
+    void FlameGeneration()
+    {
+        if (lockGeneration == true)
+        {
+            StartCoroutine(FlameCoolDown());
+        }
+    }      // Fonction qui lance la coroutine de génération de flamme
+
+    IEnumerator FlameCoolDown()
+    {
+        lockGeneration = false;
+        GameObject flame = Instantiate(flamePrefab, transform.position, transform.rotation);
+        yield return new WaitForSeconds(flameSpawnRate);
+        lockGeneration = true;
+    } // Coroutine qui génére des flammes selon un temps donné
+    #endregion
+
 }
