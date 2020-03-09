@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Game;
+using Manager;
 
-namespace WateringCar
+namespace WateringCan
 {
     public class Arrosoir : MonoBehaviour
     {

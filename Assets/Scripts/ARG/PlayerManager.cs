@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Management;
 
-namespace Game
+namespace Manager
 {
     public class PlayerManager : Singleton<PlayerManager>
     {

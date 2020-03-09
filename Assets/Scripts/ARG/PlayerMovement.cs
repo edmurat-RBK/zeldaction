@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Game;
+using Manager;
 
-namespace movementPlayer
+namespace MovementPlayer
 {
     public class PlayerMovement : MonoBehaviour
     {
