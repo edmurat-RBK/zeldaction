@@ -8,13 +8,11 @@ namespace WateringCan
     public class Arrosoir : MonoBehaviour
     {
         #region Variables
-
         private float horizontalRot;
         private float verticalRot;
         [SerializeField]
-        private ParticleSystem water;
-
-
+        private GameObject water;
+        private int bucketAngle;
         #endregion
 
         void Awake()
@@ -24,19 +22,15 @@ namespace WateringCan
         
         void Start()
         {
-            water.gameObject.SetActive(false); 
-
+            water.gameObject.SetActive(false);
         }
         
         void Update()
         {
-            horizontalRot = PlayerManager.Instance.horizontal;
-            verticalRot = PlayerManager.Instance.vertical;
-            //retrieve the position of the joystick
 
             if (Input.GetButton("B"))
             {
-                WateringPos();
+                Watering();
             }
             else
             {
@@ -46,53 +40,48 @@ namespace WateringCan
 
         }
 
-        #region Watering
-        private void WateringPos()
+        #region BucketWatering
+        private void Watering()
         {
-            Debug.Log("je me désactive");
             PlayerManager.Instance.playerCanMove = false; //stop the player from moving
             PlayerManager.Instance.playerRigidBody.velocity = Vector2.zero; //stop the player movement
-            water.gameObject.SetActive (true); //set on the particule system
+            water.gameObject.SetActive(true); //set on the particule system
 
-            if (horizontalRot != 0 || verticalRot != 0)
+            switch (PlayerManager.Instance.dirPlayer)
             {
-                if (verticalRot >= 0.01)
-                {
-                    verticalRot = 1;
-                    //space for animator
-                }
-                else if (verticalRot <= -0.01)
-                {
-                    verticalRot = -1;
-                    //space for animator
-                }
-                else
-                {
-                    verticalRot = 0;
-                    //space for animator
-                }
+                case PlayerManager.direction.down:
+                    water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                    break;
 
-                if (horizontalRot >= 0.01)
-                {
-                    horizontalRot = 1;
-                    //space for animator
-                }
-                else if (horizontalRot <= -0.01)
-                {
-                    horizontalRot = -1;
-                    //space for animator
-                }
-                else
-                {
-                    horizontalRot = 0;
-                    //space for animator
-                }
+                case PlayerManager.direction.downRight:
+                    water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 45));
+                    break;
 
-                water.transform.rotation = Quaternion.Euler(new Vector3(-verticalRot, horizontalRot,0).normalized*90);
-                //vertical and horizontal is swap, i don't know why but it work
+                case PlayerManager.direction.right:
+                    water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 90));
+                    break;
+
+                case PlayerManager.direction.upRight:
+                    water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 135));
+                    break;
+
+                case PlayerManager.direction.up:
+                    water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 180));
+                    break;
+
+                case PlayerManager.direction.upLeft:
+                    water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 225));
+                    break;
+
+                case PlayerManager.direction.left:
+                    water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 270));
+                    break;
+
+                case PlayerManager.direction.downLeft:
+                    water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 315));
+                    break;
             }
         }
-
         #endregion
     }
 }
