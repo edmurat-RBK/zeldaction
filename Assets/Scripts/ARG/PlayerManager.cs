@@ -5,17 +5,20 @@ using Management;
 
 namespace Manager
 {
+    /// <summary>
+    /// Made by Arthur Galland
+    /// Script use for manage all the importante variables for the player
+    /// It's a Singleton, we can acces all thoses variables with "PlayerManager.Instance.Variable"
+    /// </summary>
     public class PlayerManager : Singleton<PlayerManager>
     {
         #region Variables
-
         public float horizontal;
         public float vertical;
         public bool playerCanMove;
         public Rigidbody2D playerRigidBody;
         public enum direction { down, downLeft, left, upLeft, up, upRight, right, downRight, } //enulm for the player direction
         public direction dirPlayer = direction.down;
-
         #endregion
 
         void Awake()

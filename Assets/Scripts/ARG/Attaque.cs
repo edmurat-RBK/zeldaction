@@ -2,16 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Manager;
+using Ennemis;
 
 namespace Attack
 {
+    /// <summary>
+    /// Made by Arthur Galland
+    /// Use for the attack behevior and for the dammage application to the ennemis
+    /// </summary>
     public class Attaque : MonoBehaviour
     {
         #region Variables
         [SerializeField]
         private GameObject attackBox;
+        private bool alreadyInList;
+        public List<GameObject> ennemisInRange = new List<GameObject>(); //list of all the ennemis in range
+        public int dammage; //dammages of the player
         #endregion
-        
+
         void Awake()
         {
             
@@ -25,6 +33,12 @@ namespace Attack
         void Update()
         {
             AtatckPos();
+            ennemisInRange.RemoveAll(list_item => list_item == null); //remove
+
+            if (Input.GetButtonDown("X"))
+            {
+                ApplyDammage();
+            }
         }
 
         private void AtatckPos()
@@ -66,5 +80,42 @@ namespace Attack
             }
 
         }
-}
+
+        #region DetectTheEnnemis
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.tag == "Ennemis")
+            {
+                foreach (GameObject ennemi in ennemisInRange)
+                {
+                    if (collision.gameObject == ennemi)
+                    {
+                        alreadyInList = true;
+                    }
+                }
+                if (!alreadyInList)
+                {
+                    ennemisInRange.Add(collision.gameObject);
+                }
+                alreadyInList = false;
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.gameObject.tag == "Ennemis")
+            {
+                ennemisInRange.Remove(collision.gameObject);
+            }
+        }
+        #endregion
+
+        private void ApplyDammage()
+        {
+            foreach (GameObject ennemi in ennemisInRange)
+            {
+             ennemi.GetComponent<EnnemiDummy>().EnnemiTakeDammage(dammage);
+            }
+        } //apply damage to the ennemis within the colldier of the attack
+    }
 }

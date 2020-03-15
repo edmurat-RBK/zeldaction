@@ -5,14 +5,15 @@ using Manager;
 
 namespace WateringCan
 {
+    /// <summary>
+    /// Made by Arthur Galland
+    /// Script used by the bucket for the watering can
+    /// </summary>
     public class Arrosoir : MonoBehaviour
     {
         #region Variables
-        private float horizontalRot;
-        private float verticalRot;
         [SerializeField]
-        private GameObject water;
-        private int bucketAngle;
+        private GameObject water; //reference to the particule system attach to a object
         #endregion
 
         void Awake()
@@ -47,7 +48,7 @@ namespace WateringCan
             PlayerManager.Instance.playerRigidBody.velocity = Vector2.zero; //stop the player movement
             water.gameObject.SetActive(true); //set on the particule system
 
-            switch (PlayerManager.Instance.dirPlayer)
+            switch (PlayerManager.Instance.dirPlayer) //use the direction in the player manager to retrieve the angle for the particule systeme
             {
                 case PlayerManager.direction.down:
                     water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
@@ -80,8 +81,13 @@ namespace WateringCan
                 case PlayerManager.direction.downLeft:
                     water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 315));
                     break;
+
+                default:
+                water.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+                break;
             }
         }
         #endregion
+
     }
 }

@@ -5,6 +5,10 @@ using Manager;
 
 namespace MovementPlayer
 {
+    /// <summary>
+    /// Made by Arthur Galland
+    /// Script use by the player for moving
+    /// </summary>
     public class PlayerMovement : MonoBehaviour
     {
         #region variable

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ennemis
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -36,8 +37,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Ennemis
+  - Fire
   m_SortingLayers:
   - name: Default
     uniqueID: 0
