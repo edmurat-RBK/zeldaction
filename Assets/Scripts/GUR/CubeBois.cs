@@ -1,26 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using movementPlayer;
 
 public class CubeBois : MonoBehaviour
 {
-    public GameObject hitboxHaut;
-    public GameObject hitboxBas;
-    public GameObject hitboxDroite;
-    public GameObject hitboxGauche;
+    public GameObject[] courantEau;
+
+    public GameObject hitboxVerticale;
+    public GameObject hitboxHorizontale;
 
     public bool canRedirect = true;
-    public GameObject waterSlide;
-    public GameObject teste;
 
+    [HideInInspector]
     public string wichDirection;
 
     private void Start()
     {
-        hitboxHaut.SetActive(false);
-        hitboxBas.SetActive(false);
-        hitboxDroite.SetActive(false);
-        hitboxGauche.SetActive(false);
+        courantEau = GameObject.FindGameObjectsWithTag("Courant");
+
+        hitboxVerticale.SetActive(false);
+        hitboxHorizontale.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -29,45 +29,31 @@ public class CubeBois : MonoBehaviour
         {
             switch (wichDirection)
             {
-                case("Bas"):
-                    waterSlide.SetActive(false);
-                    teste.SetActive(false);
-                    hitboxHaut.SetActive(true);
-                    hitboxBas.SetActive(true);
-
-                    hitboxDroite.SetActive(false);
-                    hitboxGauche.SetActive(false);
+                case ("Bas"):
+                    hitboxVerticale.SetActive(true);
+                    hitboxHorizontale.SetActive(false);
+                   
                 break;
 
                 case ("Haut"):
-                    waterSlide.SetActive(false);
-                    teste.SetActive(false);
-                    hitboxHaut.SetActive(true);
-                    hitboxBas.SetActive(true);
-
-                    hitboxDroite.SetActive(false);
-                    hitboxGauche.SetActive(false);
+                    hitboxVerticale.SetActive(true);
+                    hitboxHorizontale.SetActive(false);
                 break;
 
                 case ("Droite"):
-                    waterSlide.SetActive(false);
-                    teste.SetActive(false);
-                    hitboxDroite.SetActive(true);
-                    hitboxGauche.SetActive(true);
-
-                    hitboxHaut.SetActive(false);
-                    hitboxBas.SetActive(false);
+                    hitboxVerticale.SetActive(false);
+                    hitboxHorizontale.SetActive(true);
                 break;
 
                 case ("Gauche"):
-                    waterSlide.SetActive(false);
-                    teste.SetActive(false);
-                    hitboxDroite.SetActive(true);
-                    hitboxGauche.SetActive(true);
-
-                    hitboxHaut.SetActive(false);
-                    hitboxBas.SetActive(false);
+                    hitboxVerticale.SetActive(false);
+                    hitboxHorizontale.SetActive(true);
                 break;
+            }
+
+            for (int i = 0; i < courantEau.Length; i++)
+            {
+                courantEau[i].SetActive(false);
             }
         }
     }
@@ -76,12 +62,13 @@ public class CubeBois : MonoBehaviour
     {
         if (collision.gameObject.layer == 29)
         {
-            waterSlide.SetActive(true);
-            teste.SetActive(true);
-            hitboxHaut.SetActive(false);
-            hitboxBas.SetActive(false);
-            hitboxDroite.SetActive(false);
-            hitboxGauche.SetActive(false);
+            for (int i = 0; i < courantEau.Length; i++)
+            {
+                courantEau[i].SetActive(true);
+            }
+
+            hitboxVerticale.SetActive(false);
+            hitboxHorizontale.SetActive(false);
         }
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ennemis
   - Fire
+  - Courant
   layers:
   - Default
   - TransparentFX
@@ -34,7 +35,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Courant eau
   - Cube de bois
   - Player
   - 

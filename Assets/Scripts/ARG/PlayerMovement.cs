@@ -14,7 +14,7 @@ namespace MovementPlayer
         #region variable
         private float horizontal;
         private float vertical;
-        private Vector2 direction;
+        public Vector2 direction;
 
         [SerializeField]
         [Range(100f, 1000f)]
