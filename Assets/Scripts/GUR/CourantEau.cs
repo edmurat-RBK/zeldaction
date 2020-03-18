@@ -7,7 +7,7 @@ public class CourantEau : MonoBehaviour
     public float waterSpeed;
     public string direction;
 
-    Vector2 movement;
+    public Vector2 movement;
  
     void Start()
     {
