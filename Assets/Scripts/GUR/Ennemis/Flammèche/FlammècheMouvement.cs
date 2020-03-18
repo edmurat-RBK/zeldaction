@@ -36,11 +36,20 @@ public class FlammècheMouvement : MonoBehaviour
     private bool lockGeneration = true;
     #endregion
 
+   
     void Update()
     {
-        EnnemyMoving();
-        Direction();
-        FlameGeneration();
+        if (GetComponentInChildren<ZoneAggro>().canAggro == true)
+        {
+            EnnemyMoving();
+            Direction();
+            FlameGeneration();
+        } // Rentre si le joueur rentre dans la zone d'aggro
+
+        if (GetComponentInChildren<ZoneAggro>().canAggro == false) 
+        {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;   
+        } // Arrete la flammèche si le joueur sort da la zone d'aggro 
     }
 
     #region Partie sur la gestion du mouvement 
