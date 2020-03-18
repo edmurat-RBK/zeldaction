@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using movementPlayer;
+using Game;
 
 public class CubeBois : MonoBehaviour
 {
     public GameObject[] courantEau;
+
+    public Transform player;
 
     public GameObject hitboxVerticale;
     public GameObject hitboxHorizontale;
@@ -55,6 +58,8 @@ public class CubeBois : MonoBehaviour
             {
                 courantEau[i].SetActive(false);
             }
+
+            
         }
     }
 
