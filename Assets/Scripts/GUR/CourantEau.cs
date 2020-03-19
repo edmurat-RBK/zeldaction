@@ -2,16 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Créateur : Guillaume Rogé 
+/// Ce script permet de : 
+/// - Donné une force à la caisse de bois dans une direction choisi
+/// </summary>
 public class CourantEau : MonoBehaviour
 {
-    public float waterSpeed;
+    #region Variable
+    [Header ("Mettre la direction du courant d'eau")]
     public string direction;
+    [Header ("Vitesse de déplacement des caisses sur le courant")]
+    public float waterSpeed;
 
+    [HideInInspector]
     public Vector2 movement;
- 
+    #endregion
+
     void Start()
     {
-        switch (direction)
+        switch (direction) 
         {
             case("Bas"):
                 movement = Vector2.down;
@@ -28,12 +38,12 @@ public class CourantEau : MonoBehaviour
             case ("Gauche"):
                 movement = Vector2.left;
                 break;
-        }
+        } // Permet de donné la direction choisi dans l'inspecteur au vecteur
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other) // Permet de donné une vélocité à un cube de bois quand il est dans le courant
     {
-        if (other.gameObject.layer == 28)
+        if (other.gameObject.layer == 28) // 28 = layer Cube de bois
         {
             if(other.GetComponent<CubeBois>().canRedirect == true)
             {
@@ -44,7 +54,7 @@ public class CourantEau : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other) // Permet d'être sur qu'un cube soit bien sortie d'un courant avant d'en prendre un autres
     {
 
         other.GetComponent<CubeBois>().canRedirect = true;
