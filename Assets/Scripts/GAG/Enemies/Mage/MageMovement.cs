@@ -7,6 +7,7 @@ using UnityEngine;
 /// Le script permet de : 
 /// - Déplacer le mage en fonction de la position du joueur
 /// - Faire spawn un projectile sur la position du joueur 
+/// - D'activer le mage quand le joueur rentre dans sa zone d'aggro
 /// </summary>
 
 public class MageMovement : MonoBehaviour
@@ -35,7 +36,15 @@ public class MageMovement : MonoBehaviour
 
     void Update()
     {
-        MageDisplacement();
+        if (GetComponentInChildren<ZoneAggro>().canAggro == true)
+        {
+            MageDisplacement();
+        }
+
+        if (GetComponentInChildren<ZoneAggro>().canAggro == false)
+        {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
     }
 
     private void MageDisplacement()
