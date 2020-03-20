@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Game;
+using Manager;
 
 /// <summary>
 /// Créateur : Guillaume Rogé
