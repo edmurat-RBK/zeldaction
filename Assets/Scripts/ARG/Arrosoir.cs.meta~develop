@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/GUR.meta
+guid: 7b736f859e44ffa41902c89093d156be
+folderAsset: yes
+DefaultImporter:
+=======
+guid: a6744053c6219f243919c1e1ed1cd346
+MonoImporter:
+>>>>>>> develop:Assets/Scripts/ARG/Arrosoir.cs.meta
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
