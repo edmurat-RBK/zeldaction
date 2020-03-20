@@ -219,6 +219,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.64
+--- !u!1 &904667951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4799022678641809770, guid: 10d632e473a3b1c45889c2fecdfeb84e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1710055288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &904667953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904667951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea55327bdb7c9b94c9780b3e0ca55277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canAggro: 0
 --- !u!1 &1038046176
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,5 +496,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mage
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4662766332961414687, guid: 10d632e473a3b1c45889c2fecdfeb84e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 10d632e473a3b1c45889c2fecdfeb84e, type: 3}
