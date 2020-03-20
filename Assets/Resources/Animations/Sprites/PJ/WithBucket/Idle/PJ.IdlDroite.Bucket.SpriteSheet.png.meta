@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: 7032598298733866166
     second: PJ.IdlDroite.Bucket_2
+  - first:
+      213: -1315726579740099547
+    second: PJ.IdlDroite.Bucket.SpriteSheet_0
+  - first:
+      213: 2507222800991092962
+    second: PJ.IdlDroite.Bucket.SpriteSheet_1
+  - first:
+      213: -2193079307193316007
+    second: PJ.IdlDroite.Bucket.SpriteSheet_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PJ.IdlDroite.Bucket_0
+      name: PJ.IdlDroite.Bucket.SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -109,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ee0cf80be59e4b00800000000000000
-      internalID: 814753419301228257
+      spriteID: 52c3d0195a99dbde0800000000000000
+      internalID: -1315726579740099547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ.IdlDroite.Bucket_1
+      name: PJ.IdlDroite.Bucket.SpriteSheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -130,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a12f2f72a4579f7b0800000000000000
-      internalID: -5189988134209523174
+      spriteID: 2e085d98ad17bc220800000000000000
+      internalID: 2507222800991092962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ.IdlDroite.Bucket_2
+      name: PJ.IdlDroite.Bucket.SpriteSheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -151,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bc6c0474eec89160800000000000000
-      internalID: 7032598298733866166
+      spriteID: 95d8b725dfd9091e0800000000000000
+      internalID: -2193079307193316007
       vertices: []
       indices: 
       edges: []
