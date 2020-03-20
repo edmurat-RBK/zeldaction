@@ -37,12 +37,9 @@ TagManager:
   - 
   - 
   - Cube de bois
-  - Player
+  - 
   - 
   - Player
-  - 
-  - Ennemis
-  - Fire
   m_SortingLayers:
   - name: Default
     uniqueID: 0
