@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 5987844329369052875}
   - component: {fileID: 5987844329369052879}
   - component: {fileID: 5987844329369052868}
+  - component: {fileID: 1097937794574312931}
   - component: {fileID: 5987844329369052873}
   m_Layer: 0
   m_Name: Player
@@ -155,6 +156,22 @@ MonoBehaviour:
   attackBox: {fileID: 5987844329921033346}
   ennemisInRange: []
   dammage: 3
+--- !u!114 &1097937794574312931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987844329369052878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a180df8ec041645bea6f211e1fa09e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beamRange: 3
+  inputMaxHoldTime: 0.8
+  beamMaxTime: 1
+  beamTime: 0
 --- !u!50 &5987844329369052873
 Rigidbody2D:
   serializedVersion: 4
