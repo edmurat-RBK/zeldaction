@@ -30,25 +30,32 @@ public class Kameheaumeheau : MonoBehaviour
 
     private void CheckLoading()
     {
+        //If input hasnt been pressed enough time
         if (!loaded)
         {
+            //If inupt is still pressed
             if (Input.GetButton("Y"))
             {
                 inputHoldTime += Time.deltaTime;
+                //When input has been pressed enough
                 if (inputHoldTime >= inputMaxHoldTime)
                 {
                     loaded = true;
                 }
             }
+            //If input is not pressed / realsed
             else
             {
                 inputHoldTime = 0;
             }
         }
+        // If Kameheaumeheau is loaded
         else
         {
+            //When input released
             if (Input.GetButtonUp("Y"))
             {
+                //Start Kameheau
                 kameheaumeheau = true;
                 manager.playerCanMove = false;
                 loaded = false;
@@ -59,8 +66,10 @@ public class Kameheaumeheau : MonoBehaviour
 
     private void LaunchKameheaumeheau()
     {
+        //If kameheau launched
         if(kameheaumeheau)
         {
+            //Check time
             beamTime += Time.deltaTime;
             if(beamTime >= beamMaxTime)
             {
@@ -69,6 +78,7 @@ public class Kameheaumeheau : MonoBehaviour
                 manager.playerCanMove = true;
             }
 
+            //Check direction
             Vector2 beamDirection = Vector2.zero;
             switch(manager.dirPlayer)
             {
@@ -105,6 +115,7 @@ public class Kameheaumeheau : MonoBehaviour
                     break;
             }
 
+            //Check collision
             Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), beamDirection, beamRange);
         }
     }
