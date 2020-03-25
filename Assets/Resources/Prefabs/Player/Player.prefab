@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   water: {fileID: 5987844329395168478}
+  useWaterCan: 0
 --- !u!114 &5987844329369052879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,10 +169,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a180df8ec041645bea6f211e1fa09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beamRange: 3
+  beamRange: 35
   inputMaxHoldTime: 0.8
+  inputHoldTime: 0
   beamMaxTime: 1
   beamTime: 0
+  loaded: 0
+  kameheaumeheau: 0
+  manager: {fileID: 0}
 --- !u!50 &5987844329369052873
 Rigidbody2D:
   serializedVersion: 4

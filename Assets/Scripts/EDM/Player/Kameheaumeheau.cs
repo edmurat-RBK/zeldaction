@@ -71,11 +71,13 @@ public class Kameheaumeheau : MonoBehaviour
         {
             //Check time
             beamTime += Time.deltaTime;
+            manager.playerRigidBody.velocity = Vector2.zero;
             if(beamTime >= beamMaxTime)
             {
                 beamTime = 0;
                 kameheaumeheau = false;
                 manager.playerCanMove = true;
+                
             }
 
             //Check direction
