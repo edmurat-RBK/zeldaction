@@ -8,7 +8,7 @@ public class ZoneAggro : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 29)
+        if (collision.gameObject.layer == 31)
         {
             canAggro = true;
         }
@@ -16,7 +16,7 @@ public class ZoneAggro : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 29)
+        if (collision.gameObject.layer == 31)
         {
             canAggro = false;
         }

@@ -80,7 +80,7 @@ public class MageMovement : MonoBehaviour
     {
         lockMovement = false;
         yield return new WaitForSeconds(timeBeforeAttack);
-        GameObject meteor = Instantiate(projectile, player.transform.position, transform.rotation);
+        GameObject meteor = Instantiate(projectile, (player.transform.position + new Vector3(0,2.5f)), transform.rotation);
         StartCoroutine(Cooldown());
         lockMovement = true;
 
