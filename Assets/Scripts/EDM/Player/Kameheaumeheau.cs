@@ -118,7 +118,8 @@ public class Kameheaumeheau : MonoBehaviour
             }
 
             //Check collision
-            Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), beamDirection, beamRange);
+            RaycastHit2D Ray = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), beamDirection, beamRange);
+            Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), beamDirection, Color.blue);            
         }
     }
 }
