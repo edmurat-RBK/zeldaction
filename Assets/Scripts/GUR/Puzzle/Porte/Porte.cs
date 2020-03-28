@@ -6,6 +6,7 @@ public class Porte : MonoBehaviour
 {
     public float speed;
     public GameObject[] wichPlaque;
+    public GameObject hitBox;
     public float timeForOpen;
 
     private Vector2 direction;
@@ -43,5 +44,7 @@ public class Porte : MonoBehaviour
         rbDoor.velocity = direction * speed * Time.fixedDeltaTime;
         yield return new WaitForSeconds(timeForOpen);
         rbDoor.velocity = Vector2.zero;
+        hitBox.SetActive(false);
+        
     }
 }
