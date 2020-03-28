@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 5987844329369052879}
   - component: {fileID: 5987844329369052868}
   - component: {fileID: 1097937794574312931}
+  - component: {fileID: 3476064462236680033}
   - component: {fileID: 5987844329369052873}
   m_Layer: 0
   m_Name: Player
@@ -112,6 +113,7 @@ MonoBehaviour:
   horizontal: 0
   vertical: 0
   playerCanMove: 0
+  playerInvulnerable: 0
   playerRigidBody: {fileID: 0}
   dirPlayer: 0
 --- !u!114 &5987844329369052875
@@ -177,6 +179,24 @@ MonoBehaviour:
   loaded: 0
   kameheaumeheau: 0
   manager: {fileID: 0}
+--- !u!114 &3476064462236680033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987844329369052878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe563fd64faea64e910e7fa8d64d8cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 0
+  maxCooldown: 1
+  effectTime: 0
+  maxEffectTime: 0.5
+  active: 0
+  vagueTrigger: 0.1
 --- !u!50 &5987844329369052873
 Rigidbody2D:
   serializedVersion: 4

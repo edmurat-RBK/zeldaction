@@ -16,7 +16,7 @@ namespace Manager
         public float horizontal;
         public float vertical;
         public bool playerCanMove;
-        public bool playerInvunerable;
+        public bool playerInvulnerable = false;
         public Rigidbody2D playerRigidBody;
         public enum direction { down, downLeft, left, upLeft, up, upRight, right, downRight, } //enulm for the player direction
         public direction dirPlayer = direction.down;
