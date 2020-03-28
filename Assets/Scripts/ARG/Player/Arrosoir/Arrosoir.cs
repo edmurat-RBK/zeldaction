@@ -14,6 +14,7 @@ namespace WateringCan
         #region Variables
         [SerializeField]
         private GameObject water; //reference to the particule system attach to a object
+        public bool useWaterCan = false;
         #endregion
 
         void Awake()
@@ -35,8 +36,12 @@ namespace WateringCan
             }
             else
             {
-             PlayerManager.Instance.playerCanMove = true; 
              water.gameObject.SetActive(false); //set off the particule system
+            }
+
+            if (Input.GetButtonUp("B"))
+            {
+                PlayerManager.Instance.playerCanMove = true;
             }
 
         }
