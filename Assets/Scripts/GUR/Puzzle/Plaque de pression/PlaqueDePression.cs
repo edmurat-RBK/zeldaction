@@ -18,11 +18,12 @@ public class PlaqueDePression : MonoBehaviour
     public GameObject plaqueDesactive;
 
     [HideInInspector]
-    public bool activeTrap = false;
+    public bool activeTrap;
     #endregion
 
     void Start()
     {
+        activeTrap = false;
         plaqueActive.SetActive(false);
     }
 
