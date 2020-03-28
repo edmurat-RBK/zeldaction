@@ -40,7 +40,7 @@ public class CubeBois : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 29) // 29 = layer Player
+        if (collision.gameObject.layer == 31) // 29 = layer Player
         {
             switch (wichDirection) // Permet de récuperer la direction dans la quel va la caisse et d'activer les bonne hitbox
             {
@@ -81,7 +81,7 @@ public class CubeBois : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 29) // 29 = layer Player
+        if (collision.gameObject.layer == 31) // 29 = layer Player
         {
             for (int i = 0; i < courantEau.Length; i++) // Permet d'activer toute les hitbox des courants d'eau
             {
