@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Manager;
 
 /// <summary>
 /// Créateur : Gauthier Gobert 
@@ -24,7 +25,7 @@ public class MageMovement : MonoBehaviour
     public float retreatDistance;
 
     [Space]
-    public Transform player;
+    private Transform player;
     public GameObject projectile;
 
     Vector2 movement;
@@ -33,6 +34,12 @@ public class MageMovement : MonoBehaviour
     private bool lockMovement = true;
     private bool lockAttack = true;
     #endregion
+
+    private void Start()
+    {
+        player = PlayerManager.Instance.transform;
+    }
+
 
     void Update()
     {

@@ -335,7 +335,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.5, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -9297,11 +9297,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 547821195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf7e49c37602af34bbd17a5034e4a9c0, type: 3}
+  m_Script: {fileID: 11500000, guid: aa3292943a0e3564495b5f6618d14a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boatcin: {fileID: 164979068}
-  cinematiqueTimer: 10
+  crabcin: {fileID: 164979068}
+  cinematicTimer: 5
 --- !u!61 &547821197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15428,7 +15428,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1693286522}
-  - {fileID: 1868446069}
   - {fileID: 1594389917}
   - {fileID: 1529171822}
   m_Father: {fileID: 1761004681}
@@ -15628,7 +15627,7 @@ PrefabInstance:
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
@@ -15643,6 +15642,11 @@ PrefabInstance:
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987844329369052874, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: playerCanMove
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052875, guid: cea7f767da1b04149aab5405f95e07b0,
@@ -18352,7 +18356,7 @@ Transform:
   - {fileID: 1969221501}
   - {fileID: 1908135876}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1400543034
 GameObject:
@@ -19438,7 +19442,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 40
+  field of view: 62
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -19671,7 +19675,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1130433769}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1532606024
 GameObject:
@@ -20932,7 +20936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boatcin: {fileID: 1529171821}
-  cinematiqueTimer: 5
+  cinematicTimer: 10
 --- !u!61 &1594389916
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20971,7 +20975,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1130433769}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603999370
 GameObject:
@@ -22126,7 +22130,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 23986ab5e4b94af4e98801a870b64b7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -22146,7 +22150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693286520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5634898, y: -4.2803955, z: 61.304688}
+  m_LocalPosition: {x: -1.39, y: -4.2803955, z: 60.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1130433769}
@@ -22944,7 +22948,7 @@ Transform:
   - {fileID: 1130433769}
   - {fileID: 1150371698}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1761080404
 GameObject:
@@ -24426,7 +24430,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1859331466
 GameObject:
@@ -24554,11 +24558,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868446066}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5634898, y: -4.2803955, z: 61.304688}
+  m_LocalPosition: {x: 0.77348983, y: 0.94000006, z: -0.47468567}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1130433769}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1873740387
 GameObject:
@@ -25028,7 +25032,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0.5, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -29169,7 +29173,7 @@ Tilemap:
       - {fileID: 21300000, guid: 132cb51b1fee5fe4cacacf21c0abc214, type: 3}
       - {fileID: 21300000, guid: 870b59fbd0d0032409522a758c111e0c, type: 3}
       - {fileID: 21300000, guid: 37965b635eaa73548840bfbc84910fa0, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
@@ -29399,7 +29403,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 936458966}
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 62
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -31683,7 +31687,7 @@ Transform:
   - {fileID: 1420996759}
   - {fileID: 585126467}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2129742917
 GameObject:

@@ -13,8 +13,8 @@ public class BoatCinematique : MonoBehaviour
     #region Variable
     public PlayableDirector boatcin;//reference to the playable cinematique
     [SerializeField]
-    [Range(1f, 100f)]
-    private float cinematiqueTimer;
+    [Range(0f, 50f)]
+    private float cinematicTimer;
     #endregion
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -23,7 +23,7 @@ public class BoatCinematique : MonoBehaviour
         {
             PlayCinematique(); //start the cinematique
             StartCoroutine("MoveAgain"); //player can't move during this cinematique
-            Destroy(this.gameObject); //destroy the collider so the cinematique can't be played again
+            
         }
     }
 
@@ -36,7 +36,9 @@ public class BoatCinematique : MonoBehaviour
 
     IEnumerator MoveAgain()
     {
-        yield return new WaitForSeconds(cinematiqueTimer);
+        yield return new WaitForSeconds(cinematicTimer);
         PlayerManager.Instance.playerCanMove = true;
+        Destroy(this.gameObject); //destroy the collider so the cinematique can't be played again
+        
     }
 }

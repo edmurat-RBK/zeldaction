@@ -123,8 +123,7 @@ MonoBehaviour:
   attackCooldown: 1.5
   stoppingDistance: 10
   retreatDistance: 6
-  player: {fileID: 0}
-  projectile: {fileID: 1284462347519424399, guid: 56011bf119dedea44bfb418d8b2a7c59,
+  projectile: {fileID: 2105884287301529379, guid: a89db78045bd840458005a21f71b2a78,
     type: 3}
 --- !u!1 &4799022678641809770
 GameObject:
@@ -136,7 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8146561693827722712}
   - component: {fileID: 4499664703963820301}
-  - component: {fileID: 4662766332961414687}
+  - component: {fileID: 9190322458926956887}
   m_Layer: 0
   m_Name: ZoneAggro
   m_TagString: Untagged
@@ -174,7 +173,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 80
---- !u!114 &4662766332961414687
+--- !u!114 &9190322458926956887
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,7 +182,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4799022678641809770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da92e4c65e2a9fe4d837225daf59bd9a, type: 3}
+  m_Script: {fileID: 11500000, guid: ea55327bdb7c9b94c9780b3e0ca55277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   canAggro: 0

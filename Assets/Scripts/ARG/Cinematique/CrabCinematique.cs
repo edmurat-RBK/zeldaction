@@ -13,9 +13,8 @@ public class CrabCinematique : MonoBehaviour
     #region Variable
     public PlayableDirector crabcin; //reference to the playable cinematique
     [SerializeField]
-    [Range(1f, 100f)]
-    private float cinematiqueTimer;
-    
+    [Range(0f, 50f)]
+    private float cinematicTimer;
     #endregion
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,7 +23,6 @@ public class CrabCinematique : MonoBehaviour
         {
             PlayCinematique(); //start the cinematique
             StartCoroutine("MoveAgain"); //player can't move during this cinematique
-            Destroy(this.gameObject); //destroy the collider so the cinematique can't be played again
         }
     }
 
@@ -37,7 +35,8 @@ public class CrabCinematique : MonoBehaviour
 
     IEnumerator MoveAgain()
     {
-        yield return new WaitForSeconds(cinematiqueTimer);
+        yield return new WaitForSeconds(cinematicTimer);
         PlayerManager.Instance.playerCanMove = true;
+        Destroy(this.gameObject); //destroy the collider so the cinematique can't be played again
     }
 }
