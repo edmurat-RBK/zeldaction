@@ -26,6 +26,8 @@ public class CubeBois : MonoBehaviour
     public string wichDirection;
     [HideInInspector]
     public bool canRedirect = true;
+    [HideInInspector]
+    public bool notStop;
 
     private Vector2 direction;
     private GameObject[] courantEau;
@@ -33,6 +35,7 @@ public class CubeBois : MonoBehaviour
 
     private void Start()
     {
+        notStop = true;
         courantEau = GameObject.FindGameObjectsWithTag("Courant"); // Permet de récuperer toutes les hitbox des courants d'eau et de les stocker dans un tableau
         hitboxVerticale.SetActive(false);
         hitboxHorizontale.SetActive(false);
@@ -75,7 +78,10 @@ public class CubeBois : MonoBehaviour
                 courantEau[i].SetActive(false);
             }
 
-            PlayerManager.Instance.playerRigidBody.AddForce(direction * speedOfWater); // Permet de transporter le joueur sur la caisse
+            if (notStop == true)
+            {
+                PlayerManager.Instance.playerRigidBody.AddForce(direction * speedOfWater); // Permet de transporter le joueur sur la caisse
+            }
         }
     }
 
