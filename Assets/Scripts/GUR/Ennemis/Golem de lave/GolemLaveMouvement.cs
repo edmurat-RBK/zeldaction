@@ -3,16 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using Manager;
 
+/// <summary>
+/// Créateur Guillaume Rogé 
+/// Ce script permet de : 
+/// - Une fois le joueur dans la zone d'aggro d'activer le golem
+/// - Déplacer le golem vers le joueur selon ne vitesse donné
+/// - Une fois à une certaine distance arrete le golem pour le faire attaquer
+/// - Gérer un systéme de cooldown d'attaque
+/// </summary>
 public class GolemLaveMouvement : MonoBehaviour
 {
     #region Variable
     [Header("Stats de base")]
     public float pv;
-    public float speed;
     public float timeBeforeAttack;
     public float attackCooldown;
 
     [Header("Valeur de déplacement")]
+    public float speed;
     public float stoppingDistance;
     public float retreatDistance;
 
@@ -29,6 +37,7 @@ public class GolemLaveMouvement : MonoBehaviour
     private Transform player;
     private Rigidbody2D rbGolem;
     #endregion
+
     void Start()
     {
         lockMouvement = true;
@@ -72,28 +81,28 @@ public class GolemLaveMouvement : MonoBehaviour
             }
 
         }
-    }
+    } // Fonction qui déplace le golem vers le joueur selon une vitesse donné et l'arrête à une distance donné
 
     IEnumerator GolemLaveAtack()
     {
         lockMouvement = false;
         yield return new WaitForSeconds(timeBeforeAttack);
 
-        var dir = new Vector2 (player.transform.position.x - shotPoint.transform.position.x, player.transform.position.y - shotPoint.transform.position.y);
-        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        var dir = new Vector2 (player.transform.position.x - shotPoint.transform.position.x, player.transform.position.y - shotPoint.transform.position.y); // Permet d'orienter le shotPoint vers le joueur
+        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;                          
         shotPoint.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        GameObject wave = Instantiate(chocWave, shotPoint.transform.position, shotPoint.transform.rotation);
+        GameObject wave = Instantiate(chocWave, shotPoint.transform.position, shotPoint.transform.rotation); // spawn l'onde de choc
         Destroy(wave, 0.5f);
         StartCoroutine(AttackCoolDown());
         lockMouvement = true;
-    }
+    } // Coroutine qui fais attaquer le golem en faisant spawn l'onde de choc sur un spawn point
 
     IEnumerator AttackCoolDown()
     {
         lockAttack = false;
         yield return new WaitForSeconds(attackCooldown);
         lockAttack = true;
-    }
+    } // Coroutine qui empéche le golem d'attaquer juste après une attaque
    
 }
