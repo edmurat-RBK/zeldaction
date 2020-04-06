@@ -1,0 +1,3103 @@
+fileFormatVersion: 2
+guid: 3583faa702a068b4bab51d6574bc1cd8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1043207345623838484
+    second: IMG_1461_0
+  - first:
+      213: 7940412832402259946
+    second: IMG_1461_1
+  - first:
+      213: 270698465244533391
+    second: IMG_1461_2
+  - first:
+      213: 5312771411589146432
+    second: IMG_1461_3
+  - first:
+      213: 5333111252153261930
+    second: IMG_1461_4
+  - first:
+      213: 708413403400249084
+    second: IMG_1461_5
+  - first:
+      213: 4564834696516040244
+    second: IMG_1461_6
+  - first:
+      213: 2159906121020191011
+    second: IMG_1461_7
+  - first:
+      213: -1440957764432507560
+    second: IMG_1461_8
+  - first:
+      213: 4574835230426667830
+    second: IMG_1461_9
+  - first:
+      213: -5330971608247192775
+    second: IMG_1461_10
+  - first:
+      213: -8816695020269293238
+    second: IMG_1461_11
+  - first:
+      213: -5324714478508275145
+    second: IMG_1461_12
+  - first:
+      213: -9047387086434670858
+    second: IMG_1461_13
+  - first:
+      213: -5824014033252113607
+    second: IMG_1461_14
+  - first:
+      213: 6369978528865546918
+    second: IMG_1461_15
+  - first:
+      213: 5284534651321491411
+    second: IMG_1461_16
+  - first:
+      213: -3028340328446294792
+    second: IMG_1461_17
+  - first:
+      213: 2290359786350345247
+    second: IMG_1461_18
+  - first:
+      213: -7900672120160951942
+    second: IMG_1461_19
+  - first:
+      213: 5572768905878763077
+    second: IMG_1461_20
+  - first:
+      213: -248922883709173237
+    second: IMG_1461_21
+  - first:
+      213: 7611303421345857562
+    second: IMG_1461_22
+  - first:
+      213: -8331368556367456060
+    second: IMG_1461_23
+  - first:
+      213: 650454887030502290
+    second: IMG_1461_24
+  - first:
+      213: 6261211016782550923
+    second: IMG_1461_25
+  - first:
+      213: 6265457548297087731
+    second: IMG_1461_26
+  - first:
+      213: -2920298186988522374
+    second: IMG_1461_27
+  - first:
+      213: 4094348218297496918
+    second: IMG_1461_28
+  - first:
+      213: 6998417816762434145
+    second: IMG_1461_29
+  - first:
+      213: -5225434726431397786
+    second: IMG_1461_30
+  - first:
+      213: 6781411499764336134
+    second: IMG_1461_31
+  - first:
+      213: 7587535996850586621
+    second: IMG_1461_32
+  - first:
+      213: -4907119175287097100
+    second: IMG_1461_33
+  - first:
+      213: 1286273185934573962
+    second: IMG_1461_34
+  - first:
+      213: 5648421472061367722
+    second: IMG_1461_35
+  - first:
+      213: 7673657667168127089
+    second: IMG_1461_36
+  - first:
+      213: 7388207420970579218
+    second: IMG_1461_37
+  - first:
+      213: 3390078925003797849
+    second: IMG_1461_38
+  - first:
+      213: 4762847798116279952
+    second: IMG_1461_39
+  - first:
+      213: 8975785520560209595
+    second: IMG_1461_40
+  - first:
+      213: 1325708652268889440
+    second: IMG_1461_41
+  - first:
+      213: -7305873726763421838
+    second: IMG_1461_42
+  - first:
+      213: -1368543832473546579
+    second: IMG_1461_43
+  - first:
+      213: -5286321119070849372
+    second: IMG_1461_44
+  - first:
+      213: 7212138292279417630
+    second: IMG_1461_45
+  - first:
+      213: 4932892886864630053
+    second: IMG_1461_46
+  - first:
+      213: -4290924408986436295
+    second: IMG_1461_47
+  - first:
+      213: 6368833043297467559
+    second: IMG_1461_48
+  - first:
+      213: 1632948756507929685
+    second: IMG_1461_49
+  - first:
+      213: -8952748612601106747
+    second: IMG_1461_50
+  - first:
+      213: -8953745747088715296
+    second: IMG_1461_51
+  - first:
+      213: 830356684354788149
+    second: IMG_1461_52
+  - first:
+      213: -351157205897419399
+    second: IMG_1461_53
+  - first:
+      213: 2081082259064111930
+    second: IMG_1461_54
+  - first:
+      213: -220960341857388047
+    second: IMG_1461_55
+  - first:
+      213: -2652515861471377211
+    second: IMG_1461_56
+  - first:
+      213: -3089732627733365258
+    second: IMG_1461_57
+  - first:
+      213: -5348457186374582608
+    second: IMG_1461_58
+  - first:
+      213: 1592426938542413887
+    second: IMG_1461_59
+  - first:
+      213: 3310635792778365006
+    second: IMG_1461_60
+  - first:
+      213: 3517171589710197960
+    second: IMG_1461_61
+  - first:
+      213: -7457590411879265425
+    second: IMG_1461_62
+  - first:
+      213: 7557950754747017973
+    second: IMG_1461_63
+  - first:
+      213: -413080883608146827
+    second: IMG_1461_64
+  - first:
+      213: 1377990523070307271
+    second: IMG_1461_65
+  - first:
+      213: -267611367315232513
+    second: IMG_1461_66
+  - first:
+      213: 4721097481041467705
+    second: IMG_1461_67
+  - first:
+      213: -5487473411463673898
+    second: IMG_1461_68
+  - first:
+      213: -2034584842948976456
+    second: IMG_1461_69
+  - first:
+      213: -2215721613145845470
+    second: IMG_1461_70
+  - first:
+      213: -5741173274951609288
+    second: IMG_1461_71
+  - first:
+      213: -128023537360389903
+    second: IMG_1461_72
+  - first:
+      213: -2835560705020467752
+    second: IMG_1461_73
+  - first:
+      213: 396178928099924595
+    second: IMG_1461_74
+  - first:
+      213: -4813272356175954669
+    second: IMG_1461_75
+  - first:
+      213: -2302038918869988950
+    second: IMG_1461_76
+  - first:
+      213: -9060976464267218624
+    second: IMG_1461_77
+  - first:
+      213: 3892104727284535294
+    second: IMG_1461_78
+  - first:
+      213: -6695190342601874160
+    second: IMG_1461_79
+  - first:
+      213: -4128393459149506270
+    second: IMG_1461_80
+  - first:
+      213: 3433548334101594800
+    second: IMG_1461_81
+  - first:
+      213: 6812541908097982724
+    second: IMG_1461_82
+  - first:
+      213: -3557389159489132019
+    second: IMG_1461_83
+  - first:
+      213: 1816771251578725154
+    second: IMG_1461_84
+  - first:
+      213: 4214984099028988012
+    second: IMG_1461_85
+  - first:
+      213: 4080690409133239649
+    second: IMG_1461_86
+  - first:
+      213: -5969788195290382114
+    second: IMG_1461_87
+  - first:
+      213: -39155493375651057
+    second: IMG_1461_88
+  - first:
+      213: -8727017043275259426
+    second: IMG_1461_89
+  - first:
+      213: 655183205580002034
+    second: IMG_1461_90
+  - first:
+      213: -2063355302878024648
+    second: IMG_1461_91
+  - first:
+      213: -3393004969124048570
+    second: IMG_1461_92
+  - first:
+      213: 8201624868757758398
+    second: IMG_1461_93
+  - first:
+      213: -7328341810000285189
+    second: IMG_1461_94
+  - first:
+      213: -6500859203416484600
+    second: IMG_1461_95
+  - first:
+      213: 4000026824233123480
+    second: IMG_1461_96
+  - first:
+      213: 9165766390718190560
+    second: IMG_1461_97
+  - first:
+      213: 5399635396705485312
+    second: IMG_1461_98
+  - first:
+      213: 4567210639275934313
+    second: IMG_1461_99
+  - first:
+      213: 5457062638555247706
+    second: P_PatchHerbe_0
+  - first:
+      213: -8419441356946304671
+    second: P_PatchHerbe_1
+  - first:
+      213: 6150794470001004177
+    second: P_PatchHerbe_2
+  - first:
+      213: -7857714738296699961
+    second: P_PatchHerbe_3
+  - first:
+      213: 3473456134829328891
+    second: P_PatchHerbe_4
+  - first:
+      213: -8428611711270574199
+    second: P_PatchHerbe_5
+  - first:
+      213: -2191954929904473091
+    second: P_PatchHerbe_6
+  - first:
+      213: 1389412272029693052
+    second: P_PatchHerbe_7
+  - first:
+      213: -4021902355845148077
+    second: P_PatchHerbe_8
+  - first:
+      213: -916089667753569195
+    second: P_PatchHerbe_9
+  - first:
+      213: 6963052872075840329
+    second: P_PatchHerbe_10
+  - first:
+      213: -1996186280319380662
+    second: P_PatchHerbe_11
+  - first:
+      213: -7778443680621178961
+    second: P_PatchHerbe_12
+  - first:
+      213: -1640866817897267664
+    second: P_PatchHerbe_13
+  - first:
+      213: 4985179027048195733
+    second: P_PatchHerbe_14
+  - first:
+      213: -3274810538938426979
+    second: P_PatchHerbe_15
+  - first:
+      213: 1606252838095391417
+    second: P_PatchHerbe_16
+  - first:
+      213: -3117293987937517438
+    second: P_PatchHerbe_17
+  - first:
+      213: 2658863509619022901
+    second: P_PatchHerbe_18
+  - first:
+      213: 1539403090024206009
+    second: P_PatchHerbe_19
+  - first:
+      213: -1259075995704032676
+    second: P_PatchHerbe_20
+  - first:
+      213: -8553373188297963918
+    second: P_PatchHerbe_21
+  - first:
+      213: -2486723587995576628
+    second: P_PatchHerbe_22
+  - first:
+      213: 8427785362720480126
+    second: P_PatchHerbe_23
+  - first:
+      213: -8260559229216618391
+    second: P_PatchHerbe_24
+  - first:
+      213: -3344363950712980209
+    second: P_PatchHerbe_25
+  - first:
+      213: 29307001710713870
+    second: P_PatchHerbe_26
+  - first:
+      213: 1930755947497487631
+    second: P_PatchHerbe_27
+  - first:
+      213: -8436138765273320310
+    second: P_PatchHerbe_28
+  - first:
+      213: 6491991420794399713
+    second: P_PatchHerbe_29
+  - first:
+      213: -6835287556784453061
+    second: P_PatchHerbe_30
+  - first:
+      213: 6230841034143833089
+    second: P_PatchHerbe_31
+  - first:
+      213: 8618446136589562993
+    second: P_PatchHerbe_32
+  - first:
+      213: -5731458493436404065
+    second: P_PatchHerbe_33
+  - first:
+      213: -6259553562861673379
+    second: P_PatchHerbe_34
+  - first:
+      213: 6067763322726031213
+    second: P_PatchHerbe_35
+  - first:
+      213: -8049380426326876291
+    second: P_PatchHerbe_36
+  - first:
+      213: -4981087380045666194
+    second: P_PatchHerbe_37
+  - first:
+      213: 8764149115626414131
+    second: P_PatchHerbe_38
+  - first:
+      213: 5922889389350068841
+    second: P_PatchHerbe_39
+  - first:
+      213: -5323766196854370503
+    second: P_PatchHerbe_40
+  - first:
+      213: 243684528088095752
+    second: P_PatchHerbe_41
+  - first:
+      213: -219553711279909662
+    second: P_PatchHerbe_42
+  - first:
+      213: 6356768234370384522
+    second: P_PatchHerbe_43
+  - first:
+      213: 8351035435692401973
+    second: P_PatchHerbe_44
+  - first:
+      213: 760317471533871354
+    second: P_PatchHerbe_45
+  - first:
+      213: 7531069483701834773
+    second: P_PatchHerbe_46
+  - first:
+      213: 2113208919367751693
+    second: P_PatchHerbe_47
+  - first:
+      213: -5100505792547958977
+    second: P_PatchHerbe_48
+  - first:
+      213: -7779369788463547928
+    second: P_PatchHerbe_49
+  - first:
+      213: -6558407874708172048
+    second: P_PatchHerbe_50
+  - first:
+      213: -6052918933445649188
+    second: P_PatchHerbe_51
+  - first:
+      213: 4033015301597883992
+    second: P_PatchHerbe_52
+  - first:
+      213: -7948186672882027090
+    second: P_PatchHerbe_53
+  - first:
+      213: 7810386473014801308
+    second: P_PatchHerbe_54
+  - first:
+      213: 7725621476892856618
+    second: P_PatchHerbe_55
+  - first:
+      213: 5909213133614807162
+    second: P_PatchHerbe_56
+  - first:
+      213: -2799238873102245653
+    second: P_PatchHerbe_57
+  - first:
+      213: 2010244292736446152
+    second: P_PatchHerbe_58
+  - first:
+      213: 6730213965015769026
+    second: P_PatchHerbe_59
+  - first:
+      213: 1527322701876739544
+    second: P_PatchHerbe_60
+  - first:
+      213: 1031850396449662275
+    second: P_PatchHerbe_61
+  - first:
+      213: -1039544263028484190
+    second: P_PatchHerbe_62
+  - first:
+      213: -4652054553799726114
+    second: P_PatchHerbe_63
+  - first:
+      213: 6791881696490541074
+    second: P_PatchHerbe_64
+  - first:
+      213: 9000325323994042949
+    second: P_PatchHerbe_65
+  - first:
+      213: -3851435931104049185
+    second: P_PatchHerbe_66
+  - first:
+      213: -8963267801308910125
+    second: P_PatchHerbe_67
+  - first:
+      213: -6244636236450587186
+    second: P_PatchHerbe_68
+  - first:
+      213: 4298399580911711198
+    second: P_PatchHerbe_69
+  - first:
+      213: 4129743508326562161
+    second: P_PatchHerbe_70
+  - first:
+      213: 2317124785383434929
+    second: P_PatchHerbe_71
+  - first:
+      213: -6239722363362082795
+    second: P_PatchHerbe_72
+  - first:
+      213: -8805411726673026419
+    second: P_PatchHerbe_73
+  - first:
+      213: 1024368195386700077
+    second: P_PatchHerbe_74
+  - first:
+      213: 2813217075749347915
+    second: P_PatchHerbe_75
+  - first:
+      213: 4509282006537007748
+    second: P_PatchHerbe_76
+  - first:
+      213: 684839902941656022
+    second: P_PatchHerbe_77
+  - first:
+      213: 512535837829526993
+    second: P_PatchHerbe_78
+  - first:
+      213: 8098325324427411525
+    second: P_PatchHerbe_79
+  - first:
+      213: 7794787605188529164
+    second: P_PatchHerbe_80
+  - first:
+      213: -7803694259775889812
+    second: P_PatchHerbe_81
+  - first:
+      213: -6414159661604991788
+    second: P_PatchHerbe_82
+  - first:
+      213: 7001287210510198592
+    second: P_PatchHerbe_83
+  - first:
+      213: 4008402473410604866
+    second: P_PatchHerbe_84
+  - first:
+      213: 2384277273227529776
+    second: P_PatchHerbe_85
+  - first:
+      213: 8155740195913546720
+    second: P_PatchHerbe_86
+  - first:
+      213: 2070080230229191674
+    second: P_PatchHerbe_87
+  - first:
+      213: -5049369396962735286
+    second: P_PatchHerbe_88
+  - first:
+      213: -8499461074410642466
+    second: P_PatchHerbe_89
+  - first:
+      213: 3180310899731861549
+    second: P_PatchHerbe_90
+  - first:
+      213: 401886148491850110
+    second: P_PatchHerbe_91
+  - first:
+      213: 8822956181912278024
+    second: P_PatchHerbe_92
+  - first:
+      213: 8953259259561390534
+    second: P_PatchHerbe_93
+  - first:
+      213: 4338930999115697848
+    second: P_PatchHerbe_94
+  - first:
+      213: 4484352660088098757
+    second: P_PatchHerbe_95
+  - first:
+      213: 8817530745854007310
+    second: P_PatchHerbe_96
+  - first:
+      213: -965309349052199738
+    second: P_PatchHerbe_97
+  - first:
+      213: -1659329387407594115
+    second: P_PatchHerbe_98
+  - first:
+      213: -4143166368358341926
+    second: P_PatchHerbe_99
+  - first:
+      213: -1585552391544323182
+    second: P_PatchHerbe_0
+  - first:
+      213: 8919388985007404629
+    second: P_PatchHerbe_1
+  - first:
+      213: -3527116368435104038
+    second: P_PatchHerbe_2
+  - first:
+      213: 4817975182002037280
+    second: P_PatchHerbe_3
+  - first:
+      213: 5208829265519217007
+    second: P_PatchHerbe_4
+  - first:
+      213: 227807846894082247
+    second: P_PatchHerbe_5
+  - first:
+      213: -4359860694323952318
+    second: P_PatchHerbe_6
+  - first:
+      213: 7501901273968631692
+    second: P_PatchHerbe_7
+  - first:
+      213: -1498623954967856192
+    second: P_PatchHerbe_8
+  - first:
+      213: 4039519293181408195
+    second: P_PatchHerbe_9
+  - first:
+      213: -6469547882352562168
+    second: P_PatchHerbe_10
+  - first:
+      213: 6265325502172557827
+    second: P_PatchHerbe_11
+  - first:
+      213: 8126695825985185456
+    second: P_PatchHerbe_12
+  - first:
+      213: 8893932782084419417
+    second: P_PatchHerbe_13
+  - first:
+      213: 5791559608671228202
+    second: P_PatchHerbe_14
+  - first:
+      213: 717016262207038400
+    second: P_PatchHerbe_15
+  - first:
+      213: 7809178405981589489
+    second: P_PatchHerbe_16
+  - first:
+      213: -1506938582283826381
+    second: P_PatchHerbe_17
+  - first:
+      213: -5243642234890907814
+    second: P_PatchHerbe_18
+  - first:
+      213: 1280294898224494278
+    second: P_PatchHerbe_19
+  - first:
+      213: 5428569306376121858
+    second: P_PatchHerbe_20
+  - first:
+      213: 3686922057284294201
+    second: P_PatchHerbe_21
+  - first:
+      213: -8866679226900684198
+    second: P_PatchHerbe_22
+  - first:
+      213: -6742219511989443590
+    second: P_PatchHerbe_23
+  - first:
+      213: -6555868311401334613
+    second: P_PatchHerbe_24
+  - first:
+      213: -3672203739186666085
+    second: P_PatchHerbe_25
+  - first:
+      213: -4513795868373849458
+    second: P_PatchHerbe_26
+  - first:
+      213: 9126948151022348213
+    second: P_PatchHerbe_27
+  - first:
+      213: 2220194627540570582
+    second: P_PatchHerbe_28
+  - first:
+      213: 3686597806349062207
+    second: P_PatchHerbe_29
+  - first:
+      213: -680544866474515873
+    second: P_PatchHerbe_30
+  - first:
+      213: -1968528630725888697
+    second: P_PatchHerbe_31
+  - first:
+      213: 9060692072001330472
+    second: P_PatchHerbe_32
+  - first:
+      213: 7666727719004143546
+    second: P_PatchHerbe_33
+  - first:
+      213: -7992501587055261622
+    second: P_PatchHerbe_34
+  - first:
+      213: 3148057883907751149
+    second: P_PatchHerbe_35
+  - first:
+      213: 5649074169135832697
+    second: P_PatchHerbe_36
+  - first:
+      213: -4903088922993498557
+    second: P_PatchHerbe_37
+  - first:
+      213: 8117080977861765830
+    second: P_PatchHerbe_38
+  - first:
+      213: -2973863840568694860
+    second: P_PatchHerbe_39
+  - first:
+      213: -9053519498393496355
+    second: P_PatchHerbe_40
+  - first:
+      213: -2123004005476215830
+    second: P_PatchHerbe_41
+  - first:
+      213: -368424736036527248
+    second: P_PatchHerbe_42
+  - first:
+      213: 6664823753650645724
+    second: P_PatchHerbe_43
+  - first:
+      213: -8903716426873141376
+    second: P_PatchHerbe_44
+  - first:
+      213: -7360742185448332884
+    second: P_PatchHerbe_45
+  - first:
+      213: -2709009994708266606
+    second: P_PatchHerbe_46
+  - first:
+      213: -6865725524185833943
+    second: P_PatchHerbe_47
+  - first:
+      213: -1932209416099943925
+    second: P_PatchHerbe_48
+  - first:
+      213: 633428620081382425
+    second: P_PatchHerbe_49
+  - first:
+      213: -4790272478512448564
+    second: P_PatchHerbe_50
+  - first:
+      213: 9137556628874433496
+    second: P_PatchHerbe_51
+  - first:
+      213: 1808480836115169583
+    second: P_PatchHerbe_52
+  - first:
+      213: 7311704082497630875
+    second: P_PatchHerbe_53
+  - first:
+      213: 6783447887297533555
+    second: P_PatchHerbe_54
+  - first:
+      213: -192807480038132630
+    second: P_PatchHerbe_55
+  - first:
+      213: 1632818857995822401
+    second: P_PatchHerbe_56
+  - first:
+      213: 8430705972616353228
+    second: P_PatchHerbe_57
+  - first:
+      213: -5956958900453769476
+    second: P_PatchHerbe_58
+  - first:
+      213: 4265194298308289286
+    second: P_PatchHerbe_59
+  - first:
+      213: -3958218116011843640
+    second: P_PatchHerbe_60
+  - first:
+      213: -6479680439232102286
+    second: P_PatchHerbe_61
+  - first:
+      213: -3342271084973203100
+    second: P_PatchHerbe_62
+  - first:
+      213: 3654763807475212336
+    second: P_PatchHerbe_63
+  - first:
+      213: -7268049891269175257
+    second: P_PatchHerbe_64
+  - first:
+      213: -8976096644658238567
+    second: P_PatchHerbe_65
+  - first:
+      213: 6274821703548954826
+    second: P_PatchHerbe_66
+  - first:
+      213: -3432398216012334678
+    second: P_PatchHerbe_67
+  - first:
+      213: 2027619640670016234
+    second: P_PatchHerbe_68
+  - first:
+      213: -4675167789666159337
+    second: P_PatchHerbe_69
+  - first:
+      213: 3863796655271440160
+    second: P_PatchHerbe_70
+  - first:
+      213: 998933806112758221
+    second: P_PatchHerbe_71
+  - first:
+      213: 5726588290596903139
+    second: P_PatchHerbe_72
+  - first:
+      213: -3871772206430736229
+    second: P_PatchHerbe_73
+  - first:
+      213: -1607433299090818606
+    second: P_PatchHerbe_74
+  - first:
+      213: 2811659526212583517
+    second: P_PatchHerbe_75
+  - first:
+      213: 7676884613386983487
+    second: P_PatchHerbe_76
+  - first:
+      213: -6615930348562390880
+    second: P_PatchHerbe_77
+  - first:
+      213: 154984030526575509
+    second: P_PatchHerbe_78
+  - first:
+      213: -2760010411653919634
+    second: P_PatchHerbe_79
+  - first:
+      213: 63308331723026764
+    second: P_PatchHerbe_80
+  - first:
+      213: 6978554646733401819
+    second: P_PatchHerbe_81
+  - first:
+      213: 4909537212135793840
+    second: P_PatchHerbe_82
+  - first:
+      213: 9187824399650379736
+    second: P_PatchHerbe_83
+  - first:
+      213: -3639439667637110901
+    second: P_PatchHerbe_84
+  - first:
+      213: 1800826557771502237
+    second: P_PatchHerbe_85
+  - first:
+      213: 6398196291839447691
+    second: P_PatchHerbe_86
+  - first:
+      213: -5323192762788865201
+    second: P_PatchHerbe_87
+  - first:
+      213: 1852328904948925340
+    second: P_PatchHerbe_88
+  - first:
+      213: -225234439071894545
+    second: P_PatchHerbe_89
+  - first:
+      213: -7980278428725182185
+    second: P_PatchHerbe_90
+  - first:
+      213: 8912424368294913928
+    second: P_PatchHerbe_91
+  - first:
+      213: -7126360992728603837
+    second: P_PatchHerbe_92
+  - first:
+      213: -339908711999225673
+    second: P_PatchHerbe_93
+  - first:
+      213: 5342142661595232957
+    second: P_PatchHerbe_94
+  - first:
+      213: -3476482794642382140
+    second: P_PatchHerbe_95
+  - first:
+      213: 8898601134444545832
+    second: P_PatchHerbe_96
+  - first:
+      213: 8939325508571142635
+    second: P_PatchHerbe_97
+  - first:
+      213: 469375769527268719
+    second: P_PatchHerbe_98
+  - first:
+      213: -9028637581922990524
+    second: P_PatchHerbe_99
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: P_PatchHerbe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293ca31208cfef9e0800000000000000
+      internalID: -1585552391544323182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556f5e0660908cb70800000000000000
+      internalID: 8919388985007404629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6b5f1b95a2d0fc0800000000000000
+      internalID: -3527116368435104038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02221ebb6e2ecd240800000000000000
+      internalID: 4817975182002037280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f698ee29e9a794840800000000000000
+      internalID: 5208829265519217007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c81b2f9706592300800000000000000
+      internalID: 227807846894082247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24502ac4cc9ae73c0800000000000000
+      internalID: -4359860694323952318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f53fe367b1c1860800000000000000
+      internalID: 7501901273968631692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbff38f371d33be0800000000000000
+      internalID: -1498623954967856192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c33a6515614f0830800000000000000
+      internalID: 4039519293181408195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800bef66a7c8736a0800000000000000
+      internalID: -6469547882352562168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302f03f5958e2f650800000000000000
+      internalID: 6265325502172557827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b62f71fbc2d7c070800000000000000
+      internalID: 8126695825985185456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fe7544eb89d6b70800000000000000
+      internalID: 8893932782084419417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21595277c0cf5050800000000000000
+      internalID: 5791559608671228202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c36707dd7a53f900800000000000000
+      internalID: 717016262207038400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff0f2ca266cf5c60800000000000000
+      internalID: 7809178405981589489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b44a0f757461be0800000000000000
+      internalID: -1506938582283826381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f871c5b27da37b0800000000000000
+      internalID: -5243642234890907814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c67a683d6584c110800000000000000
+      internalID: 1280294898224494278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e2329b507265b40800000000000000
+      internalID: 5428569306376121858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9369bf2b3149a2330800000000000000
+      internalID: 3686922057284294201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52ef37883a33f480800000000000000
+      internalID: -8866679226900684198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3692e5313de62a0800000000000000
+      internalID: -6742219511989443590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8fea85180e405a0800000000000000
+      internalID: -6555868311401334613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95eae6c726b90dc0800000000000000
+      internalID: -3672203739186666085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_26
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a63f4a296cb51c0800000000000000
+      internalID: -4513795868373849458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_27
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b768199cfe69ae70800000000000000
+      internalID: 9126948151022348213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d159ca2047bfce10800000000000000
+      internalID: 2220194627540570582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_29
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f309b252c2d692330800000000000000
+      internalID: 3686597806349062207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f522214bc083e86f0800000000000000
+      internalID: -680544866474515873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745b56bd3a16ea4e0800000000000000
+      internalID: -1968528630725888697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d56d21f6b0ebd70800000000000000
+      internalID: 9060692072001330472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abff1e88d30b56a60800000000000000
+      internalID: 7666727719004143546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4843d4172ee41190800000000000000
+      internalID: -7992501587055261622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec70be57f520bb20800000000000000
+      internalID: 3148057883907751149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e1d29d60b856e40800000000000000
+      internalID: 5649074169135832697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346e1da2a9ab4fbb0800000000000000
+      internalID: -4903088922993498557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cae78aa42aa5a070800000000000000
+      internalID: 8117080977861765830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7268cd796bab6d0800000000000000
+      internalID: -2973863840568694860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4de2bdbff6b5280800000000000000
+      internalID: -9053519498393496355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3dbdcea139982e0800000000000000
+      internalID: -2123004005476215830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073631297a713eaf0800000000000000
+      internalID: -368424736036527248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdaaee664e53e7c50800000000000000
+      internalID: 6664823753650645724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_44
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0878a6b6515af6480800000000000000
+      internalID: -8903716426873141376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_45
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1ae113bf369d990800000000000000
+      internalID: -7360742185448332884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2915e6443c9a76ad0800000000000000
+      internalID: -2709009994708266606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_47
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e129d030b08b0a0800000000000000
+      internalID: -6865725524185833943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0aa2b9f5c96f25e0800000000000000
+      internalID: -1932209416099943925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914448259f36ac800800000000000000
+      internalID: 633428620081382425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb7fec8f88858db0800000000000000
+      internalID: -4790272478512448564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d39313575f1fce70800000000000000
+      internalID: 9137556628874433496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_52
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f210fbb1db3091910800000000000000
+      internalID: 1808480836115169583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_53
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b927b0cbf14687560800000000000000
+      internalID: 7311704082497630875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3765ebac9e5a32e50800000000000000
+      internalID: 6783447887297533555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_55
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64f9425e92035df0800000000000000
+      internalID: -192807480038132630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145666da910f8a610800000000000000
+      internalID: 1632818857995822401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_57
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5df8f0a62eff470800000000000000
+      internalID: 8430705972616353228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_58
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfef9dcf071a45da0800000000000000
+      internalID: -5956958900453769476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_59
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603efa8cd93013b30800000000000000
+      internalID: 4265194298308289286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf199358959119c0800000000000000
+      internalID: -3958218116011843640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2700689a8fc8316a0800000000000000
+      internalID: -6479680439232102286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461ec15082edd91d0800000000000000
+      internalID: -3342271084973203100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030a382b15458b230800000000000000
+      internalID: 3654763807475212336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_64
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7289515b123b22b90800000000000000
+      internalID: -7268049891269175257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_65
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99be199b8af7e6380800000000000000
+      internalID: -8976096644658238567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac862fc0815a41750800000000000000
+      internalID: 6274821703548954826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_67
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa976e6120cad50d0800000000000000
+      internalID: -3432398216012334678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2ddb5025d832c10800000000000000
+      internalID: 2027619640670016234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_69
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715b9975aa77e1fb0800000000000000
+      internalID: -4675167789666159337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_70
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02febc13696fe9530800000000000000
+      internalID: 3863796655271440160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_71
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9da7b010decdd00800000000000000
+      internalID: 998933806112758221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e890f3a5bde87f40800000000000000
+      internalID: 5726588290596903139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_73
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90377811b3b44ac0800000000000000
+      internalID: -3871772206430736229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_74
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9be875eef31b9e0800000000000000
+      internalID: -1607433299090818606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_75
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d508e393175050720800000000000000
+      internalID: 2811659526212583517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38d79ac1e5c98a60800000000000000
+      internalID: 7676884613386983487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_77
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a06633966e7f24a0800000000000000
+      internalID: -6615930348562390880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5931565972d962200800000000000000
+      internalID: 154984030526575509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_79
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c0dfc572972b9d0800000000000000
+      internalID: -2760010411653919634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c417caf979ae0e000800000000000000
+      internalID: 63308331723026764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_81
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde223c2a7ec8d060800000000000000
+      internalID: 6978554646733401819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b46ae4251e222440800000000000000
+      internalID: 4909537212135793840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_83
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7d3dfbc95b18f70800000000000000
+      internalID: 9187824399650379736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b873605a7ec1e7dc0800000000000000
+      internalID: -3639439667637110901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d925f0e8632ddf810800000000000000
+      internalID: 1800826557771502237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_86
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82df4ad0a5fac850800000000000000
+      internalID: 6398196291839447691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_87
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b1a0fb2683026b0800000000000000
+      internalID: -5323192762788865201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c934ba2335bc4b910800000000000000
+      internalID: 1852328904948925340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_89
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe37fe3987ecfdcf0800000000000000
+      internalID: -225234439071894545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_90
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7118f17ec0b504190800000000000000
+      internalID: -7980278428725182185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_91
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887e0cf2eba4fab70800000000000000
+      internalID: 8912424368294913928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_92
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34326372f641a1d90800000000000000
+      internalID: -7126360992728603837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_93
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0c93dc3d6684bf0800000000000000
+      internalID: -339908711999225673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_94
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbaf7d3627a132a40800000000000000
+      internalID: 5342142661595232957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_95
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c26595415d01cfc0800000000000000
+      internalID: -3476482794642382140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_96
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8278470c59e2e7b70800000000000000
+      internalID: 8898601134444545832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_97
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be998fdff2dde0c70800000000000000
+      internalID: 8939325508571142635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6539d886ce838600800000000000000
+      internalID: 469375769527268719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_PatchHerbe_99
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4460dbb74f5d3b280800000000000000
+      internalID: -9028637581922990524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4306f730565ef8d4983c7b4bd15d9353
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
