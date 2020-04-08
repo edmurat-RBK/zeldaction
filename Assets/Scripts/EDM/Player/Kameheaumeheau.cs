@@ -13,6 +13,9 @@ public class Kameheaumeheau : MonoBehaviour
     public bool loaded = false;
     public bool kameheaumeheau = false;
 
+    [HideInInspector]
+    public Vector2 beamDir;
+
     public PlayerManager manager;
 
     // Start is called before the first frame update
@@ -118,8 +121,15 @@ public class Kameheaumeheau : MonoBehaviour
             }
 
             //Check collision
-            RaycastHit2D Ray = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), beamDirection, beamRange);
-            Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), beamDirection, Color.blue);            
+            LayerMask mask = LayerMask.GetMask("Caisse");
+            RaycastHit2D ray = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), beamDirection, beamRange, mask);
+            Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), beamDirection, Color.blue);
+            
+            if (ray.rigidbody != null)
+            {
+                beamDir = beamDirection;
+                ray.transform.gameObject.GetComponent<CaisseEnPierre>().move = true;
+            }
         }
     }
 }
