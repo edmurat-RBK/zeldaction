@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5651005802634863058}
   - component: {fileID: 5651005802634863057}
   - component: {fileID: 5651005802634863056}
-  m_Layer: 27
+  m_Layer: 15
   m_Name: Caisse en pierre
-  m_TagString: Untagged
+  m_TagString: CaissePierre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
