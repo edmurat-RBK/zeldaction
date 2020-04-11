@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: 5749343842798202122
     second: PJ.IdleUp.Bucket.SpriteSheet_2
+  - first:
+      213: -5221835647127177915
+    second: PJ_IdleUp_Bucket_SpriteSheet_0
+  - first:
+      213: -200657858448959905
+    second: PJ_IdleUp_Bucket_SpriteSheet_1
+  - first:
+      213: 8315265142695653026
+    second: PJ_IdleUp_Bucket_SpriteSheet_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -72,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -84,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PJ.IdleUp.Bucket.SpriteSheet_0
+      name: PJ_IdleUp_Bucket_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -109,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8864a6ee7ac1ea380800000000000000
-      internalID: -8958191101208279416
+      spriteID: 545338935205887b0800000000000000
+      internalID: -5221835647127177915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ.IdleUp.Bucket.SpriteSheet_1
+      name: PJ_IdleUp_Bucket_SpriteSheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -130,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f056adaf75b115a0800000000000000
-      internalID: -6552256422868528903
+      spriteID: f5652c9adbe173df0800000000000000
+      internalID: -200657858448959905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ.IdleUp.Bucket.SpriteSheet_2
+      name: PJ_IdleUp_Bucket_SpriteSheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -151,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0de09183c5c9cf40800000000000000
-      internalID: 5749343842798202122
+      spriteID: 2aeef835791c56370800000000000000
+      internalID: 8315265142695653026
       vertices: []
       indices: 
       edges: []

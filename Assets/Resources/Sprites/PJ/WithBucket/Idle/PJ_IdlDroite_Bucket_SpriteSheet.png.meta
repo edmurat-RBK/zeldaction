@@ -20,6 +20,15 @@ TextureImporter:
   - first:
       213: -2193079307193316007
     second: PJ.IdlDroite.Bucket.SpriteSheet_2
+  - first:
+      213: 3144520311911404733
+    second: PJ_IdlDroite_Bucket_SpriteSheet_0
+  - first:
+      213: -7446487007353317894
+    second: PJ_IdlDroite_Bucket_SpriteSheet_1
+  - first:
+      213: 6918582183936838248
+    second: PJ_IdlDroite_Bucket_SpriteSheet_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -81,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PJ.IdlDroite.Bucket.SpriteSheet_0
+      name: PJ_IdlDroite_Bucket_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +127,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52c3d0195a99dbde0800000000000000
-      internalID: -1315726579740099547
+      spriteID: db4da74309493ab20800000000000000
+      internalID: 3144520311911404733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ.IdlDroite.Bucket.SpriteSheet_1
+      name: PJ_IdlDroite_Bucket_SpriteSheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e085d98ad17bc220800000000000000
-      internalID: 2507222800991092962
+      spriteID: af5d42e1583c8a890800000000000000
+      internalID: -7446487007353317894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PJ.IdlDroite.Bucket.SpriteSheet_2
+      name: PJ_IdlDroite_Bucket_SpriteSheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,8 +169,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95d8b725dfd9091e0800000000000000
-      internalID: -2193079307193316007
+      spriteID: 86ac6ee07ddb30060800000000000000
+      internalID: 6918582183936838248
       vertices: []
       indices: 
       edges: []
