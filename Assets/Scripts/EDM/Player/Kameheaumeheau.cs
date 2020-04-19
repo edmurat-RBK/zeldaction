@@ -126,21 +126,20 @@ public class Kameheaumeheau : MonoBehaviour
             Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), beamDirection, Color.blue);
             
             if (ray.rigidbody != null)
-            {
+            {
                 beamDir = beamDirection;
-
                 if (ray.transform.gameObject.tag == "Moulin")
-                {
-                    ray.transform.gameObject.GetComponent<MoulinHitDetection>().getHit = true;
+                {
+                    ray.transform.gameObject.GetComponent<MoulinHitDetection>().getHit = true;
+                }
+
+                if (ray.transform.gameObject.tag == "CaissePierre")
+                {
+                    ray.transform.gameObject.GetComponent<CaisseEnPierre>().move = true;
                 }
             }
-
-                if (ray.transform.gameObject.tag == "CaissePierre")
-                {
-                    ray.transform.gameObject.GetComponent<CaisseEnPierre>().move = true;
-                }
-
+               
             }
         }
     }
-}
+
