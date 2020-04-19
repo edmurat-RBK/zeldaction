@@ -1,0 +1,751 @@
+fileFormatVersion: 2
+guid: 50235bcafafdd164fa325d08d332ddf5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3928209501976680398
+    second: DonjonVolcan_Props_0
+  - first:
+      213: 5142555131879940690
+    second: DonjonVolcan_Props_1
+  - first:
+      213: -8951463554948874017
+    second: DonjonVolcan_Props_2
+  - first:
+      213: 6843780950589225695
+    second: DonjonVolcan_Props_3
+  - first:
+      213: 5664710191181802084
+    second: DonjonVolcan_Props_4
+  - first:
+      213: -3654768014426229560
+    second: DonjonVolcan_Props_5
+  - first:
+      213: -2162847250121547006
+    second: DonjonVolcan_Props_6
+  - first:
+      213: 8727718748797814596
+    second: DonjonVolcan_Props_7
+  - first:
+      213: 3972844297569054277
+    second: DonjonVolcan_Props_8
+  - first:
+      213: 7894384002424191971
+    second: DonjonVolcan_Props_9
+  - first:
+      213: 6617760580170512796
+    second: DonjonVolcan_Props_10
+  - first:
+      213: -4424083694048170881
+    second: DonjonVolcan_Props_11
+  - first:
+      213: -7567733593210870920
+    second: DonjonVolcan_Props_12
+  - first:
+      213: 563797849405295919
+    second: DonjonVolcan_Props_13
+  - first:
+      213: 5351653459856906638
+    second: DonjonVolcan_Props_14
+  - first:
+      213: 2889947205091199376
+    second: DonjonVolcan_Props_15
+  - first:
+      213: -6405665345104608689
+    second: DonjonVolcan_Props_16
+  - first:
+      213: 2391306933201596767
+    second: DonjonVolcan_Props_17
+  - first:
+      213: -4762018178233154568
+    second: DonjonVolcan_Props_18
+  - first:
+      213: -1109806149421885719
+    second: DonjonVolcan_Props_19
+  - first:
+      213: -2474897698328602822
+    second: DonjonVolcan_Props_20
+  - first:
+      213: -1871974133183175885
+    second: DonjonVolcan_Props_21
+  - first:
+      213: -4582700513518675977
+    second: DonjonVolcan_Props_22
+  - first:
+      213: 3696261513890438080
+    second: DonjonVolcan_Props_23
+  - first:
+      213: -2227787431611263327
+    second: DonjonVolcan_Props_24
+  - first:
+      213: -8923200265228120380
+    second: DonjonVolcan_Props_25
+  - first:
+      213: -7608034413892676929
+    second: DonjonVolcan_Props_26
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 268
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238ad5f35423c79c0800000000000000
+      internalID: -3928209501976680398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 268
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252e09165a60e5740800000000000000
+      internalID: 5142555131879940690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 274
+        width: 66
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0ca6bd25306c380800000000000000
+      internalID: -8951463554948874017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 207
+        width: 18
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdab470c38ef9fe50800000000000000
+      internalID: 6843780950589225695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 242
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a2dece7e71d9e40800000000000000
+      internalID: 5664710191181802084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_5
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 242
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c43aabcad7a74dc0800000000000000
+      internalID: -3654768014426229560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_6
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 240
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2032311a2e50cf1e0800000000000000
+      internalID: -2162847250121547006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 240
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4474c99e5f51f1970800000000000000
+      internalID: 8727718748797814596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 239
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e2a80f6d0622730800000000000000
+      internalID: 3972844297569054277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb35098c6c7e8d60800000000000000
+      internalID: 7894384002424191971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_10
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 223
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9975ad6f2207db50800000000000000
+      internalID: 6617760580170512796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_11
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 207
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c29afe15f7a92c0800000000000000
+      internalID: -4424083694048170881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_12
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 207
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87320ed74620af690800000000000000
+      internalID: -7567733593210870920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 207
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d8eea282303d700800000000000000
+      internalID: 563797849405295919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 208
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89d2cba774e44a40800000000000000
+      internalID: 5351653459856906638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_15
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 174
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0990813eba72b1820800000000000000
+      internalID: 2889947205091199376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_16
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 174
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42820bae418a17a0800000000000000
+      internalID: -6405665345104608689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_17
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 175
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51f86e6cf0af2120800000000000000
+      internalID: 2391306933201596767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_18
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 174
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3c57872b9e9edb0800000000000000
+      internalID: -4762018178233154568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 174
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e61a26ef2d2990f0800000000000000
+      internalID: -1109806149421885719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_20
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 175
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3711bbe7a567add0800000000000000
+      internalID: -2474897698328602822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_21
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 135
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333a5eaa1796506e0800000000000000
+      internalID: -1871974133183175885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_22
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 91
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f718b3c92af660c0800000000000000
+      internalID: -4582700513518675977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_23
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 70
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb13646342cb4330800000000000000
+      internalID: 3696261513890438080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_24
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 5
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a61bbf522f4511e0800000000000000
+      internalID: -2227787431611263327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_25
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 7
+        width: 65
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce086bc2ac6a2480800000000000000
+      internalID: -8923200265228120380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DonjonVolcan_Props_26
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 174
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2daf87205da6690800000000000000
+      internalID: -7608034413892676929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
