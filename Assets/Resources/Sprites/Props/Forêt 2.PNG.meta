@@ -1,0 +1,3250 @@
+fileFormatVersion: 2
+guid: 566937ee90db29a439e6770d8525e851
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3738445885359559650
+    second: "For\xEAt 2_0"
+  - first:
+      213: 214674056279555099
+    second: "For\xEAt 2_1"
+  - first:
+      213: -5692693081566815289
+    second: "For\xEAt 2_2"
+  - first:
+      213: 4121000702659210186
+    second: "For\xEAt 2_3"
+  - first:
+      213: 3772815934586982236
+    second: "For\xEAt 2_4"
+  - first:
+      213: -5262851328695435693
+    second: "For\xEAt 2_5"
+  - first:
+      213: 6104385944409761149
+    second: "For\xEAt 2_6"
+  - first:
+      213: -3006570482939028566
+    second: "For\xEAt 2_7"
+  - first:
+      213: 8357003125313044491
+    second: "For\xEAt 2_8"
+  - first:
+      213: 1122101897115661506
+    second: "For\xEAt 2_9"
+  - first:
+      213: 2043694882350597583
+    second: "For\xEAt 2_10"
+  - first:
+      213: 1993835327092932556
+    second: "For\xEAt 2_11"
+  - first:
+      213: 7918468405282452470
+    second: "For\xEAt 2_12"
+  - first:
+      213: 1220068876904038595
+    second: "For\xEAt 2_13"
+  - first:
+      213: 500141110581466580
+    second: "For\xEAt 2_14"
+  - first:
+      213: 1340574182812634549
+    second: "For\xEAt 2_15"
+  - first:
+      213: 1973532472979719003
+    second: "For\xEAt 2_16"
+  - first:
+      213: 7935132424570057468
+    second: "For\xEAt 2_17"
+  - first:
+      213: 7655848319792669758
+    second: "For\xEAt 2_18"
+  - first:
+      213: -4620920431870778360
+    second: "For\xEAt 2_19"
+  - first:
+      213: -4420494438053718879
+    second: "For\xEAt 2_20"
+  - first:
+      213: -3273255969576452417
+    second: "For\xEAt 2_21"
+  - first:
+      213: -2588181010223975146
+    second: "For\xEAt 2_22"
+  - first:
+      213: 7553413899760683466
+    second: "For\xEAt 2_23"
+  - first:
+      213: -4188449673494241
+    second: "For\xEAt 2_24"
+  - first:
+      213: 7526864458553619260
+    second: "For\xEAt 2_25"
+  - first:
+      213: 8288092331380949406
+    second: "For\xEAt 2_26"
+  - first:
+      213: 4529520134039440620
+    second: "For\xEAt 2_27"
+  - first:
+      213: -437001278976654747
+    second: "For\xEAt 2_28"
+  - first:
+      213: -3598035489839219911
+    second: "For\xEAt 2_29"
+  - first:
+      213: -3569615989761720844
+    second: "For\xEAt 2_30"
+  - first:
+      213: 2059499852759522092
+    second: "For\xEAt 2_31"
+  - first:
+      213: -7597344169622724385
+    second: "For\xEAt 2_32"
+  - first:
+      213: 5205250165723775307
+    second: "For\xEAt 2_33"
+  - first:
+      213: -2725812005908973658
+    second: "For\xEAt 2_34"
+  - first:
+      213: 1529221231050413930
+    second: "For\xEAt 2_35"
+  - first:
+      213: 7523854646846084066
+    second: "For\xEAt 2_36"
+  - first:
+      213: -8276232943547121670
+    second: "For\xEAt 2_37"
+  - first:
+      213: 2907492972720224215
+    second: "For\xEAt 2_38"
+  - first:
+      213: 1791765237796781772
+    second: "For\xEAt 2_39"
+  - first:
+      213: 3817984620486267519
+    second: "For\xEAt 2_40"
+  - first:
+      213: 2014364880723597656
+    second: "For\xEAt 2_41"
+  - first:
+      213: -7563321337402646220
+    second: "For\xEAt 2_42"
+  - first:
+      213: -2093741325023329352
+    second: "For\xEAt 2_43"
+  - first:
+      213: 2961170868993289585
+    second: "For\xEAt 2_44"
+  - first:
+      213: -8406850431508047570
+    second: "For\xEAt 2_45"
+  - first:
+      213: 7840227989832433598
+    second: "For\xEAt 2_46"
+  - first:
+      213: 74292059312087482
+    second: "For\xEAt 2_47"
+  - first:
+      213: -777520175355468863
+    second: "For\xEAt 2_48"
+  - first:
+      213: -1279447822762599843
+    second: "For\xEAt 2_49"
+  - first:
+      213: -2047158505055164176
+    second: "For\xEAt 2_50"
+  - first:
+      213: 7082403160875658924
+    second: "For\xEAt 2_51"
+  - first:
+      213: 6002152240332428290
+    second: "For\xEAt 2_52"
+  - first:
+      213: -7783810957658318229
+    second: "For\xEAt 2_53"
+  - first:
+      213: -5247284790485011725
+    second: "For\xEAt 2_54"
+  - first:
+      213: -7044922821006848722
+    second: "For\xEAt 2_55"
+  - first:
+      213: -3315003032230690411
+    second: "For\xEAt 2_56"
+  - first:
+      213: 3741302319837300965
+    second: "For\xEAt 2_57"
+  - first:
+      213: 1694839465739398407
+    second: "For\xEAt 2_58"
+  - first:
+      213: 7150583466195880252
+    second: "For\xEAt 2_59"
+  - first:
+      213: -8627876019424376903
+    second: "For\xEAt 2_60"
+  - first:
+      213: 6539970436871962177
+    second: "For\xEAt 2_61"
+  - first:
+      213: 948583682780313973
+    second: "For\xEAt 2_62"
+  - first:
+      213: -3976485102020257606
+    second: "For\xEAt 2_63"
+  - first:
+      213: -4994247294024884006
+    second: "For\xEAt 2_64"
+  - first:
+      213: 3184166597542985212
+    second: "For\xEAt 2_65"
+  - first:
+      213: 1719370538065451039
+    second: "For\xEAt 2_66"
+  - first:
+      213: 773463915048273510
+    second: "For\xEAt 2_67"
+  - first:
+      213: -8499022656015978617
+    second: "For\xEAt 2_68"
+  - first:
+      213: 3962842168031967989
+    second: "For\xEAt 2_69"
+  - first:
+      213: 7056773138272891314
+    second: "For\xEAt 2_70"
+  - first:
+      213: -8267587974439835836
+    second: "For\xEAt 2_71"
+  - first:
+      213: 5337686479346588189
+    second: "For\xEAt 2_72"
+  - first:
+      213: 6956284545088147195
+    second: "For\xEAt 2_73"
+  - first:
+      213: -5346444244359338224
+    second: "For\xEAt 2_74"
+  - first:
+      213: 6531063718732544720
+    second: "For\xEAt 2_75"
+  - first:
+      213: 8113376119297624118
+    second: "For\xEAt 2_76"
+  - first:
+      213: -3854974162767957250
+    second: "For\xEAt 2_77"
+  - first:
+      213: 7937083646436874437
+    second: "For\xEAt 2_78"
+  - first:
+      213: 3225997336121297372
+    second: "For\xEAt 2_79"
+  - first:
+      213: 2372920649508013386
+    second: "For\xEAt 2_80"
+  - first:
+      213: 8320527982162827725
+    second: "For\xEAt 2_81"
+  - first:
+      213: -5172335531590435033
+    second: "For\xEAt 2_82"
+  - first:
+      213: -107551257633202346
+    second: "For\xEAt 2_83"
+  - first:
+      213: -802815817551092098
+    second: "For\xEAt 2_84"
+  - first:
+      213: -5964073036059819279
+    second: "For\xEAt 2_85"
+  - first:
+      213: -4083477141773632468
+    second: "For\xEAt 2_86"
+  - first:
+      213: -4505053157636590773
+    second: "For\xEAt 2_87"
+  - first:
+      213: -2664351284325751084
+    second: "For\xEAt 2_88"
+  - first:
+      213: 1492511896167843176
+    second: "For\xEAt 2_89"
+  - first:
+      213: 2220389863316111348
+    second: "For\xEAt 2_90"
+  - first:
+      213: 5358886430219831560
+    second: "For\xEAt 2_91"
+  - first:
+      213: 1753454526057578324
+    second: "For\xEAt 2_92"
+  - first:
+      213: 9006168260176114219
+    second: "For\xEAt 2_93"
+  - first:
+      213: -1451796108060306479
+    second: "For\xEAt 2_94"
+  - first:
+      213: 862175729018315158
+    second: "For\xEAt 2_95"
+  - first:
+      213: -6248069466695232189
+    second: "For\xEAt 2_96"
+  - first:
+      213: 3560650202848497815
+    second: "For\xEAt 2_97"
+  - first:
+      213: -9037347721749311394
+    second: "For\xEAt 2_98"
+  - first:
+      213: 4332960501955611183
+    second: "For\xEAt 2_99"
+  - first:
+      213: -3736663750511536992
+    second: "For\xEAt 2_100"
+  - first:
+      213: -3808822208401246008
+    second: "For\xEAt 2_101"
+  - first:
+      213: -2887578520196187556
+    second: "For\xEAt 2_102"
+  - first:
+      213: -1742262193299284777
+    second: "For\xEAt 2_103"
+  - first:
+      213: -2830926126549476895
+    second: "For\xEAt 2_104"
+  - first:
+      213: 1125699617267418212
+    second: "For\xEAt 2_105"
+  - first:
+      213: -6210782035308688761
+    second: "For\xEAt 2_106"
+  - first:
+      213: 6017799395714245254
+    second: "For\xEAt 2_107"
+  - first:
+      213: -7010640556529270914
+    second: "For\xEAt 2_108"
+  - first:
+      213: 1772092438155550043
+    second: "For\xEAt 2_109"
+  - first:
+      213: 5672218899405646594
+    second: "For\xEAt 2_110"
+  - first:
+      213: 6644425727999354221
+    second: "For\xEAt 2_111"
+  - first:
+      213: -6199604957770422412
+    second: "For\xEAt 2_112"
+  - first:
+      213: 8073946314997529332
+    second: "For\xEAt 2_113"
+  - first:
+      213: -7804263236546362145
+    second: "For\xEAt 2_114"
+  - first:
+      213: -7384951950238620473
+    second: "For\xEAt 2_115"
+  - first:
+      213: 5308396222191205528
+    second: "For\xEAt 2_116"
+  - first:
+      213: 3199882037755744125
+    second: "For\xEAt 2_117"
+  - first:
+      213: 6218040109873950269
+    second: "For\xEAt 2_118"
+  - first:
+      213: 3959416522836652833
+    second: "For\xEAt 2_119"
+  - first:
+      213: -1106547570714127319
+    second: "For\xEAt 2_120"
+  - first:
+      213: 2957461013693700074
+    second: "For\xEAt 2_121"
+  - first:
+      213: 2888112921083838949
+    second: "For\xEAt 2_122"
+  - first:
+      213: 6486249008873236364
+    second: "For\xEAt 2_123"
+  - first:
+      213: 1751312388253329699
+    second: "For\xEAt 2_124"
+  - first:
+      213: 760269659588443559
+    second: "For\xEAt 2_125"
+  - first:
+      213: -5462414328660143110
+    second: "For\xEAt 2_126"
+  - first:
+      213: 6254976381285170632
+    second: "For\xEAt 2_127"
+  - first:
+      213: 4422871040517050011
+    second: "For\xEAt 2_128"
+  - first:
+      213: -6399444720508304073
+    second: "For\xEAt 2_129"
+  - first:
+      213: 4012202743576534507
+    second: "For\xEAt 2_130"
+  - first:
+      213: 7704132870793816883
+    second: "For\xEAt 2_131"
+  - first:
+      213: -4823192243086914666
+    second: "For\xEAt 2_132"
+  - first:
+      213: 7558376981019478794
+    second: "For\xEAt 2_133"
+  - first:
+      213: -3135388439998158994
+    second: "For\xEAt 2_134"
+  - first:
+      213: -5778206154838271638
+    second: "For\xEAt 2_135"
+  - first:
+      213: -759417049683382673
+    second: "For\xEAt 2_136"
+  - first:
+      213: -739988067758464921
+    second: "For\xEAt 2_137"
+  - first:
+      213: 3284926895474112529
+    second: "For\xEAt 2_138"
+  - first:
+      213: 1687133884288821197
+    second: "For\xEAt 2_139"
+  - first:
+      213: -6008035230675043858
+    second: "For\xEAt 2_140"
+  - first:
+      213: -4992836056271821157
+    second: "For\xEAt 2_141"
+  - first:
+      213: 8732136825424969532
+    second: "For\xEAt 2_142"
+  - first:
+      213: -8606227209993765845
+    second: "For\xEAt 2_143"
+  - first:
+      213: -26203772346563442
+    second: "For\xEAt 2_144"
+  - first:
+      213: -2937531760822457880
+    second: "For\xEAt 2_145"
+  - first:
+      213: 5130605036130973470
+    second: "For\xEAt 2_146"
+  - first:
+      213: -2696107694630149467
+    second: "For\xEAt 2_147"
+  - first:
+      213: -3515881829633580434
+    second: "For\xEAt 2_148"
+  - first:
+      213: 4205134894579825626
+    second: "For\xEAt 2_149"
+  - first:
+      213: -7125775288483604889
+    second: "For\xEAt 2_150"
+  - first:
+      213: -3278801888700042067
+    second: "For\xEAt 2_151"
+  - first:
+      213: -8267221215439020113
+    second: "For\xEAt 2_152"
+  - first:
+      213: -4284401699114234219
+    second: "For\xEAt 2_153"
+  - first:
+      213: -1504387606006979239
+    second: "For\xEAt 2_154"
+  - first:
+      213: -5652434827915226002
+    second: "For\xEAt 2_155"
+  - first:
+      213: -2366153128329822328
+    second: "For\xEAt 2_156"
+  - first:
+      213: 7401450231628430981
+    second: "For\xEAt 2_157"
+  - first:
+      213: 5859964101190734732
+    second: "For\xEAt 2_158"
+  - first:
+      213: -1289899255401032909
+    second: "For\xEAt 2_159"
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "For\xEAt 2_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c6f1f364f5e1cc0800000000000000
+      internalID: -3738445885359559650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_3"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb23291e4cb03930800000000000000
+      internalID: 4121000702659210186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f8dff6a1cbb5430800000000000000
+      internalID: 3772815934586982236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_6"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d756e6c8ca227b450800000000000000
+      internalID: 6104385944409761149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_7"
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab9e3443148646d0800000000000000
+      internalID: -3006570482939028566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_8"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b000d1fa01a0af370800000000000000
+      internalID: 8357003125313044491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_9"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4fe53fab1829f00800000000000000
+      internalID: 1122101897115661506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_10"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc58ac3eaa9ac5c10800000000000000
+      internalID: 2043694882350597583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_11"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfbffb8aa68bab10800000000000000
+      internalID: 1993835327092932556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_12"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3b30e8f0d04ed60800000000000000
+      internalID: 7918468405282452470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_13"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c00069ed2e8ee010800000000000000
+      internalID: 1220068876904038595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_14"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d517c1b0bbd0f600800000000000000
+      internalID: 500141110581466580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_15"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 176
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd4b99dd1daa9210800000000000000
+      internalID: 1340574182812634549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_16"
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 145
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5387a4f355636b10800000000000000
+      internalID: 1973532472979719003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_18"
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3463830c790f3a60800000000000000
+      internalID: 7655848319792669758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_19"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8046ff299513fdfb0800000000000000
+      internalID: -4620920431870778360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_20"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4d738babf37a2c0800000000000000
+      internalID: -4420494438053718879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_21"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbef772c90f0392d0800000000000000
+      internalID: -3273255969576452417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_22"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615303f751fe41cd0800000000000000
+      internalID: -2588181010223975146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_23"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9cbb01ced13d860800000000000000
+      internalID: 7553413899760683466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_24"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f114d0190ae11fff0800000000000000
+      internalID: -4188449673494241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_25"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33f994985bc47860800000000000000
+      internalID: 7526864458553619260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_26"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91c99d2018350370800000000000000
+      internalID: 8288092331380949406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_29"
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b72e209c5311ec0800000000000000
+      internalID: -3598035489839219911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_30"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdb2b18b2d267ec0800000000000000
+      internalID: -3569615989761720844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_31"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b53b25430d49c10800000000000000
+      internalID: 2059499852759522092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_32"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0a04deabfc09690800000000000000
+      internalID: -7597344169622724385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_33"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4142077273cc3840800000000000000
+      internalID: 5205250165723775307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_34"
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7fc4f2c68fb2ad0800000000000000
+      internalID: -2725812005908973658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_35"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67deb38b92e83510800000000000000
+      internalID: 1529221231050413930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_36"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3deee20f91a6860800000000000000
+      internalID: 7523854646846084066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_40"
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f721df5a8c43cf430800000000000000
+      internalID: 3817984620486267519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_41"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8595d8bbf2674fb10800000000000000
+      internalID: 2014364880723597656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_42"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431abf9d05fa90790800000000000000
+      internalID: -7563321337402646220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_43"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3cd66ab5981f2e0800000000000000
+      internalID: -2093741325023329352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_44"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d64956731381920800000000000000
+      internalID: 2961170868993289585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_45"
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e299f1ee21ed45b80800000000000000
+      internalID: -8406850431508047570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_46"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf790441d51ecc60800000000000000
+      internalID: 7840227989832433598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_47"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1edecfb30f70100800000000000000
+      internalID: 74292059312087482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_49"
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a9697ebfc7e3ee0800000000000000
+      internalID: -1279447822762599843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_50"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8644b9f280793e0800000000000000
+      internalID: -2047158505055164176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_51"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caee8109620c94260800000000000000
+      internalID: 7082403160875658924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_52"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20454dc69adeb4350800000000000000
+      internalID: 6002152240332428290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_53"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a9bf5ac295af390800000000000000
+      internalID: -7783810957658318229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_54"
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2b4dbc846ed27b0800000000000000
+      internalID: -5247284790485011725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_55"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d08d715086b3e90800000000000000
+      internalID: -7044922821006848722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_56"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5910c8a4e4ebef1d0800000000000000
+      internalID: -3315003032230690411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_58"
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70da5b2b387458710800000000000000
+      internalID: 1694839465739398407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_59"
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39036fe6c9fb3360800000000000000
+      internalID: 7150583466195880252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_60"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b749180970a34880800000000000000
+      internalID: -8627876019424376903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_61"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e3f4b4674a2ca50800000000000000
+      internalID: 6539970436871962177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_66"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18d9ae056e6cd710800000000000000
+      internalID: 1719370538065451039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_67"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666090f2555ebba00800000000000000
+      internalID: 773463915048273510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_69"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fafb7ea4f7def630800000000000000
+      internalID: 3962842168031967989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_78"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c89e62268f262e60800000000000000
+      internalID: 7937083646436874437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_80"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a454d1a22ce4ee020800000000000000
+      internalID: 2372920649508013386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_81"
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 49
+        width: 21
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc95380ad14787370800000000000000
+      internalID: 8320527982162827725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_83"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f50a573b6e18ef0800000000000000
+      internalID: -107551257633202346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_84"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e766dc67443dbd4f0800000000000000
+      internalID: -802815817551092098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_85"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f24b273c2b5b3da0800000000000000
+      internalID: -5964073036059819279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_86"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2cb72cbc239457c0800000000000000
+      internalID: -4083477141773632468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_87"
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43b1dc9506da71c0800000000000000
+      internalID: -4505053157636590773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_88"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d668ec8f92560bd0800000000000000
+      internalID: -2664351284325751084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_89"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865012279a776b410800000000000000
+      internalID: 1492511896167843176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_90"
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffb5d901d860de10800000000000000
+      internalID: 2220389863316111348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_91"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8090ae0d0d69e5a40800000000000000
+      internalID: 5358886430219831560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_92"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f767be995855810800000000000000
+      internalID: 1753454526057578324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_93"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22f13fd0565cfc70800000000000000
+      internalID: 9006168260176114219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_94"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d355c4b12f2adbe0800000000000000
+      internalID: -1451796108060306479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_95"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691a91ee14017fb00800000000000000
+      internalID: 862175729018315158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_98"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5052750124e49280800000000000000
+      internalID: -9037347721749311394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_99"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2accd89e94c12c30800000000000000
+      internalID: 4332960501955611183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_100"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a45ea9dd14b42cc0800000000000000
+      internalID: -3736663750511536992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_101"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8ff97a168542bc0800000000000000
+      internalID: -3808822208401246008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_102"
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a78aa82a24de7d0800000000000000
+      internalID: -2887578520196187556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_103"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc9dce14cd32d7e0800000000000000
+      internalID: -1742262193299284777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_104"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e955a1dfa786b8d0800000000000000
+      internalID: -2830926126549476895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_105"
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464840376d94f9f00800000000000000
+      internalID: 1125699617267418212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_106"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a4c0025aedec9a0800000000000000
+      internalID: -6210782035308688761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_107"
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682ab1faaa4838350800000000000000
+      internalID: 6017799395714245254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_108"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f302cce8335be90800000000000000
+      internalID: -7010640556529270914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_109"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5dda6dfeacb79810800000000000000
+      internalID: 1772092438155550043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_110"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ba45b4905c7be40800000000000000
+      internalID: 5672218899405646594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_113"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa7009556b6c0070800000000000000
+      internalID: 8073946314997529332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_114"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd483046fefa1b390800000000000000
+      internalID: -7804263236546362145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_115"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4e2b21451638990800000000000000
+      internalID: -7384951950238620473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_116"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c7bbe2d363ba940800000000000000
+      internalID: 5308396222191205528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_117"
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f859772c3486c20800000000000000
+      internalID: 3199882037755744125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_118"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3eea2c098aea4650800000000000000
+      internalID: 6218040109873950269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_119"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123bd71895ca2f630800000000000000
+      internalID: 3959416522836652833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_120"
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9245380e8d0c4a0f0800000000000000
+      internalID: -1106547570714127319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_122"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e10b6c5663a41820800000000000000
+      internalID: 2888112921083838949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_123"
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c876e92ab19c30a50800000000000000
+      internalID: 6486249008873236364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_124"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329a4989659ed4810800000000000000
+      internalID: 1751312388253329699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_125"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adb6413a350d8a00800000000000000
+      internalID: 760269659588443559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_126"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af35534fb1b9134b0800000000000000
+      internalID: -5462414328660143110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_127"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdf5f4e0e32ec650800000000000000
+      internalID: 6254976381285170632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_128"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e816927c1316d30800000000000000
+      internalID: 4422871040517050011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_129"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7358a52beea9037a0800000000000000
+      internalID: -6399444720508304073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_130"
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed1ab143253ea730800000000000000
+      internalID: 4012202743576534507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_131"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b631a17049aea60800000000000000
+      internalID: 7704132870793816883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_132"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b82639534901db0800000000000000
+      internalID: -4823192243086914666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_133"
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bc72871dfb4e860800000000000000
+      internalID: 7558376981019478794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_135"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6993edcd10bfcfa0800000000000000
+      internalID: -5778206154838271638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_136"
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e2f3587320675f0800000000000000
+      internalID: -759417049683382673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_137"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760aa33e5c80bb5f0800000000000000
+      internalID: -739988067758464921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_138"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1187cdd6b97669d20800000000000000
+      internalID: 3284926895474112529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_139"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc76f853457e96710800000000000000
+      internalID: 1687133884288821197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_140"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9f4952acb2f9ca0800000000000000
+      internalID: -6008035230675043858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_141"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96e72c5f02e5bab0800000000000000
+      internalID: -4992836056271821157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_142"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fff898d28ce2970800000000000000
+      internalID: 8732136825424969532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_143"
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c350443f9809880800000000000000
+      internalID: -8606227209993765845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_144"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e840281dec7e2aff0800000000000000
+      internalID: -26203772346563442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_145"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9efbf5d6acb37d0800000000000000
+      internalID: -2937531760822457880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_146"
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17ba65e812933740800000000000000
+      internalID: 5130605036130973470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_148"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62a0789a14153fc0800000000000000
+      internalID: -3515881829633580434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_149"
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbb70828e3ab5a30800000000000000
+      internalID: 4205134894579825626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_150"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7669dac01292c1d90800000000000000
+      internalID: -7125775288483604889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_151"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da47727dd0b5f72d0800000000000000
+      internalID: -3278801888700042067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_152"
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf1f2e2b1ee44d80800000000000000
+      internalID: -8267221215439020113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_153"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e4739ba5fba84c0800000000000000
+      internalID: -4284401699114234219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_154"
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955247361775f1be0800000000000000
+      internalID: -1504387606006979239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_155"
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64111ec8748e81b0800000000000000
+      internalID: -5652434827915226002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_156"
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fb8b5244cb92fd0800000000000000
+      internalID: -2366153128329822328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_157"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ef1f665cb37b660800000000000000
+      internalID: 7401450231628430981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_158"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83d3087d46c25150800000000000000
+      internalID: 5859964101190734732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "For\xEAt 2_159"
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333d7cd167b591ee0800000000000000
+      internalID: -1289899255401032909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
