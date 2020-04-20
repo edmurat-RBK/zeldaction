@@ -1,0 +1,1120 @@
+fileFormatVersion: 2
+guid: f2c521cd4006ca04f94e135a94a6248a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8569055405364695255
+    second: OMBRES_0
+  - first:
+      213: -6660529918428034692
+    second: OMBRES_1
+  - first:
+      213: -7586024589542666746
+    second: OMBRES_2
+  - first:
+      213: 3127930675749715015
+    second: OMBRES_3
+  - first:
+      213: 1749073947354598707
+    second: OMBRES_4
+  - first:
+      213: -5629199115782974795
+    second: OMBRES_5
+  - first:
+      213: -2656889979523586163
+    second: OMBRES_6
+  - first:
+      213: -5913585289499779711
+    second: OMBRES_7
+  - first:
+      213: -3309969714084679413
+    second: OMBRES_8
+  - first:
+      213: -194199139944689829
+    second: OMBRES_9
+  - first:
+      213: -1424099734158493001
+    second: OMBRES_10
+  - first:
+      213: -7684849571883928793
+    second: OMBRES_0
+  - first:
+      213: 5835660512842065727
+    second: OMBRES_1
+  - first:
+      213: 38516622801930937
+    second: OMBRES_2
+  - first:
+      213: 8698861893044888183
+    second: OMBRES_3
+  - first:
+      213: 1148107129460235343
+    second: OMBRES_4
+  - first:
+      213: -7298026837678229809
+    second: OMBRES_5
+  - first:
+      213: -2986137995859659067
+    second: OMBRES_6
+  - first:
+      213: 446530507558943146
+    second: OMBRES_7
+  - first:
+      213: -4828018622889037888
+    second: OMBRES_8
+  - first:
+      213: -284903916931342122
+    second: OMBRES_9
+  - first:
+      213: -1232085883998271603
+    second: OMBRES_10
+  - first:
+      213: -7552825428510980690
+    second: OMBRES_11
+  - first:
+      213: 9001525703933989492
+    second: OMBRES_12
+  - first:
+      213: 6279178716693155270
+    second: OMBRES_13
+  - first:
+      213: -1599413542000613193
+    second: OMBRES_14
+  - first:
+      213: -5353072042173962172
+    second: OMBRES_15
+  - first:
+      213: 99330999454776200
+    second: OMBRES_16
+  - first:
+      213: -4172731227234024684
+    second: OMBRES_17
+  - first:
+      213: -4402678577110843910
+    second: OMBRES_18
+  - first:
+      213: -3397888243471009386
+    second: OMBRES_19
+  - first:
+      213: 3162976682299451768
+    second: OMBRES_20
+  - first:
+      213: 1258230738443604872
+    second: OMBRES_21
+  - first:
+      213: 8204835265387798242
+    second: OMBRES_22
+  - first:
+      213: -5485532218823740294
+    second: OMBRES_23
+  - first:
+      213: 7215299799135624872
+    second: OMBRES_24
+  - first:
+      213: 3999873075594668409
+    second: OMBRES_25
+  - first:
+      213: -7301081766965981954
+    second: OMBRES_26
+  - first:
+      213: -616915425229759824
+    second: OMBRES_27
+  - first:
+      213: -5208367297476512863
+    second: OMBRES_28
+  - first:
+      213: -3870966484491140175
+    second: OMBRES_29
+  - first:
+      213: 6329464560293857990
+    second: OMBRES_30
+  - first:
+      213: 8085668412518220145
+    second: OMBRES_31
+  - first:
+      213: -7063149713979273679
+    second: OMBRES_32
+  - first:
+      213: 5809944791407457879
+    second: OMBRES_33
+  - first:
+      213: -1722770784534160455
+    second: OMBRES_34
+  - first:
+      213: -1351428677955888953
+    second: OMBRES_35
+  - first:
+      213: -8277887178218062074
+    second: OMBRES_36
+  - first:
+      213: 76839201520148359
+    second: OMBRES_37
+  - first:
+      213: -6961013689551950120
+    second: OMBRES_38
+  - first:
+      213: 4747533437963019726
+    second: OMBRES_39
+  - first:
+      213: -4946678240388478996
+    second: OMBRES_40
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OMBRES_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 95
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fa8967289941980800000000000000
+      internalID: -8569055405364695255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 74
+        width: 93
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c794c34045b0193a0800000000000000
+      internalID: -6660529918428034692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 87
+        width: 7
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e4eea04d609b690800000000000000
+      internalID: -7586024589542666746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 87
+        width: 8
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cfb1a8064a86b20800000000000000
+      internalID: 3127930675749715015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_4
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 87
+        width: 8
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d06f5fc75f54810800000000000000
+      internalID: 1749073947354598707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 61
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b210dd9a3111e1b0800000000000000
+      internalID: -5629199115782974795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 64
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87a333f3a4d02bd0800000000000000
+      internalID: -2656889979523586163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_7
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 30
+        width: 4
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dd36eb289beeda0800000000000000
+      internalID: -5913585289499779711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 30
+        width: 5
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b017eaef410a012d0800000000000000
+      internalID: -3309969714084679413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 28
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f09ef39e01e4df0800000000000000
+      internalID: -194199139944689829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_10
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 30
+        width: 4
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba31c446d49c3ce0800000000000000
+      internalID: -1424099734158493001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5c0131a49fe2790800000000000000
+      internalID: -7552825428510980690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_12
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 2
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47298838fe7dbec70800000000000000
+      internalID: 9001525703933989492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_13
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd40b936cf142750800000000000000
+      internalID: 6279178716693155270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_14
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 2
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8aa1c8bddbdc9e0800000000000000
+      internalID: -1599413542000613193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4486525e65116b5b0800000000000000
+      internalID: -5353072042173962172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_16
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 2
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bbfa98405e06100800000000000000
+      internalID: 99330999454776200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_17
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 2
+        width: 4
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41349819e0b7716c0800000000000000
+      internalID: -4172731227234024684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2
+        width: 4
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdf517192b86e2c0800000000000000
+      internalID: -4402678577110843910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_19
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 2
+        width: 3
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6993f6535a648d0d0800000000000000
+      internalID: -3397888243471009386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_20
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1
+        width: 5
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8796d4dc88625eb20800000000000000
+      internalID: 3162976682299451768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_21
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 2
+        width: 5
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8839862b032267110800000000000000
+      internalID: 1258230738443604872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_22
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2
+        width: 5
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee990ae33e6dd170800000000000000
+      internalID: 8204835265387798242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 2
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a74fc05b2897fd3b0800000000000000
+      internalID: -5485532218823740294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_24
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae1d6360f4e12460800000000000000
+      internalID: 7215299799135624872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_25
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 2
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9792879be57628730800000000000000
+      internalID: 3999873075594668409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_26
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 2
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc49e3d0d85daa90800000000000000
+      internalID: -7301081766965981954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_27
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 2
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba98b670b64077f0800000000000000
+      internalID: -616915425229759824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_28
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 2
+        width: 2
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3b62eb98928b7b0800000000000000
+      internalID: -5208367297476512863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_29
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3
+        width: 4
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3867add70974ac0800000000000000
+      internalID: -3870966484491140175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_30
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 3
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca4dbe8b76c6d750800000000000000
+      internalID: 6329464560293857990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_31
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171cebbd490163070800000000000000
+      internalID: 8085668412518220145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_32
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2
+        width: 3
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e0dded1c6aafd90800000000000000
+      internalID: -7063149713979273679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_33
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 2
+        width: 3
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756f870610211a050800000000000000
+      internalID: 5809944791407457879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_34
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 2
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb9b6e591d7718e0800000000000000
+      internalID: -1722770784534160455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_35
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 40
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8d92f07c2ce3de0800000000000000
+      internalID: -1351428677955888953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_36
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 39
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f3d8338790f1d80800000000000000
+      internalID: -8277887178218062074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_37
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 40
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fde6fb8dcf01100800000000000000
+      internalID: 76839201520148359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_38
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 38
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8deef9d2ee2856f90800000000000000
+      internalID: -6961013689551950120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_39
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 39
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec523112280a2e140800000000000000
+      internalID: 4747533437963019726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 149
+        width: 209
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce78d77595ed95bb0800000000000000
+      internalID: -4946678240388478996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 12fbc08fcd1b94d4c8c98b71d04c9e60
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
