@@ -27,6 +27,8 @@ public class FlammècheMouvement : MonoBehaviour
     [Space]
     public GameObject flamePrefab;
 
+    private Animator anim;
+
     Vector2 movement;
 
     private int direction;
@@ -36,7 +38,11 @@ public class FlammècheMouvement : MonoBehaviour
     private bool lockGeneration = true;
     #endregion
 
-   
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     void Update()
     {
         if (GetComponentInChildren<ZoneAggro>().canAggro == true)
@@ -65,6 +71,8 @@ public class FlammècheMouvement : MonoBehaviour
     {
         lockDirection = false;
         direction = Random.Range(1, 5);
+
+
         yield return new WaitForSeconds(timeBtwDirection);
         lockDirection = true;
     } // Coroutine qui génére aléatoirement une direction selon un temps donné
@@ -92,6 +100,14 @@ public class FlammècheMouvement : MonoBehaviour
         }
 
         GetComponent<Rigidbody2D>().velocity = (movement.normalized * speed * Time.fixedDeltaTime);
+
+        //youmna a ecrit ca
+
+
+        anim.SetFloat("Horizontal", (GetComponent<Rigidbody2D>().velocity.x));
+
+        anim.SetFloat("Vertical", (GetComponent<Rigidbody2D>().velocity.y));
+
     } // Fonction qui applique le changement de direction
     void OnCollisionEnter2D(Collision2D collision)
     {
