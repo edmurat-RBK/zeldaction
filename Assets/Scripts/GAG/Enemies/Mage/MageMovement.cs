@@ -1,15 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Manager;
+﻿using System.Collections; using System.Collections.Generic; using UnityEngine; using Manager;  /// <summary> /// Créateur : Gauthier Gobert  /// Le script permet de :  /// - Déplacer le mage en fonction de la position du joueur /// - Faire spawn un projectile sur la position du joueur  /// - D'activer le mage quand le joueur rentre dans sa zone d'aggro /// </summary>  public class MageMovement : MonoBehaviour {     #region Variable     [Header ("Stats de base")]     public float pv;     public float speed;     public float timeBeforeAttack;     public float attackCooldown;      [Header ("Valeur de déplacement")]     public float stoppingDistance;     public float retreatDistance;      [Space]     private Transform player;     public GameObject projectile;      Vector2 movement;     Vector2 retreat;
 
-/// <summary>
-/// Créateur : Gauthier Gobert 
-/// Le script permet de : 
-/// - Déplacer le mage en fonction de la position du joueur
-/// - Faire spawn un projectile sur la position du joueur 
-/// - D'activer le mage quand le joueur rentre dans sa zone d'aggro
-/// </summary>
+    private Animator anim;      private bool lockMovement = true;     private bool lockAttack = true;     #endregion          private void Start()     {         player = PlayerManager.Instance.transform;         anim = GetComponent<Animator>();              }       void Update()     {         if (GetComponentInChildren<ZoneAggro>().canAggro == true)         {             MageDisplacement();         }          if (GetComponentInChildren<ZoneAggro>().canAggro == false)         {             GetComponent<Rigidbody2D>().velocity = Vector2.zero;         }     }      private void MageDisplacement()     {         movement = (player.transform.position - transform.position).normalized;         retreat = (transform.position - player.transform.position).normalized;          //youmna a ecrit ca          anim.SetFloat("Horizontal",GetComponent<Rigidbody2D>().velocity.x);         anim.SetFloat("Vertical", GetComponent<Rigidbody2D>().velocity.y);          if (lockMovement == true)         {             if (Vector2.Distance(transform.position, player.position) > stoppingDistance)             {                 anim.SetBool("IsRecule", false);                  GetComponent<Rigidbody2D>().velocity = (movement.normalized * speed * Time.fixedDeltaTime);
 
 public class MageMovement : MonoBehaviour
 {
