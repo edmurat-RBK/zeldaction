@@ -26,6 +26,18 @@ TextureImporter:
   - first:
       213: 4601928763673127477
     second: FX_Mage_3
+  - first:
+      213: -2353934964574192356
+    second: FX_Mage_0
+  - first:
+      213: 8076665867797035691
+    second: FX_Mage_1
+  - first:
+      213: 1579547349899413689
+    second: FX_Mage_2
+  - first:
+      213: -3629050221182620123
+    second: FX_Mage_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -69,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -87,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d2ffb4fe685a1900800000000000000
-      internalID: 655933929311695572
+      spriteID: c1dfe241f94255fd0800000000000000
+      internalID: -2353934964574192356
       vertices: []
       indices: 
       edges: []
@@ -134,7 +146,7 @@ TextureImporter:
       name: FX_Mage_1
       rect:
         serializedVersion: 2
-        x: 5
+        x: 6
         y: 0
         width: 5
         height: 5
@@ -145,8 +157,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f3be6f93d44533e0800000000000000
-      internalID: -2074676377630624775
+      spriteID: baa709390d4161070800000000000000
+      internalID: 8076665867797035691
       vertices: []
       indices: 
       edges: []
@@ -155,9 +167,9 @@ TextureImporter:
       name: FX_Mage_2
       rect:
         serializedVersion: 2
-        x: 10
+        x: 11
         y: 0
-        width: 5
+        width: 4
         height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcc55dc2c5d1e35d0800000000000000
-      internalID: -3080992813348463409
+      spriteID: 9b80aa822fdabe510800000000000000
+      internalID: 1579547349899413689
       vertices: []
       indices: 
       edges: []
@@ -187,8 +199,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53aa36814d55ddf30800000000000000
-      internalID: 4601928763673127477
+      spriteID: 52e6b562d0603adc0800000000000000
+      internalID: -3629050221182620123
       vertices: []
       indices: 
       edges: []

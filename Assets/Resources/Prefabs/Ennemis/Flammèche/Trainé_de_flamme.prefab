@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 275619378261594271}
   - component: {fileID: 6401431719292082069}
   - component: {fileID: 4888447617170675465}
+  - component: {fileID: 4846519057745081896}
   m_Layer: 0
-  m_Name: "Train\xE9 de flamme"
+  m_Name: "Train\xE9_de_flamme"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: d97acd26af1f5654787617c731d95913, type: 3}
+  m_Sprite: {fileID: 8512346051270406744, guid: 140c8e117ab020b42a54b69b018f6f38,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,3 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timesBeforeDestruction: 1
+--- !u!95 &4846519057745081896
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075538181445301906}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e21b5527ac691e1409b70a2464efebba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
