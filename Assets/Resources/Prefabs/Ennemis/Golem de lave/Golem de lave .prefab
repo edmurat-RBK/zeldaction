@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5619790825460321364}
   - component: {fileID: 8566938357804780371}
-  - component: {fileID: 4342010126670623283}
+  - component: {fileID: 7096721021086295239}
   m_Layer: 0
   m_Name: GolemSprites
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &4342010126670623283
+--- !u!95 &7096721021086295239
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 1786733636216482513}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9e6b52622e41e574f9158d2aee79d13d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 87af8e471de254341ac2f6d707190423, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
