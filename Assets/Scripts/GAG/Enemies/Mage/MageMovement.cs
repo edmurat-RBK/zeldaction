@@ -83,7 +83,7 @@ public class MageMovement : MonoBehaviour
             else if (Vector2.Distance(transform.position, player.transform.position) < stoppingDistance && Vector2.Distance(transform.position, player.transform.position) > retreatDistance)
             {
             
-                anim.SetBool("IsRecule", false);
+                
 
                 GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
