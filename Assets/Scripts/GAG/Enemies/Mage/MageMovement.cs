@@ -33,6 +33,8 @@ public class MageMovement : MonoBehaviour
 
     private Animator anim;
 
+    public bool vunerable;
+
     private bool lockMovement = true;
     private bool lockAttack = true;
     #endregion
@@ -41,7 +43,7 @@ public class MageMovement : MonoBehaviour
     {
         player = PlayerManager.Instance.transform;
         anim = GetComponent<Animator>();
-        
+        vunerable = false;
     }
 
 
@@ -56,50 +58,59 @@ public class MageMovement : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
+
+        if (vunerable == true)
+        {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
+
     }
 
     private void MageDisplacement()
     {
-        movement = (player.transform.position - transform.position).normalized;
-        retreat = (transform.position - player.transform.position).normalized;
+        if (vunerable == false)
+        {
+            movement = (player.transform.position - transform.position).normalized;
+            retreat = (transform.position - player.transform.position).normalized;
 
        
-        if (lockMovement == true)
-        {
-            //youmna a ecrit ca
-
-            anim.SetFloat("Horizontal", GetComponent<Rigidbody2D>().velocity.x);
-            anim.SetFloat("Vertical", GetComponent<Rigidbody2D>().velocity.y);
-
-
-            if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
+            if (lockMovement == true)
             {
-                anim.SetBool("IsRecule", false);
+                //youmna a ecrit ca
 
-                GetComponent<Rigidbody2D>().velocity = (movement.normalized * speed * Time.fixedDeltaTime);
+                anim.SetFloat("Horizontal", GetComponent<Rigidbody2D>().velocity.x);
+                anim.SetFloat("Vertical", GetComponent<Rigidbody2D>().velocity.y);
 
-            }
 
-            else if (Vector2.Distance(transform.position, player.transform.position) < stoppingDistance && Vector2.Distance(transform.position, player.transform.position) > retreatDistance)
-            {
+                if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
+                {
+                    anim.SetBool("IsRecule", false);
+
+                    GetComponent<Rigidbody2D>().velocity = (movement.normalized * speed * Time.fixedDeltaTime);
+
+                }
+
+                else if (Vector2.Distance(transform.position, player.transform.position) < stoppingDistance && Vector2.Distance(transform.position, player.transform.position) > retreatDistance)
+                {
             
                 
 
-                GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                    GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
 
-                if (lockAttack == true)
-                {
-                    StartCoroutine(Attack());
+                    if (lockAttack == true)
+                    {
+                        StartCoroutine(Attack());
+                    }
                 }
-            }
 
-            else if (Vector2.Distance(transform.position, player.transform.position) < retreatDistance)
-            {
-                GetComponent<Rigidbody2D>().velocity = (retreat.normalized * speed * Time.fixedDeltaTime);
+                else if (Vector2.Distance(transform.position, player.transform.position) < retreatDistance)
+                {
+                    GetComponent<Rigidbody2D>().velocity = (retreat.normalized * speed * Time.fixedDeltaTime);
 
-                anim.SetBool("IsRecule",true);
+                    anim.SetBool("IsRecule",true);
 
+                }
             }
         }
     }  // Fonction qui permet le déplacement du mage

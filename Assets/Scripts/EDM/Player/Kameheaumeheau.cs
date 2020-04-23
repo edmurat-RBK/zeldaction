@@ -121,25 +121,28 @@ public class Kameheaumeheau : MonoBehaviour
             }
 
             //Check collision
-            LayerMask mask = LayerMask.GetMask("Puzzle");
+            LayerMask mask = LayerMask.GetMask("KamehoHit");
             RaycastHit2D ray = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), beamDirection, beamRange, mask);
             Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), beamDirection, Color.blue);
             
             if (ray.rigidbody != null)
             {
                 beamDir = beamDirection;
-                if (ray.transform.gameObject.tag == "Moulin")
+                if (ray.transform.gameObject.tag == "Moulin")
                 {
                     ray.transform.gameObject.GetComponent<MoulinHitDetection>().getHit = true;
                 }
 
-                if (ray.transform.gameObject.tag == "CaissePierre")
+                if (ray.transform.gameObject.tag == "CaissePierre")
                 {
                     ray.transform.gameObject.GetComponent<CaisseEnPierre>().move = true;
                 }
+                if (ray.transform.gameObject.tag == "Ennemi")
+                {
+                    ray.transform.gameObject.GetComponent<PvEnnemis>().kameoHit = true;
+                }
             }
-               
-            }
         }
     }
+}
 

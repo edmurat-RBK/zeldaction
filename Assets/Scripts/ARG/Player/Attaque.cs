@@ -84,7 +84,7 @@ namespace Attack
         #region DetectTheEnnemis
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject.tag == "Ennemis")
+            if (collision.gameObject.tag == "Ennemi")
             {
                 foreach (GameObject ennemi in ennemisInRange)
                 {
@@ -103,7 +103,7 @@ namespace Attack
 
         private void OnTriggerExit2D(Collider2D collision)
         {
-            if (collision.gameObject.tag == "Ennemis")
+            if (collision.gameObject.tag == "Ennemi")
             {
                 ennemisInRange.Remove(collision.gameObject);
             }
@@ -114,7 +114,7 @@ namespace Attack
         {
             foreach (GameObject ennemi in ennemisInRange)
             {
-             ennemi.GetComponent<EnnemiDummy>().EnnemiTakeDammage(dammage);
+                ennemi.GetComponent<EnnemiDummy>().EnnemiTakeDammage(dammage);
             }
         } //apply damage to the ennemis within the colldier of the attack
     }
