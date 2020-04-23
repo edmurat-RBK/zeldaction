@@ -9,6 +9,7 @@ TagManager:
   - Courant
   - CaissePierre
   - Moulin
+  - Ennemi
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - 
   - 
   - 
-  - Puzzle
+  - KamehoHit
   - 
   - 
   - 
@@ -37,7 +38,6 @@ TagManager:
   - 
   - 
   - 
-  - Caisse
   - Clepsydre
   - Cube de bois
   - 

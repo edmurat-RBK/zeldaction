@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/_Scenes/GUR_LD_Scene.unity
+    path: Assets/_Scenes/GUR_Scene/GUR_LD_Scene.unity
     guid: ddcbc2f91ff3a254eaafa10be3e94303
   m_configObjects: {}
