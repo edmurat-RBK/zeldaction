@@ -114,7 +114,7 @@ namespace Attack
         {
             foreach (GameObject ennemi in ennemisInRange)
             {
-                ennemi.GetComponent<EnnemiDummy>().EnnemiTakeDammage(dammage);
+                ennemi.GetComponent<PvEnnemis>().EnnemiTakeDammage(dammage);
             }
         } //apply damage to the ennemis within the colldier of the attack
     }

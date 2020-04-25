@@ -114,9 +114,11 @@ GameObject:
   - component: {fileID: 4269345970512379575}
   - component: {fileID: 4269345970512379574}
   - component: {fileID: 4269345970512379573}
-  m_Layer: 0
+  - component: {fileID: 1705166569}
+  - component: {fileID: 1705166570}
+  m_Layer: 15
   m_Name: 'Golem de lave '
-  m_TagString: Untagged
+  m_TagString: Ennemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,7 +198,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4269345970512379569}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -230,6 +232,53 @@ MonoBehaviour:
   chocWave: {fileID: 4079278842457562866, guid: 40909fa89121c3c46a03e420bf10a3fb,
     type: 3}
   shotPoint: {fileID: 4269345970957266582}
+  vunerableGolem: 0
+--- !u!61 &1705166569
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4269345970512379569}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2253238, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.71, y: 3.9}
+    newSize: {x: 3.71, y: 3.9}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2593524, y: 3.9}
+  m_EdgeRadius: 0
+--- !u!114 &1705166570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4269345970512379569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e634bce503d973548943d448e356d1c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flammeche: 0
+  mage: 0
+  golemLave: 1
+  pv: 10
+  waterForVulnerable: 10
+  timeOfVulnerability: 10
+  damageParticule: 1
+  kameoHit: 0
 --- !u!1 &4269345970957266582
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Ennemis;
 
 /// <summary>
 /// Créateur : Guillaume Rogé 
@@ -118,4 +119,24 @@ public class PvEnnemis : MonoBehaviour
             gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem = false;
         }
     } // Coroutine qui rend vulnérable les ennemis pendants x temps
+
+
+    public void EnnemiTakeDammage(int dammage)
+    {
+        if (golemLave == true)
+        {
+            if (gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem == true)
+            {
+                pv -= dammage;
+            }
+        }
+
+        if (mage == true)
+        {
+            if (gameObject.GetComponent<MageMovement>().vunerableMage == true)
+            {
+                pv -= dammage;
+            }
+        }
+    }
 }

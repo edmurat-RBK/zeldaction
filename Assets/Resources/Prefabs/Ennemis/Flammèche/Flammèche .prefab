@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: 0
-  speed: 0
+  speed: 100
   damage: 0
   timeBtwDirection: 2
   flamePrefab: {fileID: 1075538181445301906, guid: 53cb50b4d1f2af849a9d8ceedfb5b95e,
@@ -186,11 +186,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e634bce503d973548943d448e356d1c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flammeche: 1
+  mage: 0
+  golemLave: 0
   pv: 10
   waterForVulnerable: 0
-  flammeche: 1
-  otherEnnemis: 0
-  damageParticule: 1
+  timeOfVulnerability: 0
+  damageParticule: 0.5
   kameoHit: 0
 --- !u!1001 &1855884651330488539
 PrefabInstance:
