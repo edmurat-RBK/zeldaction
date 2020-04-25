@@ -12,12 +12,15 @@ public class Fontaine : MonoBehaviour
     public bool active = false;
     public float vagueTrigger = 0.2f;
 
+    private Animator anim;
+
     private PlayerManager manager;
 
     // Start is called before the first frame update
     void Start()
     {
         manager = GetComponent<PlayerManager>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +33,9 @@ public class Fontaine : MonoBehaviour
                 effectTime = maxEffectTime;
                 active = true;
                 manager.playerInvulnerable = true;
+
+                anim.SetBool("IsShielding", true);
+
             }
         }
         else if(!active && cooldown != 0)
@@ -38,6 +44,7 @@ public class Fontaine : MonoBehaviour
             if(cooldown < 0)
             {
                 cooldown = 0;
+                anim.SetBool("IsShielding", false);
             }
         }
         else

@@ -15,6 +15,8 @@ namespace WateringCan
         [SerializeField]
         private GameObject water; //reference to the particule system attach to a object
         public bool useWaterCan = false;
+
+        private Animator anim;
         #endregion
 
         void Awake()
@@ -25,6 +27,7 @@ namespace WateringCan
         void Start()
         {
             water.gameObject.SetActive(false);
+            anim = GetComponent<Animator>();
         }
         
         void Update()
@@ -33,10 +36,13 @@ namespace WateringCan
             if (Input.GetButton("B"))
             {
                 Watering();
+                anim.SetBool("IsWatering", true);
+
             }
             else
             {
              water.gameObject.SetActive(false); //set off the particule system
+                anim.SetBool("IsWatering", false);
             }
 
             if (Input.GetButtonUp("B"))
