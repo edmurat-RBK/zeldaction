@@ -33,7 +33,7 @@ public class MageMovement : MonoBehaviour
 
     private Animator anim;
 
-    public bool vunerable;
+    public bool vunerableMage;
 
     private bool lockMovement = true;
     private bool lockAttack = true;
@@ -43,7 +43,7 @@ public class MageMovement : MonoBehaviour
     {
         player = PlayerManager.Instance.transform;
         anim = GetComponent<Animator>();
-        vunerable = false;
+        vunerableMage = false;
     }
 
 
@@ -59,16 +59,19 @@ public class MageMovement : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
 
-        if (vunerable == true)
+        if (vunerableMage == true)
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            StopAllCoroutines();
+            lockMovement = true;
+            lockAttack = true;
         }
 
     }
 
     private void MageDisplacement()
     {
-        if (vunerable == false)
+        if (vunerableMage == false)
         {
             movement = (player.transform.position - transform.position).normalized;
             retreat = (transform.position - player.transform.position).normalized;

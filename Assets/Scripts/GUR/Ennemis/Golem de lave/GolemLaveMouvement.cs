@@ -29,6 +29,8 @@ public class GolemLaveMouvement : MonoBehaviour
 
     public GameObject shotPoint;
 
+    public bool vunerableGolem;
+
     Vector2 movement;
 
     private bool lockMouvement;
@@ -42,6 +44,7 @@ public class GolemLaveMouvement : MonoBehaviour
     {
         lockMouvement = true;
         lockAttack = true;
+        vunerableGolem = false;
         rbGolem = GetComponent<Rigidbody2D>();
         player = PlayerManager.Instance.transform;
     }
@@ -57,27 +60,39 @@ public class GolemLaveMouvement : MonoBehaviour
         {
             rbGolem.velocity = Vector2.zero;
         }
+
+        if (vunerableGolem == true)
+        {
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            StopAllCoroutines();
+            lockMouvement = true;
+            lockAttack = true;
+        }
     }
 
     void GolemLaveDisplacement()
     {
         movement = (player.transform.position - transform.position).normalized;
 
-        if (lockMouvement == true)
+        if (vunerableGolem == false)
         {
-            if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
+            if (lockMouvement == true)
             {
-                rbGolem.velocity = (movement.normalized * speed * Time.fixedDeltaTime);
-            }
-        
-            else if (Vector2.Distance(transform.position, player.transform.position) < stoppingDistance && Vector2.Distance(transform.position, player.transform.position) > retreatDistance)
-            {
-                rbGolem.velocity = Vector2.zero;
-
-                if (lockAttack == true)
+                if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
                 {
-                    StartCoroutine(GolemLaveAtack());
+                    rbGolem.velocity = (movement.normalized * speed * Time.fixedDeltaTime);
                 }
+        
+                else if (Vector2.Distance(transform.position, player.transform.position) < stoppingDistance && Vector2.Distance(transform.position, player.transform.position) > retreatDistance)
+                {
+                    rbGolem.velocity = Vector2.zero;
+
+                    if (lockAttack == true)
+                    {
+                        StartCoroutine(GolemLaveAtack());
+                    }
+                }
+
             }
 
         }
