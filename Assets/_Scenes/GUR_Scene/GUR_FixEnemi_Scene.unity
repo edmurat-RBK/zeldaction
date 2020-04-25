@@ -188,11 +188,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mage
       objectReference: {fileID: 0}
-    - target: {fileID: 557820165126594859, guid: 10d632e473a3b1c45889c2fecdfeb84e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d632e473a3b1c45889c2fecdfeb84e, type: 3}
 --- !u!1001 &1049391414
@@ -347,11 +342,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Flamm\xE8che "
-      objectReference: {fileID: 0}
-    - target: {fileID: 3009620996165859508, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3009620996165859512, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
         type: 3}
@@ -532,19 +522,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1705166570, guid: 0328b1b5338592149824bff80835a75c, type: 3}
-      propertyPath: timeOfVulnerability
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4269345970512379569, guid: 0328b1b5338592149824bff80835a75c,
         type: 3}
       propertyPath: m_Name
       value: 'Golem de lave '
-      objectReference: {fileID: 0}
-    - target: {fileID: 4269345970512379569, guid: 0328b1b5338592149824bff80835a75c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4269345970512379572, guid: 0328b1b5338592149824bff80835a75c,
         type: 3}
@@ -604,7 +585,7 @@ PrefabInstance:
     - target: {fileID: 4269345970512379573, guid: 0328b1b5338592149824bff80835a75c,
         type: 3}
       propertyPath: stoppingDistance
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0328b1b5338592149824bff80835a75c, type: 3}

@@ -15,7 +15,6 @@ public class FlammècheMouvement : MonoBehaviour
     #region Variable
     [Header("Stat de base")]
     [Space]
-    public float pv;
     public float speed;
     public float damage;
 

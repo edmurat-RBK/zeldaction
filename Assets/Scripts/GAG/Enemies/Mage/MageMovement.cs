@@ -15,7 +15,6 @@ public class MageMovement : MonoBehaviour
 {
     #region Variable
     [Header ("Stats de base")]
-    public float pv;
     public float speed;
     public float timeBeforeAttack;
     public float attackCooldown;
