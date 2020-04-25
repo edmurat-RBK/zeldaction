@@ -14,6 +14,21 @@ TextureImporter:
   - first:
       213: 3979599036844322012
     second: PJ.Kamehameheau.Droite.SpriteSheet_3
+  - first:
+      213: 3010892387391210687
+    second: PJ.Kamehameheau.Droite.SpriteSheet_0
+  - first:
+      213: -1094907106768607563
+    second: PJ.Kamehameheau.Droite.SpriteSheet_1
+  - first:
+      213: 7573049950625170754
+    second: PJ.Kamehameheau.Droite.SpriteSheet_2
+  - first:
+      213: -3482880764359992611
+    second: PJ.Kamehameheau.Droite.SpriteSheet_3
+  - first:
+      213: 2211579751578297431
+    second: PJ.Kamehameheau.Droite.SpriteSheet_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -103,7 +118,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -112,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f2119b19217318b0800000000000000
-      internalID: -5182674324803218699
+      spriteID: fb481678ca6d8c920800000000000000
+      internalID: 3010892387391210687
       vertices: []
       indices: 
       edges: []
@@ -122,9 +137,9 @@ TextureImporter:
       name: PJ.Kamehameheau.Droite.SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 0
-        width: 80
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -133,8 +148,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e27c1c13971b7abf0800000000000000
-      internalID: -313086514995017938
+      spriteID: 5b6a10799cb1ec0f0800000000000000
+      internalID: -1094907106768607563
       vertices: []
       indices: 
       edges: []
@@ -143,9 +158,9 @@ TextureImporter:
       name: PJ.Kamehameheau.Droite.SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 160
+        x: 128
         y: 0
-        width: 80
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,8 +169,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7c05aef8b9058300800000000000000
-      internalID: 253619644167163006
+      spriteID: 2458d4d6ec0e81960800000000000000
+      internalID: 7573049950625170754
       vertices: []
       indices: 
       edges: []
@@ -164,9 +179,9 @@ TextureImporter:
       name: PJ.Kamehameheau.Droite.SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 240
+        x: 192
         y: 0
-        width: 80
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -175,8 +190,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdca79b3d306a3730800000000000000
-      internalID: 3979599036844322012
+      spriteID: dda184dd5625aafc0800000000000000
+      internalID: -3482880764359992611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PJ.Kamehameheau.Droite.SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754654d011c11be10800000000000000
+      internalID: 2211579751578297431
       vertices: []
       indices: 
       edges: []

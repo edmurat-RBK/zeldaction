@@ -18,6 +18,8 @@ namespace Attack
         private bool alreadyInList;
         public List<GameObject> ennemisInRange = new List<GameObject>(); //list of all the ennemis in range
         public int dammage; //dammages of the player
+
+        private Animator anim;
         #endregion
 
         void Awake()
@@ -27,7 +29,7 @@ namespace Attack
         
         void Start()
         {
-            
+            anim = GetComponent<Animator>();
         }
         
         void Update()
@@ -38,7 +40,18 @@ namespace Attack
             if (Input.GetButtonDown("X"))
             {
                 ApplyDammage();
+                anim.SetBool("IsMeleeAttacking", true);
+
             }
+            else
+            {
+                anim.SetBool("IsMeleeAttacking", false);
+            }
+
+            //Essayer de mettre une ligne de code qui dit qu'un double click de x ramene a une deuxieme anim
+            
+
+
         }
 
         private void AtatckPos()
