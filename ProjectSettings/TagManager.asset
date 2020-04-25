@@ -10,6 +10,7 @@ TagManager:
   - CaissePierre
   - Moulin
   - Ennemi
+  - Destructible
   layers:
   - Default
   - TransparentFX

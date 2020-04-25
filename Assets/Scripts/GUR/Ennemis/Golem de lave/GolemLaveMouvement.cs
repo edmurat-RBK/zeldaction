@@ -15,7 +15,6 @@ public class GolemLaveMouvement : MonoBehaviour
 {
     #region Variable
     [Header("Stats de base")]
-    public float pv;
     public float timeBeforeAttack;
     public float attackCooldown;
 
