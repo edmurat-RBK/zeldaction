@@ -126,11 +126,11 @@ MonoBehaviour:
   speed: 100
   timeBeforeAttack: 2
   attackCooldown: 1.5
-  stoppingDistance: 10
-  retreatDistance: 6
+  stoppingDistance: 5
+  retreatDistance: 2
   projectile: {fileID: 2105884287301529379, guid: a89db78045bd840458005a21f71b2a78,
     type: 3}
-  vunerable: 0
+  vunerableMage: 0
 --- !u!95 &5757311525299253795
 Animator:
   serializedVersion: 3
@@ -162,10 +162,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e634bce503d973548943d448e356d1c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pv: 10
-  waterForVulnerable: 1
   flammeche: 0
-  otherEnnemis: 1
+  mage: 1
+  golemLave: 0
+  pv: 10
+  waterForVulnerable: 10
+  timeOfVulnerability: 2
   damageParticule: 1
   kameoHit: 0
 --- !u!61 &7109924837648316841
