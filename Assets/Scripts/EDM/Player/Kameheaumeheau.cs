@@ -141,6 +141,11 @@ public class Kameheaumeheau : MonoBehaviour
                 {
                     ray.transform.gameObject.GetComponent<PvEnnemis>().kameoHit = true;
                 }
+
+                if (ray.transform.gameObject.tag == "Destructible")
+                {
+                    ray.transform.gameObject.GetComponent<DestructibleByWater>().khameoDetection = true;
+                }
             }
         }
     }

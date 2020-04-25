@@ -10,10 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 7539766320191818603}
   - component: {fileID: 3138746846520092527}
-  - component: {fileID: 9178016993475479985}
-  m_Layer: 0
+  - component: {fileID: 5785869849412904593}
+  - component: {fileID: -3596006739019185043}
+  - component: {fileID: 2942165941825658273}
+  - component: {fileID: 6250335131499950611}
+  m_Layer: 15
   m_Name: "Fl\xEAche"
-  m_TagString: Untagged
+  m_TagString: Destructible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &9178016993475479985
+--- !u!50 &5785869849412904593
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -90,7 +93,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4604962061793822854}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -101,5 +104,64 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!60 &-3596006739019185043
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4604962061793822854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3, y: 3}
+    newSize: {x: 3, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.77}
+      - {x: -0.02, y: 0.75}
+      - {x: -1.5, y: 0.39}
+      - {x: -1.5, y: -0.39}
+      - {x: -0.099999994, y: -0.76}
+      - {x: 0.089999996, y: -0.76}
+      - {x: 1.5, y: -0.02}
+      - {x: 1.5, y: 0.03}
+--- !u!114 &2942165941825658273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4604962061793822854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be905cfebf2c7648be9a4368f9badb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  khameoDetection: 0
+--- !u!114 &6250335131499950611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4604962061793822854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4dcfa5e6cb65a4ab3ecf224c3d8bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0

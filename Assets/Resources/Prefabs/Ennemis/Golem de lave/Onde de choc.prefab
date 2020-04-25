@@ -45,8 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   step: 5
   start: 30
-  numOfStep: 0
+  bulNumber: 10
   bulletPrefab: {fileID: 4604962061793822854, guid: 9f8b109061790c44dbc125db03e79856,
     type: 3}
-  bulNumber: 10
   speed: 200
