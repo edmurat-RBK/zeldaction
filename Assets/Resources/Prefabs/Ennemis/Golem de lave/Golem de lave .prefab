@@ -223,11 +223,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d5bc8ea39432843a0b5958a6c6e8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pv: 0
   timeBeforeAttack: 1
   attackCooldown: 3
   speed: 100
-  stoppingDistance: 4
+  stoppingDistance: 2
   retreatDistance: 0
   chocWave: {fileID: 4079278842457562866, guid: 40909fa89121c3c46a03e420bf10a3fb,
     type: 3}
@@ -276,7 +275,7 @@ MonoBehaviour:
   golemLave: 1
   pv: 10
   waterForVulnerable: 10
-  timeOfVulnerability: 10
+  timeOfVulnerability: 3
   damageParticule: 1
   kameoHit: 0
 --- !u!1 &4269345970957266582
