@@ -135,8 +135,14 @@ public class Kameheaumeheau : MonoBehaviour
 
                 if (ray.transform.gameObject.tag == "CaissePierre")
                 {
-                    ray.transform.gameObject.GetComponent<CaisseEnPierre>().move = true;
+                    ray.transform.gameObject.GetComponent<CaisseEnPierre>().move = true;
                 }
+                if (ray.transform.gameObject.tag == "Clepsydre")
+                {
+                    ray.transform.gameObject.GetComponent<Clepsydre>().clepsydreHit = true;
+                }
+
+
                 if (ray.transform.gameObject.tag == "Ennemi")
                 {
                     ray.transform.gameObject.GetComponent<PvEnnemis>().kameoHit = true;
