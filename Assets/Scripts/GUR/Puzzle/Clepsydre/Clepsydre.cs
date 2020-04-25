@@ -18,21 +18,32 @@ public class Clepsydre : MonoBehaviour
     public int valeurParticule;
     public int maxStockage;
 
-    [HideInInspector]
+    //[HideInInspector]
     public float remplissage;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool actifClepsydre;
+
+    public bool clepsydreHit;
     #endregion
+
+    
 
     void Start()
     {
         actifClepsydre = false;
+        clepsydreHit = false;
     }
 
     void Update()
     {
         Vidage();
+
+        if (clepsydreHit == true)
+        {
+            remplissage = maxStockage;
+            clepsydreHit = false;
+        }
     }
 
     void Vidage()

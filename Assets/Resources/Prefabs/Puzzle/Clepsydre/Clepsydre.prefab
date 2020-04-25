@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 3842681876926265271}
   - component: {fileID: 3842681876926265264}
   - component: {fileID: 3842681876926265265}
-  - component: {fileID: 8018375307782707892}
-  m_Layer: 28
+  - component: {fileID: 1848132518}
+  m_Layer: 15
   m_Name: Clepsydre
-  m_TagString: Untagged
+  m_TagString: Clepsydre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,22 +127,25 @@ MonoBehaviour:
   maxStockage: 10
   remplissage: 0
   actifClepsydre: 0
---- !u!95 &8018375307782707892
-Animator:
-  serializedVersion: 3
+  clepsydreHit: 0
+--- !u!50 &1848132518
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3842681876926265267}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2cfea00941c045945accd80cb174e0d4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
