@@ -28,15 +28,6 @@ AnimationClip:
     - time: 0.35
       value: {fileID: -5869839648889291947, guid: 16729e32574188c40a2ccebb4d14e28c,
         type: 3}
-    - time: 0.55
-      value: {fileID: -2446590842481921472, guid: 16729e32574188c40a2ccebb4d14e28c,
-        type: 3}
-    - time: 0.71666664
-      value: {fileID: 6667643546280406718, guid: 16729e32574188c40a2ccebb4d14e28c,
-        type: 3}
-    - time: 0.9
-      value: {fileID: 1995146332011785851, guid: 16729e32574188c40a2ccebb4d14e28c,
-        type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -59,15 +50,12 @@ AnimationClip:
     - {fileID: 232832686474179749, guid: 16729e32574188c40a2ccebb4d14e28c, type: 3}
     - {fileID: 4791257676257661419, guid: 16729e32574188c40a2ccebb4d14e28c, type: 3}
     - {fileID: -5869839648889291947, guid: 16729e32574188c40a2ccebb4d14e28c, type: 3}
-    - {fileID: -2446590842481921472, guid: 16729e32574188c40a2ccebb4d14e28c, type: 3}
-    - {fileID: 6667643546280406718, guid: 16729e32574188c40a2ccebb4d14e28c, type: 3}
-    - {fileID: 1995146332011785851, guid: 16729e32574188c40a2ccebb4d14e28c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.9166666
+    m_StopTime: 0.36666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -86,11 +74,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.46666667
-    functionName: 
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
