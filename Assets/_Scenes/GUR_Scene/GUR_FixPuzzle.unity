@@ -121,12 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &128353051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4960442286142023400, guid: 336d19805af877848ac8167e1a1baabf,
-    type: 3}
-  m_PrefabInstance: {fileID: 373951859}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &248469301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265,31 +259,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53ce13e5f22110c4d9b298a907cc8d8e, type: 3}
---- !u!1 &257819234 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 289899008850224442, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
-    type: 3}
-  m_PrefabInstance: {fileID: 257819233}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &257819235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257819234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 906baf0ef30a5244fb98b8a7dd87be3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whoActivate:
-  - {fileID: 128353051}
-  linkMoulinLeft: 0
-  linkMoulinRight: 0
-  linkMoulinBoth: 0
-  lockAfterFinish: 1
-  canActive: 0
 --- !u!1001 &373951859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -518,22 +487,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1641176196, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
-      propertyPath: whoActivate.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641176196, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
-      propertyPath: whoActivate.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641176196, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
-      propertyPath: lockAfterFinish
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641176196, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
-      propertyPath: linkMoulinRight
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 425269397106540162, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -594,38 +547,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pieu_mouvant Bas
       objectReference: {fileID: 0}
-    - target: {fileID: 425269397106540163, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
---- !u!1 &707955840 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4275856978186661501, guid: e6503093b9cbf7d4b88a3ca837580ad6,
-    type: 3}
-  m_PrefabInstance: {fileID: 248469301}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &707955841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707955840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 906baf0ef30a5244fb98b8a7dd87be3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  whoActivate:
-  - {fileID: 1796099287}
-  linkMoulinLeft: 0
-  linkMoulinRight: 0
-  linkMoulinBoth: 0
-  lockAfterFinish: 0
-  canActive: 0
 --- !u!1 &849042059
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,11 +757,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clepsydre
       objectReference: {fileID: 0}
-    - target: {fileID: 3842681876926265267, guid: 748690715eb2a8b44ab4aae13713209d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 748690715eb2a8b44ab4aae13713209d, type: 3}
 --- !u!1001 &1296698073
@@ -908,19 +826,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bassin
       objectReference: {fileID: 0}
-    - target: {fileID: 1755729804106787943, guid: 3679e2685b5d545488db2984d5d97c04,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3679e2685b5d545488db2984d5d97c04, type: 3}
---- !u!1 &1796099287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4377197079023019434, guid: 30a4f1675e4c7dd46887176c24263bd8,
-    type: 3}
-  m_PrefabInstance: {fileID: 427001503}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2136373445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -928,20 +835,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8161820870829286696, guid: 7d10fd4fb1b82c845aa01f264751c922,
-        type: 3}
-      propertyPath: timeOfActivation
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 8161820870829286700, guid: 7d10fd4fb1b82c845aa01f264751c922,
         type: 3}
       propertyPath: m_Name
       value: Moulin
-      objectReference: {fileID: 0}
-    - target: {fileID: 8161820870829286700, guid: 7d10fd4fb1b82c845aa01f264751c922,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8161820870829286702, guid: 7d10fd4fb1b82c845aa01f264751c922,
         type: 3}
