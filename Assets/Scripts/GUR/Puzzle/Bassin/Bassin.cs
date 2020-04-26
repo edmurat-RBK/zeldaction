@@ -24,7 +24,6 @@ public class Bassin : MonoBehaviour
 
     private bool canEmpty;
 
-    
     public float remplissage;
 
     [HideInInspector]
