@@ -60,7 +60,7 @@ public class Fontaine : MonoBehaviour
         {
             Vague();
 
-            effectTime -= Time.deltaTime;
+            effectTime -= Time.deltaTime; 
             if(effectTime < 0)
             {
                 cooldown = maxCooldown;
