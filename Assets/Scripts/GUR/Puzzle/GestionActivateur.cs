@@ -112,6 +112,7 @@ public class GestionActivateur : MonoBehaviour
         }
         else
         {
+            canActive = false;
             counter = 0;
             maxCounter = 0;
         }
