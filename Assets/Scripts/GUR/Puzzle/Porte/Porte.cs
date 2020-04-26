@@ -5,7 +5,7 @@ using UnityEngine;
 public class Porte : MonoBehaviour
 {
     public float speed;
-    public GameObject[] wichPlaque;
+    //public GameObject[] wichPlaque;
     public GameObject hitBox;
     public float timeForOpen;
 
@@ -23,7 +23,15 @@ public class Porte : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < wichPlaque.Length; i++)
+        if (gameObject.GetComponent<GestionActivateur>().canActive == true && canOpen == true)
+        {
+            StartCoroutine(OpenDoor());
+        }
+
+
+
+
+        /*for (int i = 0; i < wichPlaque.Length; i++)
         {
             if (wichPlaque[i].GetComponent<PlaqueDePression>().activeTrap == true)
             {
@@ -35,7 +43,7 @@ public class Porte : MonoBehaviour
                 StartCoroutine(OpenDoor());
             }
         }
-        numberOfActive = 0;
+        numberOfActive = 0;*/
     }
 
     IEnumerator OpenDoor()

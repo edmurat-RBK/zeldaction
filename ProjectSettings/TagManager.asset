@@ -12,6 +12,8 @@ TagManager:
   - Ennemi
   - Destructible
   - Clepsydre
+  - Bassin
+  - Plaque Pierre
   layers:
   - Default
   - TransparentFX
