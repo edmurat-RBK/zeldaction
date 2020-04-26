@@ -9,11 +9,10 @@ TagManager:
   - Courant
   - CaissePierre
   - Moulin
-  - Ennemi
   - Destructible
-  - Clepsydre
-  - Bassin
+  - Ennemi
   - Plaque Pierre
+  - Clepsydre
   layers:
   - Default
   - TransparentFX

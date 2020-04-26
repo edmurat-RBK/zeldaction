@@ -18,17 +18,21 @@ public class Clepsydre : MonoBehaviour
     public int valeurParticule;
     public int maxStockage;
 
-    [HideInInspector]
     public float remplissage;
 
     [HideInInspector]
     public bool actifClepsydre;
 
+    [HideInInspector]
+    public bool lockClepsydre;
+
+    [HideInInspector]
     public bool clepsydreHit;
     #endregion
 
     void Start()
     {
+        lockClepsydre = false;
         actifClepsydre = false;
         clepsydreHit = false;
     }
@@ -36,33 +40,45 @@ public class Clepsydre : MonoBehaviour
     void Update()
     {
         Vidage();
-
-        if (clepsydreHit == true)
-        {
-            remplissage = maxStockage;
-            clepsydreHit = false;
-        }
+        KhamehoHit();
     }
 
+    void KhamehoHit()
+    {
+        if (lockClepsydre == false)
+        {
+            if (clepsydreHit == true)
+            {
+                remplissage = maxStockage;
+                clepsydreHit = false;
+            }
+        }
+    }
     void Vidage()
     {
-        if (remplissage > 0)
+        if (lockClepsydre == false)
         {
-            actifClepsydre = true;
-            remplissage -= Time.fixedDeltaTime;
-        }
+            if (remplissage > 0)
+            {
+                actifClepsydre = true;
+                remplissage -= Time.fixedDeltaTime;
+            }
 
-        else if (remplissage <= 0)
-        {
-            actifClepsydre = false;
-        }    
+            else if (remplissage <= 0)
+            {
+                actifClepsydre = false;
+            }    
+        }
     } // Fonction qui s'occupe de soustraire la valeur de remplissage par le temps qui passe
 
     private void OnParticleCollision(GameObject other)
     {
-        if (remplissage < maxStockage)
+        if (lockClepsydre == false)
         {
-            remplissage += valeurParticule;
+            if (remplissage < maxStockage)
+            {
+                remplissage += valeurParticule;
+            }
         }
         
     } // Permet de détecter la collision de particule d'eau et d'incrémenter la valeur de remplissage

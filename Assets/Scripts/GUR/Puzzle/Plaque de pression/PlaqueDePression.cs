@@ -17,6 +17,8 @@ public class PlaqueDePression : MonoBehaviour
     public GameObject plaqueActive;
     public GameObject plaqueDesactive;
 
+    public bool stayActivate;
+
     [HideInInspector]
     public bool activeTrap;
     #endregion
@@ -36,8 +38,11 @@ public class PlaqueDePression : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        plaqueActive.SetActive(false);
-        plaqueDesactive.SetActive(true);
-        activeTrap = false;
+        if (stayActivate == false)
+        {
+            plaqueActive.SetActive(false);
+            plaqueDesactive.SetActive(true);
+            activeTrap = false;
+        }
     } // Permet de changé graphiquement la plaque (désactivé) et de changé l'etat de la bool en false
 }
