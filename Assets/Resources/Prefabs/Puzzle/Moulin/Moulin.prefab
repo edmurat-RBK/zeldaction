@@ -301,8 +301,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f96823caccdbd4daa2d174aa6108ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeOfActivation: 2
+  timeOfActivation: 4
   hitGauche: 0
   hitDroit: 0
   moulinOnGauche: 0
   moulinOnDroit: 0
+  lockMoulinLeft: 0
+  lockMoulinRight: 0

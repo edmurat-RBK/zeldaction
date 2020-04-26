@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4275856978186661503}
   - component: {fileID: 4275856978186661502}
+  - component: {fileID: 707955841}
   m_Layer: 0
   m_Name: Spawner caisse plaque
   m_TagString: Untagged
@@ -43,6 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b41b231610d156469cd5ef7781b68db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wichPlaque: {fileID: 0}
   caisseBoisPrefab: {fileID: 2521424828691850045, guid: 82141aaf34d72ce4388a3cd4443b271a,
     type: 3}
+  caisse: {fileID: 0}
+--- !u!114 &707955841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4275856978186661501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906baf0ef30a5244fb98b8a7dd87be3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whoActivate: []
+  linkMoulinLeft: 0
+  linkMoulinRight: 0
+  linkMoulinBoth: 0
+  lockAfterFinish: 0
+  canActive: 0
