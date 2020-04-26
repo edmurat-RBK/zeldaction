@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 289899008850224443}
   - component: {fileID: 289899008850224441}
   - component: {fileID: 289899008850224438}
+  - component: {fileID: 257819235}
   m_Layer: 0
   m_Name: PorteShaman Face
   m_TagString: Untagged
@@ -118,10 +119,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
-  wichPlaque:
-  - {fileID: 0}
   hitBox: {fileID: 8830860538084823279}
   timeForOpen: 1
+  canOpen: 0
+--- !u!114 &257819235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289899008850224442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906baf0ef30a5244fb98b8a7dd87be3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whoActivate: []
+  linkMoulinLeft: 0
+  linkMoulinRight: 0
+  linkMoulinBoth: 0
+  lockAfterFinish: 0
+  canActive: 0
 --- !u!1 &8830860538084823279
 GameObject:
   m_ObjectHideFlags: 0

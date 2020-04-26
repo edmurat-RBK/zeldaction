@@ -127,6 +127,7 @@ MonoBehaviour:
   maxStockage: 10
   remplissage: 0
   actifClepsydre: 0
+  lockClepsydre: 0
   clepsydreHit: 0
 --- !u!50 &1848132518
 Rigidbody2D:
