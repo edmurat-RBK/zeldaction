@@ -4,18 +4,10 @@ using UnityEngine;
 
 public class SpawnCaissePlaque : MonoBehaviour
 {
-    public GameObject wichPlaque;
     public GameObject caisseBoisPrefab;
 
-    private GameObject caisse;
-
-    private bool lockSpawn;
-    private int counter = 0;
-
-    void Start()
-    {
-        lockSpawn = true;
-    }
+    [HideInInspector]
+    public GameObject caisse;
 
     void Update()
     {

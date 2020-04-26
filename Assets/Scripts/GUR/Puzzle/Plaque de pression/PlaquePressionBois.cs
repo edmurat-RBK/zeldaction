@@ -8,37 +8,48 @@ public class PlaquePressionBois : MonoBehaviour
     public GameObject plaqueActive;
     public GameObject plaqueDesactive;
 
-    public bool stayActivate;
+    public bool lockActivation;
 
-    [HideInInspector]
+    public bool teste;
+    public bool other;
+
+    //[HideInInspector]
     public bool activePlaqueBois;
+
 
     void Start()
     {
+        lockActivation = false;
+        other = false;
+        teste = false;
         activePlaqueBois = false;
         plaqueActive.SetActive(false);
     }
 
-    void Update()
+    private void Update()
     {
+        if (teste == true)
+        {
+            plaqueActive.SetActive(true);
+            plaqueDesactive.SetActive(false);
+            activePlaqueBois = true;
+        }
 
-
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        plaqueActive.SetActive(true);
-        plaqueDesactive.SetActive(false);
-        activePlaqueBois = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (stayActivate == false)
+        if (teste == false && lockActivation == false)
         {
             plaqueActive.SetActive(false);
             plaqueDesactive.SetActive(true);
             activePlaqueBois = false;
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        teste = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        teste = false;
     }
 }
