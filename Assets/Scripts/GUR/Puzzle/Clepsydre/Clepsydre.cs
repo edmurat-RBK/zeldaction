@@ -18,16 +18,14 @@ public class Clepsydre : MonoBehaviour
     public int valeurParticule;
     public int maxStockage;
 
-    //[HideInInspector]
+    [HideInInspector]
     public float remplissage;
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool actifClepsydre;
 
     public bool clepsydreHit;
     #endregion
-
-    
 
     void Start()
     {
@@ -64,7 +62,6 @@ public class Clepsydre : MonoBehaviour
     {
         if (remplissage < maxStockage)
         {
-            Debug.Log("detection trigger");
             remplissage += valeurParticule;
         }
         

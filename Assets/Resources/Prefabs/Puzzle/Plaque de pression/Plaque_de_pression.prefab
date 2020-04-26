@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 0.79128003, y: 0.79128003, z: 0}
   m_Children: []
   m_Father: {fileID: 4960442286142023415}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4960442285092449034
 SpriteRenderer:
@@ -91,9 +91,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4960442286142023415}
+  - component: {fileID: 3097926283763563637}
+  - component: {fileID: 2192278003826424150}
   m_Layer: 0
   m_Name: Plaque_de_pression
-  m_TagString: Untagged
+  m_TagString: Plaque Pierre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,51 +111,18 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
-  - {fileID: 4960442286147870736}
   - {fileID: 4960442286594936866}
   - {fileID: 4960442285092449035}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4960442286147870737
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4960442286147870736}
-  - component: {fileID: 4960442286147870751}
-  - component: {fileID: 4960442286147870750}
-  m_Layer: 0
-  m_Name: 'Logic '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4960442286147870736
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4960442286147870737}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4960442286142023415}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4960442286147870751
+--- !u!114 &3097926283763563637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4960442286147870737}
+  m_GameObject: {fileID: 4960442286142023400}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0e1908b68b4ca742a28e68310be7df9, type: 3}
@@ -162,20 +131,20 @@ MonoBehaviour:
   plaqueActive: {fileID: 4960442285092449036}
   plaqueDesactive: {fileID: 4960442286594936868}
   activeTrap: 0
---- !u!61 &4960442286147870750
+--- !u!61 &2192278003826424150
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4960442286147870737}
+  m_GameObject: {fileID: 4960442286142023400}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0054692626, y: 0.054692507}
+  m_Offset: {x: -0.0025839806, y: 0.054263115}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -186,7 +155,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6827823, y: 0.52964306}
+  m_Size: {x: 0.6847577, y: 0.5297203}
   m_EdgeRadius: 0
 --- !u!1 &4960442286594936868
 GameObject:
@@ -217,7 +186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4960442286142023415}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4960442286594936867
 SpriteRenderer:

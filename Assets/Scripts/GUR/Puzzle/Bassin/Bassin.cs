@@ -29,6 +29,7 @@ public class Bassin : MonoBehaviour
 
     [HideInInspector]
     public bool actifBassin;
+
     #endregion
 
     void Start()
@@ -117,7 +118,7 @@ public class Bassin : MonoBehaviour
 
     private void  OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 20)
+        if (collision.gameObject.tag == "Ennemi")
         {
             canEmpty = true;
         }
@@ -125,7 +126,7 @@ public class Bassin : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 20)
+        if (collision.gameObject.tag == "Ennemi")
         {
             canEmpty = false;
         }

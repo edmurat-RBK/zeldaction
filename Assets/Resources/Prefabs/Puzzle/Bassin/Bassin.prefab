@@ -174,9 +174,10 @@ GameObject:
   - component: {fileID: 1755729804106787942}
   - component: {fileID: 1755729804106787940}
   - component: {fileID: 1755729804106787939}
+  - component: {fileID: 1755729802760276457}
   m_Layer: 15
   m_Name: Bassin
-  m_TagString: Untagged
+  m_TagString: Bassin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,6 +268,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -1.6773627}
   serializedVersion: 2
   m_Radius: 2.06
+--- !u!50 &1755729802760276457
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755729804106787943}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1755729804451659068
 GameObject:
   m_ObjectHideFlags: 0
