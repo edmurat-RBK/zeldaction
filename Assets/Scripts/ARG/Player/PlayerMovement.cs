@@ -16,17 +16,14 @@ namespace MovementPlayer
         private float horizontal;
         private float vertical;
         public Vector2 direction;
-
+        private PlayerManager manager;
         private Animator anim;
-
-        [SerializeField]
-        [Range(100f, 1000f)]
-        private float speed;
         #endregion
 
         private void Start()
         {
            anim = GetComponent<Animator>();
+           manager = GetComponent<PlayerManager>();
         }
 
         void Update()
@@ -94,7 +91,7 @@ namespace MovementPlayer
                 }
 
                 direction = new Vector2(horizontal, vertical).normalized;
-                PlayerManager.Instance.playerRigidBody.velocity = direction * speed * Time.deltaTime;
+                PlayerManager.Instance.playerRigidBody.velocity = direction * manager.speed * Time.deltaTime;
 
             }
             
