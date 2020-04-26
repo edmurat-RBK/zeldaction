@@ -15,6 +15,7 @@ namespace MovementPlayer
         #region variable
         private float horizontal;
         private float vertical;
+       
         public Vector2 direction;
         private PlayerManager manager;
         private Animator anim;
@@ -24,12 +25,14 @@ namespace MovementPlayer
         {
            anim = GetComponent<Animator>();
            manager = GetComponent<PlayerManager>();
+            
         }
 
         void Update()
         {
             horizontal = PlayerManager.Instance.horizontal;
             vertical = PlayerManager.Instance.vertical;
+           
             PlayerMove();
         }
 

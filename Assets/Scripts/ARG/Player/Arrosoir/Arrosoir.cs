@@ -55,8 +55,8 @@ namespace WateringCan
         #region BucketWatering
         private void Watering()
         {
-            PlayerManager.Instance.playerCanMove = false; //stop the player from moving
-            PlayerManager.Instance.playerRigidBody.velocity = Vector2.zero; //stop the player movement
+            PlayerManager.Instance.playerCanMove = true; // the player can move_YS
+            /*PlayerManager.Instance.playerRigidBody.velocity = Vector2.zero; //stop the player movement*/ //il doit pouvoir bouger normalement_YS
             water.gameObject.SetActive(true); //set on the particule system
 
             switch (PlayerManager.Instance.dirPlayer) //use the direction in the player manager to retrieve the angle for the particule systeme

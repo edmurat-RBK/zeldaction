@@ -43,14 +43,14 @@ namespace Manager
             PlayerDirection();
         }
 
-        public void obtainBucket()
+        /*public void obtainBucket()
         {
             if (getBucket = true)
             {
 
             }
         }
-    
+    */
 
 
         #region direction
