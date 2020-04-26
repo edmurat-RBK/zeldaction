@@ -115,8 +115,10 @@ MonoBehaviour:
   vertical: 0
   playerCanMove: 0
   playerInvulnerable: 0
+  getBucket: 0
   playerRigidBody: {fileID: 0}
   dirPlayer: 0
+  speed: 200
 --- !u!114 &5987844329369052875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,7 +146,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
-  speed: 250
 --- !u!114 &5987844329369052868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,6 +161,7 @@ MonoBehaviour:
   attackBox: {fileID: 5987844329921033346}
   ennemisInRange: []
   dammage: 3
+  timeBetweenAttack: 1
 --- !u!114 &1097937794574312931
 MonoBehaviour:
   m_ObjectHideFlags: 0
