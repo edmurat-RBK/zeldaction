@@ -454,11 +454,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plaque_de_pression Bois
       objectReference: {fileID: 0}
-    - target: {fileID: 4377197079023019434, guid: 30a4f1675e4c7dd46887176c24263bd8,
-        type: 3}
-      propertyPath: m_TagString
-      value: Plaque Bois
-      objectReference: {fileID: 0}
     - target: {fileID: 4377197079023019445, guid: 30a4f1675e4c7dd46887176c24263bd8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -602,7 +597,7 @@ PrefabInstance:
     - target: {fileID: 425269397106540163, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
@@ -713,12 +708,12 @@ PrefabInstance:
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2458665
+      value: -2.53
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.70049345
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}

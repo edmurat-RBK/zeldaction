@@ -79,6 +79,15 @@ public class GestionActivateur : MonoBehaviour
                 if (element.gameObject.GetComponent<PlaquePressionBois>().activePlaqueBois == true)
                 {
                     counter += 1;
+
+                    /*if (gameObject.GetComponent<SpawnCaissePlaque>().caisse != null)
+                    {
+                        element.gameObject.GetComponent<PlaquePressionBois>().lockActivation = true;
+                    }
+                    else if (gameObject.GetComponent<SpawnCaissePlaque>().caisse == null)
+                    {
+                        element.gameObject.GetComponent<PlaquePressionBois>().lockActivation = false;
+                    }*/
                 }
             }
 
