@@ -12,23 +12,26 @@ using UnityEngine;
 public class PieuMouvent : MonoBehaviour
 {
     #region Variable 
-    [Header ("Glisser la plaque de pression au qui l'active")]
-    public GameObject plaqueDePression;
-
     [Header ("Dans quel direction ce retracte le pieu")]
     public string inWichDirection;
 
-    [Header ("Vitesse de mouvement du pieu")]
+    [Header ("Stats premier mouvement")]
     public float speedRetractage;
     public float speedRemiseEnPlace;
-
-    [Header ("Temps de chaque phase")]
+    [Space]
     public float tempsRetractage;
     public float tempsRemiseEnPlace;
 
-    [Header ("Coché si le pieu doit rester retracté quand la plaque est active")]
+    [Header ("Stats deuxième mouvement")]
+    public float speed;
+    [Space]
+    public float startTime = 0f;
+    public float maxTime;
+
+    [Header ("activer si le pieu doit rester activé")]
     public bool stayActivate = false;
 
+    private float actualTime;
     private bool canRetracte = true;
     Vector2 retractage;
     Vector2 remiseEnPlace;
@@ -36,6 +39,7 @@ public class PieuMouvent : MonoBehaviour
 
     private void Start()
     {
+        actualTime = startTime;
         switch (inWichDirection)
         {
             case ("Droite"):
@@ -63,64 +67,60 @@ public class PieuMouvent : MonoBehaviour
     void Update()
     {
         ActivateFirstComportement();
-
-        ActivateFirstPart();
-
-        ActivateSecondPart();
+        ActivateSecondComportement();
     }
 
     void ActivateFirstComportement()
     {
-        if (plaqueDePression.GetComponent<PlaqueDePression>().activeTrap == true && stayActivate == false)
+        if (stayActivate == false)
         {
-            if (canRetracte == true)
+            if (gameObject.GetComponent<GestionActivateur>().canActive == true && canRetracte == true)
             {
                 StartCoroutine(RetractagePieu());
             }
         }
     } // Fonction qui gére le premier comportement de déplacement du pieu
 
-    void ActivateFirstPart()
+    void ActivateSecondComportement()
     {
-        if (plaqueDePression.GetComponent<PlaqueDePression>().activeTrap == true && stayActivate == true)
+        if (stayActivate == true)
         {
-            if (canRetracte == true)
+           if (gameObject.GetComponent<GestionActivateur>().canActive == true && actualTime <= maxTime)
             {
-                StartCoroutine(Retractage());
+                gameObject.GetComponent<Rigidbody2D>().velocity = retractage.normalized * speed * Time.fixedDeltaTime;
+                actualTime += Time.fixedDeltaTime;
             }
+
+
+           if (gameObject.GetComponent<GestionActivateur>().canActive == false && actualTime > startTime)
+            {
+                gameObject.GetComponent<Rigidbody2D>().velocity = remiseEnPlace.normalized * speed * Time.fixedDeltaTime;
+                actualTime -= Time.fixedDeltaTime;
+            }
+
+           if (actualTime <= startTime)
+            {
+                actualTime = startTime;
+                gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            }
+
+           if (actualTime >= maxTime)
+           {
+                actualTime = maxTime;
+                gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+           }
         }
     } // Première fonction qui gére le deuxième type de déplacement du pieu
 
-    void ActivateSecondPart()
-    {
-        if (plaqueDePression.GetComponent<PlaqueDePression>().activeTrap == false && stayActivate == true && canRetracte == false)
-        {
-            StartCoroutine(RemiseEnPlace());
-        }
-    }  // Deuxième fonction qui gére le deuxième type de déplacement du pieu
 
     IEnumerator RetractagePieu()
     {
         canRetracte = false;
-        GetComponentInParent<Rigidbody2D>().velocity = (retractage.normalized * speedRetractage * Time.fixedDeltaTime);
+        GetComponent<Rigidbody2D>().velocity = (retractage.normalized * speedRetractage * Time.fixedDeltaTime);
         yield return new WaitForSeconds(tempsRetractage);
-        GetComponentInParent<Rigidbody2D>().velocity = (remiseEnPlace.normalized * speedRemiseEnPlace * Time.fixedDeltaTime);
+        GetComponent<Rigidbody2D>().velocity = (remiseEnPlace.normalized * speedRemiseEnPlace * Time.fixedDeltaTime);
         yield return new WaitForSeconds(tempsRemiseEnPlace);
-        GetComponentInParent<Rigidbody2D>().velocity = (Vector2.zero);
+        GetComponent<Rigidbody2D>().velocity = (Vector2.zero);
         canRetracte = true;
     } // Coroutine qui retracte et remet en place le pieu selon un temps et une vitesse donné (premier mouvement)
-    IEnumerator Retractage()
-    {
-        canRetracte = false;
-        GetComponentInParent<Rigidbody2D>().velocity = (retractage.normalized * speedRetractage * Time.fixedDeltaTime);
-        yield return new WaitForSeconds(tempsRetractage);
-        GetComponentInParent<Rigidbody2D>().velocity = Vector2.zero;
-    } // Coroutine qui retracte le pieu et le garde dans cette position tant que la plaque de pression est activé (deuxième mouvement)
-    IEnumerator RemiseEnPlace()
-    {
-        GetComponentInParent<Rigidbody2D>().velocity = (remiseEnPlace.normalized * speedRemiseEnPlace * Time.fixedDeltaTime);
-        yield return new WaitForSeconds(tempsRemiseEnPlace);
-        GetComponentInParent<Rigidbody2D>().velocity = (Vector2.zero);
-        canRetracte = true;
-    } // Coroutine qui remet en place le pieu et le stop quand la plaque de pression est désactivé (deuxième mouvement)
 }

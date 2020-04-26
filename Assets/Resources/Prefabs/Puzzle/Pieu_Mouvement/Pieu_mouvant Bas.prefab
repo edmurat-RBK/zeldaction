@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 425269397106540162}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &425269395570771404
 SpriteRenderer:
@@ -81,56 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &425269396728883559
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 425269396728883558}
-  - component: {fileID: 425269396728883557}
-  m_Layer: 0
-  m_Name: 'Pieu Logic '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &425269396728883558
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425269396728883559}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 425269397106540162}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &425269396728883557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425269396728883559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b02daf8434ee1b41892011eff8b1a86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plaqueDePression: {fileID: 0}
-  inWichDirection: Bas
-  speedRetractage: 150
-  speedRemiseEnPlace: 50
-  tempsRetractage: 1
-  tempsRemiseEnPlace: 3
-  stayActivate: 0
 --- !u!1 &425269397106540163
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +110,6 @@ Transform:
   m_LocalPosition: {x: 71.46, y: 97.365265, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 0}
   m_Children:
-  - {fileID: 425269396728883558}
   - {fileID: 425269395570771405}
   - {fileID: 2843586337087777329}
   - {fileID: 154713022146350257}
@@ -328,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 4587194243935493849, guid: f47210790ce0b9c48a999f573ffc759b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4587194243935493849, guid: f47210790ce0b9c48a999f573ffc759b,
         type: 3}
@@ -468,7 +417,7 @@ PrefabInstance:
     - target: {fileID: 4587194243935493849, guid: f47210790ce0b9c48a999f573ffc759b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4587194243935493849, guid: f47210790ce0b9c48a999f573ffc759b,
         type: 3}
