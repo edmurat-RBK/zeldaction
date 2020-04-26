@@ -95,6 +95,11 @@ public class GestionActivateur : MonoBehaviour
                     if (element.gameObject.GetComponent<Moulin>().moulinOnGauche == true)
                     {
                         counter += 1;
+
+                        if (canActive == true && lockAfterFinish == true)
+                        {
+                            element.gameObject.GetComponent<Moulin>().lockMoulinLeft = true;
+                        }
                     }
                 }
 
@@ -104,6 +109,11 @@ public class GestionActivateur : MonoBehaviour
                     if (element.gameObject.GetComponent<Moulin>().moulinOnDroit == true)
                     {
                         counter += 1;
+
+                        if (canActive == true && lockAfterFinish == true)
+                        {
+                            element.gameObject.GetComponent<Moulin>().lockMoulinRight = true;
+                        }
                     }
                 }
 
@@ -113,6 +123,12 @@ public class GestionActivateur : MonoBehaviour
                     if (element.gameObject.GetComponent<Moulin>().moulinOnGauche == true || element.gameObject.GetComponent<Moulin>().moulinOnDroit == true)
                     {
                         counter += 1;
+
+                        if (canActive == true && lockAfterFinish == true)
+                        {
+                            element.gameObject.GetComponent<Moulin>().lockMoulinLeft = true;
+                            element.gameObject.GetComponent<Moulin>().lockMoulinRight = true;
+                        }
                     }
                 }
             }

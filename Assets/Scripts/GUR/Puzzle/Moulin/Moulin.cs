@@ -19,14 +19,22 @@ public class Moulin : MonoBehaviour
     [HideInInspector]
     public bool hitDroit;
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool moulinOnGauche;
-    [HideInInspector]
+    //[HideInInspector]
     public bool moulinOnDroit;
+
+    //[HideInInspector]
+    public bool lockMoulinLeft;
+    //[HideInInspector]
+    public bool lockMoulinRight;
     #endregion
 
     void Start()
     {
+        lockMoulinLeft = false;
+        lockMoulinRight = false;
+
         moulinOnGauche = false;
         moulinOnDroit = false;
     }
@@ -40,7 +48,7 @@ public class Moulin : MonoBehaviour
 
     void ActivationGauche()
     {
-        if (hitGauche == true)
+        if (hitGauche == true && lockMoulinLeft == false)
         {
             hitGauche = false;
             StartCoroutine(ActivationTimeGauche());
@@ -49,7 +57,7 @@ public class Moulin : MonoBehaviour
 
     void ActivationDroit()
     {
-        if (hitDroit == true)
+        if (hitDroit == true && lockMoulinRight == false)
         {
             hitDroit = false;
             StartCoroutine(ActivationTimeDroit());

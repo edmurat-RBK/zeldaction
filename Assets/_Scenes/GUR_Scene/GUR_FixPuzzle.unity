@@ -209,10 +209,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   whoActivate:
-  - {fileID: 1296698074}
+  - {fileID: 0}
   - {fileID: 1159098784}
   linkMoulinLeft: 0
-  linkMoulinRight: 0
+  linkMoulinRight: 1
   linkMoulinBoth: 0
   lockAfterFinish: 1
   canActive: 0
@@ -236,7 +236,7 @@ PrefabInstance:
     - target: {fileID: 4960442286142023400, guid: 336d19805af877848ac8167e1a1baabf,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4960442286142023415, guid: 336d19805af877848ac8167e1a1baabf,
         type: 3}
@@ -385,6 +385,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1641176196, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
+      propertyPath: whoActivate.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641176196, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
+      propertyPath: whoActivate.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641176196, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
+      propertyPath: lockAfterFinish
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1641176196, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
+      propertyPath: linkMoulinRight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 425269397106540162, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -444,6 +460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pieu_mouvant Bas
+      objectReference: {fileID: 0}
+    - target: {fileID: 425269397106540163, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3fdf26fb0b5fc54cbf03c57f3aa1eaa, type: 3}
@@ -735,14 +756,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bassin
       objectReference: {fileID: 0}
+    - target: {fileID: 1755729804106787943, guid: 3679e2685b5d545488db2984d5d97c04,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3679e2685b5d545488db2984d5d97c04, type: 3}
---- !u!1 &1296698074 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1755729804106787943, guid: 3679e2685b5d545488db2984d5d97c04,
-    type: 3}
-  m_PrefabInstance: {fileID: 1296698073}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2136373445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -763,7 +783,7 @@ PrefabInstance:
     - target: {fileID: 8161820870829286700, guid: 7d10fd4fb1b82c845aa01f264751c922,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8161820870829286702, guid: 7d10fd4fb1b82c845aa01f264751c922,
         type: 3}
