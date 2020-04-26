@@ -20,6 +20,9 @@ namespace Attack
         public int dammage; //dammages of the player
 
         private Animator anim;
+        bool attack1;
+        float timer;
+        public float timeBetweenAttack;       
         #endregion
 
         void Awake()
@@ -31,7 +34,7 @@ namespace Attack
         {
             anim = GetComponent<Animator>();
         }
-        
+       
         void Update()
         {
             AtatckPos();
@@ -39,20 +42,55 @@ namespace Attack
 
             if (Input.GetButtonDown("X"))
             {
+                if (!anim.GetBool("IsMeleeAttacking"))
+                {
+                    anim.SetBool("IsMeleeAttacking", true);
+
+                    if (!attack1)
+                    {
+                        attack1 = true;
+                    }
+                    else
+                    {
+                        anim.SetBool("DoubleAttack", true);
+                        attack1 = false;
+                        timer = 0;
+                    }
+                }
                 ApplyDammage();
-                anim.SetBool("IsMeleeAttacking", true);
+             }
 
-            }
-            else
+
+            //youmna a eu de laide de sam
+
+            if (attack1)
             {
-                anim.SetBool("IsMeleeAttacking", false);
+                timer += Time.deltaTime;
+
+                if (timer >= timeBetweenAttack)
+                {
+                    attack1 = false;
+                    timer = 0;
+                }
             }
 
-            //Essayer de mettre une ligne de code qui dit qu'un double click de x ramene a une deuxieme anim
-            
-
-
+         
         }
+        public void Attack2Done()
+        {
+            anim.SetBool("DoubleAttack", false);
+            anim.SetBool("IsMeleeAttacking", false);
+        }
+        public void Attack1Done()  //cree event dans animation pour ramener meleeattack a false apres 1 cp
+        {          
+            if(!anim.GetBool("DoubleAttack"))
+            {
+            anim.SetBool("IsMeleeAttacking", false);   
+
+            }
+          
+        }
+
 
         private void AtatckPos()
         {
