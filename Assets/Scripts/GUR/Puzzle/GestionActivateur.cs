@@ -20,6 +20,8 @@ public class GestionActivateur : MonoBehaviour
     public bool linkMoulinRight;
     public bool linkMoulinBoth;
 
+    public bool lockAfterFinish;
+
     [HideInInspector]
     public bool canActive;
 
@@ -49,6 +51,11 @@ public class GestionActivateur : MonoBehaviour
                 if (element.gameObject.GetComponent<Clepsydre>().actifClepsydre == true)
                 {
                     counter += 1;
+
+                    if (canActive == true && lockAfterFinish == true)
+                    {
+                        element.gameObject.GetComponent<Clepsydre>().lockClepsydre = true;
+                    }
                 }
             }
 
@@ -58,6 +65,11 @@ public class GestionActivateur : MonoBehaviour
                 if (element.gameObject.GetComponent<PlaqueDePression>().activeTrap == true)
                 {
                     counter += 1;
+
+                    if (canActive == true && lockAfterFinish == true)
+                    {
+                        element.gameObject.GetComponent<PlaqueDePression>().stayActivate = true;
+                    }
                 }
             }
 
@@ -67,6 +79,11 @@ public class GestionActivateur : MonoBehaviour
                 if (element.gameObject.GetComponent<Bassin>().actifBassin == true)
                 {
                     counter += 1;
+
+                    if (canActive == true && lockAfterFinish == true)
+                    {
+                        element.gameObject.GetComponent<Bassin>().lockBassin = true;
+                    }
                 }
             }
 

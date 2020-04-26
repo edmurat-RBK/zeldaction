@@ -92,13 +92,15 @@ GameObject:
   - component: {fileID: 425269397106540162}
   - component: {fileID: 425269397106540161}
   - component: {fileID: 7698317621595332545}
+  - component: {fileID: 1641176193}
+  - component: {fileID: 1641176196}
   m_Layer: 0
   m_Name: Pieu_mouvant Bas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &425269397106540162
 Transform:
   m_ObjectHideFlags: 0
@@ -167,6 +169,45 @@ PolygonCollider2D:
       - {x: -0.19501877, y: -0.99794006}
       - {x: 0.20496368, y: -0.9979439}
       - {x: 0.19684601, y: 0.5419922}
+--- !u!114 &1641176193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425269397106540163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b02daf8434ee1b41892011eff8b1a86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inWichDirection: Bas
+  speedRetractage: 150
+  speedRemiseEnPlace: 50
+  tempsRetractage: 1
+  tempsRemiseEnPlace: 3
+  speed: 75
+  startTime: 0
+  maxTime: 5
+  stayActivate: 0
+--- !u!114 &1641176196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425269397106540163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 906baf0ef30a5244fb98b8a7dd87be3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whoActivate: []
+  linkMoulinLeft: 0
+  linkMoulinRight: 0
+  linkMoulinBoth: 0
+  lockAfterFinish: 0
+  canActive: 0
 --- !u!1001 &1792026284557645032
 PrefabInstance:
   m_ObjectHideFlags: 0

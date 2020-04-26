@@ -24,12 +24,14 @@ public class Bassin : MonoBehaviour
 
     private bool canEmpty;
 
-    [HideInInspector]
+    
     public float remplissage;
 
     [HideInInspector]
     public bool actifBassin;
 
+    [HideInInspector]
+    public bool lockBassin;
     #endregion
 
     void Start()
@@ -39,6 +41,7 @@ public class Bassin : MonoBehaviour
         bassin[2].SetActive(false);
         bassin[3].SetActive(false);
 
+        lockBassin = false;
         canEmpty = false;
         actifBassin = false;
     }
@@ -53,9 +56,12 @@ public class Bassin : MonoBehaviour
 
     void VidageBassin()
     {
-        if (remplissage > 0 && canEmpty == true)
+        if (lockBassin == false)
+        {
+            if (remplissage > 0 && canEmpty == true)
         {
             remplissage -= Time.fixedDeltaTime;
+        }
         }
     } // Diminue la valeur de remplissage en fonction du temps si un ennemi de feu et proche
 
@@ -96,14 +102,17 @@ public class Bassin : MonoBehaviour
 
     void GestionActivation()
     {
-        if (remplissage > 0)
+        if (lockBassin == false)
         {
-            actifBassin = true;
-        }
+            if (remplissage > 0)
+            {
+                actifBassin = true;
+            }
 
-        else if (remplissage <= 0)
-        {
-            actifBassin = false;
+            else if (remplissage <= 0)
+            {
+                actifBassin = false;
+            }
         }
     } // Change l'etat d'une bool "activation" si il y a de l'eau ou non
 
