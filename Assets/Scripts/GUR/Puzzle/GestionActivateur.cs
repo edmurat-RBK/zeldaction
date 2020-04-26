@@ -11,16 +11,21 @@ using UnityEngine;
 
 public class GestionActivateur : MonoBehaviour
 {
+    #region Variable
+    [Header ("Glisser les élement à lier")]
     public List<GameObject> whoActivate = new List<GameObject>();
 
+    [Header ("Si il y à des moulins")]
     public bool linkMoulinLeft;
     public bool linkMoulinRight;
     public bool linkMoulinBoth;
 
+    [HideInInspector]
     public bool canActive;
 
     private int counter;
     private int maxCounter;
+    #endregion
 
     void Start()
     {
@@ -28,6 +33,13 @@ public class GestionActivateur : MonoBehaviour
     }
 
     void Update()
+    {
+        ActivationDestection();
+        Analyse();
+    }
+
+
+    void ActivationDestection()
     {
         foreach (GameObject element in whoActivate)
         {
@@ -88,7 +100,12 @@ public class GestionActivateur : MonoBehaviour
                 }
             }
         }
-        
+
+
+    } // Fonction qui detecte si les élements dans la liste sont activé ou pas
+
+    void Analyse()
+    {
         if (counter == maxCounter)
         {
             canActive = true;
@@ -98,6 +115,5 @@ public class GestionActivateur : MonoBehaviour
             counter = 0;
             maxCounter = 0;
         }
-
-    }
+    } // Onction qui active une bool si tous les élements de a liste sont actif en même temps
 }
