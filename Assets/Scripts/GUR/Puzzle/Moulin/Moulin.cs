@@ -19,14 +19,14 @@ public class Moulin : MonoBehaviour
     [HideInInspector]
     public bool hitDroit;
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool moulinOnGauche;
-    //[HideInInspector]
+    [HideInInspector]
     public bool moulinOnDroit;
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool lockMoulinLeft;
-    //[HideInInspector]
+    [HideInInspector]
     public bool lockMoulinRight;
     #endregion
 

@@ -13,6 +13,8 @@ TagManager:
   - Ennemi
   - Plaque Pierre
   - Clepsydre
+  - Bassin
+  - Plaque Bois
   layers:
   - Default
   - TransparentFX

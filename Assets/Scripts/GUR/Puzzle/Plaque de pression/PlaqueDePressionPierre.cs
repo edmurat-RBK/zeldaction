@@ -10,7 +10,7 @@ using UnityEngine;
 /// - Changer une bool qui permet d'activer les piège relier
 /// </summary>
 
-public class PlaqueDePression : MonoBehaviour
+public class PlaqueDePressionPierre : MonoBehaviour
 {
     #region Variable
     [Header ("Glisser les gameobject qui contienne les grph")]
@@ -20,12 +20,12 @@ public class PlaqueDePression : MonoBehaviour
     public bool stayActivate;
 
     [HideInInspector]
-    public bool activeTrap;
+    public bool activePlaquePierre;
     #endregion
 
     void Start()
     {
-        activeTrap = false;
+        activePlaquePierre = false;
         plaqueActive.SetActive(false);
     }
 
@@ -33,7 +33,7 @@ public class PlaqueDePression : MonoBehaviour
     {
         plaqueActive.SetActive(true);
         plaqueDesactive.SetActive(false);
-        activeTrap = true;
+        activePlaquePierre = true;
     } // Permet de changé graphiquement la plaque (activé) et de changé l'etat de la bool en true
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -42,7 +42,7 @@ public class PlaqueDePression : MonoBehaviour
         {
             plaqueActive.SetActive(false);
             plaqueDesactive.SetActive(true);
-            activeTrap = false;
+            activePlaquePierre = false;
         }
     } // Permet de changé graphiquement la plaque (désactivé) et de changé l'etat de la bool en false
 }

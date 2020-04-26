@@ -62,14 +62,23 @@ public class GestionActivateur : MonoBehaviour
             if (element.gameObject.tag == "Plaque Pierre")
             {
                 maxCounter += 1;
-                if (element.gameObject.GetComponent<PlaqueDePression>().activeTrap == true)
+                if (element.gameObject.GetComponent<PlaqueDePressionPierre>().activePlaquePierre == true)
                 {
                     counter += 1;
 
                     if (canActive == true && lockAfterFinish == true)
                     {
-                        element.gameObject.GetComponent<PlaqueDePression>().stayActivate = true;
+                        element.gameObject.GetComponent<PlaqueDePressionPierre>().stayActivate = true;
                     }
+                }
+            }
+
+            if (element.gameObject.tag == "Plaque Bois")
+            {
+                maxCounter += 1;
+                if (element.gameObject.GetComponent<PlaquePressionBois>().activePlaqueBois == true)
+                {
+                    counter += 1;
                 }
             }
 
