@@ -17,9 +17,12 @@ namespace Manager
         public float vertical;
         public bool playerCanMove;
         public bool playerInvulnerable = false;
+        public bool getBucket;
         public Rigidbody2D playerRigidBody;
         public enum direction { down, downLeft, left, upLeft, up, upRight, right, downRight, } //enulm for the player direction
         public direction dirPlayer = direction.down;
+        [Range(100f, 1000f)]
+        public float speed;
         #endregion
 
         void Awake()
@@ -39,6 +42,15 @@ namespace Manager
             vertical = Input.GetAxis("Vertical");
             PlayerDirection();
         }
+
+        public void obtainBucket()
+        {
+            if (getBucket = true)
+            {
+
+            }
+        }
+    
 
 
         #region direction

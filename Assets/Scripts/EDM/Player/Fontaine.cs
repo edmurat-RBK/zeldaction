@@ -28,23 +28,27 @@ public class Fontaine : MonoBehaviour
     {
         if(!active && cooldown == 0)
         {
-            if(Input.GetButton("X"))
+            if(Input.GetButton("A"))
             {
                 effectTime = maxEffectTime;
                 active = true;
                 manager.playerInvulnerable = true;
-
+                manager.playerCanMove = false;
+                manager.playerRigidBody.velocity = Vector2.zero;
                 anim.SetBool("IsShielding", true);
+                Debug.Log("Fontaine !");
 
             }
         }
-        else if(!active && cooldown != 0)
+        else if(!active && cooldown != 0 && !Input.GetButton("A"))
         {
+            
             cooldown -= Time.deltaTime;
             if(cooldown < 0)
             {
                 cooldown = 0;
                 anim.SetBool("IsShielding", false);
+                Debug.Log("Pas Fontaine !");
             }
         }
         else
@@ -60,14 +64,21 @@ public class Fontaine : MonoBehaviour
                 manager.playerInvulnerable = false;
             }
         }
+
+        if (Input.GetButtonUp("A"))
+        {
+            PlayerManager.Instance.playerCanMove = true;
+        }
     }
 
     private void Vague()
     {
         if(0 < effectTime && effectTime < vagueTrigger)
         {
-            if(Input.GetButtonDown("X"))
+            if(Input.GetButtonDown("A"))
             {
+                manager.playerCanMove = false;
+                manager.playerRigidBody.velocity = Vector2.zero;
                 Debug.Log("Vague !");
             }
         }
