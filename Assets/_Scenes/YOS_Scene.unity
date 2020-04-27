@@ -397,16 +397,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 557820165126594855, guid: 10d632e473a3b1c45889c2fecdfeb84e,
-        type: 3}
-      propertyPath: stoppingDistance
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 557820165126594855, guid: 10d632e473a3b1c45889c2fecdfeb84e,
-        type: 3}
-      propertyPath: retreatDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 557820165126594856, guid: 10d632e473a3b1c45889c2fecdfeb84e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -462,20 +452,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 557820165126594857, guid: 10d632e473a3b1c45889c2fecdfeb84e,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 557820165126594857, guid: 10d632e473a3b1c45889c2fecdfeb84e,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 557820165126594859, guid: 10d632e473a3b1c45889c2fecdfeb84e,
         type: 3}
       propertyPath: m_Name
       value: Mage
+      objectReference: {fileID: 0}
+    - target: {fileID: 557820165126594859, guid: 10d632e473a3b1c45889c2fecdfeb84e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d632e473a3b1c45889c2fecdfeb84e, type: 3}
@@ -897,11 +882,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Flamm\xE8che "
-      objectReference: {fileID: 0}
-    - target: {fileID: 3009620996165859508, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3009620996165859512, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
         type: 3}
