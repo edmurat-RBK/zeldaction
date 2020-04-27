@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -5664881369151820685, guid: 35ea3f5f7f44eab4b979f9f50f25917b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -126,8 +126,8 @@ MonoBehaviour:
   speed: 100
   timeBeforeAttack: 2
   attackCooldown: 1.5
-  stoppingDistance: 5
-  retreatDistance: 2
+  stoppingDistance: 4
+  retreatDistance: 3
   projectile: {fileID: 2105884287301529379, guid: a89db78045bd840458005a21f71b2a78,
     type: 3}
   vunerableMage: 0

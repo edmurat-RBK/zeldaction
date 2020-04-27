@@ -28,12 +28,15 @@ public class PvEnnemis : MonoBehaviour
    [HideInInspector]
     public bool kameoHit;
 
+    private Animator anim;
+
     private float stock;
     #endregion
 
     private void Start()
     {
         stock = waterForVulnerable;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -46,7 +49,8 @@ public class PvEnnemis : MonoBehaviour
         if (waterForVulnerable <= 0)
         {
             StartCoroutine(CooldownOfVulnerable());
-            waterForVulnerable = stock;
+            waterForVulnerable = stock;   
+
         }
     }
 
@@ -59,7 +63,7 @@ public class PvEnnemis : MonoBehaviour
 
         if (mage == true && gameObject.GetComponent<MageMovement>().vunerableMage == false)
         {
-            waterForVulnerable -= damageParticule;
+            waterForVulnerable -= damageParticule;           
         }
 
         if (golemLave == true && gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem == false)
@@ -72,8 +76,10 @@ public class PvEnnemis : MonoBehaviour
     {
         if (mage == true && kameoHit == true && gameObject.GetComponent<MageMovement>().vunerableMage == false)
         {
+            anim.SetBool("IsEteint", true);
             kameoHit = false;
-            StartCoroutine(CooldownOfVulnerable());
+            StartCoroutine(CooldownOfVulnerable());            
+            
         }
     } // Fonction qui rend vulnérable le mage quand il est touché par le khaméo
 
@@ -82,6 +88,7 @@ public class PvEnnemis : MonoBehaviour
         if (flammeche == true && kameoHit == true)
         {
             pv = 0;
+            anim.SetBool("IsDead", true);
         }
     }  // Fonction qui set les pv à 0 de la flammèche quand elle se fait toucher par le khaméo
 
@@ -98,6 +105,7 @@ public class PvEnnemis : MonoBehaviour
     {
         if (pv <= 0)
         {
+            anim.SetBool("IsDead", true); //YS MageDeath Timer pour laisser le temps a l'anim de mort de passer non?
             // Anim de mort
             Destroy(gameObject);
         }
@@ -107,9 +115,11 @@ public class PvEnnemis : MonoBehaviour
     {
         if (mage == true)
         {
+            
             gameObject.GetComponent<MageMovement>().vunerableMage = true;
             yield return new WaitForSeconds(timeOfVulnerability);
             gameObject.GetComponent<MageMovement>().vunerableMage = false;
+            anim.SetBool("IsEteint", false);
         }
 
         if (golemLave == true)
@@ -128,6 +138,7 @@ public class PvEnnemis : MonoBehaviour
             if (gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem == true)
             {
                 pv -= dammage;
+                
             }
         }
 
@@ -136,6 +147,7 @@ public class PvEnnemis : MonoBehaviour
             if (gameObject.GetComponent<MageMovement>().vunerableMage == true)
             {
                 pv -= dammage;
+                anim.SetBool("IsDamaged", true);
             }
         }
     }
