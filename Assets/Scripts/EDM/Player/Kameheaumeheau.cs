@@ -118,6 +118,11 @@ public class Kameheaumeheau : MonoBehaviour
                     ray.transform.gameObject.GetComponent<CaisseEnPierre>().move = true;
                 }
 
+                if (ray.transform.gameObject.tag == "Caisse Destructible")
+                {
+                    ray.transform.gameObject.GetComponent<DestructibleByWater>().khameoDetection = true;
+                }
+
                 if (ray.transform.gameObject.tag == "Clepsydre")
                 {
                     ray.transform.gameObject.GetComponent<Clepsydre>().clepsydreHit = true;
