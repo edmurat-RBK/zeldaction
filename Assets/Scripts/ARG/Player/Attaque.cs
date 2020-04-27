@@ -16,7 +16,9 @@ namespace Attack
         [SerializeField]
         private GameObject attackBox;
         private bool alreadyInList;
+        private bool alreadyInCrateList;
         public List<GameObject> ennemisInRange = new List<GameObject>(); //list of all the ennemis in range
+        public List<GameObject> destructibleElement = new List<GameObject>();
         public int dammage; //dammages of the player
 
         private Animator anim;
@@ -58,6 +60,7 @@ namespace Attack
                     }
                 }
                 ApplyDammage();
+                CrateDestruction();
              }
 
 
@@ -150,6 +153,23 @@ namespace Attack
                 }
                 alreadyInList = false;
             }
+
+            if (collision.gameObject.tag == "Caisse Destructible")
+            {
+                foreach (GameObject caisseDestruc in destructibleElement)
+                {
+                    if (collision.gameObject == caisseDestruc)
+                    {
+                        alreadyInCrateList = true;
+                    }
+                }
+                if (alreadyInCrateList == false)
+                {
+                    destructibleElement.Add(collision.gameObject);
+                }
+                alreadyInCrateList = false;
+            }
+
         }
 
         private void OnTriggerExit2D(Collider2D collision)
@@ -157,6 +177,11 @@ namespace Attack
             if (collision.gameObject.tag == "Ennemi")
             {
                 ennemisInRange.Remove(collision.gameObject);
+            }
+
+            if (collision.gameObject.tag == "Caisse Destructible")
+            {
+                destructibleElement.Remove(collision.gameObject);
             }
         }
         #endregion
@@ -168,5 +193,13 @@ namespace Attack
                 ennemi.GetComponent<PvEnnemis>().EnnemiTakeDammage(dammage);
             }
         } //apply damage to the ennemis within the colldier of the attack
+
+        private void CrateDestruction()
+        {
+            foreach (GameObject caisseDestruc in destructibleElement)
+            {
+                caisseDestruc.GetComponent<CaisseDestructible>().Destruction();
+            }
+        }
     }
 }

@@ -15,6 +15,7 @@ TagManager:
   - Clepsydre
   - Plaque Pierre
   - Ennemi
+  - Caisse Destructible
   layers:
   - Default
   - TransparentFX

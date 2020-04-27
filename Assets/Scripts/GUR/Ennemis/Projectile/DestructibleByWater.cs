@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class DestructibleByWater : MonoBehaviour
 {
-
+    [HideInInspector]
     public bool khameoDetection;
 
+    public bool particuleCanDestroy;
     void Start()
     {
         khameoDetection = false;
@@ -22,6 +23,9 @@ public class DestructibleByWater : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        Destroy(gameObject);
+        if (particuleCanDestroy == true)
+        {
+            Destroy(gameObject);
+        }
     }
 }
