@@ -31,14 +31,22 @@ public class PieuMouvent : MonoBehaviour
     [Header ("activer si le pieu doit rester activé")]
     public bool stayActivate = false;
 
-    private float actualTime;
+    private Vector3 startPosition;
+
+    private bool lockStop;
+
+    public float actualTime;
     private bool canRetracte = true;
     Vector2 retractage;
     Vector2 remiseEnPlace;
+
     #endregion
 
     private void Start()
     {
+        
+        startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+
         actualTime = startTime;
         switch (inWichDirection)
         {
@@ -85,29 +93,36 @@ public class PieuMouvent : MonoBehaviour
     {
         if (stayActivate == true)
         {
-           if (gameObject.GetComponent<GestionActivateur>().canActive == true && actualTime <= maxTime)
-            {
+           if (gameObject.GetComponent<GestionActivateur>().canActive == true && actualTime <= maxTime && lockStop == false)
+           {
+                Debug.Log("Reculer");
+                lockStop = false;
                 gameObject.GetComponent<Rigidbody2D>().velocity = retractage.normalized * speed * Time.fixedDeltaTime;
                 actualTime += Time.fixedDeltaTime;
-            }
-
+           }
 
            if (gameObject.GetComponent<GestionActivateur>().canActive == false && actualTime > startTime)
-            {
+           {
+                Debug.Log("Avancer");
+                lockStop = true;
                 gameObject.GetComponent<Rigidbody2D>().velocity = remiseEnPlace.normalized * speed * Time.fixedDeltaTime;
                 actualTime -= Time.fixedDeltaTime;
-            }
+           }
 
-           if (actualTime <= startTime)
-            {
-                actualTime = startTime;
+           if (transform.position == startPosition && lockStop == true) 
+           {
+                Debug.Log("Stop si recule");
+                lockStop = false;
                 gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-            }
+                actualTime = startTime;
+                transform.position = startPosition;
+           }
 
            if (actualTime >= maxTime)
            {
-                actualTime = maxTime;
+                Debug.Log("Stop si avance");
                 gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                actualTime = maxTime;
            }
         }
     } // Première fonction qui gére le deuxième type de déplacement du pieu
