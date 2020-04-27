@@ -166,7 +166,7 @@ PrefabInstance:
     - target: {fileID: 557820165126594856, guid: 10d632e473a3b1c45889c2fecdfeb84e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 557820165126594856, guid: 10d632e473a3b1c45889c2fecdfeb84e,
         type: 3}
@@ -187,6 +187,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mage
+      objectReference: {fileID: 0}
+    - target: {fileID: 557820165126594859, guid: 10d632e473a3b1c45889c2fecdfeb84e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d632e473a3b1c45889c2fecdfeb84e, type: 3}
@@ -338,10 +343,44 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346026333674627668, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346026333674627668, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346026333674627668, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346026333674627668, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2907461515013326426, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
+        type: 3}
+      propertyPath: m_Radius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3009620996165859508, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
         type: 3}
       propertyPath: m_Name
       value: "Flamm\xE8che "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009620996165859508, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3009620996165859512, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
         type: 3}
@@ -522,10 +561,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1705166569, guid: 0328b1b5338592149824bff80835a75c, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.07604313
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705166569, guid: 0328b1b5338592149824bff80835a75c, type: 3}
+      propertyPath: m_Size.x
+      value: 0.73151827
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705166569, guid: 0328b1b5338592149824bff80835a75c, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.17913806
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705166569, guid: 0328b1b5338592149824bff80835a75c, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5114939
+      objectReference: {fileID: 0}
     - target: {fileID: 4269345970512379569, guid: 0328b1b5338592149824bff80835a75c,
         type: 3}
       propertyPath: m_Name
       value: 'Golem de lave '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269345970512379569, guid: 0328b1b5338592149824bff80835a75c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4269345970512379572, guid: 0328b1b5338592149824bff80835a75c,
         type: 3}
@@ -565,7 +625,7 @@ PrefabInstance:
     - target: {fileID: 4269345970512379572, guid: 0328b1b5338592149824bff80835a75c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4269345970512379572, guid: 0328b1b5338592149824bff80835a75c,
         type: 3}
@@ -586,6 +646,11 @@ PrefabInstance:
         type: 3}
       propertyPath: stoppingDistance
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269345970512379575, guid: 0328b1b5338592149824bff80835a75c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0328b1b5338592149824bff80835a75c, type: 3}

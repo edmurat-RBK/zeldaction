@@ -360,7 +360,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 601146037}
-  - component: {fileID: 601146036}
   m_Layer: 0
   m_Name: Ennemis
   m_TagString: Untagged
@@ -368,18 +367,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &601146036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601146035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57d82e61c3ec39b4691751b01ee0f46d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &601146037
 Transform:
   m_ObjectHideFlags: 0

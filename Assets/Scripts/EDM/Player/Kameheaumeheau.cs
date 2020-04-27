@@ -16,12 +16,16 @@ public class Kameheaumeheau : MonoBehaviour
     [HideInInspector]
     public Vector2 beamDir;
 
+    private Animator anim;
+
     public PlayerManager manager;
 
+    private float playerSpeed;
     // Start is called before the first frame update
     void Start()
     {
         manager = GetComponent<PlayerManager>();
+        anim = GetComponent<Animator>();         playerSpeed = manager.speed;
     }
 
     // Update is called once per frame
@@ -36,34 +40,10 @@ public class Kameheaumeheau : MonoBehaviour
         //If input hasnt been pressed enough time
         if (!loaded)
         {
-            //If inupt is still pressed
-            if (Input.GetButton("Y"))
-            {
-                inputHoldTime += Time.deltaTime;
-                //When input has been pressed enough
-                if (inputHoldTime >= inputMaxHoldTime)
-                {
-                    loaded = true;
-                }
-            }
-            //If input is not pressed / realsed
-            else
-            {
-                inputHoldTime = 0;
-            }
-        }
-        // If Kameheaumeheau is loaded
-        else
-        {
-            //When input released
-            if (Input.GetButtonUp("Y"))
-            {
+           //If inupt is still pressed             if (Input.GetButton("Y"))             {
+                anim.SetBool("IsCharging", true);                 inputHoldTime += Time.deltaTime;                 manager.speed = playerSpeed*0.25f;                  //When input has been pressed enough                 if (inputHoldTime >= inputMaxHoldTime)                 {                     loaded = true;                 }             }             //If input is not pressed / realsed             else             {                 manager.speed = playerSpeed;                 inputHoldTime = 0;                 anim.SetBool("IsKameomeo", false);                 anim.SetBool("IsCharging", false);             }         }         // If Kameheaumeheau is loaded         else         {             //When input released             if (Input.GetButtonUp("Y"))             {
                 //Start Kameheau
-                kameheaumeheau = true;
-                manager.playerCanMove = false;
-                loaded = false;
-                inputHoldTime = 0;
-            }
+                anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                 kameheaumeheau = true;                 manager.playerCanMove = false;                 loaded = false;                 inputHoldTime = 0;             }                      
         }
     }
 

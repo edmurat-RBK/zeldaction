@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 557820165126594858}
   - component: {fileID: 557820165126594855}
   - component: {fileID: 5757311525299253795}
-  m_Layer: 0
+  - component: {fileID: 3684821645665945322}
+  - component: {fileID: 2605958379829095623}
+  m_Layer: 15
   m_Name: Mage
   m_TagString: Ennemi
   m_Icon: {fileID: 0}
@@ -128,6 +130,7 @@ MonoBehaviour:
   retreatDistance: 2
   projectile: {fileID: 2105884287301529379, guid: a89db78045bd840458005a21f71b2a78,
     type: 3}
+  vunerableMage: 0
 --- !u!95 &5757311525299253795
 Animator:
   serializedVersion: 3
@@ -147,6 +150,52 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &3684821645665945322
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557820165126594859}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.074643195, y: -0.14099264}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 9.58, y: 13.07}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.77253616, y: 0.65642357}
+  m_EdgeRadius: 0
+--- !u!114 &2605958379829095623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557820165126594859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e634bce503d973548943d448e356d1c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flammeche: 0
+  mage: 1
+  golemLave: 0
+  pv: 5
+  waterForVulnerable: 2
+  timeOfVulnerability: 3
+  damageParticule: 0.1
+  kameoHit: 0
 --- !u!1 &4799022678641809770
 GameObject:
   m_ObjectHideFlags: 0
