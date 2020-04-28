@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Management;
+using Attack;
+using WateringCan;
 
 namespace Manager
 {
@@ -23,17 +25,33 @@ namespace Manager
         public direction dirPlayer = direction.down;
         [Range(100f, 1000f)]
         public float speed;
+    
+        
+        //4 scripts to disable when the player don't have the bucket
+        private Attaque attack;
+        private Arrosoir water;
+        private Fontaine fontaine;
+        private Kameheaumeheau kameo;
+        public bool canChangeSprite; //use when obtain the bucket
+
         #endregion
 
         void Awake()
         {
             MakeSingleton(true);
+            water = GetComponent<Arrosoir>();
+            attack = GetComponent<Attaque>(); 
+            kameo = GetComponent<Kameheaumeheau>(); 
+            fontaine = GetComponent<Fontaine>();
+            canChangeSprite = false;
+
         }
         
         void Start()
         {
             playerCanMove = true;
             playerRigidBody = GetComponent<Rigidbody2D>();
+            getBucket = false;
         }
         
         void Update()
@@ -43,14 +61,31 @@ namespace Manager
             PlayerDirection();
         }
 
-        /*public void obtainBucket()
+        //function to lucnh when you want to desactivate or activate all the abilities of the player with the boolen
+        public void obtainBucket()
         {
-            if (getBucket = true)
+            if (getBucket == true)
             {
-
+                water.enabled = true;
+                attack.enabled = true;
+                kameo.enabled = true;
+                fontaine.enabled = true;
+                
+            }
+            else
+            {
+                water.enabled = false;
+                attack.enabled = false;
+                kameo.enabled = false;
+                fontaine.enabled = false;
+                if (canChangeSprite == true)
+                {
+                    //change the animator without bucket
+                    canChangeSprite = false;
+                }
             }
         }
-    */
+
 
 
         #region direction

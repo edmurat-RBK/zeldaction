@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 5987844329369052873}
   - component: {fileID: 3919086101930191228}
   - component: {fileID: 2267215137024255313}
+  - component: {fileID: 2241696926748252811}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -119,7 +120,8 @@ MonoBehaviour:
   getBucket: 0
   playerRigidBody: {fileID: 0}
   dirPlayer: 0
-  speed: 400
+  speed: 200
+  ALED: []
 --- !u!114 &5987844329369052875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,9 +201,9 @@ MonoBehaviour:
   cooldown: 0
   maxCooldown: 1
   effectTime: 0
-  maxEffectTime: 0.5
+  maxEffectTime: 1
   active: 0
-  vagueTrigger: 0.1
+  vagueTrigger: 0.5
 --- !u!50 &5987844329369052873
 Rigidbody2D:
   serializedVersion: 4
@@ -293,6 +295,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2241696926748252811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987844329369052878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccad2ad6a6d8d848b328c1f7cfc2a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maximumHealth: 3
+  health: 3
+  respawnPoints: []
+  actualRespawnPoint: {fileID: 0}
 --- !u!1 &5987844329395168478
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +368,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5987844329599836587}
-  m_LocalRotation: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.14557621, y: 0.17020623, z: 0.27343336}
   m_Children: []
@@ -931,7 +949,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.02
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -985,7 +1003,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 12.29
+    angle: 10
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1

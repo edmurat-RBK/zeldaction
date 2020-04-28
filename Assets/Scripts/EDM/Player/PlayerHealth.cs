@@ -5,15 +5,21 @@ using UnityEngine;
 
 /// <summary>
 /// Class that manager health of the player
-/// by Edouard Murat
+/// by Edouard Murat and Arthur Galland
 /// </summary>
 public class PlayerHealth : MonoBehaviour
 {
+    #region Variables
     public float maximumHealth = 3f;
     public float health = 3f;
     private bool isDead;
 
+    public List<GameObject> respawnPoints = new List<GameObject>();
+    public GameObject actualRespawnPoint; //give him one in the inspector
+    private bool alreadyInList;
     private PlayerManager playerManager;
+    #endregion
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +27,14 @@ public class PlayerHealth : MonoBehaviour
         health = maximumHealth;
         playerManager = GetComponent<PlayerManager>();
     }
+
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Y))
+    //    {
+    //        TakeDamage(1);
+    //    }
+    //}
 
     // Function that check player vulnerability before taking damage
     // Called when the avatar is hit by an enemy
@@ -34,21 +48,32 @@ public class PlayerHealth : MonoBehaviour
 
     // Function that give damage to player health
     // Called in TakeHit()
-    private void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
+        //animation stagger
         health -= damage;
         if(health <= 0)
         {
             health = 0;
-            Die();
+            StartCoroutine("Death");
         }
     }
 
     // Function called at player death
     // Called in TakeDamage()
-    private void Die()
+    private IEnumerator Death()
     {
         isDead = true;
+        playerManager.playerCanMove = false;
+        playerManager.playerRigidBody.velocity = Vector2.zero;
+        playerManager.getBucket = false;
+        playerManager.obtainBucket(); //player can't use his action but sprite without bucket
+        //animation death
+        yield return new WaitForSeconds(2f);//animation time
+        playerManager.playerCanMove = true;
+        playerManager.getBucket = true;
+        playerManager.obtainBucket();
+        respawn();
     }
 
     // Function that restore health
@@ -64,4 +89,44 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
+
+    //Function for respawn at the actual checfpoint with full health
+    public void respawn()
+    {
+        transform.position = actualRespawnPoint.transform.position;
+        health = maximumHealth;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 10) //add only one copy of each checkpoint in the list
+        {
+            foreach (GameObject respawnPoint in respawnPoints)
+            {
+                if (collision.gameObject == respawnPoint)
+                {
+                    alreadyInList = true;
+                }
+            }
+
+            if (!alreadyInList)
+            {
+                respawnPoints.Add(collision.gameObject);
+            }
+            alreadyInList = false;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 10) //fonction for saving a checkpoint
+        {
+            if (Input.GetButtonDown("X"))
+            {
+                actualRespawnPoint = collision.gameObject;
+                //getcomponent in collision.gameobject sprite différent ou fonction qui change le sprite
+            }
+        }
+    }
+
 }
