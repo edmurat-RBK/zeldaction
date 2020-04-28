@@ -95,7 +95,6 @@ public class PieuMouvent : MonoBehaviour
         {
            if (gameObject.GetComponent<GestionActivateur>().canActive == true && actualTime <= maxTime && lockStop == false)
            {
-                Debug.Log("Reculer");
                 lockStop = false;
                 gameObject.GetComponent<Rigidbody2D>().velocity = retractage.normalized * speed * Time.fixedDeltaTime;
                 actualTime += Time.fixedDeltaTime;
@@ -103,7 +102,6 @@ public class PieuMouvent : MonoBehaviour
 
            if (gameObject.GetComponent<GestionActivateur>().canActive == false && actualTime > startTime)
            {
-                Debug.Log("Avancer");
                 lockStop = true;
                 gameObject.GetComponent<Rigidbody2D>().velocity = remiseEnPlace.normalized * speed * Time.fixedDeltaTime;
                 actualTime -= Time.fixedDeltaTime;
@@ -111,7 +109,6 @@ public class PieuMouvent : MonoBehaviour
 
            if (transform.position == startPosition && lockStop == true) 
            {
-                Debug.Log("Stop si recule");
                 lockStop = false;
                 gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 actualTime = startTime;
@@ -120,7 +117,6 @@ public class PieuMouvent : MonoBehaviour
 
            if (actualTime >= maxTime)
            {
-                Debug.Log("Stop si avance");
                 gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 actualTime = maxTime;
            }
