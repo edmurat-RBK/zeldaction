@@ -26,9 +26,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Checkpoint
+  - Attack
+  - CamCollider
   - 
   - 
   - KamehoHit
