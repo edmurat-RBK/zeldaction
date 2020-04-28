@@ -35,12 +35,17 @@ public class MageMovement : MonoBehaviour
 
     public bool vunerableMage;
 
+    [HideInInspector]
+    public bool deathLockMage;
+
     private bool lockMovement = true;
+
     private bool lockAttack = true;
     #endregion
     
     private void Start()
     {
+        deathLockMage = false;
         player = PlayerManager.Instance.transform;
         anim = GetComponent<Animator>();
         vunerableMage = false;
@@ -74,7 +79,7 @@ public class MageMovement : MonoBehaviour
         retreat = (transform.position - player.transform.position).normalized;
 
        
-        if (lockMovement == true)
+        if (lockMovement == true && deathLockMage == false)
         {
             if (vunerableMage == false)
             {

@@ -33,23 +33,35 @@ public class FlammècheMouvement : MonoBehaviour
     private int direction;
     private float flameSpawnRate = 0.5f;
 
+    public bool deathLockFlammeche;
+
     private bool lockDirection = true;
     private bool lockGeneration = true;
     #endregion
 
     private void Start()
     {
+        deathLockFlammeche = false;
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (GetComponentInChildren<ZoneAggro>().canAggro == true)
+        if (deathLockFlammeche == true)
         {
-            EnnemyMoving();
-            Direction();
-            FlameGeneration();
-        } // Rentre si le joueur rentre dans la zone d'aggro
+            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        }
+
+        if (deathLockFlammeche == false)
+        {
+            if (GetComponentInChildren<ZoneAggro>().canAggro == true)
+            {
+                EnnemyMoving();
+                Direction();
+                FlameGeneration();
+            } // Rentre si le joueur rentre dans la zone d'aggro
+
+        }
 
         if (GetComponentInChildren<ZoneAggro>().canAggro == false) 
         {
