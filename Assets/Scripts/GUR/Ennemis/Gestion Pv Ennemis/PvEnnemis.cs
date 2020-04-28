@@ -31,10 +31,15 @@ public class PvEnnemis : MonoBehaviour
     private Animator anim;
 
     private float stock;
+
+    private bool lockMageVulné;
+    private bool lockGolemVulné;
     #endregion
 
     private void Start()
     {
+        lockGolemVulné = false;
+        lockMageVulné = false;
         stock = waterForVulnerable;
         anim = GetComponent<Animator>();
     }
@@ -51,6 +56,11 @@ public class PvEnnemis : MonoBehaviour
             StartCoroutine(CooldownOfVulnerable());
             waterForVulnerable = stock;   
 
+        }
+
+        if (kameoHit == true)
+        {
+            kameoHit = false;
         }
     }
 
@@ -76,10 +86,7 @@ public class PvEnnemis : MonoBehaviour
     {
         if (mage == true && kameoHit == true && gameObject.GetComponent<MageMovement>().vunerableMage == false)
         {
-            anim.SetBool("IsEteint", true);
-            kameoHit = false;
             StartCoroutine(CooldownOfVulnerable());            
-            
         }
     } // Fonction qui rend vulnérable le mage quand il est touché par le khaméo
 
@@ -96,7 +103,6 @@ public class PvEnnemis : MonoBehaviour
     {
         if (golemLave == true && kameoHit == true && gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem == false)
         {
-            kameoHit = false;
             StartCoroutine(CooldownOfVulnerable());
         }
     } // Fonction qui rend vulnérable le golem de lave quand il est touché par le khaméo
@@ -113,20 +119,28 @@ public class PvEnnemis : MonoBehaviour
 
     IEnumerator CooldownOfVulnerable()
     {
-        if (mage == true)
+        if (mage == true && lockMageVulné == false)
         {
-            
+            lockMageVulné = true;
+            anim.SetBool("IsEteint", true);
+
             gameObject.GetComponent<MageMovement>().vunerableMage = true;
             yield return new WaitForSeconds(timeOfVulnerability);
             gameObject.GetComponent<MageMovement>().vunerableMage = false;
+
             anim.SetBool("IsEteint", false);
+            lockMageVulné = false;
         }
 
-        if (golemLave == true)
+        if (golemLave == true && lockGolemVulné == false)
         {
+            lockGolemVulné = true;
+
             gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem = true;
             yield return new WaitForSeconds(timeOfVulnerability);
             gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem = false;
+
+            lockGolemVulné = false;
         }
     } // Coroutine qui rend vulnérable les ennemis pendants x temps
 
