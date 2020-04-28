@@ -111,9 +111,27 @@ public class PvEnnemis : MonoBehaviour
     {
         if (pv <= 0)
         {
-            anim.SetBool("IsDead", true); //YS MageDeath Timer pour laisser le temps a l'anim de mort de passer non?
-            // Anim de mort
-            Destroy(gameObject);
+            if (flammeche == true)
+            {
+                gameObject.GetComponent<FlammècheMouvement>().deathLockFlammeche = true;
+                // Death de la flammèche
+                Destroy(gameObject, 0.8f);
+            }
+
+            if (mage == true)
+            {
+                gameObject.GetComponent<MageMovement>().deathLockMage = true;
+                anim.SetBool("IsDead", true); //YS MageDeath Timer pour laisser le temps a l'anim de mort de passer non?
+                Destroy(gameObject, 0.8f);
+
+            }
+
+            if (golemLave == true)
+            {
+                gameObject.GetComponent<GolemLaveMouvement>().deathLockGolem = true;
+                // bool pour le golem mort
+                Destroy(gameObject, 0.8f);
+            }
         }
     } // Fonction qui détruit les ennemis quand leur pv sont à 0 
 

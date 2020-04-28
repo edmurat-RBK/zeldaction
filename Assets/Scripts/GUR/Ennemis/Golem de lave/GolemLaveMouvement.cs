@@ -32,6 +32,9 @@ public class GolemLaveMouvement : MonoBehaviour
 
     Vector2 movement;
 
+    [HideInInspector]
+    public bool deathLockGolem;
+
     private bool lockMouvement;
     private bool lockAttack ;
 
@@ -41,6 +44,7 @@ public class GolemLaveMouvement : MonoBehaviour
 
     void Start()
     {
+        deathLockGolem = false;
         lockMouvement = true;
         lockAttack = true;
         vunerableGolem = false;
