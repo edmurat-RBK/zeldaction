@@ -143,6 +143,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pieu_mouvant Haut
       objectReference: {fileID: 0}
+    - target: {fileID: 4631933301942546404, guid: a69304676b5949944b9cf02199cc3787,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4631933301942546405, guid: a69304676b5949944b9cf02199cc3787,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -283,11 +288,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mage
       objectReference: {fileID: 0}
-    - target: {fileID: 557820165126594859, guid: 10d632e473a3b1c45889c2fecdfeb84e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d632e473a3b1c45889c2fecdfeb84e, type: 3}
 --- !u!1001 &461488556
@@ -301,6 +301,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plaque_de_pression
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960442286142023400, guid: 336d19805af877848ac8167e1a1baabf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4960442286142023415, guid: 336d19805af877848ac8167e1a1baabf,
         type: 3}
@@ -816,6 +821,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pieu_mouvant Droit
       objectReference: {fileID: 0}
+    - target: {fileID: 90702949661058584, guid: 4b93107f1d3d0e646a64cc568a6e6587,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 90702949661058585, guid: 4b93107f1d3d0e646a64cc568a6e6587,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1150,6 +1160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Clepsydre
+      objectReference: {fileID: 0}
+    - target: {fileID: 3842681876926265267, guid: 748690715eb2a8b44ab4aae13713209d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 748690715eb2a8b44ab4aae13713209d, type: 3}
