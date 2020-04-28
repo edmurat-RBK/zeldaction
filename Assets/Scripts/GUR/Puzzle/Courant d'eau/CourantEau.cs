@@ -56,7 +56,9 @@ public class CourantEau : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other) // Permet d'être sur qu'un cube soit bien sortie d'un courant avant d'en prendre un autres
     {
-
-        other.GetComponent<CubeBois>().canRedirect = true;
+        if (other.gameObject.layer == 28)
+        {
+            other.GetComponent<CubeBois>().canRedirect = true;
+        }
     }
 }
