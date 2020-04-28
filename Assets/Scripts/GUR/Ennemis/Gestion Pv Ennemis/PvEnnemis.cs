@@ -113,6 +113,7 @@ public class PvEnnemis : MonoBehaviour
         {
             if (flammeche == true)
             {
+                anim.SetBool("IsDead", true);
                 gameObject.GetComponent<FlammècheMouvement>().deathLockFlammeche = true;
                 // Death de la flammèche
                 Destroy(gameObject, 0.8f);
@@ -120,8 +121,8 @@ public class PvEnnemis : MonoBehaviour
 
             if (mage == true)
             {
-                gameObject.GetComponent<MageMovement>().deathLockMage = true;
                 anim.SetBool("IsDead", true); //YS MageDeath Timer pour laisser le temps a l'anim de mort de passer non?
+                gameObject.GetComponent<MageMovement>().deathLockMage = true;
                 Destroy(gameObject, 0.8f);
 
             }
@@ -175,12 +176,16 @@ public class PvEnnemis : MonoBehaviour
         }
 
         if (mage == true)
-        {
+        {         
+
             if (gameObject.GetComponent<MageMovement>().vunerableMage == true)
-            {
-                pv -= dammage;
+            {                
                 anim.SetBool("IsDamaged", true);
-            }
+                pv -= dammage;
+
+            }           
         }
+        
     }
+   
 }
