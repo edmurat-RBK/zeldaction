@@ -131,6 +131,7 @@ MonoBehaviour:
   projectile: {fileID: 2105884287301529379, guid: a89db78045bd840458005a21f71b2a78,
     type: 3}
   vunerableMage: 0
+  deathLockMage: 0
 --- !u!95 &5757311525299253795
 Animator:
   serializedVersion: 3
