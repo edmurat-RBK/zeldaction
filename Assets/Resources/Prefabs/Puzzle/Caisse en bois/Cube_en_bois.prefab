@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2521424827863753560}
   - component: {fileID: 2521424827863753561}
-  m_Layer: 28
+  m_Layer: 0
   m_Name: Hitbox Droite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2521424828258367484}
   - component: {fileID: 2521424828258367485}
-  m_Layer: 28
+  m_Layer: 0
   m_Name: Hitbox Bas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2521424828553587384}
   - component: {fileID: 2521424828553587385}
-  m_Layer: 28
+  m_Layer: 0
   m_Name: Hitbox Haut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,6 +354,7 @@ MonoBehaviour:
   speedOfWater: 75
   wichDirection: 
   canRedirect: 1
+  notStop: 0
 --- !u!1 &2521424828995356883
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2521424828995356882}
-  m_Layer: 28
+  m_Layer: 0
   m_Name: Hitbox Haut et Bas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2521424829394068013}
   - component: {fileID: 2521424829394068014}
-  m_Layer: 28
+  m_Layer: 0
   m_Name: Hitbox Gauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}

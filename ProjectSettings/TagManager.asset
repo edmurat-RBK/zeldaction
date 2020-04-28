@@ -15,6 +15,7 @@ TagManager:
   - Clepsydre
   - Plaque Pierre
   - Ennemi
+  - Cube de bois
   layers:
   - Default
   - TransparentFX
