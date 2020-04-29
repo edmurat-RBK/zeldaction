@@ -23,18 +23,18 @@ public class Kameheaumeheau : MonoBehaviour
     private float playerSpeed;
 
     //for kameaumeau renderer
-    //public LineRenderer lineRenderer;
-    //public Transform origin;
-    //public Transform destination;
+    public LineRenderer lineRenderer;
+    public GameObject origin;
+    private Transform endPointTransform;
 
+    private Vector2 kameoHit;
+    public LayerMask mask;
     // Start is called before the first frame update
     void Start()
     {
         manager = GetComponent<PlayerManager>();
         anim = GetComponent<Animator>();         playerSpeed = manager.speed;
-        //lien renderer
-        //lineRenderer = GetComponent<LineRenderer>();
-        //lineRenderer.SetPosition(0, origin.position);
+
     }
 
     // Update is called once per frame
@@ -115,13 +115,18 @@ public class Kameheaumeheau : MonoBehaviour
             }
 
             //Check collision
-            LayerMask mask = LayerMask.GetMask("KamehoHit");
+            //LayerMask mask = LayerMask.GetMask("KamehoHit", "Ennemi", "CamCollider");
+            //LayerMask mask = LayerMask.GetMask("Ennemi");
             RaycastHit2D ray = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), beamDirection, beamRange, mask);
             Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), beamDirection, Color.blue);
             
-            if (ray.rigidbody != null)
+            if (ray.collider != null)
             {
-                beamDir = beamDirection;
+                //setup line when kameomeo
+                beamDir = beamDirection;
+                Debug.Log(ray.transform.position);
+                lineRenderer.SetPosition(0, transform.position);
+                lineRenderer.SetPosition(1, ray.point);
                 if (ray.transform.gameObject.tag == "Moulin")
                 {
                     ray.transform.gameObject.GetComponent<MoulinHitDetection>().getHit = true;
