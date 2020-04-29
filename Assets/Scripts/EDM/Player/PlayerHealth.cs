@@ -124,6 +124,7 @@ public class PlayerHealth : MonoBehaviour
             if (Input.GetButtonDown("X"))
             {
                 actualRespawnPoint = collision.gameObject;
+                //animation checkpoint + message
                 //getcomponent in collision.gameobject sprite différent ou fonction qui change le sprite
             }
         }
