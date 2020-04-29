@@ -11,31 +11,38 @@ using UnityEngine;
 /// </summary>
 public class PieuMouvent : MonoBehaviour
 {
-    #region Variable 
-    [Header ("Dans quel direction ce retracte le pieu")]
-    public string inWichDirection;
+    public enum Direction
+    {
+        Up,
+        Down,
+        Right,
+        Left
+    }
 
-    [Header ("Stats premier mouvement")]
-    public float speedRetractage;
+    #region Variable
+
+    [Header("Dans quel direction ce retracte le pieu")]
+    // public string inWichDirection;
+    public Direction inWichDirection;
+
+
+    [Header("Stats premier mouvement")] public float speedRetractage;
     public float speedRemiseEnPlace;
-    [Space]
-    public float tempsRetractage;
+    [Space] public float tempsRetractage;
     public float tempsRemiseEnPlace;
 
-    [Header ("Stats deuxième mouvement")]
-    public float speed;
-    [Space]
-    public float startTime = 0f;
-    public float maxTime;
+    [Header("Stats deuxième mouvement")] public float speed;
+    [Space] public float startTime = 0f;
+    public float maxDist;
 
-    [Header ("activer si le pieu doit rester activé")]
+    [Header("activer si le pieu doit rester activé")]
     public bool stayActivate = false;
 
     private Vector3 startPosition;
 
     private bool lockStop;
 
-    public float actualTime;
+    public float actualDist;
     private bool canRetracte = true;
     Vector2 retractage;
     Vector2 remiseEnPlace;
@@ -44,85 +51,79 @@ public class PieuMouvent : MonoBehaviour
 
     private void Start()
     {
-        
         startPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 
-        actualTime = startTime;
+        actualDist = startTime;
+
         switch (inWichDirection)
         {
-            case ("Droite"):
+            case Direction.Right:
                 retractage = Vector2.right;
-                remiseEnPlace = Vector2.left;
                 break;
 
-            case ("Gauche"):
+            case Direction.Left:
                 retractage = Vector2.left;
-                remiseEnPlace = Vector2.right;
                 break;
 
-            case ("Haut"):
+            case Direction.Up:
                 retractage = Vector2.up;
-                remiseEnPlace = Vector2.down;
                 break;
 
-            case ("Bas"):
+            case Direction.Down:
                 retractage = Vector2.down;
-                remiseEnPlace = Vector2.up;
                 break;
         } // Detecte la direction dans la quelle bouge le pieu et change les vecteur en conséquence
+
+        remiseEnPlace = -retractage;
     }
 
     void Update()
     {
-        ActivateFirstComportement();
-        ActivateSecondComportement();
+        if (stayActivate == false)
+        {
+            ActivateFirstComportement();
+        }
+        else
+        {
+            ActivateSecondComportement();
+        }
     }
 
     void ActivateFirstComportement()
     {
-        if (stayActivate == false)
+        if (gameObject.GetComponent<GestionActivateur>().canActive == true && canRetracte == true)
         {
-            if (gameObject.GetComponent<GestionActivateur>().canActive == true && canRetracte == true)
-            {
-                StartCoroutine(RetractagePieu());
-            }
+            StartCoroutine(RetractagePieu());
         }
     } // Fonction qui gére le premier comportement de déplacement du pieu
 
     void ActivateSecondComportement()
     {
-        if (stayActivate == true)
+        actualDist = (transform.position - startPosition).magnitude;
+
+        if (gameObject.GetComponent<GestionActivateur>().canActive == true)
         {
-           if (gameObject.GetComponent<GestionActivateur>().canActive == true && actualTime <= maxTime && lockStop == false)
-           {
-                lockStop = false;
+            if (actualDist < maxDist)
+            {
                 gameObject.GetComponent<Rigidbody2D>().velocity = retractage.normalized * speed * Time.fixedDeltaTime;
-                actualTime += Time.fixedDeltaTime;
-           }
-
-           if (gameObject.GetComponent<GestionActivateur>().canActive == false && actualTime > startTime)
-           {
-                lockStop = true;
-                gameObject.GetComponent<Rigidbody2D>().velocity = remiseEnPlace.normalized * speed * Time.fixedDeltaTime;
-                actualTime -= Time.fixedDeltaTime;
-           }
-
-           if (transform.position == startPosition && lockStop == true) 
-           {
-                lockStop = false;
+            }
+            else
+            {
                 gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                actualTime = startTime;
-                transform.position = startPosition;
-           }
-
-           if (actualTime >= maxTime)
-           {
-                gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                actualTime = maxTime;
-           }
+            }
         }
-    } // Première fonction qui gére le deuxième type de déplacement du pieu
-
+        else
+        {
+            if (actualDist > 0.1f)
+            {
+                gameObject.GetComponent<Rigidbody2D>().velocity = remiseEnPlace.normalized * speed * Time.fixedDeltaTime;
+            }
+            else
+            {
+                gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            }
+        }
+    }
 
     IEnumerator RetractagePieu()
     {

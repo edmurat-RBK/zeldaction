@@ -100,15 +100,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b02daf8434ee1b41892011eff8b1a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inWichDirection: Droite
+  inWichDirection: 2
   speedRetractage: 150
   speedRemiseEnPlace: 50
   tempsRetractage: 1
   tempsRemiseEnPlace: 3
   speed: 75
   startTime: 0
-  maxTime: 5
-  stayActivate: 0
+  maxDist: 0
+  stayActivate: 1
+  actualDist: 0
 --- !u!114 &3355823659686337106
 MonoBehaviour:
   m_ObjectHideFlags: 0
