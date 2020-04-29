@@ -148,6 +148,7 @@ public class PvEnnemis : MonoBehaviour
             gameObject.GetComponent<MageMovement>().vunerableMage = false;
 
             anim.SetBool("IsEteint", false);
+            anim.SetBool("IsDamaged", false);
             lockMageVulné = false;
         }
 
@@ -180,12 +181,12 @@ public class PvEnnemis : MonoBehaviour
 
             if (gameObject.GetComponent<MageMovement>().vunerableMage == true)
             {                
-                anim.SetBool("IsDamaged", true);
+                anim.SetTrigger("IsDamaged");
                 pv -= dammage;
 
             }           
         }
         
-    }
    
+    }
 }
