@@ -711,6 +711,10 @@ GameObject:
   - component: {fileID: 761769045}
   - component: {fileID: 761769048}
   - component: {fileID: 761769050}
+  - component: {fileID: 761769049}
+  - component: {fileID: 761769053}
+  - component: {fileID: 761769052}
+  - component: {fileID: 761769051}
   m_Layer: 12
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -814,6 +818,32 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!61 &761769049
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761769044}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.07493162, y: 5.0835094}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 18.289001, y: 0.08449936}
+  m_EdgeRadius: 0
 --- !u!114 &761769050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,6 +878,84 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!61 &761769051
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761769044}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -9.027719, y: 0.017250061}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15018272, y: 10.349903}
+  m_EdgeRadius: 0
+--- !u!61 &761769052
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761769044}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 9.028115, y: 0.017250061}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.116960526, y: 10.349903}
+  m_EdgeRadius: 0
+--- !u!61 &761769053
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761769044}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.018631935, y: -5.089239}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 18.069387, y: 0.15428162}
+  m_EdgeRadius: 0
 --- !u!1 &798690145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,7 +1211,7 @@ GameObject:
   - component: {fileID: 1177100933}
   - component: {fileID: 1177100932}
   m_Layer: 0
-  m_Name: Line
+  m_Name: Line Kameomeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1116,7 +1224,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177100931}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1714,7 +1822,7 @@ PrefabInstance:
     - target: {fileID: 1097937794574312931, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: mask.m_Bits
-      value: 1081344
+      value: 1085440
       objectReference: {fileID: 0}
     - target: {fileID: 3476064462236680033, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
@@ -1784,6 +1892,11 @@ PrefabInstance:
     - target: {fileID: 5987844329369052874, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: getBucket
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987844329369052874, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: playerCanRotate
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052875, guid: cea7f767da1b04149aab5405f95e07b0,

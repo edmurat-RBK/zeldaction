@@ -92,10 +92,8 @@ namespace MovementPlayer
                 anim.SetFloat("Vertical", vertical);
 
                 }
-
                 direction = new Vector2(horizontal, vertical).normalized;
                 PlayerManager.Instance.playerRigidBody.velocity = direction * manager.speed * Time.deltaTime;
-
             }
             
         }

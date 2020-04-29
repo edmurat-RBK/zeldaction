@@ -57,7 +57,7 @@ public class Kameheaumeheau : MonoBehaviour
            //If inupt is still pressed             if (Input.GetButton("Y"))             {
                 anim.SetBool("IsCharging", true);                 inputHoldTime += Time.deltaTime;                 manager.speed = playerSpeed*0.25f;                  //When input has been pressed enough                 if (inputHoldTime >= inputMaxHoldTime)                 {                     loaded = true;                 }             }             //If input is not pressed / realsed             else             {                 manager.speed = playerSpeed;                 inputHoldTime = 0;                 anim.SetBool("IsKameomeo", false);                 anim.SetBool("IsCharging", false);             }         }         // If Kameheaumeheau is loaded         else         {             //When input released             if (Input.GetButtonUp("Y"))             {
                 //Start Kameheau
-                anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                 kameheaumeheau = true;                 manager.playerCanMove = false;                 loaded = false;                 inputHoldTime = 0;             }              
+                anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                 kameheaumeheau = true;                 manager.playerCanMove = false;                                  loaded = false;                 inputHoldTime = 0;                              }              
         }
     }
 
@@ -116,7 +116,6 @@ public class Kameheaumeheau : MonoBehaviour
 
             //Check collision
             //LayerMask mask = LayerMask.GetMask("KamehoHit", "Ennemi", "CamCollider");
-            //LayerMask mask = LayerMask.GetMask("Ennemi");
             RaycastHit2D ray = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), beamDirection, beamRange, mask);
             Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), beamDirection, Color.blue);
             
@@ -126,7 +125,7 @@ public class Kameheaumeheau : MonoBehaviour
                 beamDir = beamDirection;
                 Debug.Log(ray.transform.position);
                 lineRenderer.SetPosition(0, transform.position);
-                lineRenderer.SetPosition(1, ray.point);
+                lineRenderer.SetPosition(1, ray.point);                manager.playerCanRotate = false;                lineRenderer.enabled = true;
                 if (ray.transform.gameObject.tag == "Moulin")
                 {
                     ray.transform.gameObject.GetComponent<MoulinHitDetection>().getHit = true;
@@ -158,6 +157,12 @@ public class Kameheaumeheau : MonoBehaviour
                     ray.transform.gameObject.GetComponent<DestructibleByWater>().khameoDetection = true;
                 }
             }
+        }
+        else
+        {
+            manager.playerCanRotate = true;
+            lineRenderer.enabled = false;
+            //normaly this line can't break all the logic of the game but I write this just in case we want to fixe the player rotation and we can't figure it out why it doesn't work
         }
     }
 }
