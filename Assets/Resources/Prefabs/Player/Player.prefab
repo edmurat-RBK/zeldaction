@@ -117,11 +117,12 @@ MonoBehaviour:
   vertical: 0
   playerCanMove: 0
   playerInvulnerable: 0
-  getBucket: 0
+  getBucket: 1
   playerRigidBody: {fileID: 0}
   dirPlayer: 0
   speed: 200
-  ALED: []
+  playerCanRotate: 1
+  canChangeSprite: 0
 --- !u!114 &5987844329369052875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a180df8ec041645bea6f211e1fa09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beamRange: 35
+  beamRange: 1000
   inputMaxHoldTime: 0.8
   inputHoldTime: 0
   beamMaxTime: 1
@@ -186,6 +187,12 @@ MonoBehaviour:
   kameheaumeheau: 0
   beamDir: {x: 0, y: 0}
   manager: {fileID: 0}
+  lineRenderer: {fileID: 5354462167631956441, guid: 0cf97fd013f5f754d9f71574aa8b7d17,
+    type: 3}
+  origin: {fileID: 5987844329369052878}
+  mask:
+    serializedVersion: 2
+    m_Bits: 1085440
 --- !u!114 &3476064462236680033
 MonoBehaviour:
   m_ObjectHideFlags: 0

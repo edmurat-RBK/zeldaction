@@ -26,8 +26,11 @@ namespace Manager
         [Range(100f, 1000f)]
         public float speed;
         public bool playerCanRotate;
-    
-        
+        public bool canTakeDammage = true;
+
+        //booleen for the different actions of the player
+
+
         //4 scripts to disable when the player don't have the bucket
         private Attaque attack;
         private Arrosoir water;
