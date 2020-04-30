@@ -20,6 +20,10 @@ public class Clepsydre : MonoBehaviour
 
     public float remplissage;
 
+    public Sprite[] wichSprite;
+
+    private SpriteRenderer clepsydreRenderer;
+
     [HideInInspector]
     public bool actifClepsydre;
 
@@ -28,10 +32,12 @@ public class Clepsydre : MonoBehaviour
 
     [HideInInspector]
     public bool clepsydreHit;
+
     #endregion
 
     void Start()
     {
+        clepsydreRenderer = GetComponent<SpriteRenderer>();
         lockClepsydre = false;
         actifClepsydre = false;
         clepsydreHit = false;
@@ -41,6 +47,11 @@ public class Clepsydre : MonoBehaviour
     {
         Vidage();
         KhamehoHit();
+
+        switch (remplissage)
+        {
+            default:
+        }
     }
 
     void KhamehoHit()
@@ -67,6 +78,7 @@ public class Clepsydre : MonoBehaviour
             else if (remplissage <= 0)
             {
                 actifClepsydre = false;
+                remplissage = 0
             }    
         }
     } // Fonction qui s'occupe de soustraire la valeur de remplissage par le temps qui passe
