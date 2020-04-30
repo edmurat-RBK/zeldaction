@@ -126,6 +126,7 @@ MonoBehaviour:
   valeurParticule: 0.3
   maxStockage: 8
   speedVidage: 0.5
+  speedRemplissageKhameo: 6
   remplissage: 0
   wichSprite:
   - {fileID: 8332659766456270850, guid: 87703cec1019db844aa3240b51637685, type: 3}
