@@ -102,7 +102,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.18, y: 0.46}
+    oldSize: {x: 0.5625, y: 1.4375}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -123,9 +123,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4400cbc04c849b488e1548e27d405a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valeurParticule: 1
-  maxStockage: 10
+  valeurParticule: 0.3
+  maxStockage: 8
+  speedVidage: 0.5
   remplissage: 0
+  wichSprite:
+  - {fileID: 8332659766456270850, guid: 87703cec1019db844aa3240b51637685, type: 3}
+  - {fileID: 8152637223256045692, guid: 87703cec1019db844aa3240b51637685, type: 3}
+  - {fileID: 3487242738651383293, guid: 87703cec1019db844aa3240b51637685, type: 3}
+  - {fileID: -8552917403704956053, guid: 87703cec1019db844aa3240b51637685, type: 3}
+  - {fileID: 458562176765423583, guid: 87703cec1019db844aa3240b51637685, type: 3}
+  - {fileID: -1180505780073009665, guid: 87703cec1019db844aa3240b51637685, type: 3}
+  - {fileID: 4584432789829683972, guid: 87703cec1019db844aa3240b51637685, type: 3}
+  - {fileID: 770908414192384158, guid: 87703cec1019db844aa3240b51637685, type: 3}
   actifClepsydre: 0
   lockClepsydre: 0
   clepsydreHit: 0
