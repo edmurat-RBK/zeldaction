@@ -36,7 +36,7 @@ public class MageMovement : MonoBehaviour
     public bool vunerableMage;
 
     private bool lockMovement = true;
-    private bool lockAttack = true;
+    public bool lockAttack = true;
     #endregion
     
     private void Start()
@@ -49,6 +49,7 @@ public class MageMovement : MonoBehaviour
 
     void Update()
     {
+        
         if (GetComponentInChildren<ZoneAggro>().canAggro == true)
         {
             MageDisplacement();
@@ -64,7 +65,7 @@ public class MageMovement : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             StopAllCoroutines();
             lockMovement = true;
-            lockAttack = true;
+            lockAttack = false;
         }
     }
 
@@ -85,17 +86,25 @@ public class MageMovement : MonoBehaviour
 
                 if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
                 {
+                    
                     anim.SetBool("IsRecule", false);
 
                     GetComponent<Rigidbody2D>().velocity = (movement.normalized * speed * Time.fixedDeltaTime);
 
                 }
 
+                else if (Vector2.Distance(transform.position, player.transform.position) < retreatDistance)
+                {
+                    
+                    GetComponent<Rigidbody2D>().velocity = (retreat.normalized * speed * Time.fixedDeltaTime);
+
+                    anim.SetBool("IsRecule", true);
+
+                }
+
                 else if (Vector2.Distance(transform.position, player.transform.position) < stoppingDistance && Vector2.Distance(transform.position, player.transform.position) > retreatDistance)
                 {
-
                     GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-
 
                     if (lockAttack == true)
                     {
@@ -103,13 +112,6 @@ public class MageMovement : MonoBehaviour
                     }
                 }
 
-                else if (Vector2.Distance(transform.position, player.transform.position) < retreatDistance)
-                {
-                    GetComponent<Rigidbody2D>().velocity = (retreat.normalized * speed * Time.fixedDeltaTime);
-
-                    anim.SetBool("IsRecule", true);
-
-                }
             }
 
         }

@@ -18,6 +18,10 @@ public class PlayerHealth : MonoBehaviour
     public GameObject actualRespawnPoint; //give him one in the inspector
     private bool alreadyInList;
     private PlayerManager playerManager;
+
+    public Sprite checkpointBaseSprite;
+    public Sprite checkpointActiveSprite;
+    
     #endregion
 
 
@@ -26,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
     {
         health = maximumHealth;
         playerManager = GetComponent<PlayerManager>();
+        
     }
 
     //private void Update()
@@ -50,13 +55,18 @@ public class PlayerHealth : MonoBehaviour
     // Called in TakeHit()
     public void TakeDamage(float damage)
     {
-        //animation stagger
-        health -= damage;
-        if(health <= 0)
+        if (playerManager.canTakeDammage == true)
         {
-            health = 0;
-            StartCoroutine("Death");
+            //animation stagger
+            health -= damage;
+            StartCoroutine("Invulnerability");
+            if (health <= 0)
+            {
+                health = 0;
+                StartCoroutine("Death");
+            }
         }
+
     }
 
     // Function called at player death
@@ -124,10 +134,23 @@ public class PlayerHealth : MonoBehaviour
             if (Input.GetButtonDown("X"))
             {
                 actualRespawnPoint = collision.gameObject;
+                foreach(GameObject respawnPoint in respawnPoints) //change all the other sprite of checkpoint not used by the player
+                {
+                    respawnPoint.GetComponent<SpriteRenderer>().sprite = checkpointBaseSprite;
+                }
+                actualRespawnPoint.GetComponent<SpriteRenderer>().sprite = checkpointActiveSprite;
                 //animation checkpoint + message
-                //getcomponent in collision.gameobject sprite différent ou fonction qui change le sprite
             }
         }
+    }
+
+    private IEnumerator Invulnerability()
+    {
+        playerManager.playerInvulnerable = true;
+        playerManager.canTakeDammage = false;
+        yield return new WaitForSeconds(2);
+        playerManager.playerInvulnerable = false;
+        playerManager.canTakeDammage = true;
     }
 
 }

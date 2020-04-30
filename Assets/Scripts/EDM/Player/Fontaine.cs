@@ -10,7 +10,7 @@ public class Fontaine : MonoBehaviour
     public float effectTime = 0;
     public float maxEffectTime = 0.5f;
     public bool active = false;
-    public float vagueTrigger = 0.2f;
+    //public float vagueTrigger = 0.2f;
 
     private Animator anim;
 
@@ -58,7 +58,7 @@ public class Fontaine : MonoBehaviour
         }
         else
         {
-            Vague();
+            //Vague();
 
             effectTime -= Time.deltaTime; 
             if(effectTime < 0)
@@ -67,6 +67,7 @@ public class Fontaine : MonoBehaviour
                 effectTime = 0;
                 active = false;
                 manager.playerInvulnerable = false;
+                anim.SetBool("IsShielding", false);
             }
         }
 
@@ -77,16 +78,16 @@ public class Fontaine : MonoBehaviour
         }        
     }
 
-    private void Vague()
-    {
-        if(0 < effectTime && effectTime < vagueTrigger)
-        {
-            if(Input.GetButtonDown("A"))
-            {
-                manager.playerCanMove = false;
-                manager.playerRigidBody.velocity = Vector2.zero;
-                Debug.Log("Vague !");
-            }
-        }
-    }
+    //private void Vague()
+    //{
+    //    if(0 < effectTime && effectTime < vagueTrigger)
+    //    {
+    //        if(Input.GetButtonDown("A"))
+    //        {
+    //            manager.playerCanMove = false;
+    //            manager.playerRigidBody.velocity = Vector2.zero;
+    //            Debug.Log("Vague !");
+    //        }
+    //    }
+    //}
 }
