@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 27074291cffe58b4c8ef2edb54fd0da6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1536858339603889802
+    second: P_NarrationEnvironnementale_0
+  - first:
+      213: -2473748107496321827
+    second: P_NarrationEnvironnementale_1
+  - first:
+      213: 2058205912212045142
+    second: P_NarrationEnvironnementale_2
+  - first:
+      213: -3895881531409841343
+    second: P_NarrationEnvironnementale_3
+  - first:
+      213: 7414701210069592997
+    second: P_NarrationEnvironnementale_4
+  - first:
+      213: -3698759651285273819
+    second: P_NarrationEnvironnementale_5
+  - first:
+      213: 4732593561427131394
+    second: P_NarrationEnvironnementale_6
+  - first:
+      213: -3665589581918577419
+    second: P_NarrationEnvironnementale_7
+  - first:
+      213: 7997703076678969200
+    second: P_NarrationEnvironnementale_8
+  - first:
+      213: -4055379220538966234
+    second: P_NarrationEnvironnementale_9
+  - first:
+      213: -4850401097325272911
+    second: P_NarrationEnvironnementale_10
+  - first:
+      213: -6874217623353483783
+    second: P_NarrationEnvironnementale_11
+  - first:
+      213: 2620099447103493854
+    second: P_NarrationEnvironnementale_12
+  - first:
+      213: 415480667682731959
+    second: P_NarrationEnvironnementale_13
+  - first:
+      213: -8611705023547641462
+    second: P_NarrationEnvironnementale_14
+  - first:
+      213: 3665064922390774736
+    second: P_NarrationEnvironnementale_15
+  - first:
+      213: 8749277065234531775
+    second: P_NarrationEnvironnementale_16
+  - first:
+      213: 1814560650426071811
+    second: P_NarrationEnvironnementale_17
+  - first:
+      213: -3614104704427054257
+    second: P_NarrationEnvironnementale_18
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 119
+        width: 38
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67140d59b7bfbaae0800000000000000
+      internalID: -1536858339603889802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 121
+        width: 43
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc03e4e33b7badd0800000000000000
+      internalID: -2473748107496321827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 121
+        width: 37
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65df1005f57309c10800000000000000
+      internalID: 2058205912212045142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 179
+        width: 46
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143cf41736c0fe9c0800000000000000
+      internalID: -3895881531409841343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 126
+        width: 49
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab6bdd377f46e660800000000000000
+      internalID: 7414701210069592997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 87
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523f79ba1bd5bacc0800000000000000
+      internalID: -3698759651285273819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 95
+        width: 42
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c3a2f05cc8da140800000000000000
+      internalID: 4732593561427131394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_7
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 100
+        width: 42
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcde5542b5312dc0800000000000000
+      internalID: -3665589581918577419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 55
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077af78139c8dfe60800000000000000
+      internalID: 7997703076678969200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 52
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f3642d51668b7c0800000000000000
+      internalID: -4055379220538966234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_10
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 52
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b023c786e9efacb0800000000000000
+      internalID: -4850401097325272911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_11
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 52
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd19432e7fd990a0800000000000000
+      internalID: -6874217623353483783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_12
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 58
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed61dc4b0967c5420800000000000000
+      internalID: 2620099447103493854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_13
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 24
+        width: 9
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b77548477514c500800000000000000
+      internalID: 415480667682731959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 19
+        width: 6
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81fef868e31d7880800000000000000
+      internalID: -8611705023547641462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_15
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 28
+        width: 4
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3c8d9e02decd230800000000000000
+      internalID: 3665064922390774736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_16
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 6
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5c6ca922dab6970800000000000000
+      internalID: 8749277065234531775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 4
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bae8f6bee18ddc0800000000000000
+      internalID: -3614104704427054257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_NarrationEnvironnementale_17
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 166
+        width: 47
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b3c003c4d9e2910800000000000000
+      internalID: 1814560650426071811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3521a628c12e4dd43bb2582cdfbf39c8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

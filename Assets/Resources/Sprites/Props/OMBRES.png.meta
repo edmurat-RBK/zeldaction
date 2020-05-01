@@ -158,6 +158,30 @@ TextureImporter:
   - first:
       213: -4946678240388478996
     second: OMBRES_40
+  - first:
+      213: 2459502687933495532
+    second: OMBRES_11
+  - first:
+      213: -7516538135988977885
+    second: OMBRES_12
+  - first:
+      213: -506282562531168796
+    second: OMBRES_13
+  - first:
+      213: -5638815317096613925
+    second: OMBRES_14
+  - first:
+      213: -5046028301778104747
+    second: OMBRES_15
+  - first:
+      213: 6817847073009889640
+    second: OMBRES_16
+  - first:
+      213: 8122115644368368570
+    second: OMBRES_17
+  - first:
+      213: 7272953871015019850
+    second: OMBRES_41
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1098,6 +1122,27 @@ TextureImporter:
       bones: []
       spriteID: ce78d77595ed95bb0800000000000000
       internalID: -4946678240388478996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OMBRES_41
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 303
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4507ad0309bee460800000000000000
+      internalID: 7272953871015019850
       vertices: []
       indices: 
       edges: []
