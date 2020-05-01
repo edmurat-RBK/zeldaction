@@ -260,7 +260,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
-  m_BlendParameter: Direction
+  m_BlendParameter: Horizontal
   m_BlendParameterY: Vectical
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -307,7 +307,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Horizontal
     m_Mirror: 0
-  m_BlendParameter: Direction
+  m_BlendParameter: Horizontal
   m_BlendParameterY: Vectical
   m_MinThreshold: 0
   m_MaxThreshold: 1
