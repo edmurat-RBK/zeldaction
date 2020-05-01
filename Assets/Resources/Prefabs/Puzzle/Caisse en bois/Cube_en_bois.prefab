@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 2521424828691850044}
   - component: {fileID: 2521424828691850033}
   - component: {fileID: 2521424828691850032}
+  - component: {fileID: 1865943659}
   m_Layer: 28
   m_Name: Cube_en_bois
   m_TagString: Untagged
@@ -355,6 +356,25 @@ MonoBehaviour:
   wichDirection: 
   canRedirect: 1
   notStop: 0
+--- !u!95 &1865943659
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2521424828691850045}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4277c157272abc24687d531220014cf0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2521424828995356883
 GameObject:
   m_ObjectHideFlags: 0
