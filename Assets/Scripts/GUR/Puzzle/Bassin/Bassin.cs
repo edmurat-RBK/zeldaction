@@ -18,11 +18,10 @@ public class Bassin : MonoBehaviour
     [Header ("Gestion de l'eau du bassin")]
     public float valeurParticule;
     public int maxStockage;
+    public float speedVidage;
 
-    [Header ("Les différents etats du bassin")]
-    public GameObject[] bassin;
-
-    private bool canEmpty;
+    [Header("Les différents etats du bassin")]
+    public Sprite[] spriteBassin;
 
     public float remplissage;
 
@@ -31,14 +30,16 @@ public class Bassin : MonoBehaviour
 
     [HideInInspector]
     public bool lockBassin;
+
+    private SpriteRenderer bassinRenderer;
+    private float bassinState;
+    private bool canEmpty;
     #endregion
 
     void Start()
     {
-        bassin[0].SetActive(true);
-        bassin[1].SetActive(false);
-        bassin[2].SetActive(false);
-        bassin[3].SetActive(false);
+        bassinRenderer = GetComponent<SpriteRenderer>();
+        bassinState = maxStockage / spriteBassin.Length;
 
         lockBassin = false;
         canEmpty = false;
@@ -48,56 +49,84 @@ public class Bassin : MonoBehaviour
     void Update()
     {
         VidageBassin();
-        GestionVisuel();
         GestionActivation();
+        GestionVisuel();
+
     }
 
+    void GestionVisuel()
+    {
+        if (remplissage <= 0)
+        {
+            bassinRenderer.sprite = spriteBassin[0];
+        }
+
+        else if (remplissage > 0 && remplissage < bassinState)
+        {
+            bassinRenderer.sprite = spriteBassin[1];
+        }
+
+        else if (remplissage > bassinState && remplissage < bassinState * 2)
+        {
+            bassinRenderer.sprite = spriteBassin[2];
+        }
+
+        else if (remplissage > bassinState * 2 && remplissage < bassinState * 3)
+        {
+            bassinRenderer.sprite = spriteBassin[3];
+        }
+
+        else if (remplissage > bassinState * 3 && remplissage < bassinState * 4)
+        {
+            bassinRenderer.sprite = spriteBassin[4];
+        }
+
+        else if (remplissage > bassinState * 4 && remplissage < bassinState * 5)
+        {
+            bassinRenderer.sprite = spriteBassin[5];
+        }
+
+        else if (remplissage > bassinState * 5 && remplissage < bassinState * 6)
+        {
+            bassinRenderer.sprite = spriteBassin[6];
+        }
+
+        else if (remplissage > bassinState * 7 && remplissage < bassinState * 8)
+        {
+            bassinRenderer.sprite = spriteBassin[7];
+        }
+
+        else if (remplissage > bassinState * 9 && remplissage < bassinState * 10)
+        {
+            bassinRenderer.sprite = spriteBassin[8];
+        }
+
+        else if (remplissage > bassinState * 10 && remplissage < bassinState * 11)
+        {
+            bassinRenderer.sprite = spriteBassin[9];
+        }
+
+        else if (remplissage > bassinState * 11 && remplissage < bassinState * 12)
+        {
+            bassinRenderer.sprite = spriteBassin[10];
+        }
+
+        else if (remplissage > bassinState * 12)
+        {
+            bassinRenderer.sprite = spriteBassin[11];
+        }
+    }
 
     void VidageBassin()
     {
         if (lockBassin == false)
         {
             if (remplissage > 0 && canEmpty == true)
-        {
-            remplissage -= Time.fixedDeltaTime;
-        }
+            {
+                remplissage -= Time.fixedDeltaTime * speedVidage;
+            }
         }
     } // Diminue la valeur de remplissage en fonction du temps si un ennemi de feu et proche
-
-    void GestionVisuel()
-    {
-        if (remplissage > 0 && remplissage <= 3)
-        {
-            bassin[0].SetActive(true);
-            bassin[1].SetActive(false);
-            bassin[2].SetActive(false);
-            bassin[3].SetActive(false);
-        }
-
-        else if (remplissage > 3 && remplissage <= 6)
-        {
-            bassin[0].SetActive(false);
-            bassin[1].SetActive(true);
-            bassin[2].SetActive(false);
-            bassin[3].SetActive(false);
-        }
-
-        else if (remplissage > 6 && remplissage <= 9)
-        {
-            bassin[0].SetActive(false);
-            bassin[1].SetActive(false);
-            bassin[2].SetActive(true);
-            bassin[3].SetActive(false);
-        }
-
-        else if (remplissage > 9 && remplissage <= 12)
-        {
-            bassin[0].SetActive(false);
-            bassin[1].SetActive(false);
-            bassin[2].SetActive(false);
-            bassin[3].SetActive(true);
-        }
-    } // Change le visuel du bassin en fonction de la valeur de remplissage
 
     void GestionActivation()
     {
