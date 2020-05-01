@@ -43,9 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4144577caee43342a7ceea7e27f6c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  step: 5
+  step: 10
   start: 30
   bulNumber: 10
   bulletPrefab: {fileID: 4604962061793822854, guid: 9f8b109061790c44dbc125db03e79856,
     type: 3}
   speed: 200
+  bulletParent: {fileID: 0}

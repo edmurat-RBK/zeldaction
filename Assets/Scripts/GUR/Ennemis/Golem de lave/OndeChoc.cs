@@ -26,6 +26,7 @@ public class OndeChoc : MonoBehaviour
     public float speed;
 
     Vector2 direction;
+    public GameObject bulletParent;
     #endregion
 
     private void Start()
@@ -43,6 +44,7 @@ public class OndeChoc : MonoBehaviour
             direction = transform.right;
 
             GameObject bul = Instantiate(bulletPrefab, transform.position, transform.rotation);
+            //bul.transform.SetParent(bulletParent.transform);
             bul.GetComponent<Rigidbody2D>().velocity = direction * speed * Time.fixedDeltaTime;
 
             Destroy(bul, 3f);
