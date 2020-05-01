@@ -2,25 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Créateur : Guillaume Rogé
+/// Ce script permet de : 
+/// - Faire spawn un ennemi toute les x seconde
+/// - De caper le nombre d'ennemis pour pas en avoir trop
+/// </summary>
+
 public class SpawnerMob : MonoBehaviour
 {
-    public enum Ennemy
-    {
-        flammeche,
-        mage,
-        golem
-    }
-    
+    #region Variable
     public int maxMob;
     public float timeBtwSpawn;
     public float radius;
 
-    public GameObject enemy;
+    private List<GameObject> isAlive = new List<GameObject>();
 
-    private GameObject monster;
-    public int numOfEnemy;
+    public GameObject monster;
+    private int numOfEnemy;
     private bool lockSpawn;
     private Vector2 spawnPosition;
+    #endregion
 
     void Start()
     {
@@ -30,28 +32,29 @@ public class SpawnerMob : MonoBehaviour
    
     void Update()
     {
+        numOfEnemy = isAlive.Count;
+
         if (numOfEnemy < maxMob)
         {
             if (lockSpawn == false)
             {
-                numOfEnemy += 1;
                 spawnPosition = Random.insideUnitCircle * radius;
-                monster = Instantiate(enemy, spawnPosition, transform.rotation);
+                GameObject ennemy = Instantiate(monster, spawnPosition, transform.rotation);
+                isAlive.Add(ennemy);
                 StartCoroutine(SpawnCoolDown());
-  
             }
         }
 
-        if (monster.activeSelf == false)
+        foreach (GameObject gameObject in isAlive)
         {
-            numOfEnemy -= 1;
+            if (gameObject == null)
+            {
+                isAlive.Remove(gameObject);
+            }
         }
-     
     }
 
-    
-
-
+   
     IEnumerator SpawnCoolDown()
     {
         lockSpawn = true;
