@@ -40,10 +40,15 @@ public class GolemLaveMouvement : MonoBehaviour
 
     private Transform player;
     private Rigidbody2D rbGolem;
+
+    private Animator anim;
+
     #endregion
 
     void Start()
     {
+        anim = GetComponent<Animator>();
+
         deathLockGolem = false;
         lockMouvement = true;
         lockAttack = true;
@@ -81,14 +86,23 @@ public class GolemLaveMouvement : MonoBehaviour
         {
             if (lockMouvement == true)
             {
+                
                 if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
                 {
                     rbGolem.velocity = (movement.normalized * speed * Time.fixedDeltaTime);
+
+                    anim.SetBool("IsWalking", true);
+
+                    anim.SetFloat("Horizontal", GetComponent<Rigidbody2D>().velocity.x);
+                    anim.SetFloat("Vertical", GetComponent<Rigidbody2D>().velocity.y);
+
                 }
         
                 else if (Vector2.Distance(transform.position, player.transform.position) < stoppingDistance && Vector2.Distance(transform.position, player.transform.position) > retreatDistance)
                 {
                     rbGolem.velocity = Vector2.zero;
+
+                    anim.SetBool("IsWalking", false);
 
                     if (lockAttack == true)
                     {
@@ -103,6 +117,8 @@ public class GolemLaveMouvement : MonoBehaviour
 
     IEnumerator GolemLaveAtack()
     {
+        anim.SetBool("IsAttacking", true);
+
         lockMouvement = false;
         yield return new WaitForSeconds(timeBeforeAttack);
 
@@ -119,6 +135,9 @@ public class GolemLaveMouvement : MonoBehaviour
     IEnumerator AttackCoolDown()
     {
         lockAttack = false;
+
+        anim.SetBool("IsAttacking", false);
+
         yield return new WaitForSeconds(attackCooldown);
         lockAttack = true;
     } // Coroutine qui empéche le golem d'attaquer juste après une attaque

@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class DestructibleByWater : MonoBehaviour
 {
+    private Animator anim;
 
     public bool khameoDetection;
 
     void Start()
     {
+        anim = GetComponent<Animator>();  
+
         khameoDetection = false;
     }
 
@@ -16,12 +19,16 @@ public class DestructibleByWater : MonoBehaviour
     {
         if (khameoDetection == true)
         {
-            Destroy(gameObject);
+            anim.SetBool("IsDead", true);
+
+            Destroy(gameObject, 0.8f);
         }
     }
 
     private void OnParticleCollision(GameObject other)
     {
-        Destroy(gameObject);
+        anim.SetBool("IsDead", true);
+
+        Destroy(gameObject, 0.8f);
     }
 }
