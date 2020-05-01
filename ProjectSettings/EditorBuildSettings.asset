@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/GUR_Scene/GUR_LD_Scene.unity
     guid: ddcbc2f91ff3a254eaafa10be3e94303
+  - enabled: 1
+    path: Assets/_Scenes/GAG_LD_TempleEau.unity
+    guid: b105e65fbe29e8846bbc3adedf6620dc
   m_configObjects: {}
