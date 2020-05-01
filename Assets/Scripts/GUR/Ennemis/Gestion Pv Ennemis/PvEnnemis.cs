@@ -127,8 +127,10 @@ public class PvEnnemis : MonoBehaviour
 
             }
 
-            if (golemLave == true)
+            if (golemLave == true) 
             {
+                anim.SetBool("IsDead",true);
+
                 gameObject.GetComponent<GolemLaveMouvement>().deathLockGolem = true;
                 // bool pour le golem mort
                 Destroy(gameObject, 0.8f);
@@ -147,8 +149,7 @@ public class PvEnnemis : MonoBehaviour
             yield return new WaitForSeconds(timeOfVulnerability);
             gameObject.GetComponent<MageMovement>().vunerableMage = false;
 
-            anim.SetBool("IsEteint", false);
-            anim.SetBool("IsDamaged", false);
+            anim.SetBool("IsEteint", false);            
             lockMageVulné = false;
         }
 
@@ -156,9 +157,13 @@ public class PvEnnemis : MonoBehaviour
         {
             lockGolemVulné = true;
 
+            anim.SetBool("IsSolidifying", true);
+
             gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem = true;
             yield return new WaitForSeconds(timeOfVulnerability);
             gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem = false;
+
+            anim.SetBool("IsSolidifying", false);
 
             lockGolemVulné = false;
         }
@@ -171,6 +176,8 @@ public class PvEnnemis : MonoBehaviour
         {
             if (gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem == true)
             {
+                anim.SetTrigger("IsStun");
+
                 pv -= dammage;
                 
             }
