@@ -3,20 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Manager;
 
-public class Pattern : MonoBehaviour
+public class Pattern2 : MonoBehaviour
 {
     #region Variable
-    //waves of fire
-    public GameObject shotPoint;
-    [Header("Onnde de choc")]
-    public GameObject chocWave;
-    private Transform player;
-    private int numberOfWaves;
-    private int numberOfTheWave;
-    public bool canFire;
 
     //slam pattern 2
-    public GameObject[] spawnPointsForSlam = new GameObject[9];
+    public GameObject[] spawnPointsForSlam;
     [SerializeField]
     private GameObject totem;
     [SerializeField]
@@ -42,16 +34,17 @@ public class Pattern : MonoBehaviour
     private bool meteorCanStrike;
     [SerializeField]
     private GameObject totemShadowForPoint;
+    private PlayerManager player;
     private GameObject shadow;
+
+    public GameObject[] spawnPointsForMeteor;
+    private Vector3 pointOfMeteorImpact;
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        player = PlayerManager.Instance.transform;
-        canFire = true;
         //lunchSlamPoint();
-        //StartCoroutine("CreateWave");
 
 
     }
@@ -61,10 +54,9 @@ public class Pattern : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
-            WaveOfFlame();
         }
 
-        #region Phase 2
+        #region Phase
         if (totem.transform.position != pointBeforeImpact && canSearchForPoint == true) //le totem bouge jusqu"à la position au dessus de sa cible
         {
             totem.transform.position = Vector2.MoveTowards(totem.transform.position, pointBeforeImpact, speedOfTotem);
@@ -84,6 +76,13 @@ public class Pattern : MonoBehaviour
         {
             totemCollider.enabled = (true);
             canSlam = false;
+
+            if (Vector2.Distance(totem.transform.position, player.transform.position) < 0.5f)
+            {
+                player.GetComponent<PlayerHealth>().TakeHit(1);
+            }
+
+
             if (meteorCanStrike == true)
             {
                 StartCoroutine("MeteorStrike");
@@ -105,40 +104,8 @@ public class Pattern : MonoBehaviour
 
     }
 
-    #region Phase 1
-    private void WaveOfFlame()
-    {
-        if (canFire == true)
-        {
-            numberOfWaves = Random.Range(2, 5);
-            numberOfTheWave = 0;
-            StartCoroutine("CreateWave");
-            Debug.Log(numberOfWaves);
-        }
 
-    }
-    private IEnumerator CreateWave() //fire multiple waves of fire
-    {
-        
-        canFire = false;
-        var dir = new Vector2(player.transform.position.x - shotPoint.transform.position.x, player.transform.position.y - shotPoint.transform.position.y); // Permet d'orienter le shotPoint vers le joueur
-        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        shotPoint.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        GameObject wave = Instantiate(chocWave, shotPoint.transform.position, shotPoint.transform.rotation); // spawn l'onde de choc
-        Destroy(wave, 0.5f);
-        yield return new WaitForSeconds(2);
-        numberOfTheWave += 1;
-        if (numberOfTheWave != numberOfWaves)
-        {
-            Debug.Log("je suis al");
-            StartCoroutine("CreateWave");
-        }
-        else canFire = true;
-        
-    }
-    #endregion
-
-    #region Phase2
+    #region Phase
     private void SlamPoint() //decide of the slam point position
     {
             //choix du spawn point
@@ -154,7 +121,7 @@ public class Pattern : MonoBehaviour
     }
 
 
-    public IEnumerator SlamInComing() //lunch the slam attack
+    private IEnumerator SlamInComing() //lunch the slam attack
     {
         if (canLunchCoRoutine == true)
         {
@@ -172,7 +139,7 @@ public class Pattern : MonoBehaviour
 
     }
 
-    public IEnumerator SlamBack() //return the totem
+    private IEnumerator SlamBack() //return the totem
     {
             Destroy(shadow);
             totemCollider.enabled = (false);
@@ -184,16 +151,12 @@ public class Pattern : MonoBehaviour
     private IEnumerator MeteorStrike()
     {
         meteorCanStrike = false;
+        int i = Random.Range(0, 9);
+        Transform destinationOfMeteor = spawnPointsForMeteor[i].transform;
+        pointOfMeteorImpact = new Vector3(destinationOfMeteor.position.x, destinationOfMeteor.position.y);
         yield return new WaitForSeconds(2);
         GameObject meteor = Instantiate(projectil, (pointOfImpact + new Vector3(0, 2.5f)), transform.rotation);
     }
 
     #endregion
-
-    private void SlamPlayer()
-    {
-        //suit le player
-        //arret et tremble
-        //slam sur le sol
-    }
 }
