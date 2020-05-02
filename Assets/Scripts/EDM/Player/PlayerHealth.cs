@@ -45,6 +45,7 @@ public class PlayerHealth : MonoBehaviour
     // Called when the avatar is hit by an enemy
     public void TakeHit(float damage)
     {
+
         if(!playerManager.playerInvulnerable)
         {
             TakeDamage(damage);
