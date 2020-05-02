@@ -31,10 +31,12 @@ public class CubeBois : MonoBehaviour
 
     private Vector2 direction;
     private GameObject[] courantEau;
+    private Animator anim;
     #endregion
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         notStop = true;
         courantEau = GameObject.FindGameObjectsWithTag("Courant"); // Permet de récuperer toutes les hitbox des courants d'eau et de les stocker dans un tableau
         hitboxVerticale.SetActive(false);
@@ -43,8 +45,9 @@ public class CubeBois : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 31) // 29 = layer Player
+        if (collision.gameObject.layer == 31) // 31 = layer Player
         {
+            anim.SetBool("player", true);
             switch (wichDirection) // Permet de récuperer la direction dans la quel va la caisse et d'activer les bonne hitbox
             {
                 case ("Bas"):
@@ -89,6 +92,7 @@ public class CubeBois : MonoBehaviour
     {
         if (collision.gameObject.layer == 31) // 29 = layer Player
         {
+            anim.SetBool("player", false);
             for (int i = 0; i < courantEau.Length; i++) // Permet d'activer toute les hitbox des courants d'eau
             {
                 courantEau[i].SetActive(true);

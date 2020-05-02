@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: 6929794035054631276
     second: A_CubeFlotteWithPlayer_Spritesheet_1
+  - first:
+      213: 4872937913861338472
+    second: A_CubeFlotteWithPlayer_Spritesheet_0
+  - first:
+      213: 2305949128872964480
+    second: A_CubeFlotteWithPlayer_Spritesheet_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,9 +102,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 16
         width: 20
-        height: 70
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 764afe03c00767fc0800000000000000
-      internalID: -3497484862943681433
+      spriteID: 865fc38f63720a340800000000000000
+      internalID: 4872937913861338472
       vertices: []
       indices: 
       edges: []
@@ -117,9 +123,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 0
+        y: 16
         width: 20
-        height: 70
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c695d0295f29b2060800000000000000
-      internalID: 6929794035054631276
+      spriteID: 0813898e380600020800000000000000
+      internalID: 2305949128872964480
       vertices: []
       indices: 
       edges: []
