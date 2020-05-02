@@ -58,8 +58,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.009454012, y: 0.9770336}
-      - {x: -0.43116188, y: 0.7875478}
+    - - {x: -0.024531841, y: 0.40407383}
       - {x: -0.6103339, y: 0.39663136}
       - {x: -0.60444903, y: -0.21467662}
       - {x: -0.5170512, y: -0.4679165}
@@ -161,9 +160,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.6040571, y: 0.38536203}
-      - {x: 0.41949224, y: 0.77619934}
-      - {x: 0.25016594, y: 0.9106631}
-      - {x: 0.017190695, y: 0.97851205}
+      - {x: 0.032268524, y: 0.40555212}
       - {x: 0.01620841, y: -0.7446286}
       - {x: 0.19586706, y: -0.7381776}
       - {x: 0.46398783, y: -0.52115977}
@@ -215,6 +212,7 @@ GameObject:
   - component: {fileID: 8161820870829286702}
   - component: {fileID: 8161820870829286703}
   - component: {fileID: 8161820870829286696}
+  - component: {fileID: 202554341}
   m_Layer: 15
   m_Name: Moulin
   m_TagString: Moulin
@@ -308,3 +306,22 @@ MonoBehaviour:
   moulinOnDroit: 0
   lockMoulinLeft: 0
   lockMoulinRight: 0
+--- !u!95 &202554341
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161820870829286700}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d0e6885a7d5ada49b1aaa384e697ddc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

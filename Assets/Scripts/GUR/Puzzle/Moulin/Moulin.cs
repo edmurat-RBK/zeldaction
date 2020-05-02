@@ -28,10 +28,13 @@ public class Moulin : MonoBehaviour
     public bool lockMoulinLeft;
     [HideInInspector]
     public bool lockMoulinRight;
+
+    private Animator anim;
     #endregion
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         lockMoulinLeft = false;
         lockMoulinRight = false;
 
@@ -68,15 +71,19 @@ public class Moulin : MonoBehaviour
 
     IEnumerator ActivationTimeGauche()
     {
+        anim.SetBool("tourne", true);
         moulinOnGauche = true;
         yield return new WaitForSeconds(timeOfActivation);
+        anim.SetBool("tourne", false);
         moulinOnGauche = false;
     } // Active la bool gauche
 
     IEnumerator ActivationTimeDroit()
     {
+        anim.SetBool("tourne", true);
         moulinOnDroit = true;
         yield return new WaitForSeconds(timeOfActivation);
+        anim.SetBool("tourne", false);
         moulinOnDroit = false;
     } // Active la bool droite
 }
