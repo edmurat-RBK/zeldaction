@@ -126,11 +126,11 @@ public class MageMovement : MonoBehaviour
 
         lockMovement = false;
         yield return new WaitForSeconds(timeBeforeAttack);
+        anim.SetBool("IsAttacking", false);
         GameObject meteor = Instantiate(projectile, (player.transform.position + new Vector3(0,2.5f)), transform.rotation);
         StartCoroutine(Cooldown());
         lockMovement = true;
 
-        anim.SetBool("IsAttacking", false);
 
     } // Coroutine qui permet de faire spawn un projectile sur la position du joueur après une incantation
 
