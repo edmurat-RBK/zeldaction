@@ -129,6 +129,8 @@ public class MageMovement : MonoBehaviour
         anim.SetBool("IsAttacking", false);
         GameObject meteor = Instantiate(projectile, (player.transform.position + new Vector3(0,2.5f)), transform.rotation);
         StartCoroutine(Cooldown());
+        yield return new WaitForSeconds(0.3f);
+
         lockMovement = true;
 
 
