@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: 4523335971408854195
     second: C.FireMage.AttackFront_3
+  - first:
+      213: 594087445795217879
+    second: C_FireMage_StunBack_0
+  - first:
+      213: 4659021196156431750
+    second: C_FireMage_StunBack_1
+  - first:
+      213: -9208270321390645951
+    second: C_FireMage_StunBack_2
+  - first:
+      213: -3347839203760811851
+    second: C_FireMage_StunBack_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -98,85 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C.FireMage.AttackFront_0
+      name: C_FireMage_StunBack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75350dba32ea68e90800000000000000
-      internalID: -7023735100608064681
+      spriteID: 7d1a424626f9e3800800000000000000
+      internalID: 594087445795217879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.FireMage.AttackFront_1
+      name: C_FireMage_StunBack_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 152db05313ab04a50800000000000000
-      internalID: 6503402582429127249
+      spriteID: 68d6be5e71b28a040800000000000000
+      internalID: 4659021196156431750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.FireMage.AttackFront_2
+      name: C_FireMage_StunBack_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 240e74c0faa3ed080800000000000000
-      internalID: -9160820068525285310
+      spriteID: 14d0db12ee6a53080800000000000000
+      internalID: -9208270321390645951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.FireMage.AttackFront_3
+      name: C_FireMage_StunBack_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bc329fa91e16ce30800000000000000
-      internalID: 4523335971408854195
+      spriteID: 5b0d5b65bf51a81d0800000000000000
+      internalID: -3347839203760811851
       vertices: []
       indices: 
       edges: []
