@@ -38,6 +38,24 @@ TextureImporter:
   - first:
       213: -2466118577894540567
     second: C_PJ_WalkDroite_NoBucket_SpriteSheet_5
+  - first:
+      213: -1007569748351665727
+    second: C_PJ_WalkDroite.NoBucket_SpriteSheet_0
+  - first:
+      213: -5569089132141543506
+    second: C_PJ_WalkDroite.NoBucket_SpriteSheet_1
+  - first:
+      213: 2454880285272772189
+    second: C_PJ_WalkDroite.NoBucket_SpriteSheet_2
+  - first:
+      213: 869605005786596985
+    second: C_PJ_WalkDroite.NoBucket_SpriteSheet_3
+  - first:
+      213: 8720683000871141618
+    second: C_PJ_WalkDroite.NoBucket_SpriteSheet_4
+  - first:
+      213: -4500743733248009177
+    second: C_PJ_WalkDroite.NoBucket_SpriteSheet_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -122,127 +140,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C.PJ.WalkDroite.NoBucket.SpriteSheet_0
+      name: C_PJ_WalkDroite.NoBucket_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 206d32cfeee1645a0800000000000000
-      internalID: -6537503797300439550
+      spriteID: 1c9b117f6a46402f0800000000000000
+      internalID: -1007569748351665727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkDroite.NoBucket.SpriteSheet_1
+      name: C_PJ_WalkDroite.NoBucket_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 31
+        x: 64
         y: 0
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e361eabc1822142c0800000000000000
-      internalID: -4449237016002030018
+      spriteID: eaff63cc0fe96b2b0800000000000000
+      internalID: -5569089132141543506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkDroite.NoBucket.SpriteSheet_2
+      name: C_PJ_WalkDroite.NoBucket_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 62
+        x: 128
         y: 0
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08e178513d75dac10800000000000000
-      internalID: 2066404368143818368
+      spriteID: d5e0bc9ec9c711220800000000000000
+      internalID: 2454880285272772189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkDroite.NoBucket.SpriteSheet_3
+      name: C_PJ_WalkDroite.NoBucket_SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 93
+        x: 192
         y: 0
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ba3d078c70faa010800000000000000
-      internalID: 1201036668280060593
+      spriteID: 976cfc83525711c00800000000000000
+      internalID: 869605005786596985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkDroite.NoBucket.SpriteSheet_4
+      name: C_PJ_WalkDroite.NoBucket_SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 124
+        x: 256
         y: 0
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a25e349bc89f5bde0800000000000000
-      internalID: -1317872933137029846
+      spriteID: 2f046b13cf6160970800000000000000
+      internalID: 8720683000871141618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkDroite.NoBucket.SpriteSheet_5
+      name: C_PJ_WalkDroite.NoBucket_SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 155
+        x: 320
         y: 0
-        width: 31
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aed3e55f549bd6d80800000000000000
-      internalID: -8255738831779774998
+      spriteID: 72cdfaaab652a81c0800000000000000
+      internalID: -4500743733248009177
       vertices: []
       indices: 
       edges: []
