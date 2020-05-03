@@ -30,6 +30,7 @@ public class Porte : MonoBehaviour
     IEnumerator OpenDoor()
     {
         canOpen = false;
+        gameObject.GetComponent<SpriteRenderer>().sortingOrder += 1;
         rbDoor.velocity = direction * speed * Time.fixedDeltaTime;
         yield return new WaitForSeconds(timeForOpen);
         rbDoor.velocity = Vector2.zero;

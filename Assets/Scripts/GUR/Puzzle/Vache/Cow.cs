@@ -37,6 +37,8 @@ public class Cow : MonoBehaviour
                 lockCow = true;
                 anim.SetBool("Water", true);
 
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder -= 1;
+
                 box.enabled = box.enabled = true;
                 circle.enabled = circle.enabled = false;
 

@@ -123,7 +123,7 @@ public class Kameheaumeheau : MonoBehaviour
             {
                 //setup line when kameomeo
                 beamDir = beamDirection;
-                Debug.Log(ray.transform.position);
+                //Debug.Log(ray.transform.position);
                 lineRenderer.SetPosition(0, transform.position);
                 lineRenderer.SetPosition(1, ray.point);                manager.playerCanRotate = false;                lineRenderer.enabled = true;
                 if (ray.transform.gameObject.tag == "Moulin")

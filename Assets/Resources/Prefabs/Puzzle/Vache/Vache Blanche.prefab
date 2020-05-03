@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2663961841387483499}
   - component: {fileID: 2663961841387483498}
   m_Layer: 0
-  m_Name: Hitbox Cow
+  m_Name: Body Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.40007877, y: -0.37044328}
+  m_Offset: {x: -0.5061201, y: -0.200019}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3442168, y: 1.1454135}
+  m_Size: {x: 1.3593657, y: 0.31980586}
   m_EdgeRadius: 0
 --- !u!1 &2663961842641678711
 GameObject:
@@ -131,7 +131,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: -682921219060039438, guid: d36e13f6c5e4cac44b719f8fd459e188,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -208,7 +208,7 @@ BoxCollider2D:
   m_Offset: {x: 0.007376671, y: 0.088519335}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.11}
     oldSize: {x: 1.53125, y: 1.375}
     newSize: {x: 2.5, y: 2.09375}
     adaptiveTilingThreshold: 0.5
