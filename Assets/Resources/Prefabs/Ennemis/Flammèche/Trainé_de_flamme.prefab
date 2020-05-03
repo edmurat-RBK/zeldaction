@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aabc9957ae7f54a9129af91bc6c4e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timesBeforeDestruction: 20
+  timesBeforeDestruction: 5
 --- !u!95 &449841157419500984
 Animator:
   serializedVersion: 3
@@ -143,7 +143,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.022347808, y: 0.1899569}

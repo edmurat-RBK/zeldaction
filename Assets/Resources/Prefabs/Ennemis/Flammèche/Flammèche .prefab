@@ -71,7 +71,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.012949169, y: 0.37002635}
@@ -104,6 +104,7 @@ MonoBehaviour:
   timeBtwDirection: 2
   flamePrefab: {fileID: 1075538181445301906, guid: 53cb50b4d1f2af849a9d8ceedfb5b95e,
     type: 3}
+  flameSpawnRate: 0
   deathLockFlammeche: 0
 --- !u!212 &284867908
 SpriteRenderer:

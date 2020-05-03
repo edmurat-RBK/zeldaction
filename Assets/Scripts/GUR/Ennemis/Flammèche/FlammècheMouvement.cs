@@ -31,7 +31,7 @@ public class FlammècheMouvement : MonoBehaviour
     Vector2 movement;
 
     private int direction;
-    private float flameSpawnRate = 0.5f;
+    public float flameSpawnRate;
 
     public bool deathLockFlammeche;
 

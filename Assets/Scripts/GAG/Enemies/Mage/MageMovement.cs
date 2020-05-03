@@ -39,7 +39,7 @@ public class MageMovement : MonoBehaviour
     public bool deathLockMage;
 
     private bool lockMovement = true;
-    private bool lockAttack = true;
+    public bool lockAttack = true;
     #endregion
     
     private void Start()
@@ -48,6 +48,7 @@ public class MageMovement : MonoBehaviour
         player = PlayerManager.Instance.transform;
         anim = GetComponent<Animator>();
         vunerableMage = false;
+        StartCoroutine(Cooldown());
     }
 
 
@@ -69,7 +70,7 @@ public class MageMovement : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             StopAllCoroutines();
             lockMovement = true;
-            lockAttack = false;
+            lockAttack = true;
         }
     }
 

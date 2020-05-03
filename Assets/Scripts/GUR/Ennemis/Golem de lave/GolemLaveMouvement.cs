@@ -117,7 +117,7 @@ public class GolemLaveMouvement : MonoBehaviour
 
     IEnumerator GolemLaveAtack()
     {
-        anim.SetBool("IsAttacking", true);
+        //anim.SetBool("IsAttacking", true);
 
         lockMouvement = false;
         yield return new WaitForSeconds(timeBeforeAttack);
