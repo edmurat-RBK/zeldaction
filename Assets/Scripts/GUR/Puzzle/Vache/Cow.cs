@@ -4,11 +4,25 @@ using UnityEngine;
 
 public class Cow : MonoBehaviour
 {
+    public float timeBtwBroutage;
+
     private bool canActivate;
     private bool lockCow;
 
+    private CircleCollider2D circle;
+    private BoxCollider2D box;
+
+    private Animator anim;
+
+    private bool lockBroutage;
     void Start()
     {
+        circle = GetComponent<CircleCollider2D>();
+        box = GetComponent<BoxCollider2D>();
+
+        box.enabled = box.enabled = false;
+
+        anim = GetComponent<Animator>();
         canActivate = false;
         lockCow = false;
     }
@@ -20,11 +34,21 @@ public class Cow : MonoBehaviour
         {
             if (Input.GetButton("B"))
             {
+                lockCow = true;
+                anim.SetBool("Water", true);
+
+                box.enabled = box.enabled = true;
+                circle.enabled = circle.enabled = false;
+
                 gameObject.transform.position = CowManager.Instance.spawnTpCow.position;
                 transform.GetChild(0).gameObject.SetActive(false);
                 CowManager.Instance.SwitchHitBox();
-                lockCow = true;
             }
+        }
+
+        if (lockBroutage == false)
+        {
+            StartCoroutine(Broutage());
         }
     }
 
@@ -32,6 +56,7 @@ public class Cow : MonoBehaviour
     {
         if (collision.gameObject.layer == 31)
         {
+            anim.SetBool("Player", true);
             canActivate = true;
         }
     }
@@ -40,7 +65,19 @@ public class Cow : MonoBehaviour
     {
         if (collision.gameObject.layer == 31)
         {
+            anim.SetBool("Player", false);
             canActivate = false;
         }
+    }
+
+
+    IEnumerator Broutage()
+    {
+        lockBroutage = true;
+        anim.SetBool("Broutage", true);
+        yield return new WaitForSeconds(2.15f);
+        anim.SetBool("Broutage", false);
+        yield return new WaitForSeconds(timeBtwBroutage);
+        lockBroutage = false;
     }
 }

@@ -7,6 +7,7 @@ public class CowManager : Singleton<CowManager>
 {
     public GameObject[] eachState;
 
+    [HideInInspector]
     public int numOfCow;
 
     public Transform spawnTpCow;
@@ -28,7 +29,7 @@ public class CowManager : Singleton<CowManager>
     public void SwitchHitBox()
     {
         numOfCow += 1;
-        spawnTpCow.position = new Vector3(spawnTpCow.position.x, (spawnTpCow.position.y + 1), spawnTpCow.position.z);
+        spawnTpCow.position = new Vector3((spawnTpCow.position.x - 2), spawnTpCow.position.y, spawnTpCow.position.z);
 
         if (numOfCow == 1)
         {
