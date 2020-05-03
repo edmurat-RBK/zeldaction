@@ -32,6 +32,36 @@ TextureImporter:
   - first:
       213: 8159072483045664002
     second: C_PJ_WalkDown_NoBucket_SpriteSheet_4
+  - first:
+      213: -7934808840775653044
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_0
+  - first:
+      213: -8394203778628267489
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_1
+  - first:
+      213: -4688938987911260375
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_2
+  - first:
+      213: 1898853155935048471
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_3
+  - first:
+      213: -8200209134652410717
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_4
+  - first:
+      213: 3179797847066163789
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_0
+  - first:
+      213: 2282849063740127250
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_1
+  - first:
+      213: -7746824461480406699
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_2
+  - first:
+      213: 474934809495149818
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_3
+  - first:
+      213: 3869853307920573918
+    second: C_PJ_WalkDown.NoBucket_SpriteSheet_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,106 +146,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C.PJ.WalkDown.NoBucket.SpriteSheet_0
+      name: C_PJ_WalkDown.NoBucket_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 38
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07399b9ecbe850760800000000000000
-      internalID: 7423496502816379760
+      spriteID: d4a3eeb6b49e02c20800000000000000
+      internalID: 3179797847066163789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkDown.NoBucket.SpriteSheet_1
+      name: C_PJ_WalkDown.NoBucket_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 64
         y: 0
-        width: 38
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7cca085a5bde48e0800000000000000
-      internalID: -1707186027656196995
+      spriteID: 2183010e02f4eaf10800000000000000
+      internalID: 2282849063740127250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkDown.NoBucket.SpriteSheet_2
+      name: C_PJ_WalkDown.NoBucket_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 76
+        x: 128
         y: 0
-        width: 38
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa4ccb69e5ffbf60800000000000000
-      internalID: 8052425041646471933
+      spriteID: 551572c5230cd7490800000000000000
+      internalID: -7746824461480406699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkDown.NoBucket.SpriteSheet_3
+      name: C_PJ_WalkDown.NoBucket_SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 114
+        x: 192
         y: 0
-        width: 38
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34431fef5b5a6c300800000000000000
-      internalID: 272087028587377731
+      spriteID: afc1d6361be479600800000000000000
+      internalID: 474934809495149818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkDown.NoBucket.SpriteSheet_4
+      name: C_PJ_WalkDown.NoBucket_SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 152
+        x: 256
         y: 0
-        width: 38
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f952daa8ab1d809b0800000000000000
-      internalID: -5113606777758472801
+      spriteID: ed5e977841b74b530800000000000000
+      internalID: 3869853307920573918
       vertices: []
       indices: 
       edges: []

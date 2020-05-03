@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5557044200927896091}
   - component: {fileID: 5258033933257326619}
   - component: {fileID: 5258033933257326622}
-  - component: {fileID: 5252705103031261765}
+  - component: {fileID: 447591439599312045}
   m_Layer: 0
   m_Name: Mur mouvant Bas
   m_TagString: Untagged
@@ -55,7 +55,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5258033933257326619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   tempsRemiseEnPlace: 3
   speed: 75
   startTime: 0
-  maxDist: 0
+  maxDist: 2
   stayActivate: 1
   actualDist: 0
 --- !u!114 &5258033933257326622
@@ -90,13 +90,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 906baf0ef30a5244fb98b8a7dd87be3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whoActivate: []
+  whoActivate:
+  - {fileID: 0}
   linkMoulinLeft: 0
   linkMoulinRight: 0
   linkMoulinBoth: 0
   lockAfterFinish: 0
   canActive: 0
---- !u!61 &5252705103031261765
+--- !u!61 &447591439599312045
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +110,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: -0.24949229}
+  m_Offset: {x: -0.0030829906, y: 0.91818154}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -120,7 +121,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.40505648, y: 2.6504886}
+  m_Size: {x: 0.41423106, y: 2.7435195}
   m_EdgeRadius: 0
 --- !u!1 &5557044202342570324
 GameObject:
@@ -191,7 +192,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: dfdedd9baf8a3fa48aba7fcfb3037547, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -26,12 +26,14 @@ public class PieuMouvent : MonoBehaviour
     public Direction inWichDirection;
 
 
-    [Header("Stats premier mouvement")] public float speedRetractage;
+    [Header("Stats premier mouvement")]
+    public float speedRetractage;
     public float speedRemiseEnPlace;
     [Space] public float tempsRetractage;
     public float tempsRemiseEnPlace;
 
-    [Header("Stats deuxième mouvement")] public float speed;
+    [Header("Stats deuxième mouvement")]
+    public float speed;
     [Space] public float startTime = 0f;
     public float maxDist;
 
@@ -103,6 +105,7 @@ public class PieuMouvent : MonoBehaviour
 
         if (gameObject.GetComponent<GestionActivateur>().canActive == true)
         {
+            Debug.Log("je rentre");
             if (actualDist < maxDist)
             {
                 gameObject.GetComponent<Rigidbody2D>().velocity = retractage.normalized * speed * Time.fixedDeltaTime;
