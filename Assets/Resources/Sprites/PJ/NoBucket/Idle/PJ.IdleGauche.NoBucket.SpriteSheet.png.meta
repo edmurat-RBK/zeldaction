@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: -5699268194271414995
     second: PJ.IdleGauche.NoBucket.SpriteSheet_2
+  - first:
+      213: -8401182966558903054
+    second: PJ.IdleGauche.NoBucket.SpriteSheet_0
+  - first:
+      213: 3602317979533587254
+    second: PJ.IdleGauche.NoBucket.SpriteSheet_1
+  - first:
+      213: 5623800881461980356
+    second: PJ.IdleGauche.NoBucket.SpriteSheet_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -102,15 +111,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d657d61a8d4dca30800000000000000
-      internalID: 4237128079909541592
+      spriteID: 2f4b1317a90096b80800000000000000
+      internalID: -8401182966558903054
       vertices: []
       indices: 
       edges: []
@@ -123,15 +132,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92147cbde3ee61210800000000000000
-      internalID: 1303491095912988969
+      spriteID: 6333a12dd110ef130800000000000000
+      internalID: 3602317979533587254
       vertices: []
       indices: 
       edges: []
@@ -144,15 +153,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2535c8f5c128e0b0800000000000000
-      internalID: -5699268194271414995
+      spriteID: 4cce1130b11cb0e40800000000000000
+      internalID: 5623800881461980356
       vertices: []
       indices: 
       edges: []

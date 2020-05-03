@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: 630454536140598951
     second: C_FireMage_ReculeBack_3
+  - first:
+      213: -8112244935525241785
+    second: C_FireMage_ReculeBack_0
+  - first:
+      213: 7728115204835964373
+    second: C_FireMage_ReculeBack_1
+  - first:
+      213: -8761751861325925904
+    second: C_FireMage_ReculeBack_2
+  - first:
+      213: -6228425432589033089
+    second: C_FireMage_ReculeBack_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -105,15 +117,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c290ee02b0045e90800000000000000
-      internalID: -7037999552919465276
+      spriteID: 74c6e0f26348b6f80800000000000000
+      internalID: -8112244935525241785
       vertices: []
       indices: 
       edges: []
@@ -126,15 +138,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55de04f4699bcfa70800000000000000
-      internalID: 8862162221984181589
+      spriteID: 5d5fa8f55d7cf3b60800000000000000
+      internalID: 7728115204835964373
       vertices: []
       indices: 
       edges: []
@@ -147,15 +159,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0344cb50e2448770800000000000000
-      internalID: 8612081918818927372
+      spriteID: 0f1fc879a11086680800000000000000
+      internalID: -8761751861325925904
       vertices: []
       indices: 
       edges: []
@@ -168,15 +180,15 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aea1b17f03dfb800800000000000000
-      internalID: 630454536140598951
+      spriteID: f71a58491103099a0800000000000000
+      internalID: -6228425432589033089
       vertices: []
       indices: 
       edges: []

@@ -131,106 +131,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C.PJ.WalkTop.NoBucket.SpriteSheet_0
+      name: C_PJ_WalkTop_NoBucket_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 38
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 947a98e9de2bc8c40800000000000000
-      internalID: 5515980377258829641
+      spriteID: c4f0f8dab24685420800000000000000
+      internalID: 2618953322074148684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkTop.NoBucket.SpriteSheet_1
+      name: C_PJ_WalkTop_NoBucket_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 64
         y: 0
-        width: 38
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9ea11c32b447a6d0800000000000000
-      internalID: -2979337096179634530
+      spriteID: f87c3dd68538a78a0800000000000000
+      internalID: -6306583912356001905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkTop.NoBucket.SpriteSheet_2
+      name: C_PJ_WalkTop_NoBucket_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 76
+        x: 128
         y: 0
-        width: 38
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b64b9ba5fb5021cd0800000000000000
-      internalID: -2589000516365601685
+      spriteID: 3ba49db8d4eb28000800000000000000
+      internalID: 36800987240417971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkTop.NoBucket.SpriteSheet_3
+      name: C_PJ_WalkTop_NoBucket_SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 114
+        x: 192
         y: 0
-        width: 38
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8a2bc6408f6dac20800000000000000
-      internalID: 3219351905373989517
+      spriteID: 25453879f86c7ecc0800000000000000
+      internalID: -3681755850327501742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkTop.NoBucket.SpriteSheet_4
+      name: C_PJ_WalkTop_NoBucket_SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 152
+        x: 256
         y: 0
-        width: 38
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2717ebb1894a83f0800000000000000
-      internalID: -897824354154899667
+      spriteID: 3f969e5f9462b3d10800000000000000
+      internalID: 2106319349826021875
       vertices: []
       indices: 
       edges: []

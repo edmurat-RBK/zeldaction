@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   khameoDetection: 0
+  particuleCanDestroy: 1
 --- !u!114 &6250335131499950611
 MonoBehaviour:
   m_ObjectHideFlags: 0

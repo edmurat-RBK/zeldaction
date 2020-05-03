@@ -12,7 +12,7 @@ public class DestructibleByWater : MonoBehaviour
     public bool particuleCanDestroy;
     void Start()
     {
-        anim = GetComponent<Animator>();  
+        //anim = GetComponent<Animator>();  
 
         khameoDetection = false;
     }
@@ -23,7 +23,7 @@ public class DestructibleByWater : MonoBehaviour
         {
             anim.SetBool("IsDead", true);
 
-            Destroy(gameObject, 0.8f);
+            Destroy(gameObject);
         }
     }
 

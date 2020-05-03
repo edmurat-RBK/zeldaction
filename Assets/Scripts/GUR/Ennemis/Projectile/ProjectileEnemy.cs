@@ -15,7 +15,8 @@ public class ProjectileEnemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            // infliger les dégats au joueur
+            //infliger les dégats au joueur
+            Destroy(gameObject);
         }
         anim.SetBool("IsDead", true);
         Destroy(gameObject, 0.8f);

@@ -122,127 +122,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C.PJ.WalkGauche.NoBucket.SpriteSheet_0
+      name: C_PJ_WalkGauche_NoBucket_SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 31
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb0a4836fa1734d50800000000000000
-      internalID: 6720340067069763771
+      spriteID: 19c8ec7fc88b58220800000000000000
+      internalID: 2487597284784508049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkGauche.NoBucket.SpriteSheet_1
+      name: C_PJ_WalkGauche_NoBucket_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 31
+        x: 64
         y: 0
-        width: 31
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b336dbf814fd5e10800000000000000
-      internalID: 2188173382113440691
+      spriteID: 8b5799f96e6763940800000000000000
+      internalID: 5275534746403304888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkGauche.NoBucket.SpriteSheet_2
+      name: C_PJ_WalkGauche_NoBucket_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 62
+        x: 128
         y: 0
-        width: 31
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1c214c3260faa5d0800000000000000
-      internalID: -3050361492881724388
+      spriteID: ad208b48f46568220800000000000000
+      internalID: 2487770743697834714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkGauche.NoBucket.SpriteSheet_3
+      name: C_PJ_WalkGauche_NoBucket_SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 93
+        x: 192
         y: 0
-        width: 31
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ea283e8078f1f5c0800000000000000
-      internalID: -4183289416544408858
+      spriteID: dae238cbf099bcd10800000000000000
+      internalID: 2146977940238446253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkGauche.NoBucket.SpriteSheet_4
+      name: C_PJ_WalkGauche_NoBucket_SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 124
+        x: 256
         y: 0
-        width: 31
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c14752cd8e0856f40800000000000000
-      internalID: 5721120639258293276
+      spriteID: 313c6a62825066dc0800000000000000
+      internalID: -3646221178304543981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C.PJ.WalkGauche.NoBucket.SpriteSheet_5
+      name: C_PJ_WalkGauche_NoBucket_SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 155
+        x: 320
         y: 0
-        width: 31
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dc40e487cd9368a0800000000000000
-      internalID: -6313028772389958442
+      spriteID: 77254c25fee8a24c0800000000000000
+      internalID: -4311476534716902793
       vertices: []
       indices: 
       edges: []
