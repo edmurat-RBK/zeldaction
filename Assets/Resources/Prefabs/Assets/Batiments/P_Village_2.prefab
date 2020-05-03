@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3279653216318150874}
   - component: {fileID: 5139786108085759231}
   - component: {fileID: 8762540994499678714}
+  - component: {fileID: 7719625443793953454}
   m_Layer: 0
   m_Name: P_Village_2
   m_TagString: Untagged
@@ -102,3 +103,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &7719625443793953454
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6357337741542882896}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.7}
+    oldSize: {x: 1.65625, y: 2.65625}
+    newSize: {x: 1.65625, y: 2.65625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.5703001, y: 0.12350464}
+      - {x: 0.5494871, y: 0.8028641}
+      - {x: -0.4677143, y: 0.8028641}
+      - {x: -0.47224522, y: 0.13903427}
+      - {x: -0.58465576, y: 0.09946823}
+      - {x: -0.637249, y: -0.23905563}
+      - {x: -0.63624763, y: -0.80763626}
+      - {x: -0.76094246, y: -0.90652084}
+      - {x: -0.7642746, y: -1.859375}
+      - {x: 0.828125, y: -1.859375}
+      - {x: 0.8221369, y: -0.92349625}
+      - {x: 0.7115555, y: -0.7436714}
+      - {x: 0.7263155, y: -0.20105362}
+      - {x: 0.7489643, y: 0.11198807}

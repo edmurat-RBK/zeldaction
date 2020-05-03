@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3346886322255461319}
   - component: {fileID: 2793285212802531275}
+  - component: {fileID: 8204223218278261815}
   m_Layer: 0
-  m_Name: P_NarrationEnvironnementale_5
+  m_Name: NE_Pancarte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,3 +83,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &8204223218278261815
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4708592433276572554}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.2}
+    oldSize: {x: 0.84375, y: 0.84375}
+    newSize: {x: 0.84375, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.34381008, y: 0.52064514}
+      - {x: -0.420578, y: 0.51769257}
+      - {x: -0.41683483, y: 0.205513}
+      - {x: -0.10773373, y: 0.2025299}
+      - {x: -0.1075573, y: -0.11212158}
+      - {x: -0.010622978, y: -0.109947205}
+      - {x: -0.023337364, y: 0.20587158}
+      - {x: 0.30596256, y: 0.24521637}
+      - {x: 0.41668606, y: 0.38420868}
+      - {x: 0.24993992, y: 0.52583313}
