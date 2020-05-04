@@ -22,9 +22,15 @@ namespace Attack
         public int dammage; //dammages of the player
 
         private Animator anim;
-        bool attack1;
+        //bool attack1;
         float timer;
-        public float timeBetweenAttack;       
+        [SerializeField]
+        private float timeBetweenAttack;
+        private int attackCount;
+        private float timestamp;
+        private float timestampAuto;
+        [SerializeField]
+        private float timeReset;
         #endregion
 
         void Awake()
@@ -42,39 +48,15 @@ namespace Attack
             AtatckPos();
             ennemisInRange.RemoveAll(list_item => list_item == null); //remove
 
-            if (Input.GetButtonDown("X")) //get l'input
+            if (Input.GetButtonDown("X") && timestamp < Time.time) //get l'input
             {
-                if (!anim.GetBool("IsMeleeAttacking")) //si la booleen d'attaque est false
-                {
-                    anim.SetBool("IsMeleeAttacking", true); //alors elle devient true
-
-                    if (!attack1) //si attack est faux
-                    {
-                        attack1 = true; //alors il devient true
-                    }
-                    else //sinon
-                    {
-                        anim.SetBool("DoubleAttack", true); //la booleen double attack devient true
-                        attack1 = false; //attack  devient faux
-                        timer = 0; //timer reset
-                    }
-                }
                 ApplyDammage();
                 CrateDestruction();
              }
 
-
-            //youmna a eu de l'aide de sam
-
-            if (attack1) //attack est true
+            if (timestampAuto < Time.time)
             {
-                timer += Time.deltaTime;//le timer s'incrémente
-
-                if (timer >= timeBetweenAttack) //si le timer est supérieur ou égale au cd d'attaque
-                {
-                    attack1 = false;//alors attack est false
-                    timer = 0; //le timer est reset
-                }
+                attackCount = 0;
             }
 
          
@@ -82,22 +64,13 @@ namespace Attack
 
         public void Attack1Done()  //cree event dans animation pour ramener meleeattack a false apres 1 cp
         {
-            if (!anim.GetBool("DoubleAttack"))
-            {
                 anim.SetBool("IsMeleeAttacking", false);
-
-            }
         }
 
         public void Attack2Done() //event trigger lors de la deuxième attack
         {
-            anim.SetBool("DoubleAttack", false);
             anim.SetBool("IsMeleeAttacking", false);
         }
-
-          
-        
-
 
         private void AtatckPos()
         {
@@ -192,11 +165,34 @@ namespace Attack
 
         private void ApplyDammage()
         {
+            timestamp = Time.time + timeBetweenAttack;
+
+            if (attackCount == 0 || attackCount == 2)
+            {
+                attackCount = 1;
+                anim.SetInteger("AttackCount", 1);
+                anim.SetBool("IsMeleeAttacking", true);
+                ResetAuto();
+            }
+            else if (attackCount == 1)
+            {
+                attackCount = 2;
+                anim.SetInteger("AttackCount", 2);
+                anim.SetBool("IsMeleeAttacking", true);
+                ResetAuto();
+            }
+
             foreach (GameObject ennemi in ennemisInRange)
             {
                 ennemi.GetComponent<PvEnnemis>().EnnemiTakeDammage(dammage);
             }
         } //apply damage to the ennemis within the colldier of the attack
+
+        private void ResetAuto()
+        {
+            timestampAuto = Time.time;
+            timestampAuto = Time.time + timeReset;
+        }
 
         private void CrateDestruction()
         {
