@@ -76,7 +76,7 @@ MonoBehaviour:
   timeBeforeAttack: 1
   attackCooldown: 3
   speed: 100
-  stoppingDistance: 2
+  stoppingDistance: 4
   retreatDistance: 0
   chocWave: {fileID: 4079278842457562866, guid: 40909fa89121c3c46a03e420bf10a3fb,
     type: 3}
@@ -186,7 +186,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -3319819809142994688, guid: 6d7d9d3a60157a1448d07bb950a38504,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

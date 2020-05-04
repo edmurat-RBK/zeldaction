@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 602140337966389457, guid: 2b602b7e9ec539a4fbbee71b92aaddd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -155,7 +155,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plaqueActive: {fileID: 4377197077941856334}
   plaqueDesactive: {fileID: 4377197079308030822}
-  stayActivate: 0
+  lockActivation: 0
+  teste: 0
+  other: 0
   activePlaqueBois: 0
 --- !u!1 &4377197079308030822
 GameObject:

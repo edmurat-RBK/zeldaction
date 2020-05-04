@@ -188,7 +188,7 @@ MonoBehaviour:
   tempsRemiseEnPlace: 3
   speed: 75
   startTime: 0
-  maxDist: 0
+  maxDist: 2
   stayActivate: 1
   actualDist: 0
 --- !u!114 &-7714424795342462588
