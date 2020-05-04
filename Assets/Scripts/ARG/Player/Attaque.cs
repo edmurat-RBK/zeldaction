@@ -64,7 +64,7 @@ namespace Attack
              }
 
 
-            //youmna a eu de laide de sam
+            //youmna a eu de l'aide de sam
 
             if (attack1)
             {
