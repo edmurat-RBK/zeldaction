@@ -27,7 +27,7 @@ namespace Manager
         public float speed;
         public bool playerCanRotate;
         public bool canTakeDammage = true;
-
+        public bool deathParalise;
         //booleen for the different actions of the player
 
 
@@ -87,6 +87,25 @@ namespace Manager
                     //change the animator without bucket
                     canChangeSprite = false;
                 }
+            }
+        }
+
+        public void deathParalisy()
+        {
+            if (deathParalise == false)
+            {
+                water.enabled = true;
+                attack.enabled = true;
+                kameo.enabled = true;
+                fontaine.enabled = true;
+
+            }
+            else
+            {
+                water.enabled = false;
+                attack.enabled = false;
+                kameo.enabled = false;
+                fontaine.enabled = false;
             }
         }
 

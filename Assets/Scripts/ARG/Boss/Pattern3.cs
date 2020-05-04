@@ -149,7 +149,7 @@ public class Pattern3 : MonoBehaviour
         Transform destinationOfMeteor = spawnPointsForMeteor[i].transform;
         pointOfMeteorImpact = new Vector3(destinationOfMeteor.position.x, destinationOfMeteor.position.y);
         yield return new WaitForSeconds(2);
-        GameObject meteor = Instantiate(projectil, (pointOfMeteorImpact + new Vector3(0, 2.5f)), transform.rotation);
+        GameObject meteor = Instantiate(projectil, (pointOfMeteorImpact), transform.rotation);
         actualMeteor += 1;
         if (actualMeteor != numberOfMeteor)
         {

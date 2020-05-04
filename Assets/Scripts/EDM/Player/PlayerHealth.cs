@@ -77,13 +77,13 @@ public class PlayerHealth : MonoBehaviour
         isDead = true;
         playerManager.playerCanMove = false;
         playerManager.playerRigidBody.velocity = Vector2.zero;
-        playerManager.getBucket = false;
-        playerManager.obtainBucket(); //player can't use his action but sprite without bucket
+        playerManager.deathParalise = true;
+        playerManager.deathParalisy(); //player can't use his action but sprite without bucket
         //animation death
         yield return new WaitForSeconds(2f);//animation time
         playerManager.playerCanMove = true;
-        playerManager.getBucket = true;
-        playerManager.obtainBucket();
+        playerManager.deathParalise = false;
+        playerManager.deathParalisy();
         respawn();
     }
 
