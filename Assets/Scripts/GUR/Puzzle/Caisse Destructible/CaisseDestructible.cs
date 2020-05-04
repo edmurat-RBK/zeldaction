@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class CaisseDestructible : MonoBehaviour
 {
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     public void Destruction()
     {
-        Destroy(gameObject);
+        anim.SetBool("IsDead", true);
+        Destroy(gameObject, 1.20f);
     }
 }

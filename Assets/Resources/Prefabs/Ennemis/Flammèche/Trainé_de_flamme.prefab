@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aabc9957ae7f54a9129af91bc6c4e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timesBeforeDestruction: 5
+  timesBeforeDestruction: 8
 --- !u!95 &449841157419500984
 Animator:
   serializedVersion: 3
@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be905cfebf2c7648be9a4368f9badb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeAnimation: 0.22
   khameoDetection: 0
   particuleCanDestroy: 1
 --- !u!61 &4769483079825545811
