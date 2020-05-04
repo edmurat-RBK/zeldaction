@@ -70,7 +70,7 @@ namespace Manager
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
             PlayerDirection();
-            Update1();
+            //Update1();
         }
 
        /* private void Update1()
