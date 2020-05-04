@@ -75,6 +75,7 @@ public class GolemLaveMouvement : MonoBehaviour
             StopAllCoroutines();
             lockMouvement = true;
             lockAttack = true;
+            rbGolem.isKinematic = false;
         }
     }
 
@@ -117,7 +118,7 @@ public class GolemLaveMouvement : MonoBehaviour
 
     IEnumerator GolemLaveAtack()
     {
-        //anim.SetBool("IsAttacking", true);
+        anim.SetBool("IsAttacking", true);
 
         lockMouvement = false;
         yield return new WaitForSeconds(timeBeforeAttack);
@@ -126,9 +127,12 @@ public class GolemLaveMouvement : MonoBehaviour
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;                          
         shotPoint.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
+        rbGolem.isKinematic = true;
         GameObject wave = Instantiate(chocWave, shotPoint.transform.position, shotPoint.transform.rotation); // spawn l'onde de choc
         Destroy(wave, 0.5f);
         StartCoroutine(AttackCoolDown());
+        yield return new WaitForSeconds(1);
+        rbGolem.isKinematic = false;
         lockMouvement = true;
     } // Coroutine qui fais attaquer le golem en faisant spawn l'onde de choc sur un spawn point
 
@@ -139,6 +143,7 @@ public class GolemLaveMouvement : MonoBehaviour
         anim.SetBool("IsAttacking", false);
 
         yield return new WaitForSeconds(attackCooldown);
+        
         lockAttack = true;
     } // Coroutine qui empéche le golem d'attaquer juste après une attaque
    

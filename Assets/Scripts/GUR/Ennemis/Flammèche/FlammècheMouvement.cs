@@ -37,19 +37,22 @@ public class FlammècheMouvement : MonoBehaviour
 
     private bool lockDirection = true;
     private bool lockGeneration = true;
+
+    private Rigidbody2D rbFlammeche;
     #endregion
 
     private void Start()
     {
         deathLockFlammeche = false;
         anim = GetComponent<Animator>();
+        rbFlammeche = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
         if (deathLockFlammeche == true)
         {
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            rbFlammeche.velocity = Vector2.zero;
         }
 
         if (deathLockFlammeche == false)
@@ -65,7 +68,7 @@ public class FlammècheMouvement : MonoBehaviour
 
         if (GetComponentInChildren<ZoneAggro>().canAggro == false) 
         {
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero;   
+            rbFlammeche.velocity = Vector2.zero;   
         } // Arrete la flammèche si le joueur sort da la zone d'aggro 
     }
 
@@ -110,7 +113,7 @@ public class FlammècheMouvement : MonoBehaviour
             movement = Vector2.left;
         }
 
-        GetComponent<Rigidbody2D>().velocity = (movement.normalized * speed * Time.fixedDeltaTime);
+        rbFlammeche.velocity = (movement.normalized * speed * Time.fixedDeltaTime);
 
         //youmna a ecrit ca
 

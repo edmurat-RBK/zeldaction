@@ -24,11 +24,16 @@ public class Kameheaumeheau : MonoBehaviour
 
     //for kameaumeau renderer
     public LineRenderer lineRenderer;
-    public GameObject origin;
     private Transform endPointTransform;
 
     private Vector2 kameoHit;
     public LayerMask mask;
+
+    [SerializeField]
+    private GameObject shootPoint;
+
+    [SerializeField]
+    private int speedDevider;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +60,7 @@ public class Kameheaumeheau : MonoBehaviour
         if (!loaded)
         {
            //If inupt is still pressed             if (Input.GetButton("Y"))             {
-                anim.SetBool("IsCharging", true);                 inputHoldTime += Time.deltaTime;                 manager.speed = playerSpeed*0.25f;                  //When input has been pressed enough                 if (inputHoldTime >= inputMaxHoldTime)                 {                     loaded = true;                 }             }             //If input is not pressed / realsed             else             {                 manager.speed = playerSpeed;                 inputHoldTime = 0;                 anim.SetBool("IsKameomeo", false);                 anim.SetBool("IsCharging", false);             }         }         // If Kameheaumeheau is loaded         else         {             //When input released             if (Input.GetButtonUp("Y"))             {
+                anim.SetBool("IsCharging", true);                 inputHoldTime += Time.deltaTime;                 manager.speed = playerSpeed/speedDevider;                  //When input has been pressed enough                 if (inputHoldTime >= inputMaxHoldTime)                 {                     loaded = true;                 }             }             //If input is not pressed / realsed             else             {                 manager.speed = playerSpeed;                 inputHoldTime = 0;                 anim.SetBool("IsKameomeo", false);                 anim.SetBool("IsCharging", false);             }         }         // If Kameheaumeheau is loaded         else         {             //When input released             if (Input.GetButtonUp("Y"))             {
                 //Start Kameheau
                 anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                 kameheaumeheau = true;                 manager.playerCanMove = false;                                  loaded = false;                 inputHoldTime = 0;                              }              
         }
@@ -116,14 +121,14 @@ public class Kameheaumeheau : MonoBehaviour
 
             //Check collision
             //LayerMask mask = LayerMask.GetMask("KamehoHit", "Ennemi", "CamCollider");
-            RaycastHit2D ray = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), beamDirection, beamRange, mask);
-            Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), beamDirection, Color.blue);
+            RaycastHit2D ray = Physics2D.Raycast(new Vector2(shootPoint.transform.position.x, shootPoint.transform.position.y), beamDirection, beamRange, mask);
+            Debug.DrawRay(new Vector2(shootPoint.transform.position.x, shootPoint.transform.position.y), beamDirection, Color.blue);
             
             if (ray.collider != null)
             {
                 //setup line when kameomeo
                 beamDir = beamDirection;
-                lineRenderer.SetPosition(0, transform.position);
+                lineRenderer.SetPosition(0, shootPoint.transform.position);
                 lineRenderer.SetPosition(1, ray.point);                manager.playerCanRotate = false;                lineRenderer.enabled = true;
                 if (ray.transform.gameObject.tag == "Moulin")
                 {

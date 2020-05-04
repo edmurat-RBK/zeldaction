@@ -93,7 +93,7 @@ namespace MovementPlayer
 
                 }
                 direction = new Vector2(horizontal, vertical).normalized;
-                PlayerManager.Instance.playerRigidBody.velocity = direction * manager.speed * Time.deltaTime;
+                PlayerManager.Instance.playerRigidBody.velocity = direction * manager.speed * Time.fixedDeltaTime;
             }
             
         }

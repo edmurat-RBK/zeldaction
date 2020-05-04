@@ -12,6 +12,9 @@ public class Fontaine : MonoBehaviour
     public bool active = false;
     //public float vagueTrigger = 0.2f;
 
+    [SerializeField]
+    private GameObject fontaineShootPoint;
+
     private Animator anim;
 
     private PlayerManager manager;
@@ -32,7 +35,7 @@ public class Fontaine : MonoBehaviour
             if(Input.GetButton("A"))
             {
                 anim.SetBool("IsShielding",true);
-
+                fontaineShootPoint.SetActive (true);
                 effectTime = maxEffectTime;
                 active = true;
                 manager.playerInvulnerable = true;                
@@ -53,7 +56,8 @@ public class Fontaine : MonoBehaviour
             {
                 cooldown = 0;
                 anim.SetBool("IsShielding", false);
-                Debug.Log("Pas Fontaine !");                
+                Debug.Log("Pas Fontaine !");
+                fontaineShootPoint.SetActive (false);
              }
         }
         else

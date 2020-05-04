@@ -27,9 +27,8 @@ namespace Manager
         public float speed;
         public bool playerCanRotate;
         public bool canTakeDammage = true;
+        public bool deathParalise;
         private Animator anim;
-    
-
         //booleen for the different actions of the player
 
 
@@ -70,18 +69,18 @@ namespace Manager
             Update1();
         }
 
-       /* private void Update1()
-        {
+       /* private void Update1()
+        {
             if (Input.GetKeyDown(KeyCode.N))
             {
-                getBucket = false;
-                anim.SetBool("HasBucket", false);
-            }
+                getBucket = false;
+                anim.SetBool("HasBucket", false);
+            }
             if (Input.GetKeyDown(KeyCode.B))
             {
-                getBucket = true;
-                anim.SetBool("HasBucket", true);
-            }
+                getBucket = true;
+                anim.SetBool("HasBucket", true);
+            }
         }*/
 
         //function to lucnh when you want to desactivate or activate all the abilities of the player with the boolen
@@ -99,7 +98,7 @@ namespace Manager
                 
             }
             else
-            {
+            {
                 water.enabled = false;
                 attack.enabled = false;
                 kameo.enabled = false;
@@ -109,6 +108,25 @@ namespace Manager
                     //change the animator without bucket
                     canChangeSprite = false;
                 }
+            }
+        }
+
+        public void deathParalisy()
+        {
+            if (deathParalise == false)
+            {
+                water.enabled = true;
+                attack.enabled = true;
+                kameo.enabled = true;
+                fontaine.enabled = true;
+
+            }
+            else
+            {
+                water.enabled = false;
+                attack.enabled = false;
+                kameo.enabled = false;
+                fontaine.enabled = false;
             }
         }
 

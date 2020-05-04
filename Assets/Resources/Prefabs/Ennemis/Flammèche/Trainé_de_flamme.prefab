@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   khameoDetection: 0
-  particuleCanDestroy: 0
+  particuleCanDestroy: 1
 --- !u!61 &4769483079825545811
 BoxCollider2D:
   m_ObjectHideFlags: 0
