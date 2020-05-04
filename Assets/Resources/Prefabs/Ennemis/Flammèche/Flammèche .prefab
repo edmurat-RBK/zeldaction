@@ -105,7 +105,7 @@ MonoBehaviour:
   timeBtwDirection: 2
   flamePrefab: {fileID: 1075538181445301906, guid: 53cb50b4d1f2af849a9d8ceedfb5b95e,
     type: 3}
-  flameSpawnRate: 0.3
+  flameSpawnRate: 2
   deathLockFlammeche: 0
 --- !u!212 &284867908
 SpriteRenderer:

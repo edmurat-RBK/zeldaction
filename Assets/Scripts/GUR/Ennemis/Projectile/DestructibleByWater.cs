@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class DestructibleByWater : MonoBehaviour
 {
+    public float timeAnimation;
     private Animator anim;
+
 
     [HideInInspector]
     public bool khameoDetection;
@@ -12,7 +14,7 @@ public class DestructibleByWater : MonoBehaviour
     public bool particuleCanDestroy;
     void Start()
     {
-        //anim = GetComponent<Animator>();  
+        anim = GetComponent<Animator>();  
 
         khameoDetection = false;
     }
@@ -21,9 +23,9 @@ public class DestructibleByWater : MonoBehaviour
     {
         if (khameoDetection == true)
         {
-            //anim.SetBool("IsDead", true);
+            anim.SetBool("IsDead", true);
 
-            Destroy(gameObject);
+            Destroy(gameObject, timeAnimation);
         }
     }
 
@@ -31,7 +33,8 @@ public class DestructibleByWater : MonoBehaviour
     {
         if (particuleCanDestroy == true)
         {
-            Destroy(gameObject);
+            anim.SetBool("IsDead", true);
+            Destroy(gameObject, timeAnimation);
         }
     }
 }
