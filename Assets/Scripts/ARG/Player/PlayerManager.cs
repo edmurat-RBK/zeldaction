@@ -70,27 +70,29 @@ namespace Manager
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
             PlayerDirection();
-            //Update1();
-        }
 
-       /* private void Update1()
-        {
-            if (Input.GetKeyDown(KeyCode.N))
-            {
-                getBucket = false;
-                anim.SetBool("HasBucket", false);
-            }
-            if (Input.GetKeyDown(KeyCode.B))
-            {
-                getBucket = true;
-                anim.SetBool("HasBucket", true);
-            }
-        }*/
+                if (Input.GetKeyDown(KeyCode.N))
+                {
+                    getBucket = false;
+                    obtainBucket();
+                    anim.SetBool("HasBucket", false);
+
+                }
+
+                if (Input.GetKeyDown(KeyCode.B))
+                {
+                    getBucket = true;
+                    obtainBucket();
+                    anim.SetBool("HasBucket", true);
+
+                }
+
+        }
 
         //function to lucnh when you want to desactivate or activate all the abilities of the player with the boolen
         public void obtainBucket()
         {            
-                anim.SetBool("HasBucket", false);
+            anim.SetBool("HasBucket", false);
             if (getBucket == true)
             {
                 anim.SetBool("HasBucket", true);

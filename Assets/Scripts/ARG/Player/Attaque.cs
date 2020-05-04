@@ -42,21 +42,21 @@ namespace Attack
             AtatckPos();
             ennemisInRange.RemoveAll(list_item => list_item == null); //remove
 
-            if (Input.GetButtonDown("X"))
+            if (Input.GetButtonDown("X")) //get l'input
             {
-                if (!anim.GetBool("IsMeleeAttacking"))
+                if (!anim.GetBool("IsMeleeAttacking")) //si la booleen d'attaque est false
                 {
-                    anim.SetBool("IsMeleeAttacking", true);
+                    anim.SetBool("IsMeleeAttacking", true); //alors elle devient true
 
-                    if (!attack1)
+                    if (!attack1) //si attack est faux
                     {
-                        attack1 = true;
+                        attack1 = true; //alors il devient true
                     }
-                    else
+                    else //sinon
                     {
-                        anim.SetBool("DoubleAttack", true);
-                        attack1 = false;
-                        timer = 0;
+                        anim.SetBool("DoubleAttack", true); //la booleen double attack devient true
+                        attack1 = false; //attack  devient faux
+                        timer = 0; //timer reset
                     }
                 }
                 ApplyDammage();
@@ -66,33 +66,37 @@ namespace Attack
 
             //youmna a eu de l'aide de sam
 
-            if (attack1)
+            if (attack1) //attack est true
             {
-                timer += Time.deltaTime;
+                timer += Time.deltaTime;//le timer s'incrémente
 
-                if (timer >= timeBetweenAttack)
+                if (timer >= timeBetweenAttack) //si le timer est supérieur ou égale au cd d'attaque
                 {
-                    attack1 = false;
-                    timer = 0;
+                    attack1 = false;//alors attack est false
+                    timer = 0; //le timer est reset
                 }
             }
 
          
         }
-        public void Attack2Done()
+
+        public void Attack1Done()  //cree event dans animation pour ramener meleeattack a false apres 1 cp
+        {
+            if (!anim.GetBool("DoubleAttack"))
+            {
+                anim.SetBool("IsMeleeAttacking", false);
+
+            }
+        }
+
+        public void Attack2Done() //event trigger lors de la deuxième attack
         {
             anim.SetBool("DoubleAttack", false);
             anim.SetBool("IsMeleeAttacking", false);
         }
-        public void Attack1Done()  //cree event dans animation pour ramener meleeattack a false apres 1 cp
-        {          
-            if(!anim.GetBool("DoubleAttack"))
-            {
-            anim.SetBool("IsMeleeAttacking", false);   
 
-            }
           
-        }
+        
 
 
         private void AtatckPos()

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7657286691196906889}
   - component: {fileID: 3656192152541356107}
   - component: {fileID: 2651635573027978766}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: Zone d'aggro
   m_TagString: Untagged
   m_Icon: {fileID: 0}

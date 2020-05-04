@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be905cfebf2c7648be9a4368f9badb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeAnimation: 0
   khameoDetection: 0
   particuleCanDestroy: 1
 --- !u!1 &206017436
@@ -2427,6 +2428,11 @@ PrefabInstance:
       propertyPath: lineRenderer
       value: 
       objectReference: {fileID: 1177100932}
+    - target: {fileID: 1097937794574312931, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: mask.m_Bits
+      value: 54273
+      objectReference: {fileID: 0}
     - target: {fileID: 2241696926748252811, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: checkpointBaseSprite
@@ -2439,6 +2445,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8284627518334055542, guid: 5f4d20750bb771f4a8925c69f8567c13,
         type: 3}
+    - target: {fileID: 4787709865514705334, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5987844328129332226, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_IsActive
@@ -2518,6 +2529,11 @@ PrefabInstance:
         type: 3}
       propertyPath: speed
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987844329369052874, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: getBucket
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052878, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
