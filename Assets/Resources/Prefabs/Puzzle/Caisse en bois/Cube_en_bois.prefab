@@ -217,9 +217,9 @@ GameObject:
   - component: {fileID: 2521424828691850033}
   - component: {fileID: 2521424828691850032}
   - component: {fileID: 1865943659}
-  m_Layer: 28
+  m_Layer: 0
   m_Name: Cube_en_bois
-  m_TagString: Untagged
+  m_TagString: Cube de bois
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

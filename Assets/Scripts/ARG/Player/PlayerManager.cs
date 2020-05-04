@@ -15,6 +15,10 @@ namespace Manager
     public class PlayerManager : Singleton<PlayerManager>
     {
         #region Variables
+
+        public int healthPlayer;
+        public int healthMax;
+
         public float horizontal;
         public float vertical;
         public bool playerCanMove;
