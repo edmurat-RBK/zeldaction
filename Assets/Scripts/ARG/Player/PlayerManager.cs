@@ -27,6 +27,8 @@ namespace Manager
         public float speed;
         public bool playerCanRotate;
         public bool canTakeDammage = true;
+        private Animator anim;
+    
 
         //booleen for the different actions of the player
 
@@ -56,6 +58,8 @@ namespace Manager
             playerCanMove = true;
             playerRigidBody = GetComponent<Rigidbody2D>();
             getBucket = false;
+            anim = GetComponent<Animator>();
+
         }
         
         void Update()
@@ -63,17 +67,35 @@ namespace Manager
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
             PlayerDirection();
+            Update1();
         }
+
+       /* private void Update1()
+        {
+            if (Input.GetKeyDown(KeyCode.N))
+            {
+                getBucket = false;
+                anim.SetBool("HasBucket", false);
+            }
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                getBucket = true;
+                anim.SetBool("HasBucket", true);
+            }
+        }*/
 
         //function to lucnh when you want to desactivate or activate all the abilities of the player with the boolen
         public void obtainBucket()
-        {
+        {            
+                anim.SetBool("HasBucket", false);
             if (getBucket == true)
             {
+                anim.SetBool("HasBucket", true);
                 water.enabled = true;
                 attack.enabled = true;
                 kameo.enabled = true;
                 fontaine.enabled = true;
+                
                 
             }
             else

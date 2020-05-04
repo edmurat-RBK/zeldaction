@@ -21,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
 
     public Sprite checkpointBaseSprite;
     public Sprite checkpointActiveSprite;
+    private Animator anim;
     
     #endregion
 
@@ -30,16 +31,18 @@ public class PlayerHealth : MonoBehaviour
     {
         health = maximumHealth;
         playerManager = GetComponent<PlayerManager>();
+        anim = GetComponent<Animator>();
         
     }
 
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Y))
-    //    {
-    //        TakeDamage(1);
-    //    }
-    //}
+   /* private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Y))
+       {
+           TakeDamage(1);
+        }
+    }*/
+
 
     // Function that check player vulnerability before taking damage
     // Called when the avatar is hit by an enemy
@@ -49,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
         if(!playerManager.playerInvulnerable)
         {
             TakeDamage(damage);
+            
         }
     }
 
@@ -59,6 +63,7 @@ public class PlayerHealth : MonoBehaviour
         if (playerManager.canTakeDammage == true)
         {
             //animation stagger
+            anim.SetTrigger("IsDamaged");
             health -= damage;
             StartCoroutine("Invulnerability");
             if (health <= 0)
@@ -75,11 +80,11 @@ public class PlayerHealth : MonoBehaviour
     private IEnumerator Death()
     {
         isDead = true;
+        anim.SetBool("IsDead",true);
         playerManager.playerCanMove = false;
         playerManager.playerRigidBody.velocity = Vector2.zero;
         playerManager.getBucket = false;
         playerManager.obtainBucket(); //player can't use his action but sprite without bucket
-        //animation death
         yield return new WaitForSeconds(2f);//animation time
         playerManager.playerCanMove = true;
         playerManager.getBucket = true;
@@ -101,9 +106,10 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    //Function for respawn at the actual checfpoint with full health
+    //Function for respawn at the actual checkpoint with full health
     public void respawn()
     {
+        anim.SetBool("IsDead", false);
         transform.position = actualRespawnPoint.transform.position;
         health = maximumHealth;
     }
