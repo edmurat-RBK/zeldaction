@@ -15,7 +15,7 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         canEmpty = true;
-        GetComponent<PlayerHealth>().health = GetComponent<PlayerHealth>().maximumHealth;
+        HealthSysteme();
     }
 
     public void HealthSysteme()
