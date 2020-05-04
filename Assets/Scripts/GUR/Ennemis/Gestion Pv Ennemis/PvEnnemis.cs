@@ -161,9 +161,11 @@ public class PvEnnemis : MonoBehaviour
 
             gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem = true;
             yield return new WaitForSeconds(timeOfVulnerability);
-            gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem = false;
 
             anim.SetBool("IsSolidifying", false);
+
+            yield return new WaitForSeconds(0.7f);
+            gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem = false;
 
             lockGolemVulné = false;
         }
