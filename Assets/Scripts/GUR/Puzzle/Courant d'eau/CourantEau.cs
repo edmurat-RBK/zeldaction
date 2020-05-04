@@ -43,7 +43,7 @@ public class CourantEau : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other) // Permet de donné une vélocité à un cube de bois quand il est dans le courant
     {
-        if (other.gameObject.layer == 28) // 28 = layer Cube de bois
+        if (other.gameObject.tag == "Cube de bois") // 28 = layer Cube de bois
         {
             if(other.GetComponent<CubeBois>().canRedirect == true)
             {
@@ -56,7 +56,7 @@ public class CourantEau : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other) // Permet d'être sur qu'un cube soit bien sortie d'un courant avant d'en prendre un autres
     {
-        if (other.gameObject.layer == 28)
+        if (other.gameObject.tag == "Cube de bois")
         {
             other.GetComponent<CubeBois>().canRedirect = true;
         }

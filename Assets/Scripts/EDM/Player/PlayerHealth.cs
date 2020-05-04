@@ -10,8 +10,8 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     #region Variables
-    public float maximumHealth = 3f;
-    public float health = 3f;
+    public int maximumHealth;
+    public int health;
     private bool isDead;
 
     public List<GameObject> respawnPoints = new List<GameObject>();
@@ -28,25 +28,32 @@ public class PlayerHealth : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        health = maximumHealth;
+    {
         playerManager = GetComponent<PlayerManager>();
         anim = GetComponent<Animator>();
         
     }
 
-   /* private void Update()
-    {
+    private void Update()
+    {
+        playerManager.healthPlayer = health;
+        playerManager.healthMax = maximumHealth;
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            health += 1;
+            gameObject.GetComponent<HealthBar>().HealthSysteme();
+        }
+
         if (Input.GetKeyDown(KeyCode.Y))
-       {
+        {
            TakeDamage(1);
         }
-    }*/
-
+    }
 
     // Function that check player vulnerability before taking damage
     // Called when the avatar is hit by an enemy
-    public void TakeHit(float damage)
+    public void TakeHit(int damage)
     {
 
         if(!playerManager.playerInvulnerable)
@@ -58,13 +65,14 @@ public class PlayerHealth : MonoBehaviour
 
     // Function that give damage to player health
     // Called in TakeHit()
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         if (playerManager.canTakeDammage == true)
         {
             //animation stagger
             anim.SetTrigger("IsDamaged");
             health -= damage;
+            gameObject.GetComponent<HealthBar>().HealthSysteme();
             StartCoroutine("Invulnerability");
             if (health <= 0)
             {
@@ -97,7 +105,7 @@ public class PlayerHealth : MonoBehaviour
 
     // Function that restore health
     // Called when the player use an item that restore health
-    public void Heal(float amount)
+    public void Heal(int amount)
     {
         if(!isDead)
         {

@@ -37,6 +37,7 @@ Transform:
   - {fileID: 6082180765508848812}
   - {fileID: 8194066432057449478}
   - {fileID: 6603140250014826129}
+  - {fileID: 8264020971030719851}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -99,12 +100,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f65dd4bb73236842baf8286b4eb520a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 50
   damage: 0
   timeBtwDirection: 2
   flamePrefab: {fileID: 1075538181445301906, guid: 53cb50b4d1f2af849a9d8ceedfb5b95e,
     type: 3}
-  flameSpawnRate: 0
+  flameSpawnRate: 0.3
   deathLockFlammeche: 0
 --- !u!212 &284867908
 SpriteRenderer:
@@ -206,7 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6603140250014826129}
   - component: {fileID: 3792149973890053759}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Bodyblock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,6 +261,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3009620996165859512}
     m_Modifications:
+    - target: {fileID: 3656192152541356107, guid: d0cf02a19397f9f4f8bb12569a2f78bf,
+        type: 3}
+      propertyPath: m_Radius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5327081122105251559, guid: d0cf02a19397f9f4f8bb12569a2f78bf,
         type: 3}
       propertyPath: m_Name
@@ -502,4 +508,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2885687253431025128, guid: e8a6b6465e5a9344f916eb4527dc9a30,
     type: 3}
   m_PrefabInstance: {fileID: 6465807066838360558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6672320082262839864
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3009620996165859512}
+    m_Modifications:
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.352
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671851272936621259, guid: e33986174f44a23418d30c1eb1ce734e,
+        type: 3}
+      propertyPath: m_Name
+      value: Contact Hitbox domage
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e33986174f44a23418d30c1eb1ce734e, type: 3}
+--- !u!4 &8264020971030719851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6672320082262839864}
   m_PrefabAsset: {fileID: 0}

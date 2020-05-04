@@ -32,6 +32,7 @@ public class MageMovement : MonoBehaviour
     Vector2 retreat;
 
     private Animator anim;
+    private Rigidbody2D rbMage;
 
     public bool vunerableMage;
 
@@ -44,6 +45,7 @@ public class MageMovement : MonoBehaviour
     
     private void Start()
     {
+        rbMage = GetComponent<Rigidbody2D>();
         deathLockMage = false;
         player = PlayerManager.Instance.transform;
         anim = GetComponent<Animator>();
@@ -62,12 +64,12 @@ public class MageMovement : MonoBehaviour
 
         if (GetComponentInChildren<ZoneAggro>().canAggro == false)
         {
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            rbMage.velocity = Vector2.zero;
         }
 
         if (vunerableMage == true)
         {
-            GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            rbMage.velocity = Vector2.zero;
             StopAllCoroutines();
             lockMovement = true;
             lockAttack = true;
@@ -85,8 +87,8 @@ public class MageMovement : MonoBehaviour
             if (vunerableMage == false)
             {
                 //youmna a ecrit ca
-                anim.SetFloat("Horizontal", GetComponent<Rigidbody2D>().velocity.x);
-                anim.SetFloat("Vertical", GetComponent<Rigidbody2D>().velocity.y);
+                anim.SetFloat("Horizontal", rbMage.velocity.x);
+                anim.SetFloat("Vertical", rbMage.velocity.y);
 
 
                 if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
@@ -94,14 +96,14 @@ public class MageMovement : MonoBehaviour
                     
                     anim.SetBool("IsRecule", false);
 
-                    GetComponent<Rigidbody2D>().velocity = (movement.normalized * speed * Time.fixedDeltaTime);
+                    rbMage.velocity = (movement.normalized * speed * Time.fixedDeltaTime);
 
                 }
 
                 else if (Vector2.Distance(transform.position, player.transform.position) < retreatDistance)
                 {
-                    
-                    GetComponent<Rigidbody2D>().velocity = (retreat.normalized * speed * Time.fixedDeltaTime);
+
+                    rbMage.velocity = (retreat.normalized * speed * Time.fixedDeltaTime);
 
                     anim.SetBool("IsRecule", true);
 
@@ -109,7 +111,7 @@ public class MageMovement : MonoBehaviour
 
                 else if (Vector2.Distance(transform.position, player.transform.position) < stoppingDistance && Vector2.Distance(transform.position, player.transform.position) > retreatDistance)
                 {
-                    GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                    rbMage.velocity = Vector2.zero;
 
                     if (lockAttack == true)
                     {
@@ -129,7 +131,7 @@ public class MageMovement : MonoBehaviour
         lockMovement = false;
         yield return new WaitForSeconds(timeBeforeAttack);
         anim.SetBool("IsAttacking", false);
-        GameObject meteor = Instantiate(projectile, (player.transform.position + new Vector3(0,2.5f)), transform.rotation);
+        GameObject meteor = Instantiate(projectile, player.transform.position, transform.rotation);
         StartCoroutine(Cooldown());
         yield return new WaitForSeconds(0.3f);
 

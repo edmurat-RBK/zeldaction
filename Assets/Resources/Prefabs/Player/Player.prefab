@@ -177,6 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65325cc976a3f5c48995282415f3c852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthPlayer: 0
+  healthMax: 0
   horizontal: 0
   vertical: 0
   playerCanMove: 0
@@ -381,8 +383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ccad2ad6a6d8d848b328c1f7cfc2a1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumHealth: 3
-  health: 3
+  maximumHealth: 5
+  health: 5
   respawnPoints: []
   actualRespawnPoint: {fileID: 0}
   checkpointBaseSprite: {fileID: 0}

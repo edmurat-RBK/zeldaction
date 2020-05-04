@@ -16,7 +16,7 @@ public class FlammècheMouvement : MonoBehaviour
     [Header("Stat de base")]
     [Space]
     public float speed;
-    public float damage;
+    public int damage;
 
     [Header ("Comportement de la flamèche")]
     [Space]

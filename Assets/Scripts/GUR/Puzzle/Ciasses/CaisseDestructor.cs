@@ -11,7 +11,7 @@ public class CaisseDestructor : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 28)
+        if (collision.gameObject.tag == "Cube de bois")
         {
             Object.Destroy(collision.gameObject);
         }
