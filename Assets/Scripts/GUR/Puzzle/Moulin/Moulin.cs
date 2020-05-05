@@ -44,6 +44,16 @@ public class Moulin : MonoBehaviour
 
     void Update()
     {
+        if (lockMoulinLeft == true)
+        {
+            moulinOnGauche = lockMoulinLeft;
+        }
+
+        if (lockMoulinRight == true)
+        {
+            moulinOnDroit = lockMoulinRight;
+        }
+
         ActivationGauche(); 
         ActivationDroit(); 
     }
