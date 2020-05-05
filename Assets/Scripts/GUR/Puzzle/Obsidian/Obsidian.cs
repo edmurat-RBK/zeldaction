@@ -9,7 +9,8 @@ public class Obsidian : MonoBehaviour
     public Sprite[] sprite;
 
     private SpriteRenderer obsiSprite;
-    private BoxCollider2D obsiHitBox;
+    private BoxCollider2D hitDetection;
+    public BoxCollider2D obsiHitBox;
 
     private float state;
 
@@ -17,17 +18,18 @@ public class Obsidian : MonoBehaviour
     void Start()
     {
         state = timeBeforeDestrcution / sprite.Length;
-
-        obsiHitBox = GetComponent<BoxCollider2D>();
+        hitDetection = GetComponent<BoxCollider2D>();
         obsiSprite = GetComponent<SpriteRenderer>();
         obsiSprite.enabled = false;
         obsiHitBox.enabled = true;
+        hitDetection.enabled = true;
     }
 
     
     private void OnParticleCollision(GameObject other)
     {
         obsiHitBox.enabled = false;
+        hitDetection.enabled = false;
         obsiSprite.enabled = true;
 
         StartCoroutine(RespawnObsi());
@@ -42,6 +44,7 @@ public class Obsidian : MonoBehaviour
         }
 
         obsiHitBox.enabled = true;
+        hitDetection.enabled = true;
         obsiSprite.enabled = false;
     }
 }
