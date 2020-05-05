@@ -14,6 +14,7 @@ public class Pattern1 : MonoBehaviour
     private int numberOfWaves;
     private int numberOfTheWave;
     public bool canFire;
+    public bool vulnerable;
     #endregion
 
     // Start is called before the first frame update
@@ -22,7 +23,6 @@ public class Pattern1 : MonoBehaviour
         player = PlayerManager.Instance.transform;
         canFire = true;
         //StartCoroutine("CreateWave");
-
 
     }
 
@@ -34,19 +34,22 @@ public class Pattern1 : MonoBehaviour
             WaveOfFlame();
         }
 
-        
+        if (vulnerable == true)
+        {
+            StopAllCoroutines();
+        }
+
 
     }
 
     #region Phase
-    private void WaveOfFlame()
+    public void WaveOfFlame()
     {
-        if (canFire == true)
+        if (canFire == true && vulnerable == false)
         {
             numberOfWaves = Random.Range(2, 5);
             numberOfTheWave = 0;
             StartCoroutine("CreateWave");
-            Debug.Log(numberOfWaves);
         }
 
     }
@@ -67,6 +70,8 @@ public class Pattern1 : MonoBehaviour
             StartCoroutine("CreateWave");
         }
         else canFire = true;
+        yield return new WaitForSeconds(0.5f);
+        GetComponent<BossManager>().CooldownFunction();
         
     }
     #endregion

@@ -131,7 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 12667160}
   m_Layer: 0
-  m_Name: Point for Meteor Phase 3
+  m_Name: Point for Meteor Phase 2/3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2588,6 +2588,7 @@ GameObject:
   - component: {fileID: 830325645}
   - component: {fileID: 830325644}
   - component: {fileID: 830325643}
+  - component: {fileID: 830325652}
   m_Layer: 12
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -2829,6 +2830,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &830325652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830325642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 068195b424921ce4a971a247ab2e29a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &839854025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2909,8 +2922,8 @@ GameObject:
   - component: {fileID: 842868634}
   - component: {fileID: 842868633}
   - component: {fileID: 842868636}
-  - component: {fileID: 842868635}
   - component: {fileID: 842868637}
+  - component: {fileID: 842868635}
   m_Layer: 0
   m_Name: "Barri\xE8re d'eau"
   m_TagString: Untagged
@@ -2991,7 +3004,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 842868632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b02daf8434ee1b41892011eff8b1a86, type: 3}
+  m_Script: {fileID: 11500000, guid: 67bd50cf1475e7f4b97882a6d5e2b930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inWichDirection: 0
@@ -3004,6 +3017,8 @@ MonoBehaviour:
   maxDist: 2
   stayActivate: 1
   actualDist: 0
+  vulnerable: 0
+  boss: {fileID: 1637886625}
 --- !u!114 &842868636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3707,7 +3722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931337267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.94, y: 8.61, z: 0}
+  m_LocalPosition: {x: 7.62, y: 8.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4563,6 +4578,11 @@ PrefabInstance:
       propertyPath: lineRenderer
       value: 
       objectReference: {fileID: 1416359184}
+    - target: {fileID: 3399125423661483256, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3476064462236680033, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: fontaineShootPoint
@@ -4572,6 +4592,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987844329369052868, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: timeBetweenAttack
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987844329369052868, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: timeReset
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
@@ -4641,7 +4671,7 @@ PrefabInstance:
     - target: {fileID: 6448364620980469777, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea7f767da1b04149aab5405f95e07b0, type: 3}
@@ -4923,9 +4953,10 @@ GameObject:
   - component: {fileID: 1637886629}
   - component: {fileID: 1637886628}
   - component: {fileID: 1637886630}
+  - component: {fileID: 1637886631}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4963,6 +4994,7 @@ MonoBehaviour:
   chocWave: {fileID: 6347066350174446018, guid: db113d04b44d61b40bee474b44ff6727,
     type: 3}
   canFire: 0
+  vulnerable: 0
 --- !u!114 &1637886628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4997,6 +5029,7 @@ MonoBehaviour:
   - {fileID: 1119714686}
   - {fileID: 1509415812}
   numberOfMeteor: 2
+  vulnerable: 0
 --- !u!114 &1637886629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5004,7 +5037,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637886625}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89a1b5d1a071c434895d269cb291be1d, type: 3}
   m_Name: 
@@ -5020,17 +5053,27 @@ MonoBehaviour:
   - {fileID: 1046962221}
   - {fileID: 1547888519}
   totem: {fileID: 1019948743}
-  hightOfTotem: 5
+  hightOfTotem: 2
   speedOfTotem: 2
   totemShadow: {fileID: 152296759}
   slamDestination: {fileID: 0}
   totemCollider: {fileID: 1019948746}
   totemStase: {fileID: 931337267}
-  projectil: {fileID: 4604962061793822854, guid: 9f8b109061790c44dbc125db03e79856,
+  projectil: {fileID: 2105884287301529379, guid: a89db78045bd840458005a21f71b2a78,
     type: 3}
   totemShadowForPoint: {fileID: 2659543707926705456, guid: fdd7b14640c2d4f45b2f5b2c7e5e72b9,
     type: 3}
-  spawnPointsForMeteor: []
+  spawnPointsForMeteor:
+  - {fileID: 440275049}
+  - {fileID: 1045091400}
+  - {fileID: 1070393664}
+  - {fileID: 2116717163}
+  - {fileID: 702303044}
+  - {fileID: 684521288}
+  - {fileID: 970036556}
+  - {fileID: 1119714686}
+  - {fileID: 1509415812}
+  vulnerable: 0
 --- !u!114 &1637886630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5043,6 +5086,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e24656523ef738f45822d9d939862e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dammageCount: 2
+  cooldownPatternMin: 6
+  cooldownPatternMax: 11
+  canLunchPattern2: 1
+  vulnerable: 0
+--- !u!61 &1637886631
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637886625}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20815623, y: -1.0060852}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.3590953, y: 3.6366372}
+  m_EdgeRadius: 0
 --- !u!1 &1715333009 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3842681876926265267, guid: 748690715eb2a8b44ab4aae13713209d,

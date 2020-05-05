@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ennemis
   - Fire
   - Courant
   - CaissePierre
@@ -17,6 +16,7 @@ TagManager:
   - Ennemi
   - Caisse Destructible
   - Cube de bois
+  - Boss
   layers:
   - Default
   - TransparentFX
