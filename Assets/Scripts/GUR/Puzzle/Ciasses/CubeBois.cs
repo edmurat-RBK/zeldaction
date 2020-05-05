@@ -81,8 +81,9 @@ public class CubeBois : MonoBehaviour
                 courantEau[i].SetActive(false);
             }
 
-            if (notStop == true)
+            if (notStop == true && gameObject.GetComponentInChildren<MouvDetection>().canMakeMove == true)
             {
+                Debug.Log(direction);
                 PlayerManager.Instance.playerRigidBody.AddForce(direction * speedOfWater); // Permet de transporter le joueur sur la caisse
             }
         }

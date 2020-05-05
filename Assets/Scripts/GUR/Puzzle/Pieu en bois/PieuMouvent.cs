@@ -105,7 +105,6 @@ public class PieuMouvent : MonoBehaviour
 
         if (gameObject.GetComponent<GestionActivateur>().canActive == true)
         {
-            Debug.Log("je rentre");
             if (actualDist < maxDist)
             {
                 gameObject.GetComponent<Rigidbody2D>().velocity = retractage.normalized * speed * Time.fixedDeltaTime;
