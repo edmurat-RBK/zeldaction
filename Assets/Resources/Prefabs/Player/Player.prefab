@@ -5371,7 +5371,7 @@ PrefabInstance:
     - target: {fileID: 726260777397222361, guid: 987fd362c7092ca4bb0bff32442032a8,
         type: 3}
       propertyPath: lengthInSec
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 726260777397222361, guid: 987fd362c7092ca4bb0bff32442032a8,
         type: 3}
@@ -5391,7 +5391,32 @@ PrefabInstance:
     - target: {fileID: 726260777397222361, guid: 987fd362c7092ca4bb0bff32442032a8,
         type: 3}
       propertyPath: ShapeModule.arc.mode
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 726260777397222361, guid: 987fd362c7092ca4bb0bff32442032a8,
+        type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 726260777397222361, guid: 987fd362c7092ca4bb0bff32442032a8,
+        type: 3}
+      propertyPath: ShapeModule.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 726260777397222361, guid: 987fd362c7092ca4bb0bff32442032a8,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 726260777397222361, guid: 987fd362c7092ca4bb0bff32442032a8,
+        type: 3}
+      propertyPath: ShapeModule.arc.value
+      value: 144.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 726260777397222361, guid: 987fd362c7092ca4bb0bff32442032a8,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 2.41
       objectReference: {fileID: 0}
     - target: {fileID: 1965982393875286488, guid: 987fd362c7092ca4bb0bff32442032a8,
         type: 3}
