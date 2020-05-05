@@ -40,6 +40,7 @@ public class CaisseEnPierre : MonoBehaviour
     private void Start()
     {
         rbPierre = gameObject.GetComponent<Rigidbody2D>();
+        rbPierre.isKinematic = true;
         player = GameObject.FindWithTag("Player");
         actualSpeed = speed;
 
@@ -95,10 +96,12 @@ public class CaisseEnPierre : MonoBehaviour
 
     IEnumerator TempsGlissement() // Coroutine qui gère le mouvement sans inertie
     {
-        canMove = false; 
+        canMove = false;
+        rbPierre.isKinematic = false;
         rbPierre.velocity = player.GetComponent<Kameheaumeheau>().beamDir * speed * Time.fixedDeltaTime;
         yield return new WaitForSeconds(tempsMouvement);
         rbPierre.velocity = Vector2.zero;
+        rbPierre.isKinematic = true;
         canMove = true;
     }
 }
