@@ -47,7 +47,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4269345970512379569}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBeforeAttack: 1
   attackCooldown: 3
-  speed: 100
+  speed: 50
   stoppingDistance: 4
   retreatDistance: 0
   chocWave: {fileID: 4079278842457562866, guid: 40909fa89121c3c46a03e420bf10a3fb,
