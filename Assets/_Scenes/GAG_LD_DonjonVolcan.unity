@@ -11352,7 +11352,7 @@ PrefabInstance:
     - target: {fileID: 289899008850224440, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 86.74
+      value: 86.789
       objectReference: {fileID: 0}
     - target: {fileID: 289899008850224440, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
         type: 3}
@@ -11404,6 +11404,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2.8995473
       objectReference: {fileID: 0}
+    - target: {fileID: 289899008850224440, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7600001
+      objectReference: {fileID: 0}
     - target: {fileID: 289899008850224442, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
         type: 3}
       propertyPath: m_Name
@@ -11414,6 +11419,12 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 289899008850224443, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ef8141d5900f8c3469b8e58bfbdcc6bf,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53ce13e5f22110c4d9b298a907cc8d8e, type: 3}
 --- !u!1001 &309337139
@@ -32914,7 +32925,7 @@ PrefabInstance:
     - target: {fileID: 4269345970512379572, guid: 0328b1b5338592149824bff80835a75c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -82.54557
+      value: -82.51
       objectReference: {fileID: 0}
     - target: {fileID: 4269345970512379572, guid: 0328b1b5338592149824bff80835a75c,
         type: 3}
@@ -88858,6 +88869,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: PorteShaman Profile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6886523936967612863, guid: 0aec11c8ae1fbb24ab5da9e03d3f777e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aef5e07bd2cb8734aadb9eb3d8647dcb,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0aec11c8ae1fbb24ab5da9e03d3f777e, type: 3}
 --- !u!1001 &1557312988
@@ -92613,7 +92630,7 @@ PrefabInstance:
     - target: {fileID: 289899008850224440, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 121.35
+      value: 121.41
       objectReference: {fileID: 0}
     - target: {fileID: 289899008850224440, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
         type: 3}
@@ -92665,11 +92682,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 3.8062503
       objectReference: {fileID: 0}
+    - target: {fileID: 289899008850224440, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.9118
+      objectReference: {fileID: 0}
     - target: {fileID: 289899008850224442, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
         type: 3}
       propertyPath: m_Name
       value: PorteShaman Face (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 289899008850224443, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ef8141d5900f8c3469b8e58bfbdcc6bf,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53ce13e5f22110c4d9b298a907cc8d8e, type: 3}
 --- !u!1001 &1758824173
@@ -93847,6 +93875,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: PorteShaman Profile (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6886523936967612863, guid: 0aec11c8ae1fbb24ab5da9e03d3f777e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aef5e07bd2cb8734aadb9eb3d8647dcb,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0aec11c8ae1fbb24ab5da9e03d3f777e, type: 3}
 --- !u!4 &1814851755 stripped
