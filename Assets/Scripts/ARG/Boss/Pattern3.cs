@@ -46,6 +46,8 @@ public class Pattern3 : MonoBehaviour
     [SerializeField]
     private int numberOfMeteor;
     private int actualMeteor;
+
+    public bool vulnerable;
     #endregion
 
     // Start is called before the first frame update
@@ -53,12 +55,21 @@ public class Pattern3 : MonoBehaviour
     {
         player = PlayerManager.Instance;
         pointOfPlayer = new Vector2(player.transform.position.x, player.transform.position.y + hightOfTotem);
+        //vulnerable = GetComponent<BossManager>().vulnerable;
         StartCoroutine("WaitForSlam");
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (vulnerable == true)
+        {
+            Debug.Log("je rentre dedans");
+            StopAllCoroutines();
+            totem.SetActive(false);
+        }
+
         pointOfPlayer = new Vector2(player.transform.position.x, player.transform.position.y + hightOfTotem);
 
         //if (Input.GetKeyDown(KeyCode.L))
@@ -66,37 +77,37 @@ public class Pattern3 : MonoBehaviour
         //}
 
         #region Phase
-        if (totem.transform.position != pointOfPlayer && canMoveOnThePlayer) //le totem bouge jusqu"à la position au dessus du joueur
+        if (totem.transform.position != pointOfPlayer && canMoveOnThePlayer && vulnerable == false) //le totem bouge jusqu"à la position au dessus du joueur
         {
-            totem.transform.position = Vector2.MoveTowards(totem.transform.position, pointOfPlayer, speedOfTotem * Time.deltaTime);
+            totem.transform.position = Vector2.MoveTowards(totem.transform.position, pointOfPlayer, speedOfTotem * Time.fixedDeltaTime);
             canLunchCoRoutine = true;
             totemShadow.SetActive(true);
         }
-        else if (totem.transform.position == pointOfPlayer && canSlamThePlayer)//si au dessus du joueur et que la coroutine cooldown  à fini
+        else if (totem.transform.position == pointOfPlayer && canSlamThePlayer && vulnerable == false)//si au dessus du joueur et que la coroutine cooldown  à fini
         {
             StartCoroutine("SlamInComing");
         }
 
-        if (totem.transform.position != pointOfImpact && canSlam == true) //le totem slam le sol
+        if (totem.transform.position != pointOfImpact && canSlam == true && vulnerable == false) //le totem slam le sol
         {
-            totem.transform.position = Vector2.MoveTowards(totem.transform.position, pointOfImpact, speedOfTotem * Time.deltaTime);
+            totem.transform.position = Vector2.MoveTowards(totem.transform.position, pointOfImpact, speedOfTotem * Time.fixedDeltaTime);
         }
-        else if (totem.transform.position == pointOfImpact)
+        else if (totem.transform.position == pointOfImpact && vulnerable == false)
         {
             totemCollider.enabled = (true);
             canSlam = false;
 
-            if (Vector2.Distance(totem.transform.position, player.transform.position) < 0.5f)
+            if (Vector2.Distance(totem.transform.position, player.transform.position) < 0.5f && vulnerable == false)
             {
                 player.GetComponent<PlayerHealth>().TakeHit(1);
             }
 
-            if (meteorCanStrike == true)
+            if (meteorCanStrike == true && vulnerable == false)
             {
                 StartCoroutine("MeteorStrike");
             }
 
-            if (canRepeat)
+            if (canRepeat && vulnerable == false)
             {
                 StartCoroutine("Repeat");
             }
@@ -167,5 +178,6 @@ public class Pattern3 : MonoBehaviour
         canSlamThePlayer = true;
         canRepeat = true;
     }
+
     #endregion
 }

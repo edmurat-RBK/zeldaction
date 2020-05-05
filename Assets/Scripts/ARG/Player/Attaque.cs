@@ -148,6 +148,22 @@ namespace Attack
                 alreadyInCrateList = false;
             }
 
+            if (collision.gameObject.tag == "Boss")
+            {
+                foreach (GameObject ennemi in ennemisInRange)
+                {
+                    if (collision.gameObject == ennemi)
+                    {
+                        alreadyInList = true;
+                    }
+                }
+                if (!alreadyInList)
+                {
+                    ennemisInRange.Add(collision.gameObject);
+                }
+                alreadyInList = false;
+            }
+
         }
 
         private void OnTriggerExit2D(Collider2D collision)
@@ -161,6 +177,12 @@ namespace Attack
             {
                 destructibleElement.Remove(collision.gameObject);
             }
+
+            if (collision.gameObject.tag == "Boss")
+            {
+                ennemisInRange.Remove(collision.gameObject);
+            }
+
         }
         #endregion
 
@@ -185,8 +207,15 @@ namespace Attack
 
             foreach (GameObject ennemi in ennemisInRange)
             {
-                ennemi.GetComponent<PvEnnemis>().EnnemiTakeDammage(dammage);
+                if (ennemi.tag == ("Boss"))
+                {
+                    ennemi.GetComponent<BossManager>().DammageBoss(1);
+                }
+                else ennemi.GetComponent<PvEnnemis>().EnnemiTakeDammage(dammage);
+
             }
+
+
         } //apply damage to the ennemis within the colldier of the attack
 
         private void ResetAuto()
