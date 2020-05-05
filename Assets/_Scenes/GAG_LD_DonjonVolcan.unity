@@ -91357,6 +91357,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: PorteShaman Face
       objectReference: {fileID: 0}
+    - target: {fileID: 289899008850224443, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ef8141d5900f8c3469b8e58bfbdcc6bf,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53ce13e5f22110c4d9b298a907cc8d8e, type: 3}
 --- !u!4 &1406552565 stripped
@@ -93480,11 +93486,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862927256}
     m_Modifications:
-    - target: {fileID: 5651005802634863058, guid: 27d739270cc1c4b4da06bb15c25bf596,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5651005802634863059, guid: 27d739270cc1c4b4da06bb15c25bf596,
         type: 3}
       propertyPath: m_LocalPosition.x
