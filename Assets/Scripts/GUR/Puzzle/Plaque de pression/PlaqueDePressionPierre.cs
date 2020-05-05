@@ -31,7 +31,7 @@ public class PlaqueDePressionPierre : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "CaissePierre")
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "CaissePierre" || collision.gameObject.tag == "Cube de bois")
         {
             plaqueActive.SetActive(true);
             plaqueDesactive.SetActive(false);
@@ -43,7 +43,7 @@ public class PlaqueDePressionPierre : MonoBehaviour
     {
         if (stayActivate == false)
         {
-            if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "CaissePierre")
+            if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "CaissePierre" || collision.gameObject.tag == "Cube de bois")
             {
                 plaqueActive.SetActive(false);
                 plaqueDesactive.SetActive(true);
