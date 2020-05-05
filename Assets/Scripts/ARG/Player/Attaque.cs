@@ -208,7 +208,7 @@ namespace Attack
             {
                 if (ennemi.tag == ("Boss"))
                 {
-                    ennemi.GetComponent<BossManager>().DammageBoss(1);
+                    ennemi.GetComponent<BossManager>().DammageBoss();
                 }
                 else ennemi.GetComponent<PvEnnemis>().EnnemiTakeDammage(dammage);
 

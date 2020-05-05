@@ -16,6 +16,7 @@ public class BossManager : Singleton<BossManager>
     public int cooldownPatternMax;
     public bool canLunchPattern2;
     public bool vulnerable;
+    public bool canBeVulnerable;
     #endregion
 
     private void Awake()
@@ -30,20 +31,12 @@ public class BossManager : Singleton<BossManager>
     void Start()
     {
         dammageCount = 1;
+        StartCoroutine(CooldownPattern());
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.X))
-        //{
-        //    CooldownFunction();
-        //}
-        //if (Input.GetKeyDown(KeyCode.V))
-        //{
-        //    vulnerable = true;
-        //    IsVulnerable();
-        //}
 
         if (vulnerable == true)
         {
@@ -57,13 +50,17 @@ public class BossManager : Singleton<BossManager>
         {
             case 1:
                 GetComponent<Pattern1>().WaveOfFlame();
+                Debug.Log("do1");
                 break;
 
             case 2:
+                
                 GetComponent<Pattern2>().SlamPoint();
+                Debug.Log("do2");
                 break;
 
             case 3:
+                Debug.Log("do3");
                 pattern3.enabled = true;
                 pattern2.enabled = false;
                 pattern1.enabled = false;
@@ -71,11 +68,16 @@ public class BossManager : Singleton<BossManager>
         }
     }
 
-    public void DammageBoss(int dammage)
+    public void DammageBoss()
     {
-        dammageCount += 1;
-        vulnerable = false;
-        IsVulnerable();
+        if (vulnerable == true)
+        {
+            dammageCount += 1;
+            vulnerable = false;
+            IsVulnerable();
+            StartCoroutine(CooldownPattern());
+        }
+
     }
 
     private IEnumerator CooldownPattern()
@@ -94,11 +96,13 @@ public class BossManager : Singleton<BossManager>
 
     public void IsVulnerable()
     {
+
         if (vulnerable == false)
         {
             pattern1.vulnerable = false;
             pattern2.vulnerable = false;
             pattern3.vulnerable = false;
+
         }
         else if (vulnerable == true)
         {
@@ -106,6 +110,8 @@ public class BossManager : Singleton<BossManager>
             pattern2.vulnerable = true;
             pattern3.vulnerable = true;
         }
+
+
 
     }
 

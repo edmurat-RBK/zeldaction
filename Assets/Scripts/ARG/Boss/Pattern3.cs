@@ -56,7 +56,6 @@ public class Pattern3 : MonoBehaviour
         player = PlayerManager.Instance;
         pointOfPlayer = new Vector2(player.transform.position.x, player.transform.position.y + hightOfTotem);
         //vulnerable = GetComponent<BossManager>().vulnerable;
-        StartCoroutine("WaitForSlam");
     }
 
     // Update is called once per frame
@@ -65,7 +64,6 @@ public class Pattern3 : MonoBehaviour
 
         if (vulnerable == true)
         {
-            Debug.Log("je rentre dedans");
             StopAllCoroutines();
             totem.SetActive(false);
         }

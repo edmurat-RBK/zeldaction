@@ -87,7 +87,13 @@ public class BossPlankMouvement : MonoBehaviour
 
         if (actualDist >= maxDist)
         {
-            vulnerable = true;
+            boss.GetComponent<BossManager>().canBeVulnerable = true;
+            boss.GetComponent<BossManager>().vulnerable = true;
+            boss.GetComponent<BossManager>().IsVulnerable();
+        }
+        else
+        {
+            boss.GetComponent<BossManager>().vulnerable = false;
             boss.GetComponent<BossManager>().IsVulnerable();
         }
     }
