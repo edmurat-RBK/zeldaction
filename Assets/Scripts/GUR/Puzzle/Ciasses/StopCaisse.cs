@@ -11,5 +11,10 @@ public class StopCaisse : MonoBehaviour
             collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             collision.gameObject.GetComponent<CubeBois>().notStop = false;
         }
+
+        if (collision.gameObject.tag == "CaissePierre")
+        {
+
+        }
     }
 }
