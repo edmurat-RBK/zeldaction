@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1feed5955c177a47a6ce50c6eaca8f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeDestrcution: 6
+  timeBeforeDestrcution: 10
   sprite:
   - {fileID: -4193149444216278612, guid: dc69c19b393f74542b1f96527817bbf8, type: 3}
   - {fileID: -1640772086933694663, guid: dc69c19b393f74542b1f96527817bbf8, type: 3}
