@@ -29,7 +29,7 @@ public class MeteorComportement : MonoBehaviour
     {
         yield return new WaitForSeconds(2.57f);
         hitBox.enabled = true;
-        yield return new WaitForSeconds(3.03f);
+        yield return new WaitForSeconds(2.59f);
         hitBox.enabled = false;
     }
 
