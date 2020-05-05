@@ -31,18 +31,24 @@ public class PlaqueDePressionPierre : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        plaqueActive.SetActive(true);
-        plaqueDesactive.SetActive(false);
-        activePlaquePierre = true;
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "CaissePierre")
+        {
+            plaqueActive.SetActive(true);
+            plaqueDesactive.SetActive(false);
+            activePlaquePierre = true;
+        }
     } // Permet de changé graphiquement la plaque (activé) et de changé l'etat de la bool en true
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (stayActivate == false)
         {
-            plaqueActive.SetActive(false);
-            plaqueDesactive.SetActive(true);
-            activePlaquePierre = false;
+            if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "CaissePierre")
+            {
+                plaqueActive.SetActive(false);
+                plaqueDesactive.SetActive(true);
+                activePlaquePierre = false;
+            }
         }
     } // Permet de changé graphiquement la plaque (désactivé) et de changé l'etat de la bool en false
 }

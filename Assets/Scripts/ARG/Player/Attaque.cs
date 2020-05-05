@@ -41,6 +41,7 @@ namespace Attack
         {
             AtatckPos();
             ennemisInRange.RemoveAll(list_item => list_item == null); //remove
+            destructibleElement.RemoveAll(list_item => list_item == null);
 
             if (Input.GetButtonDown("X")) //get l'input
             {
