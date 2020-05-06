@@ -34,6 +34,10 @@ public class Bassin : MonoBehaviour
     private SpriteRenderer bassinRenderer;
     private float bassinState;
     private bool canEmpty;
+
+
+    private bool alreadyInList;
+    public List<GameObject> enemyInRange = new List<GameObject>();
     #endregion
 
     void Start()
@@ -41,6 +45,7 @@ public class Bassin : MonoBehaviour
         bassinRenderer = GetComponent<SpriteRenderer>();
         bassinState = maxStockage / spriteBassin.Length;
 
+        alreadyInList = false;
         lockBassin = false;
         canEmpty = false;
         actifBassin = false;
@@ -48,6 +53,8 @@ public class Bassin : MonoBehaviour
 
     void Update()
     {
+        enemyInRange.RemoveAll(list_item => list_item == null);
+
         VidageBassin();
         GestionActivation();
         GestionVisuel();
@@ -121,7 +128,7 @@ public class Bassin : MonoBehaviour
     {
         if (lockBassin == false)
         {
-            if (remplissage > 0 && canEmpty == true)
+            if (remplissage > 0 && enemyInRange.Count >= 1)
             {
                 remplissage -= Time.fixedDeltaTime * speedVidage;
             }
@@ -153,11 +160,24 @@ public class Bassin : MonoBehaviour
         }
     } // Detecte si des particules de l'arosoire touche le bassin pour agmenter la valeur de remplissage
 
-    private void  OnTriggerStay2D(Collider2D collision)
+    private void  OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Ennemi")
         {
-            canEmpty = true;
+            foreach (GameObject enemy in enemyInRange)
+            {
+                Debug.Log(alreadyInList);
+                if (collision.gameObject == enemy)
+                {
+                    alreadyInList = true;
+                }
+            }
+            if (alreadyInList == false)
+            {
+                enemyInRange.Add(collision.gameObject);
+            }
+            alreadyInList = false;
+            //canEmpty = true;
         }
     } // Permet de detecter si un ennemi est proche du bassin ou non pour le vider
 
@@ -165,7 +185,8 @@ public class Bassin : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ennemi")
         {
-            canEmpty = false;
+            enemyInRange.Remove(collision.gameObject);
+            //canEmpty = false;
         }
     } // Permet de detecter si un ennemi s'éloigne du bassin
 }

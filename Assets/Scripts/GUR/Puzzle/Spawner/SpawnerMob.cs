@@ -18,10 +18,12 @@ public class SpawnerMob : MonoBehaviour
 
     private List<GameObject> isAlive = new List<GameObject>();
 
+    public bool canSpawn;
+
     public GameObject monster;
     private int numOfEnemy;
     private bool lockSpawn;
-    private Vector2 spawnPosition;
+    private Vector3 spawnPosition;
     #endregion
 
     void Start()
@@ -32,14 +34,15 @@ public class SpawnerMob : MonoBehaviour
    
     void Update()
     {
+        
         numOfEnemy = isAlive.Count;
 
         if (numOfEnemy < maxMob)
         {
-            if (lockSpawn == false)
+            if (lockSpawn == false && canSpawn == true)
             {
                 spawnPosition = Random.insideUnitCircle * radius;
-                GameObject ennemy = Instantiate(monster, spawnPosition, transform.rotation);
+                GameObject ennemy = Instantiate(monster, (transform.position + spawnPosition), transform.rotation);
                 isAlive.Add(ennemy);
                 StartCoroutine(SpawnCoolDown());
             }
@@ -50,6 +53,7 @@ public class SpawnerMob : MonoBehaviour
             if (gameObject == null)
             {
                 isAlive.Remove(gameObject);
+                StartCoroutine(SpawnCoolDown());
             }
         }
     }

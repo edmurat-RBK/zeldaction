@@ -11,7 +11,6 @@ public class ContactDomage : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Je rentre");
             collision.gameObject.GetComponent<PlayerHealth>().TakeHit(damage);
 
             if (destroyOnCollision == true)

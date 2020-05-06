@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1755729804106787940}
   - component: {fileID: 1755729802760276457}
   - component: {fileID: 306869649721004942}
-  - component: {fileID: 1127475744609607828}
   - component: {fileID: 6717925806347112405}
-  m_Layer: 15
+  - component: {fileID: 9168125330540284499}
+  m_Layer: 0
   m_Name: Bassin
   m_TagString: Bassin
   m_Icon: {fileID: 0}
@@ -139,32 +139,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1127475744609607828
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755729804106787943}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.07640624, y: 0.0101873875}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.46875, y: 2.5625}
-    newSize: {x: 3.46875, y: 2.5625}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.051062, y: 2.1957498}
-  m_EdgeRadius: 0
 --- !u!58 &6717925806347112405
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -181,6 +155,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3.5
+--- !u!61 &9168125330540284499
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755729804106787943}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.46875, y: 2.5625}
+    newSize: {x: 3.46875, y: 2.5625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.46875, y: 2.5625}
+  m_EdgeRadius: 0
 --- !u!1 &6842965773143398917
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2773415429400945911}
   - component: {fileID: 1098330488972914431}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BodyBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0048964024, y: -0.004979372}
+  m_Offset: {x: 0.008388042, y: -0.0014877915}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -236,5 +236,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.4799628, y: 2.5635676}
+  m_Size: {x: 3.4171143, y: 2.5146852}
   m_EdgeRadius: 0
