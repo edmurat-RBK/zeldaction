@@ -43,7 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c812c830428f044933b7c82bfa4ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMob: 2
+  maxMob: 1
   timeBtwSpawn: 5
   radius: 3
+  canSpawn: 0
   monster: {fileID: 557820165126594859, guid: 10d632e473a3b1c45889c2fecdfeb84e, type: 3}
