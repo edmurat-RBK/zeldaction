@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Manager;
+using System.Linq;
 
 public class Totem2 : MonoBehaviour
 {
@@ -35,6 +36,9 @@ public class Totem2 : MonoBehaviour
     private float distanceToPlayer;
     [SerializeField]
     private float minDistance;
+    [SerializeField]
+    private float minNumberOfMeteor;
+    private float maxNumberOfMeteor;
 
     private void Start()
     {
@@ -62,9 +66,16 @@ public class Totem2 : MonoBehaviour
         }
         else if (totemRenderer.transform.localPosition.y == 0 && canFall)
         {
+            //visage content du boss (boss attack)
             totemRenderer.GetComponent<Collider2D>().enabled = true;
             canFall = false;
-            Instantiate(meteorite, pointOfMeteor[Random.Range(0, pointOfMeteor.Length - 1)].position, Quaternion.identity);
+            List<Transform> listPointOfMeteor = pointOfMeteor.ToList();
+            for (int i = 0; i < Random.Range(minNumberOfMeteor,maxNumberOfMeteor); i++)
+            {
+                Transform thisPoint = listPointOfMeteor[Random.Range(0, listPointOfMeteor.Count - 1)];
+                Instantiate(meteorite, thisPoint.position, Quaternion.identity);
+                listPointOfMeteor.Remove(thisPoint);
+            }
             StartCoroutine(FallCD());
 
         }
@@ -102,5 +113,13 @@ public class Totem2 : MonoBehaviour
         //lancer l'animation de l'objet sur le totemrenderer
         yield return new WaitForSeconds(timeBeforeFall);
         canFall = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<PlayerHealth>().TakeHit(1);
+        }
     }
 }
