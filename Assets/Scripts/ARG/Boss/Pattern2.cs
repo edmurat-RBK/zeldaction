@@ -9,86 +9,82 @@ public class Pattern2 : MonoBehaviour
 
     //slam pattern 2
     public GameObject[] spawnPointsForSlam;
-    [SerializeField]
-    private GameObject totem;
+
     [SerializeField]
     private int hightOfTotem;
     [SerializeField]
     private float speedOfTotem;
+
     private Vector3 pointBeforeImpact;
     private Vector3 pointOfImpact;
-    [SerializeField]
-    private GameObject totemShadow;
+    private Vector3 pointOfMeteorImpact;
+
     [SerializeField]
     private Transform slamDestination;
     [SerializeField]
     private BoxCollider2D totemCollider;
+
+    private PlayerManager player;
+
+    private GameObject shadow;
+    public GameObject[] spawnPointsForMeteor;
+    [SerializeField]
+    private GameObject totem;
+    [SerializeField]
+    private GameObject totemShadow;
     [SerializeField]
     private GameObject totemStase;
     [SerializeField]
     private GameObject projectil;
+    [SerializeField]
+    private GameObject totemShadowForPoint;
+
     private bool canLunchCoRoutine;
     private bool canSlam;
     private bool canSearchForPoint;
     private bool canReturn;
-    private bool meteorCanStrike;
-    [SerializeField]
-    private GameObject totemShadowForPoint;
-    private PlayerManager player;
-    private GameObject shadow;
     private bool canLunchPattern2;
-
-    public GameObject[] spawnPointsForMeteor;
-    private Vector3 pointOfMeteorImpact;
-    public bool vulnerable;
+    private bool meteorCanStrike;
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
         player = PlayerManager.Instance;
-        canLunchPattern2 = GetComponent<BossManager>().canLunchPattern2;
-        //vulnerable = GetComponent<BossManager>().vulnerable;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (vulnerable == true)
-        {
-            StopAllCoroutines();
-            totem.transform.position = Vector2.MoveTowards(totem.transform.position, totemStase.transform.position, speedOfTotem * Time.fixedDeltaTime);
-        }
-
         #region Phase
-        if (totem.transform.position != pointBeforeImpact && canSearchForPoint == true && vulnerable == false) //le totem bouge jusqu"à la position au dessus de sa cible
+        if (totem.transform.position != pointBeforeImpact && canSearchForPoint == true) //le totem bouge jusqu"à la position au dessus de sa cible
         {
             totem.transform.position = Vector2.MoveTowards(totem.transform.position, pointBeforeImpact, speedOfTotem * Time.fixedDeltaTime);
             canLunchCoRoutine = true;
         }
-        else if (totem.transform.position == pointBeforeImpact && vulnerable == false)//si à la bonne position et qu'il ne peux plus chercher de point
+        else if (totem.transform.position == pointBeforeImpact)//si à la bonne position et qu'il ne peux plus chercher de point
         {
             canSearchForPoint = false;
             StartCoroutine("SlamInComing"); //lance la coroutine à l'infini
         }
 
-        if (totem.transform.position != pointOfImpact && canSlam == true && vulnerable == false) //le totem slam le sol
+        if (totem.transform.position != pointOfImpact && canSlam == true) //le totem slam le sol
         {
             totem.transform.position = Vector2.MoveTowards(totem.transform.position, pointOfImpact, speedOfTotem * Time.fixedDeltaTime);
         }
-        else if (totem.transform.position == pointOfImpact && vulnerable == false)
+        else if (totem.transform.position == pointOfImpact)
         {
             totemCollider.enabled = (true);
             canSlam = false;
 
-            if (Vector2.Distance(totem.transform.position, player.transform.position) < 0.5f && vulnerable == false)
+            if (Vector2.Distance(totem.transform.position, player.transform.position) < 0.5f)
             {
                 player.GetComponent<PlayerHealth>().TakeHit(1);
             }
 
 
-            if (meteorCanStrike == true && vulnerable == false)
+            if (meteorCanStrike == true)
             {
                 StartCoroutine("MeteorStrike");
             }
@@ -96,18 +92,18 @@ public class Pattern2 : MonoBehaviour
             StartCoroutine("SlamBack");
         }
 
-        if (totem.transform.position != totemStase.transform.position && canReturn == true && vulnerable == false) //le totem retounrne à sa position initial
+        if (totem.transform.position != totemStase.transform.position && canReturn == true ) //le totem retounrne à sa position initial
         {
             totem.transform.position = Vector2.MoveTowards(totem.transform.position, totemStase.transform.position, speedOfTotem * Time.fixedDeltaTime);
         }
-        else if (totem.transform.position == totemStase.transform.position && vulnerable == false)
+        else if (totem.transform.position == totemStase.transform.position)
         {
             canReturn = false;
             totemShadow.SetActive(false);
             if(canLunchPattern2 == true)
             {
                 canLunchPattern2 = false;
-                GetComponent<BossManager>().CooldownFunction();
+                SlamPoint();
             }
 
         }
@@ -129,6 +125,7 @@ public class Pattern2 : MonoBehaviour
 
             //retour à l'upddate
             meteorCanStrike = true; //reset the meteor
+
     }
 
 
@@ -136,6 +133,7 @@ public class Pattern2 : MonoBehaviour
     {
         if (canLunchCoRoutine == true)
         {
+            canLunchPattern2 = true;
             canLunchCoRoutine = false;
             pointOfImpact = new Vector3(pointBeforeImpact.x, pointBeforeImpact.y - hightOfTotem, 0);
             //le totem tremble 

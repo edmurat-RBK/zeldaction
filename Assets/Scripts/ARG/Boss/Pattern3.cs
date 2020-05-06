@@ -7,7 +7,6 @@ public class Pattern3 : MonoBehaviour
 {
     #region Variable
 
-    //slam pattern 3
     [SerializeField]
     private GameObject totem;
     [SerializeField]
@@ -48,14 +47,24 @@ public class Pattern3 : MonoBehaviour
     private int actualMeteor;
 
     public bool vulnerable;
+    [SerializeField]
+    private GameObject totemStase;
+    [SerializeField]
+    private GameObject totemPhase2;
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
+        totem.SetActive(true);
         player = PlayerManager.Instance;
-        pointOfPlayer = new Vector2(player.transform.position.x, player.transform.position.y + hightOfTotem);
-        //vulnerable = GetComponent<BossManager>().vulnerable;
+        //pointOfPlayer = new Vector2(player.transform.position.x, player.transform.position.y + hightOfTotem);
+        canLunchCoRoutine = true;
+        StartCoroutine(SlamInComing());
+        if (GetComponent<Pattern2>().enabled == false)
+        {
+            totemPhase2.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -65,8 +74,10 @@ public class Pattern3 : MonoBehaviour
         if (vulnerable == true)
         {
             StopAllCoroutines();
-            totem.SetActive(false);
+            //totem.SetActive(false);
+            totem.transform.position = Vector2.MoveTowards(totem.transform.position, totemStase.transform.position, speedOfTotem * Time.fixedDeltaTime);
         }
+
 
         pointOfPlayer = new Vector2(player.transform.position.x, player.transform.position.y + hightOfTotem);
 
@@ -176,6 +187,11 @@ public class Pattern3 : MonoBehaviour
         canSlamThePlayer = true;
         canRepeat = true;
     }
+
+    //public void startPattern3()
+    //{
+    //    StartCoroutine(SlamInComing());
+    //}
 
     #endregion
 }
