@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 736225057761545112}
   - component: {fileID: 6869856703436480956}
   m_Layer: 0
-  m_Name: P_Poteau1
+  m_Name: F_Poteau1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 8320527982162827725, guid: 566937ee90db29a439e6770d8525e851,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
