@@ -31,6 +31,9 @@ public class Bassin : MonoBehaviour
     [HideInInspector]
     public bool lockBassin;
 
+    [HideInInspector]
+    public bool fullDestroy;
+
     private SpriteRenderer bassinRenderer;
     private float bassinState;
     private bool canEmpty;
@@ -45,6 +48,7 @@ public class Bassin : MonoBehaviour
         bassinRenderer = GetComponent<SpriteRenderer>();
         bassinState = maxStockage / spriteBassin.Length;
 
+        fullDestroy = false;
         alreadyInList = false;
         lockBassin = false;
         canEmpty = false;
@@ -59,6 +63,10 @@ public class Bassin : MonoBehaviour
         GestionActivation();
         GestionVisuel();
 
+        if (fullDestroy == true && remplissage < maxStockage)
+        {
+            remplissage += Time.fixedDeltaTime * 2;
+        }
     }
 
     void GestionVisuel()
