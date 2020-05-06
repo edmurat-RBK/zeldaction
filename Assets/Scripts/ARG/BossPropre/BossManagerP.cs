@@ -56,6 +56,7 @@ public class BossManagerP : MonoBehaviour
 
     public void IncreasePhase()
     {
+        //prise de dégat
         phaseCounter += 1;
         switch (phaseCounter)
         {
@@ -77,6 +78,7 @@ public class BossManagerP : MonoBehaviour
     [ContextMenu("MakeVulnerable")]
     public void MakeVulnerable()
     {
+        //animation vulnérable
         switch (phaseCounter)
         {
             case 0:pattern1.StopAllCoroutines();
@@ -104,6 +106,8 @@ public class BossManagerP : MonoBehaviour
     [ContextMenu("LunchPhase1")]
     public void LunchPhase1()
     {
+        //idle du boss
+        //plus vulnérable
         DesactivateClepsydre();
         bossCollider.enabled = false;
         StartCoroutine(pattern1.InitialisePattern1());
@@ -112,6 +116,8 @@ public class BossManagerP : MonoBehaviour
 
     public void LunchPhase2()
     {
+        //idle du boss
+        //plus vulnérable
         pattern2.totem.gameObject.SetActive(true);
         isVulnarable = false;
         DesactivateClepsydre();
@@ -122,6 +128,8 @@ public class BossManagerP : MonoBehaviour
 
     public void LunchPhase3()
     {
+        //idle du boss
+        //plus vulnérable
         isVulnarable = false;
         bossCollider.enabled = false;
         StartCoroutine(pattern3.InitialisePattern3());
@@ -132,6 +140,7 @@ public class BossManagerP : MonoBehaviour
     [ContextMenu("clepsydre activeé")]
     public void ActivateClepsydre()
     {
+        //clepsydre qui descend 
         clepsydreOn = true;
         foreach (ClepsydreBoss clepsydre in allclepsydre)
         {
@@ -146,6 +155,7 @@ public class BossManagerP : MonoBehaviour
     [ContextMenu("clepsydre desactiveé")]
     public void DesactivateClepsydre()
     {
+        //animation clepsydres qui remontent
         clepsydreOn = false;
         foreach (ClepsydreBoss clepsydre in allclepsydre)
         {

@@ -58,6 +58,7 @@ public class Pattern1 : MonoBehaviour
         var dir = new Vector2(player.transform.position.x - shotPoint.transform.position.x, player.transform.position.y - shotPoint.transform.position.y); // Permet d'orienter le shotPoint vers le joueur
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         shotPoint.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        //aniamtion de tire
         GameObject wave = Instantiate(chocWave, shotPoint.transform.position, shotPoint.transform.rotation); // spawn l'onde de choc
         Destroy(wave, 1f);
         yield return new WaitForSeconds(2);

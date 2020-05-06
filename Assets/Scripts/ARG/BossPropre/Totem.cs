@@ -132,4 +132,12 @@ public class Totem : MonoBehaviour
         totemRenderer.GetComponent<Collider2D>().enabled = false;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<PlayerHealth>().TakeHit(1);
+        }
+    }
+
 }
