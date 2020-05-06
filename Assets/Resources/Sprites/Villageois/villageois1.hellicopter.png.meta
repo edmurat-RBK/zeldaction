@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 6fa29bfee84944a49a502bd7cac0c078
+guid: 635baf7715cb4264b8b94546cfd84264
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4985488275709776261
-    second: Villageois2.Salut.SpriteSheet_0
+      213: 7621600293295893723
+    second: villageois1.hellicopter_0
   - first:
-      213: -6234804275428114879
-    second: Villageois2.Salut.SpriteSheet_1
-  - first:
-      213: 1222872359939408828
-    second: Villageois2.Salut.SpriteSheet_2
-  - first:
-      213: -3217007413035189117
-    second: Villageois2.Salut.SpriteSheet_3
-  - first:
-      213: 5202661705384094481
-    second: Villageois2.Salut.SpriteSheet_4
+      213: -4784902029356375266
+    second: villageois1.hellicopter_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -62,7 +53,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -101,106 +92,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Villageois2.Salut.SpriteSheet_0
+      name: villageois1.hellicopter_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 18
+        height: 40
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5815e892c23003540800000000000000
-      internalID: 4985488275709776261
+      spriteID: bdc2ae5f51d55c960800000000000000
+      internalID: 7621600293295893723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Villageois2.Salut.SpriteSheet_1
+      name: villageois1.hellicopter_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 18
         y: 0
-        width: 64
-        height: 64
+        width: 18
+        height: 40
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14e350f7b868979a0800000000000000
-      internalID: -6234804275428114879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Villageois2.Salut.SpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb305dbaee388f010800000000000000
-      internalID: 1222872359939408828
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Villageois2.Salut.SpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38c3d326dc4ea53d0800000000000000
-      internalID: -3217007413035189117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Villageois2.Salut.SpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11b62f39141933840800000000000000
-      internalID: 5202661705384094481
+      spriteID: e13ea2fa4fc989db0800000000000000
+      internalID: -4784902029356375266
       vertices: []
       indices: 
       edges: []
@@ -208,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9059138b3d1b81f469305b4a77fb7ce1
+    spriteID: 69e3279d9e2ffae499ce5a248554b703
     internalID: 0
     vertices: []
     indices: 
