@@ -209,7 +209,7 @@ namespace Attack
             {
                 if (ennemi.tag == ("Boss"))
                 {
-                    ennemi.GetComponent<BossManager>().DammageBoss();
+                    ennemi.GetComponent<BossManagerP>().IncreasePhase();
                 }
                 else ennemi.GetComponent<PvEnnemis>().EnnemiTakeDammage(dammage);
 

@@ -8,13 +8,16 @@ public class Pattern1 : MonoBehaviour
     #region Variable
     //waves of fire
     public GameObject shotPoint;
-    [Header("Onnde de choc")]
+    [Header("Onde de choc")]
     public GameObject chocWave;
     private Transform player;
     private int numberOfWaves;
     private int numberOfTheWave;
     public bool canFire;
-    public bool vulnerable;
+    public List<GameObject> allEnnemis;
+    [SerializeField]
+    private float timeBeforeLunchPattern = 0;
+    private bool ennemiDead = false;
     #endregion
 
     // Start is called before the first frame update
@@ -22,34 +25,29 @@ public class Pattern1 : MonoBehaviour
     {
         player = PlayerManager.Instance.transform;
         canFire = true;
-        //StartCoroutine("CreateWave");
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        allEnnemis.RemoveAll(list_item => list_item == null);
+       
+        if (allEnnemis.Count == 0 && ennemiDead == false)
         {
-            WaveOfFlame();
+            BossManagerP.instance.ActivateClepsydre();
+            ennemiDead = true;
         }
-
-        if (vulnerable == true)
-        {
-            StopAllCoroutines();
-        }
-
-
     }
 
     #region Phase
     public void WaveOfFlame()
     {
-        if (canFire == true && vulnerable == false)
+        if (canFire == true)
         {
             numberOfWaves = Random.Range(2, 5);
+            Debug.Log(numberOfWaves);
             numberOfTheWave = 0;
-            StartCoroutine("CreateWave");
+            StartCoroutine(CreateWave());
         }
 
     }
@@ -61,20 +59,31 @@ public class Pattern1 : MonoBehaviour
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         shotPoint.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         GameObject wave = Instantiate(chocWave, shotPoint.transform.position, shotPoint.transform.rotation); // spawn l'onde de choc
-        Destroy(wave, 0.5f);
+        Destroy(wave, 1f);
         yield return new WaitForSeconds(2);
         numberOfTheWave += 1;
         if (numberOfTheWave != numberOfWaves)
         {
-            Debug.Log("je suis al");
-            StartCoroutine("CreateWave");
+            StartCoroutine(CreateWave());
         }
-        else canFire = true;
-        yield return new WaitForSeconds(0.5f);
-        GetComponent<BossManager>().CooldownFunction();
-        
+        else
+        {
+            canFire = true;
+            int time = Random.Range(5, 9);
+            yield return new WaitForSeconds(time);
+            WaveOfFlame(); //repeat itself
+        }
+
     }
     #endregion
 
-  
+    public IEnumerator InitialisePattern1()
+    {
+        foreach (GameObject ennemi in allEnnemis)
+        {
+            ennemi.SetActive(true);
+        }
+        yield return new WaitForSeconds(timeBeforeLunchPattern);
+        WaveOfFlame();
+    }
 }

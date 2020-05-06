@@ -41,7 +41,7 @@ public class Clepsydre : MonoBehaviour
 
     #endregion
 
-    void Start()
+    protected virtual void Start()
     {
         stateTime = maxStockage / 8;
         clepsydreRenderer = GetComponent<SpriteRenderer>();
@@ -50,7 +50,7 @@ public class Clepsydre : MonoBehaviour
         clepsydreHit = false;
     }
 
-    void Update()
+    protected virtual void Update()
     {
         Vidage();
         KhamehoHit();
@@ -58,7 +58,7 @@ public class Clepsydre : MonoBehaviour
         
     }
 
-    void GestionVisuel()
+     void GestionVisuel()
     {
         if (remplissage <= 0)
         {
@@ -102,7 +102,7 @@ public class Clepsydre : MonoBehaviour
 
     } // Fonction qui gére l'affiche des sprites en fonction du remplissage
 
-    void KhamehoHit()
+    protected virtual void KhamehoHit()
     {
         if (lockClepsydre == false)
         {
@@ -114,7 +114,7 @@ public class Clepsydre : MonoBehaviour
         }
     } // fonction qui gére le remplissage de la clepsydre quand la khaméo le touche
 
-    void Vidage()
+    protected virtual void Vidage()
     {
         if (lockClepsydre == false)
         {
@@ -131,7 +131,7 @@ public class Clepsydre : MonoBehaviour
         }
     } // Fonction qui s'occupe de soustraire la valeur de remplissage par le temps qui passe
 
-    private void OnParticleCollision(GameObject other)
+    protected virtual void OnParticleCollision(GameObject other)
     {
         if (lockClepsydre == false)
         {

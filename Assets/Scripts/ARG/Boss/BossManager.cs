@@ -14,9 +14,11 @@ public class BossManager : Singleton<BossManager>
     private int cooldownPattern;
     public int cooldownPatternMin;
     public int cooldownPatternMax;
-    public bool canLunchPattern2;
+    //public bool canLunchPattern2;
     public bool vulnerable;
     public bool canBeVulnerable;
+    public BoxCollider2D colliderDammage;
+    public bool plankMouvement;
     #endregion
 
     private void Awake()
@@ -37,6 +39,11 @@ public class BossManager : Singleton<BossManager>
     // Update is called once per frame
     void Update()
     {
+        if (canBeVulnerable == true)
+        {
+            colliderDammage.enabled = true;
+        }
+        else colliderDammage.enabled = false;
 
         if (vulnerable == true)
         {
@@ -49,21 +56,25 @@ public class BossManager : Singleton<BossManager>
         switch (dammageCount)
         {
             case 1:
-                GetComponent<Pattern1>().WaveOfFlame();
-                Debug.Log("do1");
+                plankMouvement = true;
+                pattern1.enabled = true;
                 break;
 
             case 2:
-                
+                //cooldownPatternMin = 10;
+                //cooldownPatternMax = 12;
                 GetComponent<Pattern2>().SlamPoint();
-                Debug.Log("do2");
+                pattern2.enabled = true;
+                pattern1.enabled = false;
+                plankMouvement = true;
                 break;
 
             case 3:
-                Debug.Log("do3");
-                pattern3.enabled = true;
                 pattern2.enabled = false;
-                pattern1.enabled = false;
+                pattern3.enabled = true;
+                plankMouvement = true;
+                //pattern2.enabled = false;
+                //GetComponent<Pattern3>().startPattern3();
                 break;
         }
     }
@@ -75,41 +86,53 @@ public class BossManager : Singleton<BossManager>
             dammageCount += 1;
             vulnerable = false;
             IsVulnerable();
-            StartCoroutine(CooldownPattern());
+            plankMouvement = false;
+            //StartCoroutine(CooldownPattern());
+
+            if (canBeVulnerable == true)
+            {
+                canBeVulnerable = false;
+                CooldownFunction();
+                //StartCoroutine(CooldownPattern());
+            }
         }
+
+            
 
     }
 
     private IEnumerator CooldownPattern()
     {
-        Debug.Log("je lance un nouveau pattern");
         cooldownPattern = Random.Range(cooldownPatternMin, cooldownPatternMax);
         yield return new WaitForSeconds(cooldownPattern);
         BossChoice();
+        canBeVulnerable = true;
     }
 
     public void CooldownFunction()
     {
-        StartCoroutine(CooldownPattern());
-        canLunchPattern2 = true;
+        BossChoice();
+        canBeVulnerable = true;
+        //StartCoroutine(CooldownPattern());
+        //canLunchPattern2 = true;
     }
 
     public void IsVulnerable()
     {
 
-        if (vulnerable == false)
-        {
-            pattern1.vulnerable = false;
-            pattern2.vulnerable = false;
-            pattern3.vulnerable = false;
+        //if (vulnerable == false)
+        //{
+        //    pattern1.vulnerable = false;
+        //    pattern2.vulnerable = false;
+        //    pattern3.vulnerable = false;
 
-        }
-        else if (vulnerable == true)
-        {
-            pattern1.vulnerable = true;
-            pattern2.vulnerable = true;
-            pattern3.vulnerable = true;
-        }
+        //}
+        //else if (vulnerable == true)
+        //{
+        //    pattern1.vulnerable = true;
+        //    pattern2.vulnerable = true;
+        //    pattern3.vulnerable = true;
+        //}
 
 
 
