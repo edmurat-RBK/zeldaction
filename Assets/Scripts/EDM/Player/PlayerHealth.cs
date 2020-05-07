@@ -39,6 +39,9 @@ public class PlayerHealth : MonoBehaviour
         playerManager.healthPlayer = health;
         playerManager.healthMax = maximumHealth;
 
+        //health = playerManager.healthPlayer;
+        //maximumHealth = playerManager.healthMax;
+
         if (Input.GetKeyDown(KeyCode.U))
         {
             health += 1;
