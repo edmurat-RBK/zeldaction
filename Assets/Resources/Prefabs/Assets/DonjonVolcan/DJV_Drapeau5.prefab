@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 977232334785583041}
   - component: {fileID: 4985859701434064755}
   m_Layer: 0
-  m_Name: DonjonVolcan_Props_20
+  m_Name: DJV_Drapeau5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2474897698328602822, guid: 50235bcafafdd164fa325d08d332ddf5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
