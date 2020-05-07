@@ -20,6 +20,7 @@ public class HealthBar : MonoBehaviour
 
     public void HealthSysteme()
     {
+        Debug.Log("je rentre");
         if (GetComponent<PlayerHealth>().health > GetComponent<PlayerHealth>().maximumHealth)
         {
             GetComponent<PlayerHealth>().health = GetComponent<PlayerHealth>().maximumHealth;
