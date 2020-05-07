@@ -87,7 +87,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: ea66f18e1f5ac38459ace72160feb792, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -260,6 +260,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NE_Pancarte3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9120162927912919849, guid: 3244b57777a1cbf4dbd02ee3c4f2f367,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3244b57777a1cbf4dbd02ee3c4f2f367, type: 3}
 --- !u!4 &1379723568694419907 stripped
@@ -279,6 +284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DJV_Drapeau2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569820683315636433, guid: 538cbbee2775f4f42b18659c872d5ff0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8248181916676880942, guid: 538cbbee2775f4f42b18659c872d5ff0,
         type: 3}
@@ -410,6 +420,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NE_Pancarte3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9120162927912919849, guid: 3244b57777a1cbf4dbd02ee3c4f2f367,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3244b57777a1cbf4dbd02ee3c4f2f367, type: 3}
 --- !u!4 &957882671479696235 stripped
@@ -480,6 +495,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7744789525810012954, guid: 7eeeb0da353556c42a15a460439a65a9,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8445347809487395780, guid: 7eeeb0da353556c42a15a460439a65a9,
         type: 3}
       propertyPath: m_Name
@@ -500,6 +520,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8928411394669105184}
     m_Modifications:
+    - target: {fileID: 1244161331339432467, guid: 5a335c3544f96104e9c75cddb1483f30,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7638319209359793581, guid: 5a335c3544f96104e9c75cddb1483f30,
         type: 3}
       propertyPath: m_Name
@@ -635,6 +660,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NE_Pancarte3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9120162927912919849, guid: 3244b57777a1cbf4dbd02ee3c4f2f367,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3244b57777a1cbf4dbd02ee3c4f2f367, type: 3}
 --- !u!4 &4313904641228207841 stripped
@@ -650,6 +680,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8928411394669105184}
     m_Modifications:
+    - target: {fileID: 1244161331339432467, guid: 5a335c3544f96104e9c75cddb1483f30,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7638319209359793581, guid: 5a335c3544f96104e9c75cddb1483f30,
         type: 3}
       propertyPath: m_Name
@@ -785,6 +820,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2005954789638727178, guid: 02e62e754e36ed14985de7af83eaf8c1,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02e62e754e36ed14985de7af83eaf8c1, type: 3}
 --- !u!4 &2368626547164040514 stripped
@@ -800,6 +840,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8928411394669105184}
     m_Modifications:
+    - target: {fileID: 2816363494539258930, guid: 3dec452d2ed245d46b71c07fd15f57a4,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4922233292677531869, guid: 3dec452d2ed245d46b71c07fd15f57a4,
         type: 3}
       propertyPath: m_Name
@@ -935,6 +980,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NE_Pancarte3
       objectReference: {fileID: 0}
+    - target: {fileID: 9120162927912919849, guid: 3244b57777a1cbf4dbd02ee3c4f2f367,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3244b57777a1cbf4dbd02ee3c4f2f367, type: 3}
 --- !u!4 &4743656683026029625 stripped
@@ -1004,6 +1054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7744789525810012954, guid: 7eeeb0da353556c42a15a460439a65a9,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8445347809487395780, guid: 7eeeb0da353556c42a15a460439a65a9,
         type: 3}
@@ -1085,6 +1140,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: F_Tonneau1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9068532269589814464, guid: c7a40f162e4ed5640b19cd2fec48ec70,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a40f162e4ed5640b19cd2fec48ec70, type: 3}
 --- !u!4 &8533428303775157497 stripped
@@ -1160,6 +1220,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: F_Tonneau1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9068532269589814464, guid: c7a40f162e4ed5640b19cd2fec48ec70,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a40f162e4ed5640b19cd2fec48ec70, type: 3}
 --- !u!4 &8090487510805541090 stripped
@@ -1230,6 +1295,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7269799478557329421, guid: afd886fb20e41d847bb09c2610b5e4c8,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9030721531853643444, guid: afd886fb20e41d847bb09c2610b5e4c8,
         type: 3}
       propertyPath: m_Name
@@ -1254,6 +1324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DJV_Drapeau2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6569820683315636433, guid: 538cbbee2775f4f42b18659c872d5ff0,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8248181916676880942, guid: 538cbbee2775f4f42b18659c872d5ff0,
         type: 3}
@@ -1385,6 +1460,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: F_Tonneau1
       objectReference: {fileID: 0}
+    - target: {fileID: 9068532269589814464, guid: c7a40f162e4ed5640b19cd2fec48ec70,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a40f162e4ed5640b19cd2fec48ec70, type: 3}
 --- !u!4 &6963451627977415184 stripped
@@ -1459,6 +1539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2005954789638727178, guid: 02e62e754e36ed14985de7af83eaf8c1,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02e62e754e36ed14985de7af83eaf8c1, type: 3}
