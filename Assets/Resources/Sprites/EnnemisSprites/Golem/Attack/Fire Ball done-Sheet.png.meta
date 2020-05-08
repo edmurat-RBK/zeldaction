@@ -1,25 +1,43 @@
 fileFormatVersion: 2
-guid: 9d64e80a32020e04d89230b91bfc71e2
+guid: 82cb05000db286c48860c7ebf560fe9b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -33141191016655328
-    second: C_Golem_FireBall_0
+      213: -9078769928023706931
+    second: Fire Ball done-Sheet_0
   - first:
-      213: -5027392223006431620
-    second: C_Golem_FireBall_1
+      213: -5730112497472933891
+    second: Fire Ball done-Sheet_1
   - first:
-      213: 6921420773780152676
-    second: C_Golem_FireBall_2
+      213: 8845074375139077212
+    second: Fire Ball done-Sheet_2
   - first:
-      213: -8080026972984213235
-    second: C_Golem_FireBall_3
+      213: 5387147147715026220
+    second: Fire Ball done-Sheet_3
   - first:
-      213: 4526255714446930639
-    second: C_Golem_FireBall_4
+      213: -6100682557281269541
+    second: Fire Ball done-Sheet_4
   - first:
-      213: 4274125857463026164
-    second: C_Golem_FireBall_5
+      213: -5035346582884907993
+    second: Fire Ball done-Sheet_5
+  - first:
+      213: -5553419758513180601
+    second: Fire Ball done-Sheet_0
+  - first:
+      213: 684388844749200728
+    second: Fire Ball done-Sheet_1
+  - first:
+      213: 2534134595919545610
+    second: Fire Ball done-Sheet_2
+  - first:
+      213: -5908908249101481948
+    second: Fire Ball done-Sheet_3
+  - first:
+      213: 8770295090653769505
+    second: Fire Ball done-Sheet_4
+  - first:
+      213: 6155973853036102113
+    second: Fire Ball done-Sheet_5
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -63,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C_Golem_FireBall_0
+      name: Fire Ball done-Sheet_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 10
-        width: 12
-        height: 12
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 026d40a23424a8ff0800000000000000
-      internalID: -33141191016655328
+      spriteID: 740bf25272a4ee2b0800000000000000
+      internalID: -5553419758513180601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C_Golem_FireBall_1
+      name: Fire Ball done-Sheet_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 10
-        width: 12
-        height: 12
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c76e321d86d1b3ab0800000000000000
-      internalID: -5027392223006431620
+      spriteID: 85d148b37007f7900800000000000000
+      internalID: 684388844749200728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C_Golem_FireBall_2
+      name: Fire Ball done-Sheet_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 10
-        width: 12
-        height: 12
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 461ec22c583dd0060800000000000000
-      internalID: 6921420773780152676
+      spriteID: a0500d21dfd0b2320800000000000000
+      internalID: 2534134595919545610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C_Golem_FireBall_3
+      name: Fire Ball done-Sheet_3
       rect:
         serializedVersion: 2
-        x: 106
-        y: 10
-        width: 12
-        height: 12
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0183b3274afddf80800000000000000
-      internalID: -8080026972984213235
+      spriteID: 4284ee111475ffda0800000000000000
+      internalID: -5908908249101481948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C_Golem_FireBall_4
+      name: Fire Ball done-Sheet_4
       rect:
         serializedVersion: 2
-        x: 138
-        y: 10
-        width: 12
-        height: 12
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc2f036579d70de30800000000000000
-      internalID: 4526255714446930639
+      spriteID: 12f25cdfae856b970800000000000000
+      internalID: 8770295090653769505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C_Golem_FireBall_5
+      name: Fire Ball done-Sheet_5
       rect:
         serializedVersion: 2
-        x: 170
-        y: 10
-        width: 12
-        height: 12
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +241,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f1456372deb05b30800000000000000
-      internalID: 4274125857463026164
+      spriteID: 1e14fc48a996e6550800000000000000
+      internalID: 6155973853036102113
       vertices: []
       indices: 
       edges: []
@@ -232,7 +250,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0d7ee2b48e0b7a942ac0e7030ba63f8c
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
