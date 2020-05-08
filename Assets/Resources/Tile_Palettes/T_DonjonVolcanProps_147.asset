@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: T_DonjonVolcanProps_147
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 6037853061137607446, guid: 15e1170f28ecf344d944ed399fb7eabb,
+  m_Sprite: {fileID: 6037853061137607446, guid: 9b1273ac136229e41964d22eeea776c1,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

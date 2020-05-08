@@ -1,0 +1,1486 @@
+fileFormatVersion: 2
+guid: 15e1170f28ecf344d944ed399fb7eabb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5406842284688107078
+    second: T_DonjonVolcanProps_0
+  - first:
+      213: 8353192966377591906
+    second: T_DonjonVolcanProps_1
+  - first:
+      213: 1845568558412744758
+    second: T_DonjonVolcanProps_2
+  - first:
+      213: 2212956455786762654
+    second: T_DonjonVolcanProps_3
+  - first:
+      213: -3875649962412960614
+    second: T_DonjonVolcanProps_4
+  - first:
+      213: 8617556580897617369
+    second: T_DonjonVolcanProps_5
+  - first:
+      213: 3400155362596943944
+    second: T_DonjonVolcanProps_6
+  - first:
+      213: 6937214735846871621
+    second: T_DonjonVolcanProps_7
+  - first:
+      213: 7158605891718884319
+    second: T_DonjonVolcanProps_8
+  - first:
+      213: 5301872814827369034
+    second: T_DonjonVolcanProps_9
+  - first:
+      213: 4827948633294219698
+    second: T_DonjonVolcanProps_10
+  - first:
+      213: -6944676238493559183
+    second: T_DonjonVolcanProps_11
+  - first:
+      213: -7492287270174979695
+    second: T_DonjonVolcanProps_12
+  - first:
+      213: 7938229832658233740
+    second: T_DonjonVolcanProps_13
+  - first:
+      213: 8334831779333966109
+    second: T_DonjonVolcanProps_14
+  - first:
+      213: 9161758084912055336
+    second: T_DonjonVolcanProps_15
+  - first:
+      213: 5681391911275795512
+    second: T_DonjonVolcanProps_16
+  - first:
+      213: -7540853570927636000
+    second: T_DonjonVolcanProps_17
+  - first:
+      213: -2393217234056695633
+    second: T_DonjonVolcanProps_18
+  - first:
+      213: -5676737370139713671
+    second: T_DonjonVolcanProps_19
+  - first:
+      213: -7156925042223384999
+    second: T_DonjonVolcanProps_20
+  - first:
+      213: 8897188923688777364
+    second: T_DonjonVolcanProps_21
+  - first:
+      213: -7923050971058850578
+    second: T_DonjonVolcanProps_22
+  - first:
+      213: -7534460721041863123
+    second: T_DonjonVolcanProps_23
+  - first:
+      213: -2045395878708989389
+    second: T_DonjonVolcanProps_24
+  - first:
+      213: 4078626369347444021
+    second: T_DonjonVolcanProps_25
+  - first:
+      213: 4451308077706441295
+    second: T_DonjonVolcanProps_26
+  - first:
+      213: -5523085925203243726
+    second: T_DonjonVolcanProps_27
+  - first:
+      213: -5590370590257796173
+    second: T_DonjonVolcanProps_28
+  - first:
+      213: -4003262349024144704
+    second: T_DonjonVolcanProps_29
+  - first:
+      213: -7972403078274540690
+    second: T_DonjonVolcanProps_30
+  - first:
+      213: -354226958610718194
+    second: T_DonjonVolcanProps_31
+  - first:
+      213: 5385505411698985811
+    second: T_DonjonVolcanProps_32
+  - first:
+      213: -1311932364459243465
+    second: T_DonjonVolcanProps_33
+  - first:
+      213: -4805240552234783729
+    second: T_DonjonVolcanProps_34
+  - first:
+      213: 8046519362509131275
+    second: T_DonjonVolcanProps_35
+  - first:
+      213: -8944915650026065506
+    second: T_DonjonVolcanProps_36
+  - first:
+      213: 7505331274576777761
+    second: T_DonjonVolcanProps_37
+  - first:
+      213: -5281424213205241182
+    second: T_DonjonVolcanProps_38
+  - first:
+      213: -6683491122340946895
+    second: T_DonjonVolcanProps_39
+  - first:
+      213: -1426106720207243905
+    second: T_DonjonVolcanProps_40
+  - first:
+      213: -242650605858237467
+    second: T_DonjonVolcanProps_41
+  - first:
+      213: 6707055722481308770
+    second: T_DonjonVolcanProps_42
+  - first:
+      213: 7643810707648912791
+    second: T_DonjonVolcanProps_43
+  - first:
+      213: -7708102759560354899
+    second: T_DonjonVolcanProps_44
+  - first:
+      213: -5825804215809256867
+    second: T_DonjonVolcanProps_45
+  - first:
+      213: -4420929475838248251
+    second: T_DonjonVolcanProps_46
+  - first:
+      213: 8662278283677508033
+    second: T_DonjonVolcanProps_47
+  - first:
+      213: -4049486997305653029
+    second: T_DonjonVolcanProps_48
+  - first:
+      213: -1853280790874700360
+    second: T_DonjonVolcanProps_49
+  - first:
+      213: 908842142063963885
+    second: T_DonjonVolcanProps_50
+  - first:
+      213: -1948156551746129199
+    second: T_DonjonVolcanProps_51
+  - first:
+      213: -5388423383486779678
+    second: T_DonjonVolcanProps_52
+  - first:
+      213: -4641701111900875114
+    second: T_DonjonVolcanProps_53
+  - first:
+      213: 2680957141716023203
+    second: T_DonjonVolcanProps_54
+  - first:
+      213: 8965303077094394259
+    second: T_DonjonVolcanProps_55
+  - first:
+      213: 2102395666395144448
+    second: T_DonjonVolcanProps_56
+  - first:
+      213: 5317680975763471269
+    second: T_DonjonVolcanProps_57
+  - first:
+      213: -4627846317231215050
+    second: T_DonjonVolcanProps_58
+  - first:
+      213: -8817176813782934798
+    second: T_DonjonVolcanProps_59
+  - first:
+      213: -3209108902706327735
+    second: T_DonjonVolcanProps_60
+  - first:
+      213: 2371929991489144464
+    second: T_DonjonVolcanProps_61
+  - first:
+      213: 7148646222773005856
+    second: T_DonjonVolcanProps_62
+  - first:
+      213: -4952518755051946176
+    second: T_DonjonVolcanProps_63
+  - first:
+      213: 4280165066822849228
+    second: T_DonjonVolcanProps_64
+  - first:
+      213: 7398917974540361470
+    second: T_DonjonVolcanProps_65
+  - first:
+      213: 4245186959658154806
+    second: T_DonjonVolcanProps_66
+  - first:
+      213: 7120733124772661037
+    second: T_DonjonVolcanProps_67
+  - first:
+      213: -2466467170789440710
+    second: T_DonjonVolcanProps_68
+  - first:
+      213: -4401580757347759491
+    second: T_DonjonVolcanProps_69
+  - first:
+      213: 8211575089024905604
+    second: T_DonjonVolcanProps_70
+  - first:
+      213: -8463396692214859020
+    second: T_DonjonVolcanProps_71
+  - first:
+      213: -7923380829857926341
+    second: T_DonjonVolcanProps_72
+  - first:
+      213: 5068130806687647669
+    second: T_DonjonVolcanProps_73
+  - first:
+      213: 8873609845433940300
+    second: T_DonjonVolcanProps_74
+  - first:
+      213: -8372536690965031080
+    second: T_DonjonVolcanProps_75
+  - first:
+      213: 7073088636145384287
+    second: T_DonjonVolcanProps_76
+  - first:
+      213: 7594634055415692656
+    second: T_DonjonVolcanProps_77
+  - first:
+      213: -4079147571427628276
+    second: T_DonjonVolcanProps_78
+  - first:
+      213: 2590188277734241136
+    second: T_DonjonVolcanProps_79
+  - first:
+      213: -7318463640491926071
+    second: T_DonjonVolcanProps_80
+  - first:
+      213: 3744752862144133425
+    second: T_DonjonVolcanProps_81
+  - first:
+      213: -2813417352204677114
+    second: T_DonjonVolcanProps_82
+  - first:
+      213: -1503892265062480263
+    second: T_DonjonVolcanProps_83
+  - first:
+      213: 4058469433997667553
+    second: T_DonjonVolcanProps_84
+  - first:
+      213: 5164497511816482758
+    second: T_DonjonVolcanProps_85
+  - first:
+      213: 1722342459342342616
+    second: T_DonjonVolcanProps_86
+  - first:
+      213: 8712637078248263020
+    second: T_DonjonVolcanProps_87
+  - first:
+      213: -470548948259038121
+    second: T_DonjonVolcanProps_88
+  - first:
+      213: 2903161574851804759
+    second: T_DonjonVolcanProps_89
+  - first:
+      213: -2330424819874369913
+    second: T_DonjonVolcanProps_90
+  - first:
+      213: 8537617487399717277
+    second: T_DonjonVolcanProps_91
+  - first:
+      213: 5914237699965721015
+    second: T_DonjonVolcanProps_92
+  - first:
+      213: -3912701416360909333
+    second: T_DonjonVolcanProps_93
+  - first:
+      213: -3320856951119945605
+    second: T_DonjonVolcanProps_94
+  - first:
+      213: 7877080561441978619
+    second: T_DonjonVolcanProps_95
+  - first:
+      213: -4388765134083444074
+    second: T_DonjonVolcanProps_96
+  - first:
+      213: 236647278502745860
+    second: T_DonjonVolcanProps_97
+  - first:
+      213: 1353762930663689847
+    second: T_DonjonVolcanProps_98
+  - first:
+      213: 10885880508595284
+    second: T_DonjonVolcanProps_99
+  - first:
+      213: 4987918801725398861
+    second: T_DonjonVolcanProps_100
+  - first:
+      213: 4447779877374435152
+    second: T_DonjonVolcanProps_101
+  - first:
+      213: 3337160345024116624
+    second: T_DonjonVolcanProps_102
+  - first:
+      213: 71652520661779746
+    second: T_DonjonVolcanProps_103
+  - first:
+      213: -3014879233231351915
+    second: T_DonjonVolcanProps_104
+  - first:
+      213: 4549156055697943583
+    second: T_DonjonVolcanProps_105
+  - first:
+      213: -4367230385221939575
+    second: T_DonjonVolcanProps_106
+  - first:
+      213: 1051891628396014662
+    second: T_DonjonVolcanProps_107
+  - first:
+      213: -2257581466173895270
+    second: T_DonjonVolcanProps_108
+  - first:
+      213: 3168317545287580255
+    second: T_DonjonVolcanProps_109
+  - first:
+      213: 2293680384250589713
+    second: T_DonjonVolcanProps_110
+  - first:
+      213: -4625276635427098868
+    second: T_DonjonVolcanProps_111
+  - first:
+      213: -3242795927078094279
+    second: T_DonjonVolcanProps_112
+  - first:
+      213: 8838038701870715485
+    second: T_DonjonVolcanProps_113
+  - first:
+      213: 7616679960441006817
+    second: T_DonjonVolcanProps_114
+  - first:
+      213: 58262327931375442
+    second: T_DonjonVolcanProps_115
+  - first:
+      213: 2437605798461651487
+    second: T_DonjonVolcanProps_116
+  - first:
+      213: -1121446182537905694
+    second: T_DonjonVolcanProps_117
+  - first:
+      213: 2434983271130357706
+    second: T_DonjonVolcanProps_118
+  - first:
+      213: 7922526621524194958
+    second: T_DonjonVolcanProps_119
+  - first:
+      213: 7484563533040437285
+    second: T_DonjonVolcanProps_120
+  - first:
+      213: 6633506271679011206
+    second: T_DonjonVolcanProps_121
+  - first:
+      213: -232708166576492447
+    second: T_DonjonVolcanProps_122
+  - first:
+      213: -5290216221779700532
+    second: T_DonjonVolcanProps_123
+  - first:
+      213: 2593214933023052697
+    second: T_DonjonVolcanProps_124
+  - first:
+      213: 1910169254414925573
+    second: T_DonjonVolcanProps_125
+  - first:
+      213: 5857151107698025731
+    second: T_DonjonVolcanProps_126
+  - first:
+      213: 8212134344375346476
+    second: T_DonjonVolcanProps_127
+  - first:
+      213: -8845416293025787923
+    second: T_DonjonVolcanProps_128
+  - first:
+      213: 5905836536554574869
+    second: T_DonjonVolcanProps_129
+  - first:
+      213: 8381336232098035540
+    second: T_DonjonVolcanProps_130
+  - first:
+      213: -2793173098894962908
+    second: T_DonjonVolcanProps_131
+  - first:
+      213: -6848611724222972877
+    second: T_DonjonVolcanProps_132
+  - first:
+      213: -216249559944189052
+    second: T_DonjonVolcanProps_133
+  - first:
+      213: -8541889378735915748
+    second: T_DonjonVolcanProps_134
+  - first:
+      213: -3027058229684671566
+    second: T_DonjonVolcanProps_135
+  - first:
+      213: 6031071868577882399
+    second: T_DonjonVolcanProps_136
+  - first:
+      213: 9183192764971709396
+    second: T_DonjonVolcanProps_137
+  - first:
+      213: -647068004548069474
+    second: T_DonjonVolcanProps_138
+  - first:
+      213: -2693881960589939561
+    second: T_DonjonVolcanProps_139
+  - first:
+      213: -7066187199202438339
+    second: T_DonjonVolcanProps_140
+  - first:
+      213: -2211964455330828692
+    second: T_DonjonVolcanProps_141
+  - first:
+      213: 7389477379264991608
+    second: T_DonjonVolcanProps_142
+  - first:
+      213: 7498997440324468212
+    second: T_DonjonVolcanProps_143
+  - first:
+      213: 2795830453582106925
+    second: T_DonjonVolcanProps_144
+  - first:
+      213: 6835730013043031063
+    second: T_DonjonVolcanProps_145
+  - first:
+      213: -3156635719877541930
+    second: T_DonjonVolcanProps_146
+  - first:
+      213: 6037853061137607446
+    second: T_DonjonVolcanProps_147
+  - first:
+      213: -5245715096134785258
+    second: T_DonjonVolcanProps_148
+  - first:
+      213: 1255314781818062161
+    second: T_DonjonVolcanProps_149
+  - first:
+      213: 2938732777184700385
+    second: T_DonjonVolcanProps_0
+  - first:
+      213: 3621170273816470562
+    second: T_DonjonVolcanProps_1
+  - first:
+      213: 3266504428311992167
+    second: T_DonjonVolcanProps_2
+  - first:
+      213: 4779676846249004548
+    second: T_DonjonVolcanProps_3
+  - first:
+      213: -3864860810557240542
+    second: T_DonjonVolcanProps_4
+  - first:
+      213: 3291111901282831535
+    second: T_DonjonVolcanProps_5
+  - first:
+      213: 6312408809642856616
+    second: T_DonjonVolcanProps_6
+  - first:
+      213: -6419977241925571017
+    second: T_DonjonVolcanProps_7
+  - first:
+      213: -6545887093893201602
+    second: T_DonjonVolcanProps_8
+  - first:
+      213: 2396110028585126502
+    second: T_DonjonVolcanProps_9
+  - first:
+      213: 4214720084675999224
+    second: T_DonjonVolcanProps_10
+  - first:
+      213: -101401356694239911
+    second: T_DonjonVolcanProps_11
+  - first:
+      213: -1764843891495188641
+    second: T_DonjonVolcanProps_12
+  - first:
+      213: 5508461783793171525
+    second: T_DonjonVolcanProps_13
+  - first:
+      213: -1551615390491378790
+    second: T_DonjonVolcanProps_14
+  - first:
+      213: 86172221113585787
+    second: T_DonjonVolcanProps_15
+  - first:
+      213: 7813709149412320023
+    second: T_DonjonVolcanProps_16
+  - first:
+      213: 5029465397078134103
+    second: T_DonjonVolcanProps_17
+  - first:
+      213: -5040926374484325084
+    second: T_DonjonVolcanProps_18
+  - first:
+      213: 1551475401830134344
+    second: T_DonjonVolcanProps_19
+  - first:
+      213: 8484781655609799715
+    second: T_DonjonVolcanProps_20
+  - first:
+      213: 6956314409735237673
+    second: T_DonjonVolcanProps_21
+  - first:
+      213: -423491859505288892
+    second: T_DonjonVolcanProps_22
+  - first:
+      213: 3160297698957214145
+    second: T_DonjonVolcanProps_23
+  - first:
+      213: 7583373654982169657
+    second: T_DonjonVolcanProps_24
+  - first:
+      213: 8894953181748444097
+    second: T_DonjonVolcanProps_25
+  - first:
+      213: 4367078286832520263
+    second: T_DonjonVolcanProps_26
+  - first:
+      213: -5208540317055940141
+    second: T_DonjonVolcanProps_27
+  - first:
+      213: 1861146681670510755
+    second: T_DonjonVolcanProps_28
+  - first:
+      213: 1797511103175134776
+    second: T_DonjonVolcanProps_29
+  - first:
+      213: 882156782879632741
+    second: T_DonjonVolcanProps_30
+  - first:
+      213: -2713661710352342071
+    second: T_DonjonVolcanProps_31
+  - first:
+      213: 950643818319302851
+    second: T_DonjonVolcanProps_32
+  - first:
+      213: -6801074516661159187
+    second: T_DonjonVolcanProps_33
+  - first:
+      213: -6318385713609015373
+    second: T_DonjonVolcanProps_34
+  - first:
+      213: 478450430226008918
+    second: T_DonjonVolcanProps_35
+  - first:
+      213: -894484222952710264
+    second: T_DonjonVolcanProps_36
+  - first:
+      213: -3065104123380469353
+    second: T_DonjonVolcanProps_37
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 161
+        width: 16
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224e802ad2bf04230800000000000000
+      internalID: 3621170273816470562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 129
+        width: 17
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767d6ca8874f45d20800000000000000
+      internalID: 3266504428311992167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 138
+        width: 70
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec4d194c2d45240800000000000000
+      internalID: 4779676846249004548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b4868d1914d5ac0800000000000000
+      internalID: -3864860810557240542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a01fc72e5e2a9750800000000000000
+      internalID: 6312408809642856616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_7
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e2fe486b8a7e6a0800000000000000
+      internalID: -6419977241925571017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e318ea4ae565825a0800000000000000
+      internalID: -6545887093893201602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a41983061b04120800000000000000
+      internalID: 2396110028585126502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 80
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f531d22691bd7a30800000000000000
+      internalID: 4214720084675999224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9554f7ad000c79ef0800000000000000
+      internalID: -101401356694239911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 32
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57496bc4d30287e0800000000000000
+      internalID: -1764843891495188641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c7ec9aeccf17c40800000000000000
+      internalID: 5508461783793171525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b7bbde50e877ae0800000000000000
+      internalID: -1551615390491378790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b705bf4bd25223100800000000000000
+      internalID: 86172221113585787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713e0f4921fdf6c60800000000000000
+      internalID: 7813709149412320023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d06f2a1204cc540800000000000000
+      internalID: 5029465397078134103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42dc6fd9b280b0ab0800000000000000
+      internalID: -5040926374484325084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84277db68a2f78510800000000000000
+      internalID: 1551475401830134344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3247f5326ffffb570800000000000000
+      internalID: 8484781655609799715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_21
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 48
+        width: 7
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920333a791bc98060800000000000000
+      internalID: 6956314409735237673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_22
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 48
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449eae4c5647f1af0800000000000000
+      internalID: -423491859505288892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_23
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 48
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c144d26302abdb20800000000000000
+      internalID: 3160297698957214145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_24
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 48
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9349448292e8d3960800000000000000
+      internalID: 7583373654982169657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac060056d06cad20800000000000000
+      internalID: 3291111901282831535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbb8d39ac8317b70800000000000000
+      internalID: 8894953181748444097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c49f8609afa9c30800000000000000
+      internalID: 4367078286832520263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9849b7d2c87b7b0800000000000000
+      internalID: -5208540317055940141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a82ed3db0f14d910800000000000000
+      internalID: 1861146681670510755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e039023da02f810800000000000000
+      internalID: 1797511103175134776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56dedbf8bec0e3c00800000000000000
+      internalID: 882156782879632741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3aed15d03275ad0800000000000000
+      internalID: -2713661710352342071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_32
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0d7da148d513d00800000000000000
+      internalID: 950643818319302851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea337fb2cabd91a0800000000000000
+      internalID: -6801074516661159187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_34
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 5
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf7e627ba59058a0800000000000000
+      internalID: -6318385713609015373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 5
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b0140a12cc3a600800000000000000
+      internalID: 478450430226008918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_36
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 129
+        width: 16
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f56b1a6572693f0800000000000000
+      internalID: -894484222952710264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 129
+        width: 15
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79172561a009675d0800000000000000
+      internalID: -3065104123380469353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.05, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a231c709ac94b6b0800000000000000
+      internalID: -5281424213205241182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: T_DonjonVolcanProps_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.95, y: 0.9}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c14612c387f33a0800000000000000
+      internalID: -6683491122340946895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
