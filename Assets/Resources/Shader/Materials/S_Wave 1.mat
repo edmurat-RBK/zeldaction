@@ -48,7 +48,7 @@ Material:
     - Vector1_818C8308: 0.5
     - _EnableExternalAlpha: 0
     m_Colors:
-    - Vector2_4482C129: {r: 0.5, g: 0, b: 0, a: 0}
+    - Vector2_4482C129: {r: -0.5, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
