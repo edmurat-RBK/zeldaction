@@ -25,6 +25,7 @@ namespace Manager
         public bool playerInvulnerable = false;
         public bool getBucket;
         public Rigidbody2D playerRigidBody;
+        public Transform playerTransform;
         public enum direction { down, downLeft, left, upLeft, up, upRight, right, downRight, } //enulm for the player direction
         public direction dirPlayer = direction.down;
         [Range(100f, 1000f)]
@@ -47,6 +48,7 @@ namespace Manager
 
         void Awake()
         {
+            playerTransform = GetComponent<Transform>();
             MakeSingleton(true);
             water = GetComponent<Arrosoir>();
             attack = GetComponent<Attaque>(); 
