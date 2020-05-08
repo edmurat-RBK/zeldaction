@@ -40,9 +40,15 @@ public class Totem2 : MonoBehaviour
     private float minNumberOfMeteor;
     private float maxNumberOfMeteor;
 
+    private Animator anim;
+    private Animator animBoss;
+
     private void Start()
     {
         player = PlayerManager.Instance.transform;
+        anim = GetComponentInChildren<Animator>();
+        animBoss = BossManagerP.instance.GetComponent<Animator>();
+        anim.SetBool("Phase2", false);
     }
 
     private void Update()
@@ -63,10 +69,11 @@ public class Totem2 : MonoBehaviour
         if (canFall && totemRenderer.transform.localPosition.y != 0)
         {
             totemRenderer.transform.position = Vector2.MoveTowards(totemRenderer.transform.position, transform.position, totemSpeedOfFall * Time.deltaTime);
+            anim.SetBool("IsFall", true);
         }
         else if (totemRenderer.transform.localPosition.y == 0 && canFall)
         {
-            //visage content du boss (boss attack)
+            anim.SetBool("IsFall", false);
             totemRenderer.GetComponent<Collider2D>().enabled = true;
             canFall = false;
             List<Transform> listPointOfMeteor = pointOfMeteor.ToList();
@@ -110,9 +117,13 @@ public class Totem2 : MonoBehaviour
 
     public IEnumerator StartFall()
     {
-        //lancer l'animation de l'objet sur le totemrenderer
+        anim.SetBool("IsShake", true);
         yield return new WaitForSeconds(timeBeforeFall);
+        anim.SetBool("IsShake", false);
+        animBoss.SetBool("TotemAttack", true);
         canFall = true;
+        yield return new WaitForSeconds(0.483f);
+        animBoss.SetBool("TotemAttack", false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

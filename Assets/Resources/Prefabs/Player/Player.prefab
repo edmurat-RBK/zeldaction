@@ -234,8 +234,8 @@ MonoBehaviour:
   ennemisInRange: []
   destructibleElement: []
   dammage: 3
-  timeBetweenAttack: 1
-  timeReset: 0
+  timeBetweenAttack: 0.3
+  timeReset: 0.5
 --- !u!114 &1097937794574312931
 MonoBehaviour:
   m_ObjectHideFlags: 0

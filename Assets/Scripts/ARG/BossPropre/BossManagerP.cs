@@ -72,7 +72,8 @@ public class BossManagerP : MonoBehaviour
                 pattern2.totem.enabled = false;
                 break;
             case 3:
-                //lancer l'animation de mort
+                anim.SetBool("BossDeath", true);
+                Destroy(gameObject, 3f);                
                 //cinématique (avec du délai)
                 break;
             default:Debug.Log("out of range");
@@ -84,6 +85,7 @@ public class BossManagerP : MonoBehaviour
     public void MakeVulnerable()
     {
         anim.SetBool("BossVulnerable", true);
+        anim.SetBool("BossFireBall", false);
         switch (phaseCounter)
         {
             case 0:pattern1.StopAllCoroutines();
@@ -111,8 +113,7 @@ public class BossManagerP : MonoBehaviour
     [ContextMenu("LunchPhase1")]
     public void LunchPhase1()
     {
-        //idle du boss
-        //plus vulnérable
+
         DesactivateClepsydre();
         bossCollider.enabled = false;
         StartCoroutine(pattern1.InitialisePattern1());
@@ -121,8 +122,7 @@ public class BossManagerP : MonoBehaviour
 
     public void LunchPhase2()
     {
-        //idle du boss
-        //plus vulnérable
+
         pattern2.totem.gameObject.SetActive(true);
         isVulnarable = false;
         DesactivateClepsydre();
@@ -133,8 +133,7 @@ public class BossManagerP : MonoBehaviour
 
     public void LunchPhase3()
     {
-        //idle du boss
-        //plus vulnérable
+
         isVulnarable = false;
         bossCollider.enabled = false;
         StartCoroutine(pattern3.InitialisePattern3());

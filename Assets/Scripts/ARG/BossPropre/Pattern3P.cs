@@ -5,16 +5,21 @@ using UnityEngine;
 public class Pattern3P : MonoBehaviour
 {
     public Totem2 totem2;
+    public GameObject totemGO;
     public List<GameObject> allEnnemis;
     [SerializeField]
     private int timeBeforeLunchPattern;
     private bool ennemiDead = false;
     public bool hardStop;
 
+    private Animator anim;
+    private Animator animBoss;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = totemGO.GetComponentInChildren<Animator>();
+        animBoss = BossManagerP.instance.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +35,12 @@ public class Pattern3P : MonoBehaviour
                 BossManagerP.instance.ActivateClepsydre();
                 ennemiDead = true;
             }
+        }
+        else
+        {
+            anim.SetBool("IsShake", false);
+            anim.SetBool("IsFall", false);
+            animBoss.SetBool("TotemAttack", false);
         }
     }
 

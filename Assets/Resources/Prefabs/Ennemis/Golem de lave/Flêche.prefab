@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4604962061793822854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 5636432871941854544}
   m_Father: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be905cfebf2c7648be9a4368f9badb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAnimation: 0
+  timeAnimation: 0.267
   khameoDetection: 0
   particuleCanDestroy: 1
 --- !u!114 &6250335131499950611
@@ -152,7 +152,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.2
 --- !u!95 &-1665187119836117304
 Animator:
   serializedVersion: 3
