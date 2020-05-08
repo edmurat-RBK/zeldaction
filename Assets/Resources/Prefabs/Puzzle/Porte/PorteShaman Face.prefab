@@ -134,11 +134,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 906baf0ef30a5244fb98b8a7dd87be3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whoActivate: []
+  whoActivate:
+  - {fileID: 0}
   linkMoulinLeft: 0
   linkMoulinRight: 0
   linkMoulinBoth: 0
-  lockAfterFinish: 0
+  lockAfterFinish: 1
   canActive: 0
 --- !u!1 &8830860538084823279
 GameObject:
