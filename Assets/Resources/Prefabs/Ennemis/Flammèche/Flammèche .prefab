@@ -351,6 +351,11 @@ PrefabInstance:
       propertyPath: m_LightOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9189041330559767404, guid: 6e493e3733617064bb281c3653edab17,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9189041330559767405, guid: 6e493e3733617064bb281c3653edab17,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -424,12 +429,12 @@ PrefabInstance:
     - target: {fileID: 2885687253431025128, guid: e8a6b6465e5a9344f916eb4527dc9a30,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.015
+      value: 0.018
       objectReference: {fileID: 0}
     - target: {fileID: 2885687253431025128, guid: e8a6b6465e5a9344f916eb4527dc9a30,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.211
+      value: 0.498
       objectReference: {fileID: 0}
     - target: {fileID: 2885687253431025128, guid: e8a6b6465e5a9344f916eb4527dc9a30,
         type: 3}

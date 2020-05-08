@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8726112176885741887
 Transform:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ MonoBehaviour:
   effectTime: 0
   maxEffectTime: 1
   active: 0
-  fontaineShootPoint: {fileID: 5311690212441064443}
+  fontaineShootPoint: {fileID: 5987844329369052878}
 --- !u!50 &5987844329369052873
 Rigidbody2D:
   serializedVersion: 4
@@ -5305,7 +5305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7843223335879001596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.084, y: -0.122, z: 0}
+  m_LocalPosition: {x: -0.045, y: -0.128, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5987844329369052872}
@@ -5350,16 +5350,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7272953871015019850, guid: f2c521cd4006ca04f94e135a94a6248a,
+  m_Sprite: {fileID: -8656503964467498072, guid: 633dd03d75234834f9f590224ce3f6dd,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.53125, y: 0.375}
+  m_Size: {x: 0.5625, y: 0.375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &2681942798480506657
@@ -5477,12 +5477,12 @@ PrefabInstance:
     - target: {fileID: 1965982393875286488, guid: 987fd362c7092ca4bb0bff32442032a8,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1965982393875286488, guid: 987fd362c7092ca4bb0bff32442032a8,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.050000004
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1965982393875286488, guid: 987fd362c7092ca4bb0bff32442032a8,
         type: 3}
