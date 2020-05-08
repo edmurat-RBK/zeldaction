@@ -6,7 +6,7 @@ using Manager;
 
 public class SceneLoader : MonoBehaviour
 {
-    public bool canSwitch;
+    private bool canSwitch;
     public int numberOfScene;
 
     public float axeX;
@@ -25,9 +25,9 @@ public class SceneLoader : MonoBehaviour
         {
             if (Input.GetButtonDown("X"))
             {
-                PlayerManager.Instance.playerTransform.position = new Vector2(axeX, axeY);
                 canSwitch = false;
                 SceneManager.LoadScene(numberOfScene);
+                PlayerManager.Instance.playerTransform.position = new Vector2(axeX, axeY);
             }
         }
     }

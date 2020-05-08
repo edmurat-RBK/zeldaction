@@ -7,7 +7,6 @@ public class HealthBar : MonoBehaviour
 {
     public Image[] hearts;
     public Sprite fullHeart;
-    public Sprite emptyHeart;
 
     private Image stock;
     private bool canEmpty;
