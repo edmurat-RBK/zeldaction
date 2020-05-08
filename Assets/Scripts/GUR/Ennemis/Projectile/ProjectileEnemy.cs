@@ -19,6 +19,6 @@ public class ProjectileEnemy : MonoBehaviour
             Destroy(gameObject);
         }
         anim.SetBool("IsDead", true);
-        Destroy(gameObject, 0.8f);
+        //Destroy(gameObject);
     }
 }

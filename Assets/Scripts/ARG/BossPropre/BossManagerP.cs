@@ -16,6 +16,8 @@ public class BossManagerP : MonoBehaviour
     public GameObject papaObsidian;
     public GameObject mamanObsidian;
 
+    private Animator anim;
+
     private void Awake()
     {
         if (instance == null)
@@ -27,6 +29,8 @@ public class BossManagerP : MonoBehaviour
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
+
         bossCollider = GetComponent<Collider2D>();
         pattern1 = GetComponent<Pattern1>();
         pattern2 = GetComponent<Pattern2P>();
@@ -56,7 +60,8 @@ public class BossManagerP : MonoBehaviour
 
     public void IncreasePhase()
     {
-        //prise de dégat
+        anim.SetBool("BossStun", true);
+        anim.SetBool("BossVulnerable", false);
         phaseCounter += 1;
         switch (phaseCounter)
         {
@@ -78,7 +83,7 @@ public class BossManagerP : MonoBehaviour
     [ContextMenu("MakeVulnerable")]
     public void MakeVulnerable()
     {
-        //animation vulnérable
+        anim.SetBool("BossVulnerable", true);
         switch (phaseCounter)
         {
             case 0:pattern1.StopAllCoroutines();

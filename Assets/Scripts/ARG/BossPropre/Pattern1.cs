@@ -18,6 +18,8 @@ public class Pattern1 : MonoBehaviour
     [SerializeField]
     private float timeBeforeLunchPattern = 0;
     private bool ennemiDead = false;
+
+    private Animator anim;
     #endregion
 
     // Start is called before the first frame update
@@ -25,7 +27,7 @@ public class Pattern1 : MonoBehaviour
     {
         player = PlayerManager.Instance.transform;
         canFire = true;
-
+        anim = GetComponent<Animator>();
     }
 
     private void Update()
@@ -53,14 +55,16 @@ public class Pattern1 : MonoBehaviour
     }
     private IEnumerator CreateWave() //fire multiple waves of fire
     {
-        
+        anim.SetBool("BossFireBall", true);
+        yield return new WaitForSeconds(0.717f);
         canFire = false;
         var dir = new Vector2(player.transform.position.x - shotPoint.transform.position.x, player.transform.position.y - shotPoint.transform.position.y); // Permet d'orienter le shotPoint vers le joueur
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         shotPoint.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        //aniamtion de tire
+        
         GameObject wave = Instantiate(chocWave, shotPoint.transform.position, shotPoint.transform.rotation); // spawn l'onde de choc
         Destroy(wave, 1f);
+        anim.SetBool("BossFireBall", false);
         yield return new WaitForSeconds(2);
         numberOfTheWave += 1;
         if (numberOfTheWave != numberOfWaves)

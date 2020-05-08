@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3330240996290166611}
   - component: {fileID: 6743626748652848617}
-  - component: {fileID: 7368078378535021635}
+  - component: {fileID: 2569653419467833965}
   m_Layer: 15
   m_Name: Contact Hitbox domage
   m_TagString: Untagged
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   destroyOnCollision: 1
---- !u!70 &7368078378535021635
-CapsuleCollider2D:
+--- !u!58 &2569653419467833965
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -59,6 +59,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.045008667, y: -0.0035864662}
-  m_Size: {x: 3.0450225, y: 1.3594618}
-  m_Direction: 1
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.06
