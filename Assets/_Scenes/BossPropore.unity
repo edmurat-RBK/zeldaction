@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1188,6 +1188,7 @@ GameObject:
   - component: {fileID: 1079579884}
   - component: {fileID: 1079579883}
   - component: {fileID: 1079579886}
+  - component: {fileID: 1079579887}
   m_Layer: 0
   m_Name: Totem
   m_TagString: Untagged
@@ -1322,6 +1323,25 @@ MonoBehaviour:
   fallCD: 5
   minDistance: 0.1
   minNumberOfMeteor: 0
+--- !u!95 &1079579887
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079579882}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 51384eaf2d5b58a4184dde6d0bd1556b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1186536717
 PrefabInstance:
   m_ObjectHideFlags: 0
