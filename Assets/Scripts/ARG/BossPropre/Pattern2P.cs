@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pattern2P : MonoBehaviour
 {
     public Totem totem;
+    public GameObject totemGO;
     public Transform[] pointsOfImpact;
     private float minWaiting;
     private float maxWaiting;
@@ -15,11 +16,19 @@ public class Pattern2P : MonoBehaviour
     public bool l_isInAction;
     public bool hardStop;
 
+    private Animator anim;
+    private Animator animBoss;
 
+    private void Start()
+    {
+        anim = totemGO.GetComponentInChildren<Animator>();
+        animBoss = BossManagerP.instance.GetComponent<Animator>();
+    }
     void Update()
     {
         if (hardStop == false)
         {
+
             allEnnemis.RemoveAll(list_item => list_item == null);
 
             if (allEnnemis.Count == 0 && ennemiDead == false)
@@ -38,6 +47,12 @@ public class Pattern2P : MonoBehaviour
             {
                 l_isInAction = totem.isInAction;
             }
+        }
+        else
+        {
+            anim.SetBool("IsShake", false);
+            anim.SetBool("IsFall", false);
+            animBoss.SetBool("TotemAttack", false);
         }
 
     }

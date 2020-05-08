@@ -36,10 +36,17 @@ public class Totem : MonoBehaviour
     private Transform[] pointOfMeteor;
     public bool isInAction;
 
+    private Animator anim;
+    private Animator animBoss;
+
     private void Start()
     {
         transform.position = pointOfReturn.position;
         totemRenderer.transform.localPosition = new Vector3(0, totemHight, 0);
+
+        anim = GetComponentInChildren<Animator>();
+        animBoss = BossManagerP.instance.GetComponent<Animator>();
+        anim.SetBool("Phase2", true);
     }
 
     private void Update()
@@ -61,9 +68,11 @@ public class Totem : MonoBehaviour
         if (canFall && totemRenderer.transform.localPosition.y != 0)
         {
             totemRenderer.transform.position = Vector2.MoveTowards(totemRenderer.transform.position, transform.position, totemSpeedOfFall * Time.deltaTime);
+            anim.SetBool("IsFall", true);
         }
         else if (totemRenderer.transform.localPosition.y == 0 && canFall)
         {
+            anim.SetBool("IsFall", false);
             totemRenderer.GetComponent<Collider2D>().enabled = true;
             canFall = false;
             Instantiate(meteorite, pointOfMeteor[Random.Range(0, pointOfMeteor.Length -1)].position, Quaternion.identity); 
@@ -89,9 +98,13 @@ public class Totem : MonoBehaviour
         if (canReturn && transform.position != aimPosition)
         {
             transform.position = Vector2.MoveTowards(transform.position, aimPosition, totemSpeedReturn * Time.deltaTime);
+            anim.SetBool("IsShake", false);
+            anim.SetBool("IsFall", false);
         }
         else if (transform.position == aimPosition && canReturn)
         {
+            anim.SetBool("IsShake", false);
+            anim.SetBool("IsFall", false);
             canReturn = false;
             isInAction = false;
         }
@@ -108,9 +121,13 @@ public class Totem : MonoBehaviour
 
     public IEnumerator StartFall()
     {
-        //lancer l'animation de l'objet sur le totemrenderer
+        anim.SetBool("IsShake", true);
         yield return new WaitForSeconds(timeBeforeFall);
+        anim.SetBool("IsShake", false);
+        animBoss.SetBool("TotemAttack", true);
         canFall = true;
+        yield return new WaitForSeconds(0.483f);
+        animBoss.SetBool("TotemAttack", false);
     }
 
     public IEnumerator ReturnAtPoint()
