@@ -1,0 +1,562 @@
+fileFormatVersion: 2
+guid: 61c0c2cf84d5cb64d956ddad6d5d7cf4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4686295979509829967
+    second: C_Boss_Lazer_0
+  - first:
+      213: 3868825067119266954
+    second: C_Boss_Lazer_1
+  - first:
+      213: -7534762085976028875
+    second: C_Boss_Lazer_2
+  - first:
+      213: 446235005091899554
+    second: C_Boss_Lazer_3
+  - first:
+      213: -7289408654238988158
+    second: C_Boss_Lazer_4
+  - first:
+      213: -568191044834954820
+    second: C_Boss_Lazer_5
+  - first:
+      213: 2704070975941020894
+    second: C_Boss_Lazer_6
+  - first:
+      213: 4076917253653586501
+    second: C_Boss_Lazer_7
+  - first:
+      213: -5715289802691586202
+    second: C_Boss_Lazer_8
+  - first:
+      213: 6437188084604614198
+    second: C_Boss_Lazer_9
+  - first:
+      213: 4907971282689631904
+    second: C_Boss_Lazer_10
+  - first:
+      213: 4110192056445913494
+    second: C_Boss_Lazer_11
+  - first:
+      213: 4727970641736795684
+    second: C_Boss_Lazer_12
+  - first:
+      213: 5651391206017614267
+    second: C_Boss_Lazer_13
+  - first:
+      213: -7476242605178752678
+    second: C_Boss_Lazer_14
+  - first:
+      213: 2504091417950124451
+    second: C_Boss_Lazer_15
+  - first:
+      213: 7550210505388665963
+    second: C_Boss_Lazer_16
+  - first:
+      213: 394817581918508914
+    second: C_Boss_Lazer_0
+  - first:
+      213: 6365124825299369397
+    second: C_Boss_Lazer_1
+  - first:
+      213: -7497184451951899695
+    second: C_Boss_Lazer_2
+  - first:
+      213: -5009955774516973844
+    second: C_Boss_Lazer_3
+  - first:
+      213: -1392446726966596763
+    second: C_Boss_Lazer_4
+  - first:
+      213: 5685773984179239652
+    second: C_Boss_Lazer_5
+  - first:
+      213: 4938056458064181260
+    second: C_Boss_Lazer_6
+  - first:
+      213: 5512210834890850622
+    second: C_Boss_Lazer_7
+  - first:
+      213: 8670727923682523499
+    second: C_Boss_Lazer_8
+  - first:
+      213: 5017424123538505117
+    second: C_Boss_Lazer_9
+  - first:
+      213: -4495924256286373012
+    second: C_Boss_Lazer_10
+  - first:
+      213: -2298154037542168155
+    second: C_Boss_Lazer_11
+  - first:
+      213: -3781522962186328265
+    second: C_Boss_Lazer_12
+  - first:
+      213: -8566327867872950462
+    second: C_Boss_Lazer_13
+  - first:
+      213: 5202174291933237000
+    second: C_Boss_Lazer_14
+  - first:
+      213: -2733481154555584479
+    second: C_Boss_Lazer_15
+  - first:
+      213: -3901244562128260832
+    second: C_Boss_Lazer_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C_Boss_Lazer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277d459bf7caa7500800000000000000
+      internalID: 394817581918508914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd3df20e47755850800000000000000
+      internalID: 6365124825299369397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db43d57676a4f790800000000000000
+      internalID: -7497184451951899695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceeaf7754cf097ab0800000000000000
+      internalID: -5009955774516973844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b208e44190dace0800000000000000
+      internalID: -1392446726966596763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea3928605de7ee40800000000000000
+      internalID: 5685773984179239652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c083db78f20878440800000000000000
+      internalID: 4938056458064181260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e318ab4ac8e4f7c40800000000000000
+      internalID: 5512210834890850622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69382b6b1d945870800000000000000
+      internalID: 8670727923682523499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dfcfa28a871a540800000000000000
+      internalID: 5017424123538505117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b0df695b44b91c0800000000000000
+      internalID: -4495924256286373012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a95b2934115b10e0800000000000000
+      internalID: -2298154037542168155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737a6e8b6e4558bc0800000000000000
+      internalID: -3781522962186328265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24747e5c03a4e1980800000000000000
+      internalID: -8566327867872950462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f895ac4f5d13840800000000000000
+      internalID: 5202174291933237000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1206d7e5f59b01ad0800000000000000
+      internalID: -2733481154555584479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Lazer_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021bb6c8dbefbd9c0800000000000000
+      internalID: -3901244562128260832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
