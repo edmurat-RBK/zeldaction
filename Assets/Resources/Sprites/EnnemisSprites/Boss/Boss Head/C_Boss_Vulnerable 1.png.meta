@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: ebd140e9ff40bed4087246ac92c3192f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6730728129831220695
+    second: C_Boss_Vulnerable 1_0
+  - first:
+      213: 5272352270635972788
+    second: C_Boss_Vulnerable 1_1
+  - first:
+      213: 1440626231369443937
+    second: C_Boss_Vulnerable 1_2
+  - first:
+      213: -612151706052857318
+    second: C_Boss_Vulnerable 1_3
+  - first:
+      213: -5419363265914068698
+    second: C_Boss_Vulnerable 1_4
+  - first:
+      213: 9085945625683828240
+    second: C_Boss_Vulnerable 1_5
+  - first:
+      213: -2517328029938129116
+    second: C_Boss_Vulnerable 1_6
+  - first:
+      213: 3138229497826835032
+    second: C_Boss_Vulnerable 1_7
+  - first:
+      213: -15035941516574744
+    second: C_Boss_Vulnerable 1_8
+  - first:
+      213: -1750798698488744209
+    second: C_Boss_Vulnerable 1_9
+  - first:
+      213: -1748890922505324730
+    second: C_Boss_Vulnerable 1_10
+  - first:
+      213: -1209038518299860528
+    second: C_Boss_Vulnerable 1_11
+  - first:
+      213: 5300887047762598331
+    second: C_Boss_Vulnerable 1_12
+  - first:
+      213: -4603863906066956803
+    second: C_Boss_Vulnerable 1_13
+  - first:
+      213: -2527758238483072795
+    second: C_Boss_Vulnerable 1_14
+  - first:
+      213: -1190361595290177591
+    second: C_Boss_Vulnerable 1_15
+  - first:
+      213: 4715223832447373678
+    second: C_Boss_Vulnerable 1_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5b15ab299586d50800000000000000
+      internalID: 6730728129831220695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b83bfdb4782b2940800000000000000
+      internalID: 5272352270635972788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16aa2e6bce12ef310800000000000000
+      internalID: 1440626231369443937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12f11444433187f0800000000000000
+      internalID: -612151706052857318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621246a92dd8ac4b0800000000000000
+      internalID: -5419363265914068698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e166b3863c71e70800000000000000
+      internalID: 9085945625683828240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42767608e77a01dd0800000000000000
+      internalID: -2517328029938129116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85afe99e91b3d8b20800000000000000
+      internalID: 3138229497826835032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef7a0f04e49acff0800000000000000
+      internalID: -15035941516574744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6bc5f1cd9e3b7e0800000000000000
+      internalID: -1750798698488744209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6473a25d8f0bab7e0800000000000000
+      internalID: -1748890922505324730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1e8f49fd1a83fe0800000000000000
+      internalID: -1209038518299860528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9db544fa8809940800000000000000
+      internalID: 5300887047762598331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdf2a47b2acb10c0800000000000000
+      internalID: -4603863906066956803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8362556499becd0800000000000000
+      internalID: -2527758238483072795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf26769f6cfa7fe0800000000000000
+      internalID: -1190361595290177591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Boss_Vulnerable 1_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e615b71e717df6140800000000000000
+      internalID: 4715223832447373678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6b18d6aaadb210841bac53dc62c52021
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
