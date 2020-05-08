@@ -6,6 +6,8 @@ using Manager;
 
 public class SceneLoader : MonoBehaviour
 {
+    public GameObject sprite;
+
     private bool canSwitch;
     public int numberOfScene;
 
@@ -15,6 +17,7 @@ public class SceneLoader : MonoBehaviour
     
     void Start()
     {
+        sprite.SetActive(false);
         canSwitch = false;
     }
 
@@ -37,6 +40,7 @@ public class SceneLoader : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             canSwitch = true;
+            sprite.SetActive(true);
         }
     }
 
@@ -45,6 +49,7 @@ public class SceneLoader : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             canSwitch = false;
+            sprite.SetActive(false);
         }
     }
 
