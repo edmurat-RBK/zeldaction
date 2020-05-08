@@ -1,12 +1,102 @@
 fileFormatVersion: 2
 guid: 0338ae1addfcb554e8e636c18140b3ee
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7299749280736326045
+    second: C_Totem_Fall_0
+  - first:
+      213: 8745051343512592721
+    second: C_Totem_Fall_1
+  - first:
+      213: -7184151610423409519
+    second: C_Totem_Fall_2
+  - first:
+      213: 928279917230108177
+    second: C_Totem_Fall_3
+  - first:
+      213: -1177436584143500244
+    second: C_Totem_Fall_4
+  - first:
+      213: -7088818145820833271
+    second: C_Totem_Fall_5
+  - first:
+      213: 8399416399046236403
+    second: C_Totem_Fall_6
+  - first:
+      213: -6906682365266502071
+    second: C_Totem_Fall_7
+  - first:
+      213: 6290643349002454852
+    second: C_Totem_Fall_8
+  - first:
+      213: 1651285750720850030
+    second: C_Totem_Fall_9
+  - first:
+      213: -5979547157064212373
+    second: C_Totem_Fall_10
+  - first:
+      213: -1660916717545833574
+    second: C_Totem_Fall_11
+  - first:
+      213: 7946526300898960196
+    second: C_Totem_Fall_12
+  - first:
+      213: -4891564225633554386
+    second: C_Totem_Fall_13
+  - first:
+      213: -5529342675557606444
+    second: C_Totem_Fall_14
+  - first:
+      213: 2049582476811021729
+    second: C_Totem_Fall_0
+  - first:
+      213: 531391916880759247
+    second: C_Totem_Fall_1
+  - first:
+      213: 2713040977902938679
+    second: C_Totem_Fall_2
+  - first:
+      213: 2337947475562395238
+    second: C_Totem_Fall_3
+  - first:
+      213: 7318458087926960913
+    second: C_Totem_Fall_4
+  - first:
+      213: -1235657423586103156
+    second: C_Totem_Fall_5
+  - first:
+      213: -813700530908995707
+    second: C_Totem_Fall_6
+  - first:
+      213: 1660036912228343658
+    second: C_Totem_Fall_7
+  - first:
+      213: 469766938480264290
+    second: C_Totem_Fall_8
+  - first:
+      213: 2408113062437023582
+    second: C_Totem_Fall_9
+  - first:
+      213: 8548097344250164728
+    second: C_Totem_Fall_10
+  - first:
+      213: -6958569700903139823
+    second: C_Totem_Fall_11
+  - first:
+      213: -4757943543237720857
+    second: C_Totem_Fall_12
+  - first:
+      213: 2385425294532505448
+    second: C_Totem_Fall_13
+  - first:
+      213: 2035147422206673449
+    second: C_Totem_Fall_14
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +121,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -70,13 +160,340 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: C_Totem_Fall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1adaf2c4764917c10800000000000000
+      internalID: 2049582476811021729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9013a0222ef5700800000000000000
+      internalID: 531391916880759247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73aabf42568a6a520800000000000000
+      internalID: 2713040977902938679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666fa6097de027020800000000000000
+      internalID: 2337947475562395238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113987a2bd2609560800000000000000
+      internalID: 7318458087926960913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80731bbe101adee0800000000000000
+      internalID: -1235657423586103156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f5f95ada725b4f0800000000000000
+      internalID: -813700530908995707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f1863c6c2a90710800000000000000
+      internalID: 1660036912228343658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264c657aa82f48600800000000000000
+      internalID: 469766938480264290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f698152165b6120800000000000000
+      internalID: 2408113062437023582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5bd7dae31f0a670800000000000000
+      internalID: 8548097344250164728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1164fd0a9b13e6f90800000000000000
+      internalID: -6958569700903139823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4c3fb5e8368fdb0800000000000000
+      internalID: -4757943543237720857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f67d6baabba1120800000000000000
+      internalID: 2385425294532505448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C_Totem_Fall_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 13
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9224e2e3ccb4e3c10800000000000000
+      internalID: 2035147422206673449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
