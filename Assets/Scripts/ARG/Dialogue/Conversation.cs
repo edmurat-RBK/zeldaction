@@ -1,19 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-[System.Serializable]
-public struct Line
+namespace Dialogue
 {
-    public Character character;
-
-    [TextArea(2, 5)]
-    public string text;
-
-}
-[CreateAssetMenu(fileName = "New Conversation", menuName ="Dialogue/Conversation")]
-public class Conversation : ScriptableObject
-{
-    public Character characterWhoSpeak;
-    public Line[] lines;
+    [CreateAssetMenu(fileName = "New_Conversation", menuName = "Dialogue/Conversation")]
+    public class Conversation : ScriptableObject
+    {
+        public Phrase[] phraseList;
+    }
 }

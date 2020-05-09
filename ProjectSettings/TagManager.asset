@@ -17,6 +17,7 @@ TagManager:
   - Caisse Destructible
   - Cube de bois
   - Boss
+  - DialogueManager
   layers:
   - Default
   - TransparentFX
