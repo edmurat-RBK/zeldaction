@@ -235,6 +235,7 @@ MonoBehaviour:
   destructibleElement: []
   dammage: 3
   timeBetweenAttack: 1
+  timeReset: 0
 --- !u!114 &1097937794574312931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,8 +388,10 @@ MonoBehaviour:
   health: 5
   respawnPoints: []
   actualRespawnPoint: {fileID: 0}
-  checkpointBaseSprite: {fileID: 0}
-  checkpointActiveSprite: {fileID: 0}
+  checkpointBaseSprite: {fileID: -6229413581971816287, guid: 5f4d20750bb771f4a8925c69f8567c13,
+    type: 3}
+  checkpointActiveSprite: {fileID: 8284627518334055542, guid: 5f4d20750bb771f4a8925c69f8567c13,
+    type: 3}
 --- !u!61 &6448364620980469777
 BoxCollider2D:
   m_ObjectHideFlags: 0
