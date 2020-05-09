@@ -16,16 +16,25 @@ public class BossManagerP : MonoBehaviour
     public GameObject papaObsidian;
     public GameObject mamanObsidian;
 
+    //mouvement clepsydre
     [SerializeField]
     private GameObject clepsydreL;
     [SerializeField]
     private GameObject clepsydreR;
-
     private Vector2 positionBaseL;
     private Vector2 positionBaseR;
-
     [SerializeField]
     private int hightWhenClepsydreOff;
+
+    //tiles de sol au dessus de la lave
+    [SerializeField]
+    private GameObject tilesG;
+    [SerializeField]
+    private GameObject tilesD;
+
+    [SerializeField]
+    private GameObject porte;
+    private Animator animPorte;
 
     private Animator anim;
     private void Awake()
@@ -39,6 +48,7 @@ public class BossManagerP : MonoBehaviour
 
     private void Start()
     {
+        animPorte = porte.GetComponent<Animator>();
         anim = GetComponent<Animator>();
 
         bossCollider = GetComponent<Collider2D>();
@@ -75,6 +85,7 @@ public class BossManagerP : MonoBehaviour
             }
             if (fullCounter == 2)
             {
+                animPorte.SetBool("IsOpen", true);
                 MakeVulnerable();
             }
         }
@@ -84,6 +95,7 @@ public class BossManagerP : MonoBehaviour
     {
         anim.SetBool("BossStun", true);
         anim.SetBool("BossVulnerable", false);
+        animPorte.SetBool("IsOpen", false);
         phaseCounter += 1;
         switch (phaseCounter)
         {
@@ -151,6 +163,7 @@ public class BossManagerP : MonoBehaviour
         bossCollider.enabled = false;
         StartCoroutine(pattern2.InitialisePattern2());
         papaObsidian.SetActive(true);
+        tilesG.SetActive(false);
     }
 
     public void LunchPhase3()
@@ -160,6 +173,7 @@ public class BossManagerP : MonoBehaviour
         bossCollider.enabled = false;
         StartCoroutine(pattern3.InitialisePattern3());
         mamanObsidian.SetActive(true);
+        tilesD.SetActive(false);
         DesactivateClepsydre();
     }
 
