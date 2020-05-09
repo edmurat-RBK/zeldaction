@@ -524,7 +524,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7901534224033862361, guid: a337c41b1a3703a47aa69283c74f0736, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a337c41b1a3703a47aa69283c74f0736, type: 3}
 --- !u!4 &7291180516731048551 stripped
 Transform:
@@ -604,7 +605,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7674973806656509625, guid: a0a54b848186d5e458735faac5b51531, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a0a54b848186d5e458735faac5b51531, type: 3}
 --- !u!4 &7347478186462624538 stripped
 Transform:
@@ -684,7 +686,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8185862897504576154, guid: 09e7c573191e332418ab67e55ee8fa76, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09e7c573191e332418ab67e55ee8fa76, type: 3}
 --- !u!4 &4944253645896851034 stripped
 Transform:
@@ -924,7 +927,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8185862897504576154, guid: 09e7c573191e332418ab67e55ee8fa76, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 09e7c573191e332418ab67e55ee8fa76, type: 3}
 --- !u!4 &8082528105511650093 stripped
 Transform:
@@ -1084,7 +1088,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1012816863578669013, guid: f5bbabbb8ba45b8449113b0d6ac64677, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f5bbabbb8ba45b8449113b0d6ac64677, type: 3}
 --- !u!4 &4854005630413133415 stripped
 Transform:
@@ -1164,7 +1169,8 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 9
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7674973806656509625, guid: a0a54b848186d5e458735faac5b51531, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a0a54b848186d5e458735faac5b51531, type: 3}
 --- !u!4 &6327619772652645875 stripped
 Transform:
