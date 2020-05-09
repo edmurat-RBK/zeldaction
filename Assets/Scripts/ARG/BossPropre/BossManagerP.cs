@@ -16,8 +16,18 @@ public class BossManagerP : MonoBehaviour
     public GameObject papaObsidian;
     public GameObject mamanObsidian;
 
-    private Animator anim;
+    [SerializeField]
+    private GameObject clepsydreL;
+    [SerializeField]
+    private GameObject clepsydreR;
 
+    private Vector2 positionBaseL;
+    private Vector2 positionBaseR;
+
+    [SerializeField]
+    private int hightWhenClepsydreOff;
+
+    private Animator anim;
     private void Awake()
     {
         if (instance == null)
@@ -36,10 +46,22 @@ public class BossManagerP : MonoBehaviour
         pattern2 = GetComponent<Pattern2P>();
         pattern3 = GetComponent<Pattern3P>();
 
+        positionBaseL = clepsydreL.transform.position;
+        positionBaseR = clepsydreR.transform.position;
     }
 
     private void Update()
     {
+        if (clepsydreOn)
+        {
+            clepsydreL.transform.position = Vector2.MoveTowards(clepsydreL.transform.position, new Vector2(positionBaseL.x, (positionBaseL.y)), 5 * Time.deltaTime);
+            clepsydreR.transform.position = Vector2.MoveTowards(clepsydreR.transform.position, new Vector2(positionBaseR.x, (positionBaseR.y)), 5 * Time.deltaTime);
+        }
+        else
+        {
+            clepsydreL.transform.position = Vector2.MoveTowards(clepsydreL.transform.position, new Vector2(positionBaseL.x, (positionBaseL.y + hightWhenClepsydreOff)), 5 * Time.deltaTime);
+            clepsydreR.transform.position = Vector2.MoveTowards(clepsydreR.transform.position, new Vector2(positionBaseR.x, (positionBaseR.y + hightWhenClepsydreOff)), 5 * Time.deltaTime);
+        }
         
         if (clepsydreOn == true && isVulnarable == false)
         {
@@ -159,7 +181,6 @@ public class BossManagerP : MonoBehaviour
     [ContextMenu("clepsydre desactiveé")]
     public void DesactivateClepsydre()
     {
-        //animation clepsydres qui remontent
         clepsydreOn = false;
         foreach (ClepsydreBoss clepsydre in allclepsydre)
         {

@@ -871,6 +871,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1665563728}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &147670840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5435657021608830397, guid: eb503e36e30c8304ca1699a7a4586989,
+    type: 3}
+  m_PrefabInstance: {fileID: 1186536717}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &187009810
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +917,9 @@ MonoBehaviour:
   - {fileID: 698140333}
   papaObsidian: {fileID: 800170255}
   mamanObsidian: {fileID: 1942857383}
+  clepsydreL: {fileID: 1231060159}
+  clepsydreR: {fileID: 147670840}
+  hightWhenClepsydreOff: 0
 --- !u!61 &187009812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12246,7 +12255,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1651228243}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1231060159}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09b313df5c215274e88eb80a785f5864, type: 3}
@@ -12749,7 +12758,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1186536717}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 147670840}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09b313df5c215274e88eb80a785f5864, type: 3}
@@ -15452,6 +15461,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1691634809816549971, guid: 5d68b84e16e9baf4f80777d3c330379f,
     type: 3}
   m_PrefabInstance: {fileID: 1689393402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1231060159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5435657021608830397, guid: eb503e36e30c8304ca1699a7a4586989,
+    type: 3}
+  m_PrefabInstance: {fileID: 1651228243}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1287656825
 PrefabInstance:
