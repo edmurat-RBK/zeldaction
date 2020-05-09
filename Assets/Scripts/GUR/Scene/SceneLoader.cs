@@ -29,8 +29,9 @@ public class SceneLoader : MonoBehaviour
             if (Input.GetButtonDown("X"))
             {
                 canSwitch = false;
-                SceneManager.LoadScene(numberOfScene);
                 PlayerManager.Instance.playerTransform.position = new Vector2(axeX, axeY);
+                SceneManager.LoadScene(numberOfScene);
+
             }
         }
     }
