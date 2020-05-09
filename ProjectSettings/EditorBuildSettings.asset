@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/_Scenes/GAG_LD_TempleEau.unity
+    path: Assets/_Scenes/Milestone 56/GAG_LD_Exterieur.unity
+    guid: 4cd8f7848d6ff214aaf981e5364d617a
+  - enabled: 1
+    path: Assets/_Scenes/Milestone 56/GAG_LD_TempleEau.unity
     guid: b105e65fbe29e8846bbc3adedf6620dc
   - enabled: 1
-    path: Assets/_Scenes/GAG_LD_Exterieur.unity
-    guid: 4cd8f7848d6ff214aaf981e5364d617a
+    path: Assets/_Scenes/Milestone 56/GAG_LD_DonjonVolcan.unity
+    guid: d8dab6be72997bb49a8d8b11296afa7f
+  - enabled: 1
+    path: Assets/_Scenes/Milestone 56/BossPropore.unity
+    guid: d297d6d7cf8191848874400b609ca471
   m_configObjects: {}

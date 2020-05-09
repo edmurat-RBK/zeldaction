@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be905cfebf2c7648be9a4368f9badb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAnimation: 0.267
+  timeAnimation: 0
   khameoDetection: 0
   particuleCanDestroy: 1
 --- !u!114 &6250335131499950611
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4dcfa5e6cb65a4ab3ecf224c3d8bf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 1
 --- !u!58 &709469571577651921
 CircleCollider2D:
   m_ObjectHideFlags: 0

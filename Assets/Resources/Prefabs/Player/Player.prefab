@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 2267215137024255313}
   - component: {fileID: 2241696926748252811}
   - component: {fileID: 6448364620980469777}
+  - component: {fileID: 316187974}
   m_Layer: 31
   m_Name: Player
   m_TagString: Player
@@ -177,14 +178,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65325cc976a3f5c48995282415f3c852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPlayer: 0
-  healthMax: 0
+  healthPlayer: 3
+  healthMax: 3
   horizontal: 0
   vertical: 0
   playerCanMove: 0
   playerInvulnerable: 0
   getBucket: 1
   playerRigidBody: {fileID: 0}
+  playerTransform: {fileID: 0}
   dirPlayer: 0
   speed: 200
   playerCanRotate: 1
@@ -384,8 +386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ccad2ad6a6d8d848b328c1f7cfc2a1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumHealth: 5
-  health: 5
+  maximumHealth: 3
+  health: 3
   respawnPoints: []
   actualRespawnPoint: {fileID: 0}
   checkpointBaseSprite: {fileID: -6229413581971816287, guid: 5f4d20750bb771f4a8925c69f8567c13,
@@ -418,6 +420,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.46601486, y: 0.67551255}
   m_EdgeRadius: 0
+--- !u!114 &316187974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987844329369052878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a56cd28ac950664caf48feb225398bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: 21300000, guid: fb3571dd798a5b048b9c333d47f9898a, type: 3}
 --- !u!1 &5987844329395168478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5235,7 +5256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5987844329921033347}
   - component: {fileID: 5987844329921033372}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: AttackBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
