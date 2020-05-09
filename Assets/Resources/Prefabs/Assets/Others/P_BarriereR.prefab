@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566071692838022294}
   - component: {fileID: 8836421553192483233}
-  - component: {fileID: 7611851216976738016}
+  - component: {fileID: 2984335777385880548}
   m_Layer: 0
   m_Name: P_BarriereR
   m_TagString: Untagged
@@ -166,7 +166,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7611851216976738016
+--- !u!61 &2984335777385880548
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +179,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.002209194, y: -0.20146155}
+  m_Offset: {x: 0.006232962, y: -0.19999981}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.05, y: 0.9}
@@ -190,5 +190,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.06316681, y: 0.49017262}
+  m_Size: {x: 0.062465936, y: 0.5}
   m_EdgeRadius: 0
