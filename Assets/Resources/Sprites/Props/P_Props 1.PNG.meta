@@ -1370,27 +1370,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: P_Props_51
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4714e6b3f041ab90800000000000000
-      internalID: -7232428111090673842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: P_Props_52
       rect:
         serializedVersion: 2
@@ -1544,7 +1523,7 @@ TextureImporter:
         x: 112
         y: 48
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
