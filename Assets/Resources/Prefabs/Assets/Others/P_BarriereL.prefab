@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!61 &6939892534332008187
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,8 +135,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681910862788951491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.095, y: -0.263, z: 0}
-  m_LocalScale: {x: 0.2905078, y: 1.197034, z: 1}
+  m_LocalPosition: {x: -0.107, y: -0.216, z: 0}
+  m_LocalScale: {x: 0.2905078, y: 1.52, z: 1}
   m_Children: []
   m_Father: {fileID: 6710687143065225620}
   m_RootOrder: 0
