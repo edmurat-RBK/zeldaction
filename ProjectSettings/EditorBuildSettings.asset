@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Milestone 56/BossPropore.unity
     guid: d297d6d7cf8191848874400b609ca471
+  - enabled: 1
+    path: Assets/_Scenes/MainMenu.unity
+    guid: 51d149a11b969e542843e171868114a3
   m_configObjects: {}
