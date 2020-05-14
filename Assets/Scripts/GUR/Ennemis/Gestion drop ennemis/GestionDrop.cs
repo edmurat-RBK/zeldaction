@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class GestionDrop : MonoBehaviour
 {
-    
-    void Start()
-    {
-        
-    }
+    public int chanceDrop;
+    public GameObject potion;
 
-    
-    void Update()
+    public void RamdomDrop()
     {
-        
+        int random = Random.Range(0, 100);
+
+        if (random <= chanceDrop)
+        {
+            Instantiate(potion, transform.position, transform.rotation); 
+        }
     }
 }
