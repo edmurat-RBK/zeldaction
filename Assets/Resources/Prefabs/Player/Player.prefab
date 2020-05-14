@@ -282,7 +282,7 @@ MonoBehaviour:
   effectTime: 0
   maxEffectTime: 1
   active: 0
-  fontaineShootPoint: {fileID: 5987844329369052878}
+  fontaineShootPoint: {fileID: 5311690212441064443}
 --- !u!50 &5987844329369052873
 Rigidbody2D:
   serializedVersion: 4
