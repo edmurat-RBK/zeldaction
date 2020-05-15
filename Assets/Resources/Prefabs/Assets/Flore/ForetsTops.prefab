@@ -392,7 +392,7 @@ PrefabInstance:
     - target: {fileID: 2848124066723765505, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3565060201016603296, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
@@ -472,7 +472,7 @@ PrefabInstance:
     - target: {fileID: 4884337689828845288, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5999611129222335114, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e,
         type: 3}
@@ -533,6 +533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: P_GrandArbreLight (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384868896701943233, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e, type: 3}
@@ -612,7 +617,7 @@ PrefabInstance:
     - target: {fileID: 6095276625556995986, guid: 62ce6fc42826a7d499bb4acc8ccbe9da,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ce6fc42826a7d499bb4acc8ccbe9da, type: 3}
@@ -712,7 +717,7 @@ PrefabInstance:
     - target: {fileID: 2848124066723765505, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3565060201016603296, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
@@ -792,7 +797,7 @@ PrefabInstance:
     - target: {fileID: 2848124066723765505, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3565060201016603296, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
@@ -872,7 +877,7 @@ PrefabInstance:
     - target: {fileID: 2848124066723765505, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3565060201016603296, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
@@ -1013,6 +1018,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: P_GrandArbreLight (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384868896701943233, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e, type: 3}
@@ -1172,7 +1182,7 @@ PrefabInstance:
     - target: {fileID: 6095276625556995986, guid: 62ce6fc42826a7d499bb4acc8ccbe9da,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ce6fc42826a7d499bb4acc8ccbe9da, type: 3}
@@ -1192,7 +1202,7 @@ PrefabInstance:
     - target: {fileID: 2848124066723765505, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3565060201016603296, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
@@ -1332,7 +1342,7 @@ PrefabInstance:
     - target: {fileID: 6095276625556995986, guid: 62ce6fc42826a7d499bb4acc8ccbe9da,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ce6fc42826a7d499bb4acc8ccbe9da, type: 3}
@@ -1574,6 +1584,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_GrandArbreLight (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8384868896701943233, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e, type: 3}
 --- !u!4 &350702361595606112 stripped
@@ -1652,7 +1667,7 @@ PrefabInstance:
     - target: {fileID: 6095276625556995986, guid: 62ce6fc42826a7d499bb4acc8ccbe9da,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ce6fc42826a7d499bb4acc8ccbe9da, type: 3}
@@ -1732,7 +1747,7 @@ PrefabInstance:
     - target: {fileID: 6095276625556995986, guid: 62ce6fc42826a7d499bb4acc8ccbe9da,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ce6fc42826a7d499bb4acc8ccbe9da, type: 3}
@@ -1752,7 +1767,7 @@ PrefabInstance:
     - target: {fileID: 2848124066723765505, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3565060201016603296, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
@@ -1894,6 +1909,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_GrandArbreLight (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8384868896701943233, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ae1a175fa3c9b54d9f5ce57b9d55e9e, type: 3}
 --- !u!4 &2495165350187995263 stripped
@@ -1912,7 +1932,7 @@ PrefabInstance:
     - target: {fileID: 2848124066723765505, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3565060201016603296, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
@@ -1992,7 +2012,7 @@ PrefabInstance:
     - target: {fileID: 2848124066723765505, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3565060201016603296, guid: a60ff3b35754bbf49abb6c433dbdf570,
         type: 3}
@@ -2132,7 +2152,7 @@ PrefabInstance:
     - target: {fileID: 6095276625556995986, guid: 62ce6fc42826a7d499bb4acc8ccbe9da,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ce6fc42826a7d499bb4acc8ccbe9da, type: 3}
