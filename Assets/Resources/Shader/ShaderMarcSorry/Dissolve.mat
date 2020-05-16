@@ -46,10 +46,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_68D2B8F7: 0.353
-    - _Dissolve: 0.587
+    - _Dissolve: 0
     - _EnableExternalAlpha: 0
     - _Scale: 40
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.83137256, g: 0.29463485, b: 0.035294104, a: 0.972549}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
