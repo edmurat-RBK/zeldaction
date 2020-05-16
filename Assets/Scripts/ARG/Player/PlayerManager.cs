@@ -37,6 +37,12 @@ namespace Manager
         //booleen for the different actions of the player
 
 
+        // Bool pour détecter les différentes ations du joueur
+        public bool isAttacking;
+        public bool isArroisoir;
+        public bool isKhameau;
+        public bool isFontaine;
+
         //4 scripts to disable when the player don't have the bucket
         private Attaque attack;
         private Arrosoir water;

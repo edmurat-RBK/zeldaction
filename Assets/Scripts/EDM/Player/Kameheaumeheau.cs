@@ -60,9 +60,13 @@ public class Kameheaumeheau : MonoBehaviour
         if (!loaded)
         {
            //If inupt is still pressed             if (Input.GetButton("Y"))             {
-                anim.SetBool("IsCharging", true);                 inputHoldTime += Time.deltaTime;                 manager.speed = playerSpeed/speedDevider;                  //When input has been pressed enough                 if (inputHoldTime >= inputMaxHoldTime)                 {                     loaded = true;                 }             }             //If input is not pressed / realsed             else             {                 manager.speed = playerSpeed;                 inputHoldTime = 0;                 anim.SetBool("IsKameomeo", false);                 anim.SetBool("IsCharging", false);             }         }         // If Kameheaumeheau is loaded         else         {             //When input released             if (Input.GetButtonUp("Y"))             {
+                PlayerManager.Instance.isKhameau = true;
+                anim.SetBool("IsCharging", true);                 inputHoldTime += Time.deltaTime;                 manager.speed = playerSpeed/speedDevider;                  //When input has been pressed enough                 if (inputHoldTime >= inputMaxHoldTime)                 {                     loaded = true;                 }             }             //If input is not pressed / realsed             else             {                 manager.speed = playerSpeed;                 inputHoldTime = 0;                 anim.SetBool("IsKameomeo", false);                 anim.SetBool("IsCharging", false);                  if (kameheaumeheau == false)
+                {
+                    PlayerManager.Instance.isKhameau = false;
+                }             }         }         // If Kameheaumeheau is loaded         else         {             //When input released             if (Input.GetButtonUp("Y"))             {
                 //Start Kameheau
-                anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                 kameheaumeheau = true;                 manager.playerCanMove = false;                                  loaded = false;                 inputHoldTime = 0;                              }              
+                anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                 kameheaumeheau = true;                 manager.playerCanMove = false;                                  loaded = false;                 inputHoldTime = 0;             }              
         }
     }
 

@@ -22,6 +22,7 @@ public class Fontaine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        active = false;
         manager = GetComponent<PlayerManager>();
         anim = GetComponent<Animator>();
     }
@@ -29,10 +30,10 @@ public class Fontaine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!active && cooldown == 0)
+        if(Input.GetButton("A"))
         {
-
-            if(Input.GetButton("A"))
+           
+            if(!active && cooldown == 0)
             {
                 anim.SetBool("IsShielding",true);
                 fontaineShootPoint.SetActive (true);
@@ -47,10 +48,9 @@ public class Fontaine : MonoBehaviour
             }
         }
 
-
         else if(!active && cooldown != 0 && !Input.GetButton("A"))
         {
-            
+            Debug.Log("Je reduit cooldown");
             cooldown -= Time.deltaTime;
             if(cooldown < 0)
             {
@@ -58,12 +58,12 @@ public class Fontaine : MonoBehaviour
                 anim.SetBool("IsShielding", false);
                 Debug.Log("Pas Fontaine !");
                 fontaineShootPoint.SetActive (false);
-             }
+            }
         }
         else
         {
             //Vague();
-
+            Debug.Log("je rentre dans le else");
             effectTime -= Time.deltaTime; 
             if(effectTime < 0)
             {

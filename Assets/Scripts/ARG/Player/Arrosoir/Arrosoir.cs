@@ -35,18 +35,21 @@ namespace WateringCan
 
             if (Input.GetButton("B"))
             {
+                PlayerManager.Instance.isArroisoir = true;
+
                 Watering();
                 anim.SetBool("IsWatering", true);
 
             }
             else
             {
-             water.gameObject.SetActive(false); //set off the particule system
+                water.gameObject.SetActive(false); //set off the particule system
                 anim.SetBool("IsWatering", false);
             }
 
             if (Input.GetButtonUp("B"))
             {
+                PlayerManager.Instance.isArroisoir = false;
                 PlayerManager.Instance.playerCanMove = true;
             }
 
