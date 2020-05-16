@@ -86,10 +86,6 @@ public class MageMovement : MonoBehaviour
         {
             if (vunerableMage == false)
             {
-                //youmna a ecrit ca
-                anim.SetFloat("Horizontal", rbMage.velocity.x);
-                anim.SetFloat("Vertical", rbMage.velocity.y);
-
 
                 if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
                 {
@@ -118,6 +114,10 @@ public class MageMovement : MonoBehaviour
                         StartCoroutine(Attack());
                     }
                 }
+
+                //youmna a ecrit ca
+                anim.SetFloat("Horizontal", rbMage.velocity.x);
+                anim.SetFloat("Vertical", rbMage.velocity.y);
 
             }
 
