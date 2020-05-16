@@ -51,9 +51,16 @@ namespace Attack
 
             if (Input.GetButtonDown("X") && timestamp < Time.time) //get l'input
             {
+                PlayerManager.Instance.isAttacking = true;
+
                 ApplyDammage();
                 CrateDestruction();
-             }
+            }
+
+            if (Input.GetButtonUp("X"))
+            {
+                PlayerManager.Instance.isAttacking = false;
+            }
 
             if (timestampAuto < Time.time)
             {
