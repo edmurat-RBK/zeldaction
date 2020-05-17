@@ -192,6 +192,10 @@ MonoBehaviour:
   playerCanRotate: 1
   canTakeDammage: 1
   deathParalise: 0
+  isAttacking: 0
+  isArroisoir: 0
+  isKhameau: 0
+  isFontaine: 0
   canChangeSprite: 0
 --- !u!114 &5987844329369052875
 MonoBehaviour:
@@ -278,11 +282,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
-  maxCooldown: 1
+  maxCooldown: 3
   effectTime: 0
-  maxEffectTime: 1
+  maxEffectTime: 3
   active: 0
-  fontaineShootPoint: {fileID: 5311690212441064443}
+  fontaineShootPoint: {fileID: 4787709865514705334}
 --- !u!50 &5987844329369052873
 Rigidbody2D:
   serializedVersion: 4
