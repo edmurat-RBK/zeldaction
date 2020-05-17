@@ -158,8 +158,10 @@ public class PlayerHealth : MonoBehaviour
                 foreach(GameObject respawnPoint in respawnPoints) //change all the other sprite of checkpoint not used by the player
                 {
                     respawnPoint.GetComponent<SpriteRenderer>().sprite = checkpointBaseSprite;
+                    respawnPoint.GetComponent<Animator>().enabled = false;
                 }
                 actualRespawnPoint.GetComponent<SpriteRenderer>().sprite = checkpointActiveSprite;
+                actualRespawnPoint.GetComponent<Animator>().enabled = true;
                 //animation checkpoint + message
             }
         }
