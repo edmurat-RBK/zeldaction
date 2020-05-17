@@ -30,16 +30,16 @@ public class Fontaine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButton("A"))
+        if(!active && cooldown == 0)
         {
-           
-            if(!active && cooldown == 0)
+
+            if (Input.GetButton("A"))
             {
-                anim.SetBool("IsShielding",true);
-                fontaineShootPoint.SetActive (true);
+                anim.SetBool("IsShielding", true);
+                fontaineShootPoint.SetActive(true);
                 effectTime = maxEffectTime;
                 active = true;
-                manager.playerInvulnerable = true;                
+                manager.playerInvulnerable = true;
                 manager.playerCanMove = false;
                 manager.playerRigidBody.velocity = Vector2.zero;
 
@@ -48,39 +48,39 @@ public class Fontaine : MonoBehaviour
             }
         }
 
-        else if(!active && cooldown != 0 && !Input.GetButton("A"))
+        else if (!active && cooldown != 0 && !Input.GetButton("A"))
         {
-            Debug.Log("Je reduit cooldown");
             cooldown -= Time.deltaTime;
-            if(cooldown < 0)
+            if (cooldown < 0)
             {
                 cooldown = 0;
                 anim.SetBool("IsShielding", false);
                 Debug.Log("Pas Fontaine !");
-                fontaineShootPoint.SetActive (false);
             }
         }
         else
         {
             //Vague();
-            Debug.Log("je rentre dans le else");
-            effectTime -= Time.deltaTime; 
-            if(effectTime < 0)
+            effectTime -= Time.deltaTime;
+            if (effectTime < 0)
             {
                 cooldown = maxCooldown;
                 effectTime = 0;
                 active = false;
                 manager.playerInvulnerable = false;
                 anim.SetBool("IsShielding", false);
+                fontaineShootPoint.SetActive(false);
             }
         }
 
         if (Input.GetButtonUp("A"))
         {
             anim.SetBool("IsShielding", false);
-            PlayerManager.Instance.playerCanMove = true;           
-        }        
+            PlayerManager.Instance.playerCanMove = true;
+        }
     }
+
+}
 
     //private void Vague()
     //{
@@ -94,4 +94,3 @@ public class Fontaine : MonoBehaviour
     //        }
     //    }
     //}
-}
