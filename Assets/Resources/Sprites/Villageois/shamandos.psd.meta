@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 3f7e3f6b6b293834e94ebafbf3e6b3e7
+guid: 918e50b5ba86d8f4490a87dd47512da1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7173492439267743272
-    second: T_ReliefenPlus_0
+      213: 7478247563080595185
+    second: shamandos_0
   - first:
-      213: 1244695549902337915
-    second: T_ReliefenPlus_1
+      213: -7031103047678622028
+    second: shamandos_1
   - first:
-      213: -5504161162387214992
-    second: T_ReliefenPlus_2
+      213: -8098295805366307278
+    second: shamandos_2
+  - first:
+      213: 1200498580937428989
+    second: shamandos_0
+  - first:
+      213: -7368131619402376946
+    second: shamandos_1
+  - first:
+      213: -4204996093404842998
+    second: shamandos_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -50,7 +59,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 7
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -95,64 +104,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T_ReliefenPlus_0
+      name: shamandos_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8261181ed5d5d8360800000000000000
-      internalID: 7173492439267743272
+      spriteID: dffc22e491709a010800000000000000
+      internalID: 1200498580937428989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: T_ReliefenPlus_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b773079020c064110800000000000000
-      internalID: 1244695549902337915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T_ReliefenPlus_2
+      name: shamandos_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07da869c59a4d93b0800000000000000
-      internalID: -5504161162387214992
+      spriteID: e09923784532fb990800000000000000
+      internalID: -7368131619402376946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shamandos_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04f2b2055ad4a5c0800000000000000
+      internalID: -4204996093404842998
       vertices: []
       indices: 
       edges: []
@@ -160,7 +169,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ae459ade043fc254eab54a84de68e7c4
+    spriteID: 8b5387a03b04f424fb0b87ae0f38cdcc
     internalID: 0
     vertices: []
     indices: 
@@ -169,7 +178,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

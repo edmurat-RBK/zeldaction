@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 3f7e3f6b6b293834e94ebafbf3e6b3e7
+guid: 9cf3c4c593bc39248986cbe5d18309bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7173492439267743272
-    second: T_ReliefenPlus_0
+      213: -5044677721486734529
+    second: shamanexpression_0
   - first:
-      213: 1244695549902337915
-    second: T_ReliefenPlus_1
+      213: 3049369407287175225
+    second: shamanexpression_1
   - first:
-      213: -5504161162387214992
-    second: T_ReliefenPlus_2
+      213: 5335958964697265894
+    second: shamanexpression_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,64 +95,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: T_ReliefenPlus_0
+      name: shamanexpression_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8261181ed5d5d8360800000000000000
-      internalID: 7173492439267743272
+      spriteID: f3bc4741754bdf9b0800000000000000
+      internalID: -5044677721486734529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: T_ReliefenPlus_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b773079020c064110800000000000000
-      internalID: 1244695549902337915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T_ReliefenPlus_2
+      name: shamanexpression_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07da869c59a4d93b0800000000000000
-      internalID: -5504161162387214992
+      spriteID: 938ab46d159815a20800000000000000
+      internalID: 3049369407287175225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shamanexpression_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e677d248622d0a40800000000000000
+      internalID: 5335958964697265894
       vertices: []
       indices: 
       edges: []
@@ -160,7 +160,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ae459ade043fc254eab54a84de68e7c4
+    spriteID: be8ccc57e44212e47ad20a3e29efe279
     internalID: 0
     vertices: []
     indices: 
