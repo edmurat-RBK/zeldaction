@@ -32,27 +32,28 @@ namespace WateringCan
         
         void Update()
         {
-
-            if (Input.GetButton("B"))
+            if (PlayerManager.Instance.isKhameau == false && PlayerManager.Instance.isFontaine == false && PlayerManager.Instance.isAttacking == false)
             {
-                PlayerManager.Instance.isArroisoir = true;
+                if (Input.GetButton("B"))
+                {
+                    PlayerManager.Instance.isArroisoir = true;
 
-                Watering();
-                anim.SetBool("IsWatering", true);
+                    Watering();
+                    anim.SetBool("IsWatering", true);
+                }
 
+                else
+                {
+                    water.gameObject.SetActive(false); //set off the particule system
+                    anim.SetBool("IsWatering", false);
+                }
+
+                if (Input.GetButtonUp("B"))
+                {
+                    PlayerManager.Instance.isArroisoir = false;
+                    PlayerManager.Instance.playerCanMove = true;
+                }
             }
-            else
-            {
-                water.gameObject.SetActive(false); //set off the particule system
-                anim.SetBool("IsWatering", false);
-            }
-
-            if (Input.GetButtonUp("B"))
-            {
-                PlayerManager.Instance.isArroisoir = false;
-                PlayerManager.Instance.playerCanMove = true;
-            }
-
         }
 
         #region BucketWatering

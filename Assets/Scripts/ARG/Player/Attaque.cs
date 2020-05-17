@@ -49,13 +49,17 @@ namespace Attack
             ennemisInRange.RemoveAll(list_item => list_item == null); //remove
             destructibleElement.RemoveAll(list_item => list_item == null);
 
-            if (Input.GetButtonDown("X") && timestamp < Time.time) //get l'input
+            if (PlayerManager.Instance.isFontaine == false && PlayerManager.Instance.isArroisoir == false && PlayerManager.Instance.isKhameau == false)
             {
-                PlayerManager.Instance.isAttacking = true;
+                if (Input.GetButtonDown("X") && timestamp < Time.time) //get l'input
+                {
+                    PlayerManager.Instance.isAttacking = true;
 
-                ApplyDammage();
-                CrateDestruction();
+                    ApplyDammage();
+                    CrateDestruction();
+                }
             }
+
 
             if (Input.GetButtonUp("X"))
             {
