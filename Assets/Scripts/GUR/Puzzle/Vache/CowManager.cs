@@ -19,13 +19,6 @@ public class CowManager : Singleton<CowManager>
         eachState[2].gameObject.SetActive(false);
     }
 
-    
-    void Update()
-    {
-        
-    }
-
-
     public void SwitchHitBox()
     {
         numOfCow += 1;
