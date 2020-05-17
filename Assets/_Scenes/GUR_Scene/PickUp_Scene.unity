@@ -346,7 +346,22 @@ PrefabInstance:
         type: 3}
       propertyPath: fontaineShootPoint
       value: 
-      objectReference: {fileID: 1265898200}
+      objectReference: {fileID: 714135427}
+    - target: {fileID: 3919086101930191228, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919086101930191228, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3919086101930191228, guid: cea7f767da1b04149aab5405f95e07b0,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -630,6 +645,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf97fd013f5f754d9f71574aa8b7d17, type: 3}
+--- !u!1 &714135427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4787709865514705334, guid: cea7f767da1b04149aab5405f95e07b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 392556874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &999608456
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,12 +849,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1265898200 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5311690212441064443, guid: cea7f767da1b04149aab5405f95e07b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 392556874}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1506332738 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009620996165859508, guid: 1159a1ccd4f72d140a6bb8d9d03dcde2,
@@ -852,8 +867,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1468f437970411d4b958149106f81554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chanceDrop: 100
-  potion: {fileID: 999608456}
 --- !u!1001 &4905183266272066299
 PrefabInstance:
   m_ObjectHideFlags: 0
