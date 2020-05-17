@@ -7,7 +7,9 @@ public class Cow : MonoBehaviour
     public float timeBtwBroutage;
 
     private bool canActivate;
-    private bool lockCow;
+
+    [HideInInspector]
+    public bool lockCow;
 
     private CircleCollider2D circle;
     private BoxCollider2D box;
