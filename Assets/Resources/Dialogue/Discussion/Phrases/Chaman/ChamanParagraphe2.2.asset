@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9345a362799a68647a6ba13550beeb12, type: 3}
+  m_Name: ChamanParagraphe2.2
+  m_EditorClassIdentifier: 
+  interlocuteur: {fileID: 0}
+  nameInterlocuteur: Chaman
+  _phrase:
+  - "Yapluska, notre d\xE9esse de l\u2019eau et de la vie m\u2019a parl\xE9 d\u2019un
+    \xE9lu \xE0 la toison blanche venant d\u2019une contr\xE9e lointaine et qui a
+    d\xE9j\xE0 combattu les forces du feu."

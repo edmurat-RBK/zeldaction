@@ -10,15 +10,26 @@ public class PNJDialog : MonoBehaviour
     private BeginDialogue dialogueStart;
     [SerializeField]
     private GameObject button;
+    [SerializeField]
+    private bool canTalk;
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void Update()
     {
-        if (collision.gameObject.tag == "Player")
+        if (canTalk)
         {
             if (Input.GetButtonDown("X"))
             {
                 dialogueStart.enabled = (true);
             }
+        }
+
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        
+        if (collision.gameObject.tag == "Player")
+        {
+            canTalk = true;
         }
     }
 
@@ -35,6 +46,7 @@ public class PNJDialog : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             button.SetActive(false);
+            canTalk = false;
         }
     }
 }
