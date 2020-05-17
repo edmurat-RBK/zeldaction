@@ -17,8 +17,9 @@ namespace Dialogue
         void OnEnable()
         {
             dialogManag = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
-            dialogManag.BeginCoversation(Intro);
             dialogManag.isAuto = true;
+            dialogManag.BeginCoversation(Intro);
+           
         }
 
         private void Update()

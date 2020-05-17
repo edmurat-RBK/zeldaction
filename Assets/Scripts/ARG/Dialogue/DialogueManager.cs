@@ -20,6 +20,7 @@ namespace Dialogue
         [SerializeField] private Image _Sprite = null;
         [SerializeField] private Text _nom = null;
         [SerializeField] private Text _dialogues = null;
+        [SerializeField] private Image bouton;
 
         [Header("Variable")]
         [SerializeField] [Range(0, 0.05f)]
@@ -36,6 +37,16 @@ namespace Dialogue
 
         public void BeginCoversation(Conversation conversation)
         {
+            if (isAuto)
+            {
+                bouton.enabled = (false);
+            }
+            else
+            {
+                bouton.enabled = (true);
+            }
+            
+
             _actualConversation = conversation;
 
             _PhraseCounter = 0;
@@ -53,7 +64,7 @@ namespace Dialogue
         {
             float enterTime = 0.3f;
 
-            LeanTween.moveY(_textBox, -150, enterTime);
+            LeanTween.moveY(_textBox, -185, enterTime);
 
             yield return new WaitForSeconds(enterTime);
            
@@ -73,8 +84,10 @@ namespace Dialogue
             {
                 _dialogues.text += letter;
 
-                yield return new WaitForSeconds(DelayBetweenLetters);
-
+                if (!Input.GetButtonDown("RB"))
+                {
+                    yield return new WaitForSeconds(DelayBetweenLetters);
+                }
             }
 
 

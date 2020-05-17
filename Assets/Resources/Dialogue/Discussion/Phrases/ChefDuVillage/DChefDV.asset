@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d5809b6f1cc4749996518da854920f, type: 3}
+  m_Name: DChefDV
+  m_EditorClassIdentifier: 
+  phraseList:
+  - {fileID: 11400000, guid: 9f8074a86c59464459df1856777be348, type: 2}
+  - {fileID: 11400000, guid: 6fffef2e195ba8e44a8115ec17025590, type: 2}
+  - {fileID: 11400000, guid: f3707a22023b912469cccdf35682f53c, type: 2}
+  - {fileID: 11400000, guid: 0007d8b130e859f49af256a2742a3b66, type: 2}
