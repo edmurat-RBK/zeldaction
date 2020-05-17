@@ -34,6 +34,7 @@ public class Kameheaumeheau : MonoBehaviour
 
     [SerializeField]
     private int speedDevider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,7 +70,7 @@ public class Kameheaumeheau : MonoBehaviour
                     PlayerManager.Instance.isKhameau = false;
                 }             }         }         // If Kameheaumeheau is loaded         else         {             //When input released             if (Input.GetButtonUp("Y"))             {
                 //Start Kameheau
-                anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                 kameheaumeheau = true;                 manager.playerCanMove = false;                                  loaded = false;                 inputHoldTime = 0;             }              
+                anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                 kameheaumeheau = true;                 manager.playerCanMove = false;                                  loaded = false;                 inputHoldTime = 0;             }
         }
     }
 
@@ -176,5 +177,6 @@ public class Kameheaumeheau : MonoBehaviour
             //normaly this line can't break all the logic of the game but I write this just in case we want to fixe the player rotation and we can't figure it out why it doesn't work
         }
     }
+
 }
 
