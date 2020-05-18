@@ -7,7 +7,6 @@ public class BassinManager : Singleton<CowManager>
 {
     public List<GameObject> mobSpawner = new List<GameObject>();
 
-    private List<GameObject> mobAlive = new List<GameObject>();
 
     public GameObject bassin;
     public Transform spawnCaissePoint;
@@ -51,6 +50,8 @@ public class BassinManager : Singleton<CowManager>
                 }
 
                 spawner.GetComponent<SpawnerMob>().canSpawn = false;
+
+                bassin.GetComponent<Bassin>().actifBassin = false;
             }
         }
 
