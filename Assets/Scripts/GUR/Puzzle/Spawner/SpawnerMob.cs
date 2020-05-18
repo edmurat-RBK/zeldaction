@@ -16,7 +16,8 @@ public class SpawnerMob : MonoBehaviour
     public float timeBtwSpawn;
     public float radius;
 
-    private List<GameObject> isAlive = new List<GameObject>();
+    [HideInInspector]
+    public List<GameObject> isAlive = new List<GameObject>();
 
     public bool canSpawn;
 
@@ -34,7 +35,7 @@ public class SpawnerMob : MonoBehaviour
    
     void Update()
     {
-        
+        isAlive.RemoveAll(list_item => list_item == null);
         numOfEnemy = isAlive.Count;
 
         if (numOfEnemy < maxMob)

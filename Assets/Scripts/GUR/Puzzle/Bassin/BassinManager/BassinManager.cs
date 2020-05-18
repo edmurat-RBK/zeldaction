@@ -7,6 +7,8 @@ public class BassinManager : Singleton<CowManager>
 {
     public List<GameObject> mobSpawner = new List<GameObject>();
 
+    private List<GameObject> mobAlive = new List<GameObject>();
+
     public GameObject bassin;
     public Transform spawnCaissePoint;
     public GameObject caisseBois;
@@ -43,6 +45,11 @@ public class BassinManager : Singleton<CowManager>
         {
             foreach (GameObject spawner in mobSpawner)
             {
+                for (int i = 0; i < spawner.GetComponent<SpawnerMob>().isAlive.Count; i++)
+                {
+                    spawner.GetComponent<SpawnerMob>().isAlive[i].gameObject.GetComponent<PvEnnemis>().pv = 0;
+                }
+
                 spawner.GetComponent<SpawnerMob>().canSpawn = false;
             }
         }
@@ -82,8 +89,14 @@ public class BassinManager : Singleton<CowManager>
             
             foreach (GameObject spawner in mobSpawner)
             {
+                for (int i = 0; i < spawner.GetComponent<SpawnerMob>().isAlive.Count; i++)
+                {
+                    spawner.GetComponent<SpawnerMob>().isAlive[i].gameObject.GetComponent<PvEnnemis>().pv = 0;
+                }
+
                 spawner.GetComponent<SpawnerMob>().canSpawn = false;
             }
+
         }
     }
 }
