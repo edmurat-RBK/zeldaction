@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1013183249296787112}
   - component: {fileID: 3303175859676161877}
   - component: {fileID: 7984384044920906495}
+  - component: {fileID: 560940583631038023}
   m_Layer: 0
   m_Name: CheckPoint
   m_TagString: Untagged
@@ -92,7 +93,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62236492460946989}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c0e8290437eb8134d99a100edd80d597, type: 2}
   m_CullingMode: 0
@@ -145,3 +146,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.55}
   serializedVersion: 2
   m_Radius: 1.05
+--- !u!114 &560940583631038023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62236492460946989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15493a6788db26347b62a6bbe73f8a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCheckpoint: 0
+  isExit: 0
+  iD: 0
+  exitToScene: 0
+  entryPointID: 0
+  mustPCFaceLeft: 0
+  newSprite: {fileID: 21300000, guid: 5a4e470d86285bf41a45631331d67894, type: 3}
