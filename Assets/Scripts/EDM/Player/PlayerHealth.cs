@@ -15,13 +15,13 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     private bool isDead;
 
-    //public List<GameObject> respawnPoints = new List<GameObject>();
-    //public GameObject actualRespawnPoint; //give him one in the inspector
-    //private bool alreadyInList;
+    public List<GameObject> respawnPoints = new List<GameObject>();
+    public GameObject actualRespawnPoint; //give him one in the inspector
+    private bool alreadyInList;
     private PlayerManager playerManager;
 
-    //public Sprite checkpointBaseSprite;
-    //public Sprite checkpointActiveSprite;
+    public Sprite checkpointBaseSprite;
+    public Sprite checkpointActiveSprite;
     private Animator anim;
     
     #endregion
