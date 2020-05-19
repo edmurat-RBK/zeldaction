@@ -4,6 +4,7 @@ using UnityEngine;
 using Management;
 using Attack;
 using WateringCan;
+using UnityEngine.SceneManagement;
 
 namespace Manager
 {
@@ -60,10 +61,23 @@ namespace Manager
         
         void Start()
         {
+            anim = GetComponent<Animator>();
+            if (UpgradesManager.List["as bucket"] == true)
+            {
+                getBucket = true;
+                obtainBucket();
+                anim.SetBool("HasBucket", true);
+            }
+            else
+            {
+                getBucket = false;
+                obtainBucket();
+                anim.SetBool("HasBucket", false);
+            }
             playerCanMove = true;
             playerRigidBody = GetComponent<Rigidbody2D>();
-            getBucket = false;
-            anim = GetComponent<Animator>();
+            //getBucket = false;
+           
 
         }
         
@@ -94,7 +108,7 @@ namespace Manager
         //function to lucnh when you want to desactivate or activate all the abilities of the player with the boolen
         public void obtainBucket()
         {            
-            anim.SetBool("HasBucket", false);
+            //anim.SetBool("HasBucket", false);
             if (getBucket == true)
             {
                 anim.SetBool("HasBucket", true);

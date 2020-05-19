@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Class that manager health of the player
@@ -14,13 +15,13 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     private bool isDead;
 
-    public List<GameObject> respawnPoints = new List<GameObject>();
-    public GameObject actualRespawnPoint; //give him one in the inspector
-    private bool alreadyInList;
+    //public List<GameObject> respawnPoints = new List<GameObject>();
+    //public GameObject actualRespawnPoint; //give him one in the inspector
+    //private bool alreadyInList;
     private PlayerManager playerManager;
 
-    public Sprite checkpointBaseSprite;
-    public Sprite checkpointActiveSprite;
+    //public Sprite checkpointBaseSprite;
+    //public Sprite checkpointActiveSprite;
     private Animator anim;
     
     #endregion
@@ -31,6 +32,22 @@ public class PlayerHealth : MonoBehaviour
     {
         playerManager = GetComponent<PlayerManager>();
         anim = GetComponent<Animator>();
+        health = maximumHealth;
+
+        //for the number of health at the start of the game
+        //if (condition1 == true)
+        //{
+        //    maximumHealth = 4;
+        //}
+        //else
+        //{
+        //    maximumHealth = 3;
+        //}
+        //if (condition2 == true)
+        //{
+        //    maximumHealth = 5;
+        //}
+        
         
     }
 
@@ -43,11 +60,10 @@ public class PlayerHealth : MonoBehaviour
         //maximumHealth = playerManager.healthMax;
 
         if (Input.GetKeyDown(KeyCode.U))
-        {
-            health += 1;
-            gameObject.GetComponent<HealthBar>().HealthSysteme();
-        }
-
+        {
+            health += 1;
+            gameObject.GetComponent<HealthBar>().HealthSysteme();
+        }
         if (Input.GetKeyDown(KeyCode.Y))
         {
            TakeDamage(1);
@@ -103,6 +119,7 @@ public class PlayerHealth : MonoBehaviour
         playerManager.playerCanMove = true;
         playerManager.deathParalise = false;
         playerManager.deathParalisy();
+        //screen death qui apaprait et permet d'appel le respawn
         respawn();
     }
 
@@ -124,48 +141,49 @@ public class PlayerHealth : MonoBehaviour
     public void respawn()
     {
         anim.SetBool("IsDead", false);
-        transform.position = actualRespawnPoint.transform.position;
         health = maximumHealth;
+        StartCoroutine(Delay());
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == 10) //add only one copy of each checkpoint in the list
-        {
-            foreach (GameObject respawnPoint in respawnPoints)
-            {
-                if (collision.gameObject == respawnPoint)
-                {
-                    alreadyInList = true;
-                }
-            }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.layer == 10) //add only one copy of each checkpoint in the list
+    //    {
+    //        foreach (GameObject respawnPoint in respawnPoints)
+    //        {
+    //            if (collision.gameObject == respawnPoint)
+    //            {
+    //                alreadyInList = true;
+    //            }
+    //        }
 
-            if (!alreadyInList)
-            {
-                respawnPoints.Add(collision.gameObject);
-            }
-            alreadyInList = false;
-        }
-    }
+    //        if (!alreadyInList)
+    //        {
+    //            respawnPoints.Add(collision.gameObject);
+    //        }
+    //        alreadyInList = false;
+    //    }
+    //}
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer == 10) //fonction for saving a checkpoint
-        {
-            if (Input.GetButtonDown("X"))
-            {
-                actualRespawnPoint = collision.gameObject;
-                foreach(GameObject respawnPoint in respawnPoints) //change all the other sprite of checkpoint not used by the player
-                {
-                    respawnPoint.GetComponent<SpriteRenderer>().sprite = checkpointBaseSprite;
-                    respawnPoint.GetComponent<Animator>().enabled = false;
-                }
-                actualRespawnPoint.GetComponent<SpriteRenderer>().sprite = checkpointActiveSprite;
-                actualRespawnPoint.GetComponent<Animator>().enabled = true;
-                //animation checkpoint + message
-            }
-        }
-    }
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.layer == 10) //fonction for saving a checkpoint
+    //    {
+    //        if (Input.GetButtonDown("X"))
+    //        {
+    //            actualRespawnPoint = collision.gameObject;
+
+    //            foreach (GameObject respawnPoint in respawnPoints) //change all the other sprite of checkpoint not used by the player
+    //            {
+    //                respawnPoint.GetComponent<SpriteRenderer>().sprite = checkpointBaseSprite;
+    //                respawnPoint.GetComponent<Animator>().enabled = false;
+    //            }
+    //            actualRespawnPoint.GetComponent<SpriteRenderer>().sprite = checkpointActiveSprite;
+    //            actualRespawnPoint.GetComponent<Animator>().enabled = true;
+    //            //animation checkpoint + message
+    //        }
+    //    }
+    //}
 
     private IEnumerator Invulnerability()
     {
@@ -176,4 +194,11 @@ public class PlayerHealth : MonoBehaviour
         playerManager.canTakeDammage = true;
     }
 
+    private IEnumerator Delay()
+    {
+        SceneManager.LoadScene(SvgManager.SvgData.currentSceneName);
+        yield return new WaitForSeconds(0.01f);
+        GetComponent<PCPositioner>().FindSpawnPoint();
+        GetComponent<PCPositioner>().Reposition();
+    }
 }
