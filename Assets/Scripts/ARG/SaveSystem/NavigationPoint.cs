@@ -42,6 +42,7 @@ public class NavigationPoint : MonoBehaviour
 		{
 			gameObject.SetActive(false);
 		}
+
         anim = GetComponent<Animator>();
     }
 
@@ -52,7 +53,19 @@ public class NavigationPoint : MonoBehaviour
 		{
 			maySwitchOn();
 		}
-	}
+
+        if (SvgManager.SvgData.currCheckpointID == this.iD)
+        {
+            anim.SetBool("IsSaved", true);
+            anim.SetBool("IsReset", false);
+        }
+        else
+        {
+            anim.SetBool("IsSaved", false);
+            anim.SetBool("IsReset", true);
+        }
+
+    }
 
 
 	/// <summary>
@@ -84,8 +97,8 @@ public class NavigationPoint : MonoBehaviour
 
             otherColl.GetComponent<PlayerHealth>().health = otherColl.GetComponent<PlayerHealth>().maximumHealth;
             otherColl.GetComponent<HealthBar>().HealthSysteme();
+            anim.SetBool("IsSaved", true);
             GetComponent<SpriteRenderer>().sprite = newSprite;
-            anim.enabled = true;
 
         }
 	}
