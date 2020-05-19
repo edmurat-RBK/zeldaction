@@ -83,6 +83,7 @@ public class NavigationPoint : MonoBehaviour
 				isOn = false;
 
             otherColl.GetComponent<PlayerHealth>().health = otherColl.GetComponent<PlayerHealth>().maximumHealth;
+            otherColl.GetComponent<HealthBar>().HealthSysteme();
             GetComponent<SpriteRenderer>().sprite = newSprite;
             anim.enabled = true;
 

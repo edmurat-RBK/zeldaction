@@ -108,6 +108,7 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = true;
         anim.SetBool("IsDead",true);
+        anim.SetBool("Revive", false);
         playerManager.playerCanMove = false;
         playerManager.playerRigidBody.velocity = Vector2.zero;
         playerManager.deathParalise = true;
@@ -120,6 +121,7 @@ public class PlayerHealth : MonoBehaviour
         playerManager.deathParalise = false;
         playerManager.deathParalisy();
         //screen death qui apaprait et permet d'appel le respawn
+        anim.SetBool("Revive", true);
         respawn();
     }
 
@@ -140,9 +142,10 @@ public class PlayerHealth : MonoBehaviour
     //Function for respawn at the actual checkpoint with full health
     public void respawn()
     {
-        anim.SetBool("IsDead", false);
         health = maximumHealth;
+        GetComponent<HealthBar>().HealthSysteme();
         StartCoroutine(Delay());
+        anim.SetBool("IsDead", false);
     }
 
     //private void OnTriggerEnter2D(Collider2D collision)

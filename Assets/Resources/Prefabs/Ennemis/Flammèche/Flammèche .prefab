@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 284867908}
   - component: {fileID: 5138047197778627758}
   - component: {fileID: 7070094306762910579}
+  - component: {fileID: 7174182777539604122}
   m_Layer: 15
   m_Name: "Flamm\xE8che "
   m_TagString: Ennemi
@@ -197,6 +198,20 @@ MonoBehaviour:
   timeOfVulnerability: 0
   damageParticule: 1
   kameoHit: 0
+--- !u!114 &7174182777539604122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3009620996165859508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1468f437970411d4b958149106f81554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chanceDrop: 25
+  potion: {fileID: 4905183266195303027, guid: 594f87892c2fa094c9c5a6255281c868, type: 3}
 --- !u!1 &4597156904470719630
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5757311525299253795}
   - component: {fileID: 3684821645665945322}
   - component: {fileID: 2605958379829095623}
+  - component: {fileID: 7379390631411136012}
   m_Layer: 15
   m_Name: Mage
   m_TagString: Ennemi
@@ -200,6 +201,20 @@ MonoBehaviour:
   timeOfVulnerability: 3
   damageParticule: 0.1
   kameoHit: 0
+--- !u!114 &7379390631411136012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557820165126594859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1468f437970411d4b958149106f81554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chanceDrop: 25
+  potion: {fileID: 4905183266195303027, guid: 594f87892c2fa094c9c5a6255281c868, type: 3}
 --- !u!1 &1847513226910340358
 GameObject:
   m_ObjectHideFlags: 0

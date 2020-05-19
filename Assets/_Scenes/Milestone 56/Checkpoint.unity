@@ -259,6 +259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5613042775602501934, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a3e13d4015cc9745ac83b95ea8f51dd, type: 3}
 --- !u!1 &61971240
@@ -1175,7 +1180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeName: as bucket
-  isPuzzle: 0
+  isTheBucket: 1
 --- !u!114 &2101434785 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 233719348859922962, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
