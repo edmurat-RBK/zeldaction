@@ -51,6 +51,9 @@ namespace Manager
         private Kameheaumeheau kameo;
         public bool canChangeSprite; //use when obtain the bucket
 
+        public float cooldownF;
+        public float maxCooldownF;
+
         #endregion
 
         void Awake()

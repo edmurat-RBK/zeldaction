@@ -23,6 +23,8 @@ public class Fontaine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerManager.Instance.maxCooldownF = maxCooldown;
+        PlayerManager.Instance.cooldownF = cooldown;
         lockCooldown = false;
         active = false;
         manager = GetComponent<PlayerManager>();
@@ -32,6 +34,8 @@ public class Fontaine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerManager.Instance.cooldownF = cooldown;
+
         if (PlayerManager.Instance.isAttacking == false && PlayerManager.Instance.isArroisoir == false && PlayerManager.Instance.isKhameau == false)
         {
             if (!active && cooldown == 0)
