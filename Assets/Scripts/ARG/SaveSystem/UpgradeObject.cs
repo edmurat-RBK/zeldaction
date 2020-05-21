@@ -15,7 +15,7 @@ public class UpgradeObject : MonoBehaviour
 	public bool isUnlocked { get; private set; }
 
     [SerializeField]
-    private bool isTheBucket;
+    private bool isATrigger;
 
 
 	void Awake()
@@ -69,7 +69,7 @@ public class UpgradeObject : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D otherColl)
 	{
-		if (otherColl.gameObject.tag == "Player" && isTheBucket)
+		if (otherColl.gameObject.tag == "Player" && isATrigger)
 		{
 			GoUnlocked();
 

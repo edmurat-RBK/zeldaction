@@ -15,7 +15,7 @@ public class UpgradesManager : MonoBehaviour
 	{
 		//true if unlocked
 		{ "as bucket", false },
-		//{ "air jump", false },
+		{ "finishShaman", false },
 		//{ "life 1", false },
 		//{ "fireball 1", false },
 		//{ "mana 1", false },
