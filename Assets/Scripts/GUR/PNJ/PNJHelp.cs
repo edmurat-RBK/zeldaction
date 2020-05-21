@@ -5,27 +5,50 @@ using Manager;
 
 public class PNJHelp : MonoBehaviour
 {
-    public bool lockHp;
-    public bool canActivate;
+    public enum villageoi
+    {
+        villageoiFlamme,
+        villageoiCascade
+    }
+
+    public villageoi wichVillageoi;
+
+    private bool canActivate;
 
     private GameObject playerStock;
 
     void Start()
     {
         canActivate = false;
-        lockHp = false;
     }
 
     private void Update()
     {
-        if (canActivate == true && lockHp == false)
+        if (wichVillageoi == villageoi.villageoiFlamme)
         {
-            if (Input.GetButtonDown("X"))
+            if (canActivate == true && UpgradesManager.List["bonusHealth 1"] == false)
             {
-                lockHp = true;
-                playerStock.GetComponent<PlayerHealth>().maximumHealth += 1;
-                playerStock.GetComponent<PlayerHealth>().health += 1;
-                playerStock.GetComponent<HealthBar>().HealthSysteme();
+                if (Input.GetButtonDown("X"))
+                {
+                    GetComponent<UpgradeObject>().Gotcha();
+                    playerStock.GetComponent<PlayerHealth>().maximumHealth += 1;
+                    playerStock.GetComponent<PlayerHealth>().health += 1;
+                    playerStock.GetComponent<HealthBar>().HealthSysteme();
+                }
+            }
+        }
+
+        if (wichVillageoi == villageoi.villageoiCascade)
+        {
+            if (canActivate == true && UpgradesManager.List["bonusHealth 2"] == false)
+            {
+                if (Input.GetButtonDown("X"))
+                {
+                    GetComponent<UpgradeObject>().Gotcha();
+                    playerStock.GetComponent<PlayerHealth>().maximumHealth += 1;
+                    playerStock.GetComponent<PlayerHealth>().health += 1;
+                    playerStock.GetComponent<HealthBar>().HealthSysteme();
+                }
             }
         }
     }

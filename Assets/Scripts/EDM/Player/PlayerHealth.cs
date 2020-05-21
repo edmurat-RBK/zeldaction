@@ -35,20 +35,21 @@ public class PlayerHealth : MonoBehaviour
         health = maximumHealth;
 
         //for the number of health at the start of the game
-        //if (condition1 == true)
-        //{
-        //    maximumHealth = 4;
-        //}
-        //else
-        //{
-        //    maximumHealth = 3;
-        //}
-        //if (condition2 == true)
-        //{
-        //    maximumHealth = 5;
-        //}
-        
-        
+        if (UpgradesManager.List["bonusHealth 1"] == true)
+        {
+            maximumHealth += 1;
+            health = maximumHealth;
+            GetComponent<HealthBar>().HealthSysteme();
+        }
+ 
+        if (UpgradesManager.List["bonusHealth 2"] == true)
+        {
+            maximumHealth += 1;
+            health = maximumHealth;
+            GetComponent<HealthBar>().HealthSysteme();
+        }
+
+
     }
 
     private void Update()

@@ -19,8 +19,8 @@ public class UpgradesManager : MonoBehaviour
 		{ "vache", false },
 		{ "milieu", false },
 		{ "volcan", false },
-		//{ "life 2", false },
-  //      { "mana 2", false },
+		{ "bonusHealth 1", false },
+        { "bonusHealth 2", false },
 		//{ "teleport", false },
 		//{ "fireball 2", false },
   //      { "life 3", false }
