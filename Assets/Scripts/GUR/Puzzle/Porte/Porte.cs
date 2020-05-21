@@ -38,10 +38,10 @@ public class Porte : MonoBehaviour
         rbDoor.velocity = Vector2.zero;
         hitBox.SetActive(false);
 
-        
+        yield return new WaitForSeconds(4f);
+
         if (savePoint == true)
         {
-            
             gameObject.GetComponent<UpgradeObject>().Gotcha();
         }
     }

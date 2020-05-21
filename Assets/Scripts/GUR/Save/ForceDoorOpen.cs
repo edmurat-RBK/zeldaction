@@ -9,7 +9,9 @@ public class ForceDoorOpen : MonoBehaviour
         DonjonChaman,
         Milieu,
         Volcan,
-        DonjonLave
+        DonjonLave1,
+        DonjonLave2,
+        DonjonLave3
     }
 
     public lieu where;
@@ -35,6 +37,30 @@ public class ForceDoorOpen : MonoBehaviour
         if (where == lieu.Volcan)
         {
             if (UpgradesManager.List["volcan"] == true)
+            {
+                GetComponent<GestionActivateur>().whoActivate.RemoveAll(list_item => list_item != null);
+            }
+        }
+
+        if (where == lieu.DonjonLave1)
+        {
+            if (UpgradesManager.List["donjonLave1"] == true)
+            {
+                GetComponent<GestionActivateur>().whoActivate.RemoveAll(list_item => list_item != null);
+            }
+        }
+
+        if (where == lieu.DonjonLave2)
+        {
+            if (UpgradesManager.List["donjonLave2"] == true)
+            {
+                GetComponent<GestionActivateur>().whoActivate.RemoveAll(list_item => list_item != null);
+            }
+        }
+
+        if (where == lieu.DonjonLave3)
+        {
+            if (UpgradesManager.List["donjonLave3"] == true)
             {
                 GetComponent<GestionActivateur>().whoActivate.RemoveAll(list_item => list_item != null);
             }

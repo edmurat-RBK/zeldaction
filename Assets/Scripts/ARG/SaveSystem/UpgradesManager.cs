@@ -21,9 +21,9 @@ public class UpgradesManager : MonoBehaviour
 		{ "volcan", false },
 		{ "bonusHealth 1", false },
         { "bonusHealth 2", false },
-		//{ "teleport", false },
-		//{ "fireball 2", false },
-  //      { "life 3", false }
+		{ "donjonLave1", false },
+		{ "donjonLave2", false },
+        { "donjonLave3", false }
 	};
 
 
