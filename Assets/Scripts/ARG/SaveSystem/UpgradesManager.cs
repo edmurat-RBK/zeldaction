@@ -23,8 +23,9 @@ public class UpgradesManager : MonoBehaviour
         { "bonusHealth 2", false },
 		{ "donjonLave1", false },
 		{ "donjonLave2", false },
-        { "donjonLave3", false }
-	};
+        { "donjonLave3", false },
+        { "chef", false },
+    };
 
 
 	/// <summary>

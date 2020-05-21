@@ -8,7 +8,9 @@ public class PNJHelp : MonoBehaviour
     public enum villageoi
     {
         villageoiFlamme,
-        villageoiCascade
+        villageoiCascade,
+        villageoiSoif,
+          
     }
 
     public villageoi wichVillageoi;
