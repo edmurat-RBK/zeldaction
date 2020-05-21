@@ -27,6 +27,8 @@ public class OndeChoc : MonoBehaviour
 
     Vector2 direction;
     public GameObject bulletParent;
+    [SerializeField]
+    private float timeOnScreen = 3f;
     #endregion
 
     private void Start()
@@ -47,7 +49,7 @@ public class OndeChoc : MonoBehaviour
             //bul.transform.SetParent(bulletParent.transform);
             bul.GetComponent<Rigidbody2D>().velocity = direction * speed * Time.fixedDeltaTime;
 
-            Destroy(bul, 3f);
+            Destroy(bul, timeOnScreen);
         }
 
     } // Fonction qui permet de faire spawn des projectiles selon l'axe z
