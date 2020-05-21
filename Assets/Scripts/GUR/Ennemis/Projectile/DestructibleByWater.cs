@@ -24,7 +24,6 @@ public class DestructibleByWater : MonoBehaviour
         if (khameoDetection == true)
         {
             anim.SetBool("IsDead", true);
-
             Destroy(gameObject, timeAnimation);
         }
     }
