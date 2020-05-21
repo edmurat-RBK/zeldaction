@@ -29,6 +29,12 @@ public class BassinManager : Singleton<CowManager>
     void Update()
     {
         caiseStock.RemoveAll(list_item => list_item == null);
+        
+        if (UpgradesManager.List["volcan"] == true)
+        {
+            bassin.GetComponent<Bassin>().lockBassin = true;
+            bassin.GetComponent<Bassin>().actifBassin = false;
+        }
 
         if (lockGet == false)
         {
@@ -51,7 +57,7 @@ public class BassinManager : Singleton<CowManager>
 
                 spawner.GetComponent<SpawnerMob>().canSpawn = false;
 
-                bassin.GetComponent<Bassin>().actifBassin = false;
+                bassin.GetComponent<Bassin>().lockBassin = true;
             }
         }
 
@@ -59,6 +65,7 @@ public class BassinManager : Singleton<CowManager>
         {
             Gestion();
         }
+
     }
 
     void Gestion()

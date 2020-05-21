@@ -14,6 +14,8 @@ public class Cinemachine_Puzzle : MonoBehaviour
 
     private bool canWatch;
 
+    public bool volcanCam;
+
     void Start()
     {
         canWatch = true;
@@ -22,35 +24,56 @@ public class Cinemachine_Puzzle : MonoBehaviour
     
     void Update()
     {
-        if (bassinDestructible == false && vache == false)
+        if (UpgradesManager.List["volcan"] == false)
         {
-            if (canWatch == true)
+            if (bassinDestructible == false && vache == false)
             {
-                if (gameObject.GetComponent<GestionActivateur>().canActive == true)
+                if (canWatch == true && volcanCam == true)
                 {
-                    StartCoroutine(TransitionCam());
+                    if (gameObject.GetComponent<GestionActivateur>().canActive == true)
+                    {
+                        Debug.Log("Volcan");
+                        StartCoroutine(TransitionCam());
+                    }
                 }
             }
         }
 
-        if (bassinDestructible == true)
+        if (UpgradesManager.List["milieu"] == false && UpgradesManager.List["volcan"] == false)
         {
-            if (canWatch == true)
+            if (bassinDestructible == false && vache == false)
             {
-                if (gameObject.GetComponent<Bassin>().fullDestroy == true)
+                if (canWatch == true)
                 {
-                    StartCoroutine(TransitionCam());
+                    if (gameObject.GetComponent<GestionActivateur>().canActive == true)
+                    {
+                        StartCoroutine(TransitionCam());
+                    }
+                }
+            }
+
+            if (bassinDestructible == true)
+            {
+                if (canWatch == true)
+                {
+                    if (gameObject.GetComponent<Bassin>().fullDestroy == true)
+                    {
+                        StartCoroutine(TransitionCam());
+                    }
                 }
             }
         }
 
-        if (vache == true)
+        if (UpgradesManager.List["vache"] == false)
         {
-            if (canWatch == true)
+            if (vache == true)
             {
-                if (gameObject.GetComponent<Cow>().lockCow == true)
+                if (canWatch == true)
                 {
-                    StartCoroutine(TransitionCam());
+                    if (gameObject.GetComponent<Cow>().lockCow == true)
+                    {
+                        StartCoroutine(TransitionCam());
+                    }
                 }
             }
         }

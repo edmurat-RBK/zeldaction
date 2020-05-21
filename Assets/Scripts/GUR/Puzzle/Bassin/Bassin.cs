@@ -136,7 +136,7 @@ public class Bassin : MonoBehaviour
     {
         if (lockBassin == false)
         {
-            if (remplissage > 0 && enemyInRange.Count >= 1)
+            if (remplissage > 0 && enemyInRange.Count >= 1 && lockBassin == false)
             {
                 remplissage -= Time.fixedDeltaTime * speedVidage;
             }
@@ -162,7 +162,7 @@ public class Bassin : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        if (remplissage < maxStockage)
+        if (remplissage < maxStockage && lockBassin == false)
         {
             remplissage += valeurParticule;
         }

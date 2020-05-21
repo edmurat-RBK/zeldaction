@@ -12,11 +12,20 @@ public class CowManager : Singleton<CowManager>
 
     public Transform spawnTpCow;
 
+    private bool lockCoroutine;
     void Start()
     {
         eachState[0].gameObject.SetActive(true);
         eachState[1].gameObject.SetActive(false);
         eachState[2].gameObject.SetActive(false);
+
+
+        if (UpgradesManager.List["vache"] == true)
+        {
+            eachState[0].gameObject.SetActive(false);
+            eachState[1].gameObject.SetActive(false);
+            eachState[2].gameObject.SetActive(true);
+        }
     }
 
     public void SwitchHitBox()
@@ -34,6 +43,18 @@ public class CowManager : Singleton<CowManager>
         {
             eachState[1].gameObject.SetActive(false);
             eachState[2].gameObject.SetActive(true);
+
+            if (lockCoroutine == false)
+            {
+                StartCoroutine(CoolDownSave());
+            }
         }
+    }
+
+    IEnumerator CoolDownSave()
+    {
+        lockCoroutine = true;
+        yield return new WaitForSecondsRealtime(4f);
+        gameObject.GetComponent<UpgradeObject>().Gotcha();
     }
 }

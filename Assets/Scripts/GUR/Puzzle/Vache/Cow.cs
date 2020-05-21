@@ -27,6 +27,25 @@ public class Cow : MonoBehaviour
         anim = GetComponent<Animator>();
         canActivate = false;
         lockCow = false;
+
+
+        if (UpgradesManager.List["vache"] == true)
+        {
+            if (lockCow == false)
+            {
+                lockCow = true;
+                anim.SetBool("Water", true);
+
+                gameObject.GetComponent<SpriteRenderer>().sortingOrder -= 1;
+
+                box.enabled = box.enabled = true;
+                circle.enabled = circle.enabled = false;
+
+                gameObject.transform.position = CowManager.Instance.spawnTpCow.position;
+                transform.GetChild(0).gameObject.SetActive(false);
+                CowManager.Instance.SwitchHitBox();
+            }
+        }
     }
 
     

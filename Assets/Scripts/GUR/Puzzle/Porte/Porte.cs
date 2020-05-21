@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Porte : MonoBehaviour
 {
+    public bool savePoint;
+
     public float speed;
 
     public GameObject hitBox;
@@ -35,6 +37,12 @@ public class Porte : MonoBehaviour
         yield return new WaitForSeconds(timeForOpen);
         rbDoor.velocity = Vector2.zero;
         hitBox.SetActive(false);
+
         
+        if (savePoint == true)
+        {
+            
+            gameObject.GetComponent<UpgradeObject>().Gotcha();
+        }
     }
 }
