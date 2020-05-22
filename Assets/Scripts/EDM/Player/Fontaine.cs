@@ -36,6 +36,16 @@ public class Fontaine : MonoBehaviour
     {
         PlayerManager.Instance.cooldownF = cooldown;
 
+        if (cooldown != 0)
+        {
+            cooldown -= Time.deltaTime;
+            if (cooldown < 0)
+            {
+                cooldown = 0;
+                anim.SetBool("IsShielding", false);
+            }
+        }
+
         if (PlayerManager.Instance.isAttacking == false && PlayerManager.Instance.isArroisoir == false && PlayerManager.Instance.isKhameau == false)
         {
             if (!active && cooldown == 0)
@@ -56,7 +66,7 @@ public class Fontaine : MonoBehaviour
                 }
             }
 
-            else if (!active && cooldown != 0 && !Input.GetButton("A"))
+            /*else if (!active && cooldown != 0 && !Input.GetButton("A"))
             {
 
                 cooldown -= Time.deltaTime;
@@ -64,9 +74,9 @@ public class Fontaine : MonoBehaviour
                 {
                     cooldown = 0;
                     anim.SetBool("IsShielding", false);
-                    Debug.Log("Pas Fontaine !");
                 }
-            }
+            }*/
+
             else if (cooldown == 0)
             {
                 //Vague();
