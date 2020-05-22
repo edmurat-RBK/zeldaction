@@ -55,6 +55,23 @@ namespace Attack
                 {
                     PlayerManager.Instance.isAttacking = true;
 
+                    int varSon = Random.Range(1, 4);
+
+                    switch (varSon)
+                    {
+                        case 1:
+                            FindObjectOfType<AudioManager>().Play("Frappe 1");
+                            break;
+
+                        case 2:
+                            FindObjectOfType<AudioManager>().Play("Frappe 2");
+                            break;
+
+                        case 3:
+                            FindObjectOfType<AudioManager>().Play("Frappe 3");
+                            break;
+                    }
+
                     ApplyDammage();
                     CrateDestruction();
                 }

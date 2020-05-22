@@ -19,6 +19,8 @@ namespace MovementPlayer
         public Vector2 direction;
         private PlayerManager manager;
         private Animator anim;
+
+        private bool lockSon;
         #endregion
 
         private void Start()
@@ -80,16 +82,29 @@ namespace MovementPlayer
 
                 //youmna was helped
 
-            if (vertical==0 && horizontal == 0) 
+                if (vertical != 0 && horizontal != 0)
                 {
+                    Debug.Log("J'active");
+                    if (lockSon == false)
+                    {
+                        lockSon = true;
+                        FindObjectOfType<AudioManager>().Play("BDP sable");
+                    }
+                }
+
+                if (vertical==0 && horizontal == 0) 
+                {
+                    Debug.Log("Je desactive");
+                    lockSon = false;
+                    FindObjectOfType<AudioManager>().Stop("BDP sable");
                     anim.SetBool("IsWalking", false);
                  
                 }
                 else 
                 {
                     anim.SetBool("IsWalking", true);
-                anim.SetFloat("Horizontal", horizontal);
-                anim.SetFloat("Vertical", vertical);
+                    anim.SetFloat("Horizontal", horizontal);
+                    anim.SetFloat("Vertical", vertical);
 
                 }
                 direction = new Vector2(horizontal, vertical).normalized;

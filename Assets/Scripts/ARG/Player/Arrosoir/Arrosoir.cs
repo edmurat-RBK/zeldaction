@@ -34,6 +34,11 @@ namespace WateringCan
         {
             if (PlayerManager.Instance.isKhameau == false && PlayerManager.Instance.isFontaine == false && PlayerManager.Instance.isAttacking == false)
             {
+                if (Input.GetButtonDown("B"))
+                {
+                    FindObjectOfType<AudioManager>().Play("Arrosoire");
+                }
+
                 if (Input.GetButton("B"))
                 {
                     PlayerManager.Instance.isArroisoir = true;
@@ -50,6 +55,7 @@ namespace WateringCan
 
                 if (Input.GetButtonUp("B"))
                 {
+                    FindObjectOfType<AudioManager>().Stop("Arrosoire");
                     PlayerManager.Instance.isArroisoir = false;
                     PlayerManager.Instance.playerCanMove = true;
                 }
