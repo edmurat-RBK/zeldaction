@@ -22,7 +22,6 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        Play(""); // Pour musique commence au début
     }
 
 
