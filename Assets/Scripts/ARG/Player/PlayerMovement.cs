@@ -82,9 +82,8 @@ namespace MovementPlayer
 
                 //youmna was helped
 
-                if (vertical != 0 && horizontal != 0)
+                if (vertical != 0 && horizontal != 0 || vertical != 0 || horizontal != 0)
                 {
-                    Debug.Log("J'active");
                     if (lockSon == false)
                     {
                         lockSon = true;
@@ -94,11 +93,10 @@ namespace MovementPlayer
 
                 if (vertical==0 && horizontal == 0) 
                 {
-                    Debug.Log("Je desactive");
                     lockSon = false;
                     FindObjectOfType<AudioManager>().Stop("BDP sable");
+                    
                     anim.SetBool("IsWalking", false);
-                 
                 }
                 else 
                 {
