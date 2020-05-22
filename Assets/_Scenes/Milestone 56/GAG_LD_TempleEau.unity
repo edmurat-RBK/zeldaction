@@ -19413,10 +19413,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb906a7d22b36df458fae19fd7e4e16d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: 1
-  startMusic: Musique ambiance
+  start: 0
+  startMusic: 
   musique1: Musique ambiance
-  musique2: Musique shaman
 --- !u!4 &642699661
 Transform:
   m_ObjectHideFlags: 0
@@ -33411,7 +33410,7 @@ PrefabInstance:
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
@@ -105837,7 +105836,7 @@ PrefabInstance:
     - target: {fileID: 5631417302727840520, guid: 25da4ff2c3b1ccf4e8821d3b85220a29,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5631417302727840520, guid: 25da4ff2c3b1ccf4e8821d3b85220a29,
         type: 3}
