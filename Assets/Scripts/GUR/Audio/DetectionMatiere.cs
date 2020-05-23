@@ -14,16 +14,16 @@ public class DetectionMatiere : MonoBehaviour
 
     public matière wichMatter;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (wichMatter == matière.sable)
+            if (wichMatter == matière.sable && PlayerManager.Instance.onDirt == false)
             {
                 PlayerManager.Instance.onSand = true;
             }
 
-            if (wichMatter == matière.terre)
+            if (wichMatter == matière.terre && PlayerManager.Instance.onSand == false)
             {
                 PlayerManager.Instance.onDirt = true;
             }
