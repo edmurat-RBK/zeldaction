@@ -86,15 +86,34 @@ namespace MovementPlayer
                 {
                     if (lockSon == false)
                     {
-                        lockSon = true;
-                        FindObjectOfType<AudioManager>().Play("BDP sable");
+                        if (PlayerManager.Instance.onSand == true)
+                        {
+                            lockSon = true;
+                            FindObjectOfType<AudioManager>().Play("BDP sable");
+                        }
+
+                        else if (PlayerManager.Instance.onDirt == true)
+                        {
+                            lockSon = true;
+                            FindObjectOfType<AudioManager>().Play("BDP terre");
+                        }
                     }
                 }
 
                 if (vertical==0 && horizontal == 0) 
                 {
+
                     lockSon = false;
-                    FindObjectOfType<AudioManager>().Stop("BDP sable");
+
+                    if (PlayerManager.Instance.onSand == true)
+                    {
+                        FindObjectOfType<AudioManager>().Stop("BDP sable");
+                    }
+
+                    if (PlayerManager.Instance.onDirt == true)
+                    {
+                        FindObjectOfType<AudioManager>().Stop("BDP terre");
+                    }
                     
                     anim.SetBool("IsWalking", false);
                 }

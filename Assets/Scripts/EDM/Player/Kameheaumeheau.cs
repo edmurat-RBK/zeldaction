@@ -35,6 +35,8 @@ public class Kameheaumeheau : MonoBehaviour
     [SerializeField]
     private int speedDevider;
 
+    public bool lockSon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,9 +83,19 @@ public class Kameheaumeheau : MonoBehaviour
         {
             //Check time
             beamTime += Time.deltaTime;
+
+            if (lockSon == false)
+            {
+                lockSon = true;
+                FindObjectOfType<AudioManager>().Play("Khameau");
+            }
+
             manager.playerRigidBody.velocity = Vector2.zero;
             if(beamTime >= beamMaxTime)
             {
+                FindObjectOfType<AudioManager>().Stop("Khameau");
+                lockSon = false;
+
                 beamTime = 0;
                 kameheaumeheau = false;
                 manager.playerCanMove = true;
