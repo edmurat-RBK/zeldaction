@@ -24,6 +24,7 @@ namespace MovementPlayer
 
         private bool lockBDPSand;
         private bool lockBDPDirt;
+        private bool lockBDPIntérieur;
         #endregion
 
         private void Start()
@@ -92,15 +93,29 @@ namespace MovementPlayer
                     {
                         lockBDPSand = true;
                         FindObjectOfType<AudioManager>().Stop("BDP terre");
+                        FindObjectOfType<AudioManager>().Stop("BDP intérieur");
                         FindObjectOfType<AudioManager>().Play("BDP sable");
                         lockBDPDirt = false;
+                        lockBDPIntérieur = false;
                     }
 
                     else if (PlayerManager.Instance.onDirt == true && lockBDPDirt == false)
                     {
                         lockBDPDirt = true;
                         FindObjectOfType<AudioManager>().Stop("BDP sable");
+                        FindObjectOfType<AudioManager>().Stop("BDP intérieur");
                         FindObjectOfType<AudioManager>().Play("BDP terre");
+                        lockBDPSand = false;
+                        lockBDPIntérieur = false;
+                    }
+
+                    else if (PlayerManager.Instance.onConcrete == true && lockBDPIntérieur == false)
+                    {
+                        lockBDPIntérieur = true;
+                        FindObjectOfType<AudioManager>().Play("BDP intérieur");
+                        FindObjectOfType<AudioManager>().Stop("BDP sable");
+                        FindObjectOfType<AudioManager>().Stop("BDP terre");
+                        lockBDPDirt = false;
                         lockBDPSand = false;
                     }
                 }
@@ -119,6 +134,11 @@ namespace MovementPlayer
                         lockBDPDirt = false;
                     }
                     
+                    if (lockBDPIntérieur == true)
+                    {
+                        FindObjectOfType<AudioManager>().Stop("BDP intérieur");
+                        lockBDPIntérieur = false;
+                    }
                     anim.SetBool("IsWalking", false);
                 }
 

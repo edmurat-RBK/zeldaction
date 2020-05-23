@@ -18,17 +18,17 @@ public class DetectionMatiere : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (wichMatter == matière.sable && PlayerManager.Instance.onDirt == false)
+            if (wichMatter == matière.sable && PlayerManager.Instance.onDirt == false && PlayerManager.Instance.onConcrete == false)
             {
                 PlayerManager.Instance.onSand = true;
             }
 
-            if (wichMatter == matière.terre && PlayerManager.Instance.onSand == false)
+            if (wichMatter == matière.terre && PlayerManager.Instance.onSand == false && PlayerManager.Instance.onConcrete == false)
             {
                 PlayerManager.Instance.onDirt = true;
             }
 
-            if (wichMatter == matière.intérieur)
+            if (wichMatter == matière.intérieur && PlayerManager.Instance.onDirt == false && PlayerManager.Instance.onSand == false)
             {
                 PlayerManager.Instance.onConcrete = true;
             }
