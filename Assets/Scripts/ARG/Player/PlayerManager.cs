@@ -54,6 +54,13 @@ namespace Manager
         public float cooldownF;
         public float maxCooldownF;
 
+
+        // Gestion du son
+        public bool onSand;
+        public bool onDirt;
+        public bool onConcrete;
+
+
         #endregion
 
         void Awake()
