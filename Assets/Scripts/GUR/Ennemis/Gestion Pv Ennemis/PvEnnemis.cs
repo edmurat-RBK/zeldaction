@@ -115,6 +115,7 @@ public class PvEnnemis : MonoBehaviour
             {
                 anim.SetBool("IsDead", true);
                 gameObject.GetComponent<FlammècheMouvement>().deathLockFlammeche = true;
+                FindObjectOfType<AudioManager>().Play("DeathFlammeche");
                 // Death de la flammèche
                 Destroy(gameObject, 0.8f);
                 gameObject.GetComponent<GestionDrop>().RamdomDrop();
