@@ -124,6 +124,9 @@ public class PvEnnemis : MonoBehaviour
             if (mage == true)
             {
                 anim.SetBool("IsDead", true); //YS MageDeath Timer pour laisser le temps a l'anim de mort de passer non?
+
+                FindObjectOfType<AudioManager>().Play("DeathMage");
+
                 gameObject.GetComponent<MageMovement>().deathLockMage = true;
                 Destroy(gameObject, 0.8f);
                 gameObject.GetComponent<GestionDrop>().RamdomDrop();
@@ -132,6 +135,8 @@ public class PvEnnemis : MonoBehaviour
             if (golemLave == true) 
             {
                 anim.SetBool("IsDead",true);
+
+                FindObjectOfType<AudioManager>().Play("DeathGolem");
 
                 gameObject.GetComponent<GolemLaveMouvement>().deathLockGolem = true;
                 Destroy(gameObject, 0.8f);
@@ -151,7 +156,9 @@ public class PvEnnemis : MonoBehaviour
             yield return new WaitForSeconds(timeOfVulnerability);
             gameObject.GetComponent<MageMovement>().vunerableMage = false;
 
-            anim.SetBool("IsEteint", false);            
+            anim.SetBool("IsEteint", false);
+
+            FindObjectOfType<AudioManager>().Play("MageAllumage");
             lockMageVulné = false;
         }
 
@@ -182,6 +189,7 @@ public class PvEnnemis : MonoBehaviour
             {
                 anim.SetTrigger("IsStun");
 
+                FindObjectOfType<AudioManager>().Play("GolemHit");
                 pv -= dammage;
                 
             }
@@ -189,15 +197,11 @@ public class PvEnnemis : MonoBehaviour
 
         if (mage == true)
         {         
-
             if (gameObject.GetComponent<MageMovement>().vunerableMage == true)
             {                
                 anim.SetTrigger("IsDamaged");
                 pv -= dammage;
-
             }           
         }
-        
-   
     }
 }
