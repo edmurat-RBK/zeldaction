@@ -62,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
         //health = playerManager.healthPlayer;
         //maximumHealth = playerManager.healthMax;
 
-        if (Input.GetKeyDown(KeyCode.U))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             health += 1;
             gameObject.GetComponent<HealthBar>().HealthSysteme();
@@ -124,6 +124,7 @@ public class PlayerHealth : MonoBehaviour
     private IEnumerator Death()
     {
         isDead = true;
+        FindObjectOfType<AudioManager>().Play("DeathJoueur");
         anim.SetBool("IsDead",true);
         anim.SetBool("Revive", false);
         playerManager.playerCanMove = false;

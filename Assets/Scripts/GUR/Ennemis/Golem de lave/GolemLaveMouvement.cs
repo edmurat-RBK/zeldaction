@@ -128,6 +128,9 @@ public class GolemLaveMouvement : MonoBehaviour
         shotPoint.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         rbGolem.isKinematic = true;
+
+        FindObjectOfType<AudioManager>().Play("AttackGolem");
+
         GameObject wave = Instantiate(chocWave, shotPoint.transform.position, shotPoint.transform.rotation); // spawn l'onde de choc
         Destroy(wave, 0.5f);
         StartCoroutine(AttackCoolDown());
