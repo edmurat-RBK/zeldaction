@@ -92,6 +92,20 @@ public class PlayerHealth : MonoBehaviour
         if (playerManager.canTakeDammage == true)
         {
             //animation stagger
+
+            int varSon = Random.Range(1, 3);
+
+            switch (varSon)
+            {
+                case 1:
+                    FindObjectOfType<AudioManager>().Play("DamageP1");
+                    break;
+
+                case 2:
+                    FindObjectOfType<AudioManager>().Play("DamageP2");
+                    break;
+            }
+
             anim.SetTrigger("IsDamaged");
             health -= damage;
             gameObject.GetComponent<HealthBar>().HealthSysteme();
