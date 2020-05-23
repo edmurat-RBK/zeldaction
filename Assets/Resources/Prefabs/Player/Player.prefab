@@ -198,6 +198,8 @@ MonoBehaviour:
   isKhameau: 0
   isFontaine: 0
   canChangeSprite: 0
+  cooldownF: 0
+  maxCooldownF: 0
 --- !u!114 &5987844329369052875
 MonoBehaviour:
   m_ObjectHideFlags: 0
