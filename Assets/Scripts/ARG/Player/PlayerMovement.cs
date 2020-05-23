@@ -20,7 +20,10 @@ namespace MovementPlayer
         private PlayerManager manager;
         private Animator anim;
 
-        private bool lockSon;
+
+
+        private bool lockBDPSand;
+        private bool lockBDPDirt;
         #endregion
 
         private void Start()
@@ -82,41 +85,43 @@ namespace MovementPlayer
 
                 //youmna was helped
 
+
                 if (vertical != 0 && horizontal != 0 || vertical != 0 || horizontal != 0)
                 {
-                    if (lockSon == false)
+                    if (PlayerManager.Instance.onSand == true && lockBDPSand == false)
                     {
-                        if (PlayerManager.Instance.onSand == true)
-                        {
-                            lockSon = true;
-                            FindObjectOfType<AudioManager>().Play("BDP sable");
-                        }
+                        lockBDPSand = true;
+                        FindObjectOfType<AudioManager>().Stop("BDP terre");
+                        FindObjectOfType<AudioManager>().Play("BDP sable");
+                        lockBDPDirt = false;
+                    }
 
-                        else if (PlayerManager.Instance.onDirt == true)
-                        {
-                            lockSon = true;
-                            FindObjectOfType<AudioManager>().Play("BDP terre");
-                        }
+                    else if (PlayerManager.Instance.onDirt == true && lockBDPDirt == false)
+                    {
+                        lockBDPDirt = true;
+                        FindObjectOfType<AudioManager>().Stop("BDP sable");
+                        FindObjectOfType<AudioManager>().Play("BDP terre");
+                        lockBDPSand = false;
                     }
                 }
 
                 if (vertical==0 && horizontal == 0) 
                 {
-
-                    lockSon = false;
-
-                    if (PlayerManager.Instance.onSand == true)
+                    if (lockBDPSand == true)
                     {
                         FindObjectOfType<AudioManager>().Stop("BDP sable");
+                        lockBDPSand = false;
                     }
 
-                    if (PlayerManager.Instance.onDirt == true)
+                    if (lockBDPDirt == true)
                     {
                         FindObjectOfType<AudioManager>().Stop("BDP terre");
+                        lockBDPDirt = false;
                     }
                     
                     anim.SetBool("IsWalking", false);
                 }
+
                 else 
                 {
                     anim.SetBool("IsWalking", true);
