@@ -13,6 +13,7 @@ public class CaisseDestructible : MonoBehaviour
 
     public void Destruction()
     {
+        FindObjectOfType<AudioManager>().Play("Totem death");
         anim.SetBool("IsDead", true);
         Destroy(gameObject, 1.20f);
     }

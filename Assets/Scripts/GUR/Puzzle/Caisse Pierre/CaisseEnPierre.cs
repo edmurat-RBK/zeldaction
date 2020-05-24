@@ -96,6 +96,8 @@ public class CaisseEnPierre : MonoBehaviour
 
     IEnumerator TempsGlissement() // Coroutine qui gère le mouvement sans inertie
     {
+        FindObjectOfType<AudioManager>().Play("CaisseP poussé");
+
         canMove = false;
         rbPierre.isKinematic = false;
         rbPierre.velocity = player.GetComponent<Kameheaumeheau>().beamDir * speed * Time.fixedDeltaTime;
@@ -103,5 +105,6 @@ public class CaisseEnPierre : MonoBehaviour
         rbPierre.velocity = Vector2.zero;
         rbPierre.isKinematic = true;
         canMove = true;
+        FindObjectOfType<AudioManager>().Stop("CaisseP poussé");
     }
 }

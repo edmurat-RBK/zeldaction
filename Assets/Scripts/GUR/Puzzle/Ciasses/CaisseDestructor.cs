@@ -13,6 +13,11 @@ public class CaisseDestructor : MonoBehaviour
     {
         if (collision.gameObject.tag == "Cube de bois" || collision.gameObject.tag == "CaissePierre")
         {
+            if (collision.gameObject.tag == "Cube de bois")
+            {
+                FindObjectOfType<AudioManager>().Play("CaisseB death");
+            }
+
             Object.Destroy(collision.gameObject);
         }
     }
