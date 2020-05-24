@@ -39,6 +39,8 @@ public class Clepsydre : MonoBehaviour
     [HideInInspector]
     public bool clepsydreHit;
 
+
+    private bool lockSon;
     #endregion
 
     protected virtual void Start()
@@ -55,7 +57,6 @@ public class Clepsydre : MonoBehaviour
         Vidage();
         KhamehoHit();
         GestionVisuel();
-        
     }
 
      void GestionVisuel()
@@ -109,6 +110,7 @@ public class Clepsydre : MonoBehaviour
             if (clepsydreHit == true && remplissage < maxStockage)
             {
                 remplissage += Time.fixedDeltaTime * speedRemplissageKhameo;
+
                 clepsydreHit = false;
             }
         }
