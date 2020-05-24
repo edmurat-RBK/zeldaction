@@ -9,6 +9,7 @@ public class DeactivateAnimator : MonoBehaviour
     
     public Animator BossCinematique;
     public Animator BossManager;
+    public GameObject boss;
 
     void Start()
     {
@@ -25,5 +26,6 @@ public class DeactivateAnimator : MonoBehaviour
     {
         BossCinematique.enabled=false;
         BossManager.enabled=true;
+        boss.GetComponent<BossManagerP>().LunchPhase1();
     }
 }
