@@ -9,6 +9,6 @@ public class BossActivation : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        boss.GetComponent<BossManagerP>().LunchPhase1();
+        boss.SetActive(true);
     }
 }

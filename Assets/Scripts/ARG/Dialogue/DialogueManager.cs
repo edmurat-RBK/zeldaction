@@ -84,10 +84,18 @@ namespace Dialogue
             {
                 _dialogues.text += letter;
 
-                if (!Input.GetButtonDown("RB"))
+                if (isAuto == false)
+                {
+                    if (!Input.GetButtonDown("RB"))
+                    {
+                        yield return new WaitForSeconds(DelayBetweenLetters);
+                    }
+                }
+                else
                 {
                     yield return new WaitForSeconds(DelayBetweenLetters);
                 }
+                
             }
 
 

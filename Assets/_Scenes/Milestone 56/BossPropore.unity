@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbfa4d89288277f49a23c44b7789a883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boss: {fileID: 187009810}
+  boss: {fileID: 1813880458}
 --- !u!4 &72060632 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1222872604822913439, guid: f3e95032f1b607047bdc226f7d6fbc33,
@@ -32362,12 +32362,12 @@ PrefabInstance:
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.49
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.53
+      value: -14.92
       objectReference: {fileID: 0}
     - target: {fileID: 5987844329369052872, guid: cea7f767da1b04149aab5405f95e07b0,
         type: 3}
@@ -47660,7 +47660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1813880459
 Transform:
   m_ObjectHideFlags: 0
@@ -47717,6 +47717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BossCinematique: {fileID: 1813880460}
   BossManager: {fileID: 187009818}
+  boss: {fileID: 187009810}
 --- !u!1001 &1819746457
 PrefabInstance:
   m_ObjectHideFlags: 0
