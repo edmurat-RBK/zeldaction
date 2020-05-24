@@ -21,6 +21,8 @@ public class PlaqueDePressionPierre : MonoBehaviour
 
     [HideInInspector]
     public bool activePlaquePierre;
+
+    private bool lockSon;
     #endregion
 
     void Start()
@@ -33,6 +35,12 @@ public class PlaqueDePressionPierre : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "CaissePierre" || collision.gameObject.tag == "Cube de bois")
         {
+            if (lockSon == false)
+            {
+                lockSon = true;
+                FindObjectOfType<AudioManager>().Play("Plaque activée");
+            }
+
             plaqueActive.SetActive(true);
             plaqueDesactive.SetActive(false);
             activePlaquePierre = true;
@@ -45,6 +53,7 @@ public class PlaqueDePressionPierre : MonoBehaviour
         {
             if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "CaissePierre" || collision.gameObject.tag == "Cube de bois")
             {
+                lockSon = false;
                 plaqueActive.SetActive(false);
                 plaqueDesactive.SetActive(true);
                 activePlaquePierre = false;

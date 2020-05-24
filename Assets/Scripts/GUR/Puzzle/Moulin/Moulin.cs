@@ -81,19 +81,23 @@ public class Moulin : MonoBehaviour
 
     IEnumerator ActivationTimeGauche()
     {
+        FindObjectOfType<AudioManager>().Play("Moulin actif");
         anim.SetBool("tourne", true);
         moulinOnGauche = true;
         yield return new WaitForSeconds(timeOfActivation);
         anim.SetBool("tourne", false);
         moulinOnGauche = false;
+        FindObjectOfType<AudioManager>().Stop("Moulin actif");
     } // Active la bool gauche
 
     IEnumerator ActivationTimeDroit()
     {
+        FindObjectOfType<AudioManager>().Play("Moulin actif");
         anim.SetBool("tourne", true);
         moulinOnDroit = true;
         yield return new WaitForSeconds(timeOfActivation);
         anim.SetBool("tourne", false);
         moulinOnDroit = false;
+        FindObjectOfType<AudioManager>().Stop("Moulin actif");
     } // Active la bool droite
 }

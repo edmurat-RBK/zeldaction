@@ -45,11 +45,18 @@ public class PlaquePressionBois : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        teste = true;
+        if (collision.gameObject.tag == "Player")
+        {
+            FindObjectOfType<AudioManager>().Play("Plaque activée");
+            teste = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        teste = false;
+        if (collision.gameObject.tag == "Player")
+        {
+            teste = false;
+        }
     }
 }
