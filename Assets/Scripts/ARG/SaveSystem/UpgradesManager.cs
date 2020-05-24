@@ -25,6 +25,7 @@ public class UpgradesManager : MonoBehaviour
 		{ "donjonLave2", false },
         { "donjonLave3", false },
         { "chef", false },
+        { "cultiste", false },
     };
 
 
