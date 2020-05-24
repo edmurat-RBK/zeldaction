@@ -31,6 +31,7 @@ public class Porte : MonoBehaviour
 
     IEnumerator OpenDoor()
     {
+        FindObjectOfType<AudioManager>().Play("Porte ouverture");
         canOpen = false;
         gameObject.GetComponent<SpriteRenderer>().sortingOrder += 1;
         rbDoor.velocity = direction * speed * Time.fixedDeltaTime;
