@@ -129,7 +129,7 @@ MonoBehaviour:
   _dialogues: {fileID: 6425110059531244223}
   bouton: {fileID: 6425110059110189053}
   DelayBetweenLetters: 0.05
-  tempsLectParLettre: 0.05
+  tempsLectParLettre: 0.01
   haveEnd: 0
   isAuto: 0
 --- !u!1 &6425110059490971854
