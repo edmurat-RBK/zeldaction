@@ -128,7 +128,7 @@ public class PvEnnemis : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("DeathMage");
 
                 gameObject.GetComponent<MageMovement>().deathLockMage = true;
-                Destroy(gameObject, 0.8f);
+                Destroy(gameObject, 0.95f);
                 gameObject.GetComponent<GestionDrop>().RamdomDrop();
             }
 
@@ -139,7 +139,7 @@ public class PvEnnemis : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("DeathGolem");
 
                 gameObject.GetComponent<GolemLaveMouvement>().deathLockGolem = true;
-                Destroy(gameObject, 0.8f);
+                Destroy(gameObject,1.5f);
                 gameObject.GetComponent<GestionDrop>().RamdomDrop();
             }
         }

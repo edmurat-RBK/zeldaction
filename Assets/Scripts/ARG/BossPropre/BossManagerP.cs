@@ -130,7 +130,8 @@ public class BossManagerP : MonoBehaviour
                 pattern2.hardStop = true;
 
                 break;
-            case 2:Destroy(pattern3.totem2.gameObject);
+            case 2:Destroy(pattern3.totem2.gameObject,0.8f);
+                pattern3.totem2.gameObject.GetComponentInChildren<Animator>().SetBool("Destroy", true);
 
                 break;
             default:
