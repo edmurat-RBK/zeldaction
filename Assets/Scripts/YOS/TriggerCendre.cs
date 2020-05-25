@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class TriggerCendre : MonoBehaviour
 {
+    [SerializeField]
+    private bool enter;
+
     // Start is called before the first frame update
     public  ParticleSystem cendre;
     void Start()
@@ -20,7 +23,15 @@ public class TriggerCendre : MonoBehaviour
     {
         if (colid.gameObject.tag == "Player")
         {
-            cendre.Play();
+            if (enter == true)
+            {
+                cendre.Play();
+            }
+            else
+            {
+                cendre.Stop();
+            }
+            
         }
     }
 }

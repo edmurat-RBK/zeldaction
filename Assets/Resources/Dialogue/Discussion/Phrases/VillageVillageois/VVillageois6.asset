@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9345a362799a68647a6ba13550beeb12, type: 3}
   m_Name: VVillageois6
   m_EditorClassIdentifier: 
-  interlocuteur: {fileID: 0}
+  interlocuteur: {fileID: 21300000, guid: 47fe6f6d0105dd241a947a5d8852535c, type: 3}
   nameInterlocuteur: Villageois
   _phrase:
   - "Je mets ma main \xE0 couper que le Culte de la Flamme y est pour quelque chose!\nPour

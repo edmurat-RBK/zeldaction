@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9345a362799a68647a6ba13550beeb12, type: 3}
   m_Name: VVillageois8
   m_EditorClassIdentifier: 
-  interlocuteur: {fileID: 0}
+  interlocuteur: {fileID: 21300000, guid: 47fe6f6d0105dd241a947a5d8852535c, type: 3}
   nameInterlocuteur: Villageois
   _phrase:
   - "Quel coup dur pour ceux qui sont bloqu\xE9s au-del\xE0 du village."
