@@ -23,7 +23,9 @@ public class PlayerHealth : MonoBehaviour
     public Sprite checkpointBaseSprite;
     public Sprite checkpointActiveSprite;
     private Animator anim;
-    
+
+    [SerializeField]
+    private DeathMenu deathScreen;
     #endregion
 
 
@@ -118,12 +120,9 @@ public class PlayerHealth : MonoBehaviour
         playerManager.getBucket = false;
         playerManager.obtainBucket(); //player can't use his action but sprite without bucket
         yield return new WaitForSeconds(2f);//animation time
-        playerManager.playerCanMove = true;
-        playerManager.deathParalise = false;
-        playerManager.deathParalisy();
-        //screen death qui apaprait et permet d'appel le respawn
-        anim.SetBool("Revive", true);
-        respawn();
+        deathScreen.gameObject.SetActive(true);
+        Time.timeScale = 0;
+        //respawn();
     }
 
     // Function that restore health
@@ -143,6 +142,12 @@ public class PlayerHealth : MonoBehaviour
     //Function for respawn at the actual checkpoint with full health
     public void respawn()
     {
+        Debug.Log("oui");
+        Time.timeScale = 1;
+        playerManager.playerCanMove = true;
+        playerManager.deathParalise = false;
+        playerManager.deathParalisy();
+        anim.SetBool("Revive", true);
         health = maximumHealth;
         GetComponent<HealthBar>().HealthSysteme();
         StartCoroutine(Delay());
