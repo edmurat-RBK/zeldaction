@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9345a362799a68647a6ba13550beeb12, type: 3}
   m_Name: ChefDVParagraphe1.2
   m_EditorClassIdentifier: 
-  interlocuteur: {fileID: 0}
+  interlocuteur: {fileID: 21300000, guid: 887be7ee5dbe1ce42afcf2f9c768c30b, type: 3}
   nameInterlocuteur: Chef du Village
   _phrase:
   - "\u2026 !  Attendez !\r\nJe viens de me rappeler de quelque chose! \r\n"

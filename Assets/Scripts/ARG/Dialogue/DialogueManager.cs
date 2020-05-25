@@ -18,6 +18,7 @@ namespace Dialogue
         [Header("UI Elements")]
         [SerializeField] private RectTransform _textBox = null;
         [SerializeField] private Image _Sprite = null;
+        [SerializeField] private Sprite _SpriteBase = null;
         [SerializeField] private Text _nom = null;
         [SerializeField] private Text _dialogues = null;
         [SerializeField] private Image bouton;
@@ -91,10 +92,6 @@ namespace Dialogue
                         yield return new WaitForSeconds(DelayBetweenLetters);
                     }
                 }
-                else
-                {
-                    yield return new WaitForSeconds(DelayBetweenLetters);
-                }
                 
             }
 
@@ -161,7 +158,7 @@ namespace Dialogue
             StopAllCoroutines();
             _dialogues.text = "";
             _nom.text = "";
-            _Sprite.sprite = null;
+            _Sprite.sprite = _SpriteBase;
             LeanTween.moveY(_textBox, -300, 0.3f);
             haveEnd = true;
 
