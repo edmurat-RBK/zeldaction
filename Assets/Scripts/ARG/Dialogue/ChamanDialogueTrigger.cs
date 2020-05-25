@@ -42,7 +42,8 @@ public class ChamanDialogueTrigger : MonoBehaviour
 
         yield return new WaitForSeconds(timeOfCine);
         PlayerManager.Instance.playerCanMove = true;
-        ChamanCollider.enabled = true;
+        chamanCine.SetActive(false);
+        chamanSave.SetActive(true);
 
     }
 }
