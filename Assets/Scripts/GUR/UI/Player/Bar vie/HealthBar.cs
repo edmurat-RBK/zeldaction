@@ -6,16 +6,25 @@ using Manager;
 
 public class HealthBar : MonoBehaviour
 {
-    public Image[] hearts;
+    public GameObject[] hearts;
     public Sprite fullHeart;
 
-    private Image stock;
-    private bool canEmpty;
+    [HideInInspector]
+    public bool lockCanTake;
 
     private void Start()
     {
-        canEmpty = true;
-        HealthSysteme();
+        lockCanTake = false;
+    }
+
+    private void Update()
+    {
+        if (lockCanTake == false)
+        {
+            lockCanTake = true;
+            hearts = GameObject.FindGameObjectsWithTag("Heart");
+            HealthSysteme();
+        }
     }
 
     public void HealthSysteme()
@@ -40,11 +49,11 @@ public class HealthBar : MonoBehaviour
 
             if (i < GetComponent<PlayerHealth>().maximumHealth)
             {
-                hearts[i].enabled = true;
+                hearts[i].SetActive(true);
             }
             else
             {
-                hearts[i].enabled = false;
+                hearts[i].SetActive(false);
             }
         }
     }

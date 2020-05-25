@@ -18,6 +18,7 @@ TagManager:
   - Cube de bois
   - Boss
   - DialogueManager
+  - Heart
   layers:
   - Default
   - TransparentFX
