@@ -6,19 +6,32 @@ using UnityEngine.UI;
 
 public class FontaineUI : MonoBehaviour
 {
+    public GameObject objectSlider;
     public Slider slider;
 
+    private bool enable;
 
-    // Start is called before the first frame update
+   
     void Start()
     {
-        slider.maxValue = PlayerManager.Instance.maxCooldownF;
-        slider.value = PlayerManager.Instance.cooldownF;
+        objectSlider.SetActive(false);
+
+        if (PlayerManager.Instance.getBucket == true)
+        {
+            objectSlider.SetActive(true);
+            slider.maxValue = PlayerManager.Instance.maxCooldownF;
+            slider.value = PlayerManager.Instance.cooldownF;
+        }
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        if (PlayerManager.Instance.getBucket == true && enable == false)
+        {
+            enable = true;
+            objectSlider.SetActive(true);
+        }
         slider.value = PlayerManager.Instance.maxCooldownF - PlayerManager.Instance.cooldownF;
     }
 }
