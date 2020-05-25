@@ -159,10 +159,26 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("oui");
         Time.timeScale = 1;
-        playerManager.playerCanMove = true;
+
         playerManager.deathParalise = false;
         playerManager.deathParalisy();
+
+        if (UpgradesManager.List["as bucket"] == true)
+        {
+            playerManager.getBucket = true;
+            playerManager.obtainBucket();
+        }
+        else if (UpgradesManager.List["as bucket"] == false)
+        {
+            playerManager.getBucket = false;
+            playerManager.obtainBucket();
+        }
+
+        playerManager.playerCanMove = true;
         anim.SetBool("Revive", true);
+
+        gameObject.GetComponent<HealthBar>().lockCanTake = false;
+
         health = maximumHealth;
         GetComponent<HealthBar>().HealthSysteme();
         StartCoroutine(Delay());

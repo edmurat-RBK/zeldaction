@@ -7,13 +7,16 @@ using Manager;
 
 public class DeathMenu : MonoBehaviour
 {
-    public void RestartGame()
+    private void Update()
     {
-        PlayerManager.Instance.GetComponent<PlayerHealth>().respawn();
-    }
+        if (Input.GetButtonDown("X"))
+        {
+            PlayerManager.Instance.GetComponent<PlayerHealth>().respawn();
+        }
 
-    public void QuitToMain()
-    {
-        SceneManager.LoadScene(4);
+        if (Input.GetButtonDown("B"))
+        {
+            SceneManager.LoadScene(4);
+        }
     }
 }

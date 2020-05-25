@@ -136,7 +136,7 @@ namespace Manager
                 
                 
             }
-            else
+            else if (getBucket == false)
             {
                 water.enabled = false;
                 attack.enabled = false;

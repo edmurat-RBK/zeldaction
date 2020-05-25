@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/Milestone 56/T.unity
     guid: 3fb06e68543931548bfe919d22c4c2b5
+  - enabled: 0
+    path: Assets/_Scenes/Milestone 56/ARG_DeathSceen.unity
+    guid: 6a6de12bb7f0dbf4f95b3cae8423390d
   m_configObjects: {}

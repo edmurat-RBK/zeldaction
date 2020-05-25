@@ -34,7 +34,7 @@ public class PNJHelp : MonoBehaviour
                 {
                     GetComponent<UpgradeObject>().Gotcha();
                     playerStock.GetComponent<PlayerHealth>().maximumHealth += 1;
-                    playerStock.GetComponent<PlayerHealth>().health += 1;
+                    playerStock.GetComponent<PlayerHealth>().health = playerStock.GetComponent<PlayerHealth>().maximumHealth;
                     playerStock.GetComponent<HealthBar>().HealthSysteme();
                 }
             }
@@ -48,7 +48,7 @@ public class PNJHelp : MonoBehaviour
                 {
                     GetComponent<UpgradeObject>().Gotcha();
                     playerStock.GetComponent<PlayerHealth>().maximumHealth += 1;
-                    playerStock.GetComponent<PlayerHealth>().health += 1;
+                    playerStock.GetComponent<PlayerHealth>().health = playerStock.GetComponent<PlayerHealth>().maximumHealth;
                     playerStock.GetComponent<HealthBar>().HealthSysteme();
                 }
             }
