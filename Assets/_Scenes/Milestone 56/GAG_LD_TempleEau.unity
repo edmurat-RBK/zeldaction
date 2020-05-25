@@ -25094,6 +25094,10 @@ PrefabInstance:
       propertyPath: whoActivate.Array.data[0]
       value: 
       objectReference: {fileID: 617432025}
+    - target: {fileID: 257819235, guid: 53ce13e5f22110c4d9b298a907cc8d8e, type: 3}
+      propertyPath: lockAfterFinish
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 289899008850224440, guid: 53ce13e5f22110c4d9b298a907cc8d8e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -51886,6 +51890,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.4}
   serializedVersion: 2
   m_Radius: 1.2
+--- !u!114 &1769081456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769081452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab913ba593db54d46b8aa7e75e302421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: as bucket
+  isATrigger: 0
+--- !u!114 &1769081457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769081452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac144cc548273a4fb7054512552ccb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1769081458 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1352853315335599779, guid: fda290cbc58ea874cb1412313620a141,
@@ -101572,7 +101602,7 @@ PrefabInstance:
     - target: {fileID: 2813668067715665941, guid: fda290cbc58ea874cb1412313620a141,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7764855127602181644, guid: fda290cbc58ea874cb1412313620a141,
         type: 3}
