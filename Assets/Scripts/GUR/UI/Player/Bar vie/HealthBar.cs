@@ -6,7 +6,9 @@ using Manager;
 
 public class HealthBar : MonoBehaviour
 {
-    public GameObject[] hearts;
+    public List<GameObject> hearts = new List<GameObject>();
+
+    //public GameObject[] hearts;
     public Sprite fullHeart;
 
     [HideInInspector]
@@ -19,10 +21,12 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-        if (lockCanTake == false)
+        hearts.RemoveAll(list_item => list_item == null);
+
+        if (hearts.Count == 0)
         {
             lockCanTake = true;
-            hearts = GameObject.FindGameObjectsWithTag("Heart");
+            hearts.AddRange (GameObject.FindGameObjectsWithTag("Heart"));
             HealthSysteme();
         }
     }
@@ -35,7 +39,7 @@ public class HealthBar : MonoBehaviour
         }
 
 
-        for (int i = 0; i < hearts.Length; i++)
+        for (int i = 0; i < hearts.Count; i++)
         {
             if (i < GetComponent<PlayerHealth>().health)
             {

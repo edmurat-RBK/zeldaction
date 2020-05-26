@@ -44,9 +44,213 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: Musique start
+    clip: {fileID: 8300000, guid: 2990a1dae2f4aee4fb542bd753f1a3c9, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatialisation: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: Musique jungle
+    clip: {fileID: 8300000, guid: 93e29195834aba4449281f3ac2ae01cf, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatialisation: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: Musique volcan
+    clip: {fileID: 8300000, guid: 7278d2347996fef4bb7a9ed7163197c6, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatialisation: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: Frappe 1
+    clip: {fileID: 8300000, guid: 4c46a9e6f127802479d640c36fb4bc03, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.1
     loop: 0
+    source: {fileID: 0}
+  - name: Frappe 2
+    clip: {fileID: 8300000, guid: da8cc813d3e094c4cba8646415e92d3f, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: Frappe 3
+    clip: {fileID: 8300000, guid: 17cb683e1f5b0574c8643862f223436e, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: Arrosoire
+    clip: {fileID: 8300000, guid: 40ad94ec201c2494b8b8915e6a43724c, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: BDP sable
+    clip: {fileID: 8300000, guid: 6c0a0cd998970504c8aec09a8c6383fa, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: Khameau
+    clip: {fileID: 8300000, guid: 38893e4749f3dbd43a54a55827fcfd47, type: 3}
+    volume: 0.2
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: BDP terre
+    clip: {fileID: 8300000, guid: b6be702c0e1db6b46bc950a47ffe2425, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: "BDP int\xE9rieur"
+    clip: {fileID: 8300000, guid: c96103d5c1f3b8647b191a8dadbafbb6, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 1
+    source: {fileID: 0}
+  - name: DamageP1
+    clip: {fileID: 8300000, guid: 8c6fe3622785dcf44b724de9f6c47923, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: DamageP2
+    clip: {fileID: 8300000, guid: e5bc2378cc311c84c9085c2cd51e933b, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: DeathJoueur
+    clip: {fileID: 8300000, guid: 59e5d05e53ae89e459a480df962a0ecc, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: DeathFlammeche
+    clip: {fileID: 8300000, guid: 836b3e69d7928e346a515430a720a691, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: GolemHit
+    clip: {fileID: 8300000, guid: 1d62d76a661225c4d89c51d12aa28a28, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: AttackGolem
+    clip: {fileID: 8300000, guid: 6651ca13065ca9f45b1d811198403c76, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: DeathGolem
+    clip: {fileID: 8300000, guid: 7a2a79dcd45021842a6db149ccc04b64, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: DeathMage
+    clip: {fileID: 8300000, guid: 2c21cb5508637d843aa6065ddaf930cd, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: MageAllumage
+    clip: {fileID: 8300000, guid: b5d6f6ccf5969e349b7fbe2470b5bee4, type: 3}
+    volume: 0.4
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: "CaisseP pouss\xE9"
+    clip: {fileID: 8300000, guid: ea4fb1f7130111d4287ab432341b4771, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: CaisseB spawn
+    clip: {fileID: 8300000, guid: be8f40eb7af9a8f4cbbff449fbcd9021, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: CaisseB death
+    clip: {fileID: 8300000, guid: 6c05a3dea9d22004fbdb98a11e58ecc7, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: Totem death
+    clip: {fileID: 8300000, guid: 9d4b7218b60ec6148b491d1ea636c998, type: 3}
+    volume: 0.1
+    pitch: 1
+    spatialisation: 0.1
+    loop: 0
+    source: {fileID: 0}
+  - name: Porte ouverture
+    clip: {fileID: 8300000, guid: 1d3eba36d90dae845a47788c211348a2, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Moulin actif
+    clip: {fileID: 8300000, guid: ff6fd9e99427f1d46b62b227e165ce7f, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: "Plaque activ\xE9e"
+    clip: {fileID: 8300000, guid: 5aba0a9635004f342a7e29e12e0d00ce, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Musique shaman
+    clip: {fileID: 8300000, guid: d43f06d24415d2f4fba86d179c988140, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Musique ambiance chaman
+    clip: {fileID: 8300000, guid: 5fb818dfad6edb44882ba8dae579c5b5, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Donjon musique feu
+    clip: {fileID: 8300000, guid: 2ca2031569a02cd499542a8a4a47a69a, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 1
     source: {fileID: 0}

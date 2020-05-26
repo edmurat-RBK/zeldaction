@@ -14,9 +14,11 @@ public class SceneLoader : MonoBehaviour
     public float axeX;
     public float axeY;
 
-    
+    public GameObject player;
+
     void Start()
     {
+        player = GameObject.FindWithTag("Player");
         sprite.SetActive(false);
         canSwitch = false;
     }
@@ -29,6 +31,8 @@ public class SceneLoader : MonoBehaviour
             if (Input.GetButtonDown("X"))
             {
                 canSwitch = false;
+
+                player.GetComponent<HealthBar>().lockCanTake = false;
                 PlayerManager.Instance.playerTransform.position = new Vector2(axeX, axeY);
                 SceneManager.LoadScene(numberOfScene);
 

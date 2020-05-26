@@ -32,7 +32,7 @@ public class Obsidian : MonoBehaviour
 
     private void Update()
     {
-        if (Vector2.Distance(PlayerManager.Instance.transform.position,transform.position) < 0.5f && isObsi == false)
+        if (Vector2.Distance(PlayerManager.Instance.transform.position,transform.position) < 0.45f && isObsi == false)
         {
             PlayerManager.Instance.transform.position = respawnPoint.transform.position;
 

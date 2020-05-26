@@ -19,6 +19,7 @@ TagManager:
   - Boss
   - DialogueManager
   - Heart
+  - DeathScreen
   layers:
   - Default
   - TransparentFX

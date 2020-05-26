@@ -25,13 +25,14 @@ public class PlayerHealth : MonoBehaviour
     private Animator anim;
 
     [SerializeField]
-    private DeathMenu deathScreen;
+    private List<GameObject> deathScreen = new List<GameObject>();
+    //private GameObject deathScreen;
     #endregion
 
 
     // Start is called before the first frame update
     void Start()
-    {
+    {
         playerManager = GetComponent<PlayerManager>();
         anim = GetComponent<Animator>();
         health = maximumHealth;
@@ -55,7 +56,14 @@ public class PlayerHealth : MonoBehaviour
     }
 
     private void Update()
-    {
+    {        deathScreen.RemoveAll(list_item => list_item == null);        if (deathScreen.Count == 0)
+        {
+            Debug.Log("Je trouve deathscreen");
+            deathScreen.AddRange(GameObject.FindGameObjectsWithTag("DeathScreen"));
+            deathScreen[0].SetActive(false);
+        }
+
+
         playerManager.healthPlayer = health;
         playerManager.healthMax = maximumHealth;
 
@@ -135,7 +143,7 @@ public class PlayerHealth : MonoBehaviour
         playerManager.getBucket = false;
         playerManager.obtainBucket(); //player can't use his action but sprite without bucket
         yield return new WaitForSeconds(2f);//animation time
-        deathScreen.gameObject.SetActive(true);
+        deathScreen[0].SetActive(true);
         Time.timeScale = 0;
         //respawn();
     }
@@ -159,6 +167,7 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("oui");
         Time.timeScale = 1;
+        deathScreen[0].SetActive(false);
 
         playerManager.deathParalise = false;
         playerManager.deathParalisy();
@@ -177,7 +186,6 @@ public class PlayerHealth : MonoBehaviour
         playerManager.playerCanMove = true;
         anim.SetBool("Revive", true);
 
-        gameObject.GetComponent<HealthBar>().lockCanTake = false;
 
         health = maximumHealth;
         GetComponent<HealthBar>().HealthSysteme();
