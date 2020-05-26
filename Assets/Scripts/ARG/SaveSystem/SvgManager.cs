@@ -162,6 +162,14 @@ public class SvgManager : MonoBehaviour
 		print("Deleted " + SavedGameName + " key in PlayerPrefs!!!");
 	}
 
+    private void Update()
+    {
+        if (Input.GetKeyDown("L"))
+        {
+            DeleteSavegameDEBUG();
+        }
+    }
+
 #endif
 
 }

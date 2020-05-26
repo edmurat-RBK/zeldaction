@@ -92,7 +92,8 @@ namespace Dialogue
                         yield return new WaitForSeconds(DelayBetweenLetters);
                     }
                 }
-                
+                else yield return new WaitForSeconds(DelayBetweenLetters);
+
             }
 
 

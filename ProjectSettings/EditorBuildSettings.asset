@@ -20,13 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Final/BossPropore.unity
     guid: d297d6d7cf8191848874400b609ca471
-  - enabled: 0
-    path: Assets/_Scenes/Milestone 56/Checkpoint.unity
-    guid: ec57bdffe840c0c43856f98ee0c80a04
-  - enabled: 0
-    path: Assets/_Scenes/Milestone 56/T.unity
-    guid: 3fb06e68543931548bfe919d22c4c2b5
-  - enabled: 0
-    path: Assets/_Scenes/Milestone 56/ARG_DeathSceen.unity
-    guid: 6a6de12bb7f0dbf4f95b3cae8423390d
   m_configObjects: {}
