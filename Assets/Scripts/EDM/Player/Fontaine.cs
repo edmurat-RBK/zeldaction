@@ -35,14 +35,14 @@ public class Fontaine : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         PlayerManager.Instance.cooldownF = cooldown;
 
         if (cooldown != 0 && isActif == false)
         {
             isCooldown = true;
-            cooldown -= Time.deltaTime;
+            cooldown -= Time.fixedDeltaTime;
             if (cooldown < 0)
             {
                 isCooldown = false;
