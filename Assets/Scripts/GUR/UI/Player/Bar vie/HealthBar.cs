@@ -26,7 +26,11 @@ public class HealthBar : MonoBehaviour
         if (hearts.Count == 0)
         {
             lockCanTake = true;
-            hearts.AddRange (GameObject.FindGameObjectsWithTag("Heart"));
+            hearts.AddRange (GameObject.FindGameObjectsWithTag("Heart1"));
+            hearts.AddRange (GameObject.FindGameObjectsWithTag("Heart2"));
+            hearts.AddRange (GameObject.FindGameObjectsWithTag("Heart3"));
+            hearts.AddRange (GameObject.FindGameObjectsWithTag("Heart4"));
+            hearts.AddRange (GameObject.FindGameObjectsWithTag("Heart5"));
             HealthSysteme();
         }
     }

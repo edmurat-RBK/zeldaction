@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222872604822913506}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.498, y: 0.503, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2684539038480148016}
@@ -105,6 +105,8 @@ MonoBehaviour:
   - {fileID: 627163964618334242, guid: dc69c19b393f74542b1f96527817bbf8, type: 3}
   - {fileID: -6061064517612952124, guid: dc69c19b393f74542b1f96527817bbf8, type: 3}
   obsiHitBox: {fileID: 880658789578603645}
+  isObsi: 0
+  respawnPoint: {fileID: 0}
 --- !u!61 &1222872604822913438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -186,5 +188,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.03, y: 1.03}
   m_EdgeRadius: 0

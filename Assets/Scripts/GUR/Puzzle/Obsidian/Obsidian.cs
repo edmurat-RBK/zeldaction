@@ -19,7 +19,6 @@ public class Obsidian : MonoBehaviour
 
     public GameObject respawnPoint;
 
-
     void Start()
     {
         state = timeBeforeDestrcution / sprite.Length;
@@ -32,10 +31,9 @@ public class Obsidian : MonoBehaviour
 
     private void Update()
     {
-        if (Vector2.Distance(PlayerManager.Instance.transform.position,transform.position) < 0.45f && isObsi == false)
+        if (Vector2.Distance(PlayerManager.Instance.transform.position, transform.position) < 0.5 &&  isObsi == false)
         {
             PlayerManager.Instance.transform.position = respawnPoint.transform.position;
-
         }
     }
 

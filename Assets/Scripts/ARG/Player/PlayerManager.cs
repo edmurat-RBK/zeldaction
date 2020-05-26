@@ -60,7 +60,6 @@ namespace Manager
         public bool onDirt;
         public bool onConcrete;
 
-
         #endregion
 
         void Awake()
@@ -99,7 +98,6 @@ namespace Manager
         
         void Update()
         {
-
             horizontal = Input.GetAxis("Horizontal");
             vertical = Input.GetAxis("Vertical");
             PlayerDirection();

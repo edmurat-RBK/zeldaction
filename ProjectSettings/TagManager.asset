@@ -20,6 +20,11 @@ TagManager:
   - DialogueManager
   - Heart
   - DeathScreen
+  - Heart1
+  - Heart2
+  - Heart3
+  - Heart4
+  - Heart5
   layers:
   - Default
   - TransparentFX
