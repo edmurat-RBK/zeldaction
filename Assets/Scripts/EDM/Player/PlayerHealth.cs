@@ -56,7 +56,10 @@ public class PlayerHealth : MonoBehaviour
     }
 
     private void Update()
-    {        deathScreen.RemoveAll(list_item => list_item == null);        if (deathScreen.Count == 0)
+    {        playerManager.healthPlayer = health;
+        playerManager.healthMax = maximumHealth;
+
+        deathScreen.RemoveAll(list_item => list_item == null);        if (deathScreen.Count == 0)
         {
             Debug.Log("Je trouve deathscreen");
             deathScreen.AddRange(GameObject.FindGameObjectsWithTag("DeathScreen"));
@@ -64,8 +67,6 @@ public class PlayerHealth : MonoBehaviour
         }
 
 
-        playerManager.healthPlayer = health;
-        playerManager.healthMax = maximumHealth;
 
         //health = playerManager.healthPlayer;
         //maximumHealth = playerManager.healthMax;

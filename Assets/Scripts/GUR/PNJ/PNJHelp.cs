@@ -17,10 +17,11 @@ public class PNJHelp : MonoBehaviour
 
     private bool canActivate;
 
-    private GameObject playerStock;
+    public GameObject playerStock;
 
     void Start()
     {
+        playerStock = GameObject.FindWithTag("Player");
         canActivate = false;
     }
 
@@ -32,6 +33,7 @@ public class PNJHelp : MonoBehaviour
             {
                 if (Input.GetButtonDown("X"))
                 {
+                    Debug.Log("Je rentre");
                     GetComponent<UpgradeObject>().Gotcha();
                     playerStock.GetComponent<PlayerHealth>().maximumHealth += 1;
                     playerStock.GetComponent<PlayerHealth>().health = playerStock.GetComponent<PlayerHealth>().maximumHealth;
@@ -60,7 +62,6 @@ public class PNJHelp : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             canActivate = true;
-            playerStock = collision.gameObject;
         }
     }
 

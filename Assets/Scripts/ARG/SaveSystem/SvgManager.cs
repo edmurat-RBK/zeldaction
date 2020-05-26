@@ -164,10 +164,10 @@ public class SvgManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("L"))
+        /*if (Input.GetKeyDown("L"))
         {
             DeleteSavegameDEBUG();
-        }
+        }*/
     }
 
 #endif
