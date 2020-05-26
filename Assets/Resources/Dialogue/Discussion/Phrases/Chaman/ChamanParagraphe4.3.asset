@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9345a362799a68647a6ba13550beeb12, type: 3}
   m_Name: ChamanParagraphe4.3
   m_EditorClassIdentifier: 
-  interlocuteur: {fileID: 0}
+  interlocuteur: {fileID: 21300000, guid: 1136d976df7ccf54897b55e42e70dbcf, type: 3}
   nameInterlocuteur: Chaman
   _phrase:
   - "Tu peux m\xEAme concentrer un flux au sein du Bucket en restant appuy\xE9 sur

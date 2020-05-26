@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9345a362799a68647a6ba13550beeb12, type: 3}
   m_Name: ChamanParagraphe2.1
   m_EditorClassIdentifier: 
-  interlocuteur: {fileID: 0}
+  interlocuteur: {fileID: 21300000, guid: 1136d976df7ccf54897b55e42e70dbcf, type: 3}
   nameInterlocuteur: Chaman
   _phrase:
   - "Je suis le Chaman, gardien de ce Temple.\nJe t\u2019ai vu il y a quelques temps

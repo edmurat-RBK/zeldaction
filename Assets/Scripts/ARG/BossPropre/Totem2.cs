@@ -75,6 +75,7 @@ public class Totem2 : MonoBehaviour
         {
             anim.SetBool("IsFall", false);
             totemRenderer.GetComponent<Collider2D>().enabled = true;
+            GetComponent<Collider2D>().enabled = true;
             canFall = false;
             List<Transform> listPointOfMeteor = pointOfMeteor.ToList();
             for (int i = 0; i < Random.Range(minNumberOfMeteor,maxNumberOfMeteor); i++)
@@ -110,6 +111,7 @@ public class Totem2 : MonoBehaviour
         yield return new WaitForSeconds(timeOnGround);
         canUp = true;
         totemRenderer.GetComponent<Collider2D>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
         fallOnCD = true;
         yield return new WaitForSeconds(fallCD);
         fallOnCD = false;
@@ -126,7 +128,7 @@ public class Totem2 : MonoBehaviour
         animBoss.SetBool("TotemAttack", false);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {

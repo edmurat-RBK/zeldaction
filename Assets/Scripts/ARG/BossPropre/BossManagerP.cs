@@ -107,7 +107,7 @@ public class BossManagerP : MonoBehaviour
                 break;
             case 3:
                 anim.SetBool("BossDeath", true);
-                Destroy(gameObject, 3f);                
+                Destroy(gameObject, 5.5f);                
                 //cinématique (avec du délai)
                 break;
             default:Debug.Log("out of range");
@@ -130,8 +130,10 @@ public class BossManagerP : MonoBehaviour
                 pattern2.hardStop = true;
 
                 break;
-            case 2:Destroy(pattern3.totem2.gameObject,0.8f);
+            case 2:
                 pattern3.totem2.gameObject.GetComponentInChildren<Animator>().SetBool("Destroy", true);
+                Destroy(pattern3.totem2.gameObject,1f);
+                
 
                 break;
             default:
