@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Manager;
 
 public class Obsidian : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class Obsidian : MonoBehaviour
     public BoxCollider2D obsiHitBox;
 
     private float state;
+    [SerializeField]
+    private bool isObsi;
+
+    public GameObject respawnPoint;
 
 
     void Start()
@@ -25,12 +30,22 @@ public class Obsidian : MonoBehaviour
         hitDetection.enabled = true;
     }
 
-    
+    private void Update()
+    {
+        if (Vector2.Distance(PlayerManager.Instance.transform.position,transform.position) < 0.5f && isObsi == false)
+        {
+            PlayerManager.Instance.transform.position = respawnPoint.transform.position;
+
+        }
+    }
+
+
     private void OnParticleCollision(GameObject other)
     {
         obsiHitBox.enabled = false;
         hitDetection.enabled = false;
         obsiSprite.enabled = true;
+        isObsi = true;
 
         StartCoroutine(RespawnObsi());
     }
@@ -46,5 +61,6 @@ public class Obsidian : MonoBehaviour
         obsiHitBox.enabled = true;
         hitDetection.enabled = true;
         obsiSprite.enabled = false;
+        isObsi = false;
     }
 }
