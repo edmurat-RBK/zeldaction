@@ -26,7 +26,7 @@ namespace Dialogue
             //if la bool est true alors lance la fonction derrière
             dialogManag.isAuto = false;
             dialogManag.BeginCoversation(Intro);
-            triggerZone.enabled = false;
+            //triggerZone.enabled = false; Villageoi cassé à cause de sa
         }
 
         private void Update()

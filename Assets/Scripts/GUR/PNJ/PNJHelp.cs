@@ -15,7 +15,7 @@ public class PNJHelp : MonoBehaviour
 
     public villageoi wichVillageoi;
 
-    private bool canActivate;
+    public bool canActivate;
 
     public GameObject playerStock;
 
@@ -33,7 +33,6 @@ public class PNJHelp : MonoBehaviour
             {
                 if (Input.GetButtonDown("X"))
                 {
-                    Debug.Log("Je rentre");
                     GetComponent<UpgradeObject>().Gotcha();
                     playerStock.GetComponent<PlayerHealth>().maximumHealth += 1;
                     playerStock.GetComponent<PlayerHealth>().health = playerStock.GetComponent<PlayerHealth>().maximumHealth;
@@ -54,6 +53,11 @@ public class PNJHelp : MonoBehaviour
                     playerStock.GetComponent<HealthBar>().HealthSysteme();
                 }
             }
+        }
+
+        if (wichVillageoi == villageoi.villageoiSoif)
+        {
+            return;
         }
     }
 
