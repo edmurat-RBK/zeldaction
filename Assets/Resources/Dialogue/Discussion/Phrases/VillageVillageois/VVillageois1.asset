@@ -15,5 +15,5 @@ MonoBehaviour:
   interlocuteur: {fileID: 21300000, guid: 47fe6f6d0105dd241a947a5d8852535c, type: 3}
   nameInterlocuteur: Villageois
   _phrase:
-  - "Je crois que la secousse venait de cette montagne..J\u2019esp\xE8re que c\u2019est
+  - "Je crois que la secousse venait de cette montagne..\nJ\u2019esp\xE8re que c\u2019est
     pas trop la panique au village."
