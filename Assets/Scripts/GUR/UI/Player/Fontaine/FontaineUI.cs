@@ -6,8 +6,13 @@ using UnityEngine.UI;
 
 public class FontaineUI : MonoBehaviour
 {
+    public Sprite newBar;
+
+    public Image healthBar;
+
+    
     public GameObject objectSlider;
-    public Slider slider;
+    public Image slider;
 
     private bool enable;
 
@@ -19,8 +24,6 @@ public class FontaineUI : MonoBehaviour
         if (PlayerManager.Instance.getBucket == true)
         {
             objectSlider.SetActive(true);
-            slider.maxValue = PlayerManager.Instance.maxCooldownF;
-            slider.value = PlayerManager.Instance.cooldownF;
         }
     }
 
@@ -31,7 +34,9 @@ public class FontaineUI : MonoBehaviour
         {
             enable = true;
             objectSlider.SetActive(true);
+            healthBar.sprite = newBar;
         }
-        slider.value = PlayerManager.Instance.maxCooldownF - PlayerManager.Instance.cooldownF;
+
+        slider.fillAmount = (PlayerManager.Instance.maxCooldownF - PlayerManager.Instance.cooldownF) / PlayerManager.Instance.maxCooldownF;
     }
 }

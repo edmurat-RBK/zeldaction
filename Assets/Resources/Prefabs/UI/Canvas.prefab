@@ -1396,6 +1396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab866264d7f0194b9714b81f032e31d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newBar: {fileID: 0}
+  healthBar: {fileID: 0}
   objectSlider: {fileID: 102552146}
   slider: {fileID: 102552149}
 --- !u!1001 &8533166421741607832

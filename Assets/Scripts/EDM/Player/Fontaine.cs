@@ -20,6 +20,9 @@ public class Fontaine : MonoBehaviour
 
     private PlayerManager manager;
 
+    private bool isActif;
+    private bool isCooldown;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,11 +39,13 @@ public class Fontaine : MonoBehaviour
     {
         PlayerManager.Instance.cooldownF = cooldown;
 
-        if (cooldown != 0)
+        if (cooldown != 0 && isActif == false)
         {
+            isCooldown = true;
             cooldown -= Time.deltaTime;
             if (cooldown < 0)
             {
+                isCooldown = false;
                 cooldown = 0;
                 anim.SetBool("IsShielding", false);
             }
@@ -60,27 +65,15 @@ public class Fontaine : MonoBehaviour
                     manager.playerInvulnerable = true;
                     manager.playerCanMove = false;
                     manager.playerRigidBody.velocity = Vector2.zero;
-
-                    Debug.Log("Fontaine !");
-
                 }
             }
 
-            /*else if (!active && cooldown != 0 && !Input.GetButton("A"))
+           
+            else if (isCooldown == false)
             {
-
-                cooldown -= Time.deltaTime;
-                if (cooldown < 0)
-                {
-                    cooldown = 0;
-                    anim.SetBool("IsShielding", false);
-                }
-            }*/
-
-            else if (cooldown == 0)
-            {
-                //Vague();
-                effectTime -= Time.deltaTime;
+                isActif = true;
+                cooldown += Time.fixedDeltaTime;
+                effectTime -= Time.fixedDeltaTime;
                 if (effectTime < 0)
                 {
                     cooldown = maxCooldown;
@@ -91,6 +84,7 @@ public class Fontaine : MonoBehaviour
                     fontaineShootPoint.SetActive(false);
                     PlayerManager.Instance.isFontaine = false;
                     PlayerManager.Instance.playerCanMove = true;
+                    isActif = false;
                 }
             }
 
@@ -106,16 +100,3 @@ public class Fontaine : MonoBehaviour
     }
 
 }
-
-    //private void Vague()
-    //{
-    //    if(0 < effectTime && effectTime < vagueTrigger)
-    //    {
-    //        if(Input.GetButtonDown("A"))
-    //        {
-    //            manager.playerCanMove = false;
-    //            manager.playerRigidBody.velocity = Vector2.zero;
-    //            Debug.Log("Vague !");
-    //        }
-    //    }
-    //}
