@@ -23,6 +23,11 @@ public class SceneLoader : MonoBehaviour
         PlayerManager.Instance.isFontaine = false;
         PlayerManager.Instance.isKhameau = false;
 
+        PlayerManager.Instance.onDirt = false;
+        PlayerManager.Instance.onSand = false;
+        PlayerManager.Instance.onConcrete = false;
+
+
         player = GameObject.FindWithTag("Player");
         sprite.SetActive(false);
         canSwitch = false;

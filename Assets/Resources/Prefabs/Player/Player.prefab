@@ -272,7 +272,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   mask:
     serializedVersion: 2
-    m_Bits: 1085440
+    m_Bits: 36864
   shootPoint: {fileID: 5311690212441064443}
   speedDevider: 8
   lockSon: 0

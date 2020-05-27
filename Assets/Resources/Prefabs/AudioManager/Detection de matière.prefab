@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7371437444694351242}
   - component: {fileID: 7371437444694351244}
   - component: {fileID: 7371437444694351243}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: "Detection de mati\xE8re"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
