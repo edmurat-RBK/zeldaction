@@ -16,6 +16,8 @@ public class Cinemachine_Puzzle : MonoBehaviour
 
     public bool volcanCam;
 
+    public bool milieu;
+
     public bool donjonVolcanCam1;
     public bool donjonVolcanCam2;
     public bool donjonVolcanCam3;
@@ -45,25 +47,28 @@ public class Cinemachine_Puzzle : MonoBehaviour
 
         if (UpgradesManager.List["milieu"] == false && UpgradesManager.List["volcan"] == false)
         {
-            if (bassinDestructible == false && vache == false)
+            if (milieu == true)
             {
-                if (canWatch == true)
+                if (bassinDestructible == false && vache == false)
                 {
-                    if (gameObject.GetComponent<GestionActivateur>().canActive == true)
+                    if (canWatch == true)
                     {
-                        Debug.Log("Milieu");
-                        StartCoroutine(TransitionCam());
+                        if (gameObject.GetComponent<GestionActivateur>().canActive == true)
+                        {
+                            Debug.Log("Milieu");
+                            StartCoroutine(TransitionCam());
+                        }
                     }
                 }
-            }
 
-            if (bassinDestructible == true)
-            {
-                if (canWatch == true)
+                if (bassinDestructible == true)
                 {
-                    if (gameObject.GetComponent<Bassin>().fullDestroy == true)
+                    if (canWatch == true)
                     {
-                        StartCoroutine(TransitionCam());
+                        if (gameObject.GetComponent<Bassin>().fullDestroy == true)
+                        {
+                            StartCoroutine(TransitionCam());
+                        }
                     }
                 }
             }
