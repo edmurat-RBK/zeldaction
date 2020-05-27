@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8136327877893178675}
   - component: {fileID: 8136327877893178674}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Hitbox
   m_TagString: Courant
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ SpriteRenderer:
   m_Size: {x: 1.2, y: 1.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8136327878217563968

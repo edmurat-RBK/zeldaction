@@ -18,6 +18,10 @@ public class CubeBois : MonoBehaviour
     [Header ("Glisser les hitbox de la caisse")]
     public GameObject hitboxVerticale;
     public GameObject hitboxHorizontale;
+    [Space]
+    public BoxCollider2D boxTrigger;
+    public GameObject bodyBlock;
+    public GameObject moveDetection;
 
     [Header ("Mettre la vitesse de déplacement du courant")]
     public float speedOfWater;
@@ -35,12 +39,15 @@ public class CubeBois : MonoBehaviour
 
     [HideInInspector]
     public bool outWater;
+
+    private SpriteRenderer sprite;
     #endregion
 
 
     
     private void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         notStop = true;
         courantEau = GameObject.FindGameObjectsWithTag("Courant"); // Permet de récuperer toutes les hitbox des courants d'eau et de les stocker dans un tableau
@@ -53,6 +60,13 @@ public class CubeBois : MonoBehaviour
     {
         if (outWater == true)
         {
+            moveDetection.SetActive(false);
+            hitboxHorizontale.SetActive(false);
+            hitboxVerticale.SetActive(false);
+            boxTrigger.enabled = false;
+            bodyBlock.SetActive(true);
+            sprite.sortingOrder = 10;
+
             anim.SetBool("out", true);
         }
     }
@@ -90,9 +104,12 @@ public class CubeBois : MonoBehaviour
                     break;
             }
 
-            for (int i = 0; i < courantEau.Length; i++) // Permet de désactiver toute les hitbox des courants d'eau 
+            if (outWater == false)
             {
-                courantEau[i].SetActive(false);
+                for (int i = 0; i < courantEau.Length; i++) // Permet de désactiver toute les hitbox des courants d'eau 
+                {
+                    courantEau[i].SetActive(false);
+                }
             }
 
             if (notStop == true && gameObject.GetComponentInChildren<MouvDetection>().canMakeMove == true)

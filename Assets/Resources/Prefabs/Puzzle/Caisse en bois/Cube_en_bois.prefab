@@ -355,6 +355,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitboxVerticale: {fileID: 2521424828995356883}
   hitboxHorizontale: {fileID: 2521424828588983562}
+  boxTrigger: {fileID: 2521424828691850033}
+  bodyBlock: {fileID: 8892789729907476684}
+  moveDetection: {fileID: 3503481968510872144}
   speedOfWater: 75
   wichDirection: 
   canRedirect: 1
@@ -633,7 +636,7 @@ GameObject:
   - component: {fileID: 4244557502206407680}
   m_Layer: 16
   m_Name: BodyBlock
-  m_TagString: Untagged
+  m_TagString: Cube de bois
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -665,7 +668,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0012074858, y: 0.42266387}
+  m_Offset: {x: 0.0012074709, y: 0.24303818}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -676,5 +679,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.625682, y: 0.47251546}
+  m_Size: {x: 0.625682, y: 0.48346007}
   m_EdgeRadius: 0
