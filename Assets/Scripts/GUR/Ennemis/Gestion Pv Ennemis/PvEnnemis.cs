@@ -149,6 +149,8 @@ public class PvEnnemis : MonoBehaviour
     {
         if (mage == true && lockMageVulné == false)
         {
+            FindObjectOfType<AudioManager>().Play("Eteindre ennemi");
+
             lockMageVulné = true;
             anim.SetBool("IsEteint", true);
 
@@ -164,6 +166,8 @@ public class PvEnnemis : MonoBehaviour
 
         if (golemLave == true && lockGolemVulné == false)
         {
+            FindObjectOfType<AudioManager>().Play("Eteindre ennemi");
+
             lockGolemVulné = true;
 
             anim.SetBool("IsSolidifying", true);
@@ -198,8 +202,9 @@ public class PvEnnemis : MonoBehaviour
         if (mage == true)
         {         
             if (gameObject.GetComponent<MageMovement>().vunerableMage == true)
-            {                
+            {
                 anim.SetTrigger("IsDamaged");
+                FindObjectOfType<AudioManager>().Play("MageHit");
                 pv -= dammage;
             }           
         }

@@ -185,7 +185,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: "CaisseP pouss\xE9"
-    clip: {fileID: 8300000, guid: ea4fb1f7130111d4287ab432341b4771, type: 3}
+    clip: {fileID: 8300000, guid: af1a972df6dc652468c5c09132190934, type: 3}
     volume: 0.3
     pitch: 1
     spatialisation: 0.1
@@ -253,4 +253,32 @@ MonoBehaviour:
     pitch: 1
     spatialisation: 0.5
     loop: 1
+    source: {fileID: 0}
+  - name: MageHit
+    clip: {fileID: 8300000, guid: 5d9a711cde2e28741a4442250cc86134, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Meteor
+    clip: {fileID: 8300000, guid: efe45fb09b931cd4090f13a75f69d086, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Meteor impact
+    clip: {fileID: 8300000, guid: b36603352a55ff44ba0fede115dcb599, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Eteindre ennemi
+    clip: {fileID: 8300000, guid: 3cfd476fbad379248a0f48709295e224, type: 3}
+    volume: 0.2
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
     source: {fileID: 0}

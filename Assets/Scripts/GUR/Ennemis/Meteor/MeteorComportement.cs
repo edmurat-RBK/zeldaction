@@ -20,6 +20,9 @@ public class MeteorComportement : MonoBehaviour
     {
         hitBox = GetComponent<CapsuleCollider2D>();
         hitBox.enabled = false;
+
+        FindObjectOfType<AudioManager>().Play("Meteor");
+
         StartCoroutine(ActivationDomage());
         Destroy(gameObject, 4f);
     }
@@ -29,7 +32,8 @@ public class MeteorComportement : MonoBehaviour
     {
         yield return new WaitForSeconds(2.57f);
         hitBox.enabled = true;
-        yield return new WaitForSeconds(2.59f);
+        FindObjectOfType<AudioManager>().Play("Meteor impact");
+        yield return new WaitForSeconds(0.05f);
         hitBox.enabled = false;
     }
 

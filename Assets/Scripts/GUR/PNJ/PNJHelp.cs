@@ -9,7 +9,6 @@ public class PNJHelp : MonoBehaviour
     {
         villageoiFlamme,
         villageoiCascade,
-        villageoiSoif,
           
     }
 
@@ -53,11 +52,6 @@ public class PNJHelp : MonoBehaviour
                     playerStock.GetComponent<HealthBar>().HealthSysteme();
                 }
             }
-        }
-
-        if (wichVillageoi == villageoi.villageoiSoif)
-        {
-            return;
         }
     }
 

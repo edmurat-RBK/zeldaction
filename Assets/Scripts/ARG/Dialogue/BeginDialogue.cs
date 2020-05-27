@@ -13,6 +13,9 @@ namespace Dialogue
         [Header("Component")]
         public Conversation Intro = null;
         public Collider2D triggerZone;
+
+        private bool lockConv;
+
         //public PlayableDirector playableDirector;
         //public TimelineAsset timeline;
 
@@ -26,7 +29,7 @@ namespace Dialogue
             //if la bool est true alors lance la fonction derrière
             dialogManag.isAuto = false;
             dialogManag.BeginCoversation(Intro);
-            //triggerZone.enabled = false; Villageoi cassé à cause de sa
+            triggerZone.enabled = false; 
         }
 
         private void Update()
