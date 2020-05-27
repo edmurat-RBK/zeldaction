@@ -7,13 +7,20 @@ public class GestionDrop : MonoBehaviour
     public int chanceDrop;
     public GameObject potion;
 
+    private bool canDrop;
+
+    
     public void RamdomDrop()
     {
-        int random = Random.Range(0, 100);
-
-        if (random <= chanceDrop)
+        if (canDrop == false)
         {
-            Instantiate(potion, transform.position, transform.rotation); 
+            canDrop = true;
+            int random = Random.Range(0, 100);
+
+            if (random <= chanceDrop)
+            {
+                Instantiate(potion, transform.position, transform.rotation);
+            }
         }
     }
 }
