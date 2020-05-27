@@ -337,7 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7441467547368575230}
   - component: {fileID: 2515161083719100175}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: BodyBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

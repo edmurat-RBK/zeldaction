@@ -71,7 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5987844328129332227}
   - component: {fileID: 5987844328129332252}
-  m_Layer: 16
+  m_Layer: 21
   m_Name: BodyBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
