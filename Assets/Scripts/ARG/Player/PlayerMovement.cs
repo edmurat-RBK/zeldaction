@@ -50,8 +50,6 @@ namespace MovementPlayer
         { 
             if (PlayerManager.Instance.playerCanMove == true)
             {
-
-
                 if (vertical >= 0.01)
                 {
                     vertical = 1;
@@ -153,6 +151,15 @@ namespace MovementPlayer
                 PlayerManager.Instance.playerRigidBody.velocity = direction * manager.speed * Time.fixedDeltaTime;
             }
             
+            if (PlayerManager.Instance.playerCanMove == false)
+            {
+                vertical = 0;
+                horizontal = 0;
+
+                FindObjectOfType<AudioManager>().Stop("BDP sable");
+                FindObjectOfType<AudioManager>().Stop("BDP terre");
+                FindObjectOfType<AudioManager>().Stop("BDP intérieur");
+            }
         }
         #endregion
     }

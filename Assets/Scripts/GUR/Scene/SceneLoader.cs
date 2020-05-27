@@ -18,6 +18,11 @@ public class SceneLoader : MonoBehaviour
 
     void Start()
     {
+        PlayerManager.Instance.isArroisoir = false;
+        PlayerManager.Instance.isAttacking = false;
+        PlayerManager.Instance.isFontaine = false;
+        PlayerManager.Instance.isKhameau = false;
+
         player = GameObject.FindWithTag("Player");
         sprite.SetActive(false);
         canSwitch = false;

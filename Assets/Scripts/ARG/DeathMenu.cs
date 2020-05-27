@@ -9,7 +9,7 @@ public class DeathMenu : MonoBehaviour
 {
     private void Update()
     {
-        if (Input.GetButtonDown("X"))
+        if (Input.GetButtonDown("A"))
         {
             PlayerManager.Instance.GetComponent<PlayerHealth>().respawn();
         }
