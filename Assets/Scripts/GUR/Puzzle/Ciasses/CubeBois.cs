@@ -32,8 +32,13 @@ public class CubeBois : MonoBehaviour
     private Vector2 direction;
     private GameObject[] courantEau;
     private Animator anim;
+
+    [HideInInspector]
+    public bool outWater;
     #endregion
 
+
+    
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -41,6 +46,15 @@ public class CubeBois : MonoBehaviour
         courantEau = GameObject.FindGameObjectsWithTag("Courant"); // Permet de récuperer toutes les hitbox des courants d'eau et de les stocker dans un tableau
         hitboxVerticale.SetActive(false);
         hitboxHorizontale.SetActive(false);
+    }
+
+
+    private void Update()
+    {
+        if (outWater == true)
+        {
+            anim.SetBool("out", true);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
