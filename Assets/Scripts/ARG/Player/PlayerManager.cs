@@ -180,7 +180,7 @@ namespace Manager
             if (playerCanRotate)
             {
                 //if input is used
-                if (vertical > 0.2 || horizontal > 0.2 || vertical < -0.2 || horizontal < -0.2)
+                if (vertical > 0.01 || horizontal > 0.01 || vertical < -0.01 || horizontal < -0.01)
                 {
 
                     //find the angle with cos/sin

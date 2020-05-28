@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Manager;
 
 namespace Game
 {
@@ -34,14 +35,17 @@ namespace Game
             float horizontalDelta;
             float verticalDelta;
 
-            horizontalDelta = Input.GetAxisRaw("Horizontal");
-            verticalDelta = Input.GetAxisRaw("Vertical");
+           // horizontalDelta = Input.GetAxisRaw("Horizontal");
+           // verticalDelta = Input.GetAxisRaw("Vertical");
+
+            horizontalDelta = PlayerManager.Instance.horizontal;
+            verticalDelta = PlayerManager.Instance.vertical;
 
             float angleShoot;
 
 
             //input is used
-            if (verticalDelta > 0.2 || horizontalDelta > 0.2 || verticalDelta < -0.2 || horizontalDelta < -0.2)
+            if (verticalDelta > 0.01 || horizontalDelta > 0.01 || verticalDelta < -0.01 || horizontalDelta < -0.01)
             {
                 
                 //find the angle with cos/sin
