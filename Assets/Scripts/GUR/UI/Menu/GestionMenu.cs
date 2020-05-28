@@ -73,7 +73,7 @@ public class GestionMenu : MonoBehaviour
         {
             mainButton[i].gameObject.SetActive(false);
         }
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(0);
 
     }
 }
