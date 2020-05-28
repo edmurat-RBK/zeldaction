@@ -199,7 +199,7 @@ MonoBehaviour:
   isFontaine: 0
   canChangeSprite: 0
   cooldownF: 0
-  maxCooldownF: 0
+  maxCooldownF: 2
   onSand: 0
   onDirt: 0
   onConcrete: 0
@@ -289,9 +289,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0
-  maxCooldown: 3
+  maxCooldown: 2
   effectTime: 0
-  maxEffectTime: 3
+  maxEffectTime: 2
   active: 0
   fontaineShootPoint: {fileID: 4787709865514705334}
 --- !u!50 &5987844329369052873
