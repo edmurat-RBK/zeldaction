@@ -13,6 +13,8 @@ public class Obsidian : MonoBehaviour
     private BoxCollider2D hitDetection;
     public BoxCollider2D obsiHitBox;
 
+    public bool playerOn;
+
     private float state;
     [SerializeField]
     private bool isObsi;
@@ -31,7 +33,7 @@ public class Obsidian : MonoBehaviour
 
     private void Update()
     {
-        if (Vector2.Distance(PlayerManager.Instance.transform.position, transform.position) < 0.5 &&  isObsi == false)
+        if (playerOn == true &&  isObsi == false)
         {
             PlayerManager.Instance.transform.position = respawnPoint.transform.position;
         }
