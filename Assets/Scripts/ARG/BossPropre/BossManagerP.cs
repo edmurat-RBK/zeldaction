@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossManagerP : MonoBehaviour
 {
@@ -37,6 +38,9 @@ public class BossManagerP : MonoBehaviour
     private Animator animPorte;
 
     private Animator anim;
+    [SerializeField]
+    private int numberOfScene = 6;
+
     private void Awake()
     {
         if (instance == null)
@@ -107,8 +111,7 @@ public class BossManagerP : MonoBehaviour
                 break;
             case 3:
                 anim.SetBool("BossDeath", true);
-                Destroy(gameObject, 5.5f);                
-                //cinématique (avec du délai)
+                StartCoroutine(CutsceneLaunch());  //cinématique (avec du délai)
                 break;
             default:Debug.Log("out of range");
                 break;
@@ -207,4 +210,9 @@ public class BossManagerP : MonoBehaviour
         }
     }
 
+    private IEnumerator CutsceneLaunch()
+    {
+        yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene(numberOfScene);
+    }
 }

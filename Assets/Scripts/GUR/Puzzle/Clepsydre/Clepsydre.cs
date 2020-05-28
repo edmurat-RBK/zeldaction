@@ -52,7 +52,7 @@ public class Clepsydre : MonoBehaviour
         clepsydreHit = false;
     }
 
-    protected virtual void Update()
+    protected virtual void FixedUpdate()
     {
         Vidage();
         KhamehoHit();

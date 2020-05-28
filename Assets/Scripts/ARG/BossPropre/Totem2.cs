@@ -58,6 +58,7 @@ public class Totem2 : MonoBehaviour
         if (canMove && distanceToPlayer > minDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, totemSpeedOfMovement * Time.deltaTime);
+            totemRenderer.GetComponent<SpriteRenderer>().sortingOrder = 11;
         }
         else if (canMove && distanceToPlayer <= minDistance && fallOnCD == false)
         {
@@ -92,6 +93,7 @@ public class Totem2 : MonoBehaviour
         if (canUp && totemRenderer.transform.localPosition.y != totemHight)
         {
             totemRenderer.transform.position = Vector2.MoveTowards(totemRenderer.transform.position, new Vector2(transform.position.x, transform.position.y + totemHight), totemSpeedOfFall * Time.deltaTime); //possible de changer totemSpeedOffall si le totem doit changer de vitesse quand il remonte
+            totemRenderer.GetComponent<SpriteRenderer>().sortingOrder = 11;
         }
 
         else if (totemRenderer.transform.localPosition.y == totemHight && canUp)
@@ -108,6 +110,7 @@ public class Totem2 : MonoBehaviour
 
     public IEnumerator FallCD()
     {
+        totemRenderer.GetComponent<SpriteRenderer>().sortingOrder = 10;
         yield return new WaitForSeconds(timeOnGround);
         canUp = true;
         totemRenderer.GetComponent<Collider2D>().enabled = false;

@@ -57,6 +57,7 @@ public class Totem : MonoBehaviour
         if (canMove && transform.position != aimPosition)
         {
             transform.position = Vector2.MoveTowards(transform.position, aimPosition, totemSpeedOfMovement * Time.deltaTime);
+            totemRenderer.GetComponent<SpriteRenderer>().sortingOrder = 11;
         }
         else if (transform.position == aimPosition && canMove)
         {
@@ -84,7 +85,7 @@ public class Totem : MonoBehaviour
         if (canUp && totemRenderer.transform.localPosition.y != totemHight)
         {
             totemRenderer.transform.position = Vector2.MoveTowards(totemRenderer.transform.position, new Vector2(transform.position.x,transform.position.y + totemHight), totemSpeedOfFall * Time.deltaTime); //possible de changer totemSpeedOffall si le totem doit changer de vitesse quand il remonte
-            Debug.Log(totemRenderer.transform.localPosition.y == totemHight);
+            totemRenderer.GetComponent<SpriteRenderer>().sortingOrder = 11;
         }
 
         else if (totemRenderer.transform.localPosition.y == totemHight && canUp)
@@ -132,6 +133,7 @@ public class Totem : MonoBehaviour
 
     public IEnumerator ReturnAtPoint()
     {
+        totemRenderer.GetComponent<SpriteRenderer>().sortingOrder = 10;
         yield return new WaitForSeconds(timeOnGround);
         canUp = true;
         aimPosition = pointOfReturn.position;
