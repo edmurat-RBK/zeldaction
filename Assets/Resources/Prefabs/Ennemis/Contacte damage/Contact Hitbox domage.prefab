@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3330240996290166611}
   - component: {fileID: 6743626748652848617}
   - component: {fileID: 2569653419467833965}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: Contact Hitbox domage
   m_TagString: Untagged
   m_Icon: {fileID: 0}

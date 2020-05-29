@@ -132,7 +132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be905cfebf2c7648be9a4368f9badb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAnimation: 0
+  element: 1
+  timeAnimation: 0.35
+  canDeathSong: 0
   khameoDetection: 0
   particuleCanDestroy: 1
 --- !u!61 &4769483079825545811

@@ -34,6 +34,12 @@ public class PvEnnemis : MonoBehaviour
 
     private bool lockMageVulné;
     private bool lockGolemVulné;
+
+    private BoxCollider2D waterDetection;
+    private BoxCollider2D bodyBlock;
+    private CircleCollider2D contactDomage;
+
+
     #endregion
 
     private void Start()
@@ -42,6 +48,15 @@ public class PvEnnemis : MonoBehaviour
         lockMageVulné = false;
         stock = waterForVulnerable;
         anim = GetComponent<Animator>();
+
+        if (flammeche == true)
+        {
+            waterDetection = GetComponent<BoxCollider2D>();
+            bodyBlock = gameObject.transform.GetChild(0).GetComponent<BoxCollider2D>();
+            contactDomage = gameObject.transform.GetChild(1).GetComponent<CircleCollider2D>();
+        }
+
+
     }
 
     void Update()
@@ -113,6 +128,10 @@ public class PvEnnemis : MonoBehaviour
         {
             if (flammeche == true)
             {
+                waterDetection.enabled = false;
+                bodyBlock.enabled = false;
+                contactDomage.enabled = false;
+
                 anim.SetBool("IsDead", true);
                 gameObject.GetComponent<FlammècheMouvement>().deathLockFlammeche = true;
                 FindObjectOfType<AudioManager>().Play("DeathFlammeche");

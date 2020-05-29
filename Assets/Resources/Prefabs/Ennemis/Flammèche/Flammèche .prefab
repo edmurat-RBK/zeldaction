@@ -34,11 +34,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 6603140250014826129}
+  - {fileID: 8264020971030719851}
   - {fileID: 8115524045978422168}
   - {fileID: 6082180765508848812}
   - {fileID: 8194066432057449478}
-  - {fileID: 6603140250014826129}
-  - {fileID: 8264020971030719851}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -241,7 +241,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3009620996165859512}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3792149973890053759
 BoxCollider2D:
@@ -324,7 +324,7 @@ PrefabInstance:
     - target: {fileID: 7657286691196906889, guid: d0cf02a19397f9f4f8bb12569a2f78bf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7657286691196906889, guid: d0cf02a19397f9f4f8bb12569a2f78bf,
         type: 3}
@@ -409,7 +409,7 @@ PrefabInstance:
     - target: {fileID: 9189041330559767405, guid: 6e493e3733617064bb281c3653edab17,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9189041330559767405, guid: 6e493e3733617064bb281c3653edab17,
         type: 3}
@@ -479,7 +479,7 @@ PrefabInstance:
     - target: {fileID: 2885687253431025128, guid: e8a6b6465e5a9344f916eb4527dc9a30,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2885687253431025128, guid: e8a6b6465e5a9344f916eb4527dc9a30,
         type: 3}
@@ -574,7 +574,7 @@ PrefabInstance:
     - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3330240996290166611, guid: e33986174f44a23418d30c1eb1ce734e,
         type: 3}
