@@ -67,7 +67,7 @@ public class DestructibleByWater : MonoBehaviour
                 bodyBlock.enabled = false;
             }
 
-                canDeathSong = true;
+            canDeathSong = true;
             anim.SetBool("IsDead", true);
             Destroy(gameObject, timeAnimation);
         }

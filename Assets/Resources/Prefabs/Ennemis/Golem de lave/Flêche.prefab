@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3138746846520092527}
   - component: {fileID: 5785869849412904593}
   - component: {fileID: 2942165941825658273}
-  - component: {fileID: 6250335131499950611}
   - component: {fileID: 709469571577651921}
   - component: {fileID: -1665187119836117304}
   m_Layer: 15
@@ -123,23 +122,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   element: 1
-  timeAnimation: 0.15
+  timeAnimation: 0.45
   canDeathSong: 0
   khameoDetection: 0
   particuleCanDestroy: 1
---- !u!114 &6250335131499950611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4604962061793822854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a4dcfa5e6cb65a4ab3ecf224c3d8bf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
 --- !u!58 &709469571577651921
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -155,7 +141,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.3
 --- !u!95 &-1665187119836117304
 Animator:
   serializedVersion: 3
