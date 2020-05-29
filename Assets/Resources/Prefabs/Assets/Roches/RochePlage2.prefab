@@ -337,6 +337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2048502514433224257}
+  - component: {fileID: 1270262255}
   m_Layer: 0
   m_Name: RochePlage2
   m_TagString: Untagged
@@ -351,7 +352,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2729063249671692543}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -377,6 +378,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &1270262255
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729063249671692543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.3132678, y: -0.29576492}
+      - {x: -0.07571316, y: 0.07629776}
+      - {x: -0.8991626, y: 0.023677826}
+      - {x: -1.149297, y: -0.46904373}
+      - {x: -0.031985343, y: -0.57502365}
+      - {x: 0.3207733, y: -0.29416656}
+      - {x: 0.083504945, y: -0.94521713}
+      - {x: -0.28980932, y: -0.7654915}
+      - {x: -0.6595169, y: -1.1134567}
+      - {x: -0.29004443, y: -1.7485237}
+      - {x: 0.1670407, y: -1.6500931}
+      - {x: 0.34373587, y: -2.2231674}
+      - {x: 1.0982429, y: -2.2236404}
+      - {x: 1.8811599, y: -1.8596115}
+      - {x: 2.146495, y: -0.8929291}
+      - {x: 2.084589, y: -0.56492233}
+      - {x: 1.6173341, y: -0.084690094}
 --- !u!1 &3126026278940255560
 GameObject:
   m_ObjectHideFlags: 0

@@ -105,7 +105,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.06310308, y: -0.0686613}
+  m_Offset: {x: -0.062966496, y: -0.0686613}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -116,7 +116,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37702203, y: 0.18885475}
+  m_Size: {x: 0.3772952, y: 0.18885475}
   m_EdgeRadius: 0
 --- !u!1 &5987844329369052878
 GameObject:
@@ -272,7 +272,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 0}
   mask:
     serializedVersion: 2
-    m_Bits: 36864
+    m_Bits: 45056
   shootPoint: {fileID: 5311690212441064443}
   speedDevider: 8
   lockSon: 0
@@ -4237,7 +4237,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 98304
+      m_Bits: 106496
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5

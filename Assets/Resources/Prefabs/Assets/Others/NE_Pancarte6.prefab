@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2698252842124557374}
   - component: {fileID: 1104237355702241684}
-  - component: {fileID: -6229661886856149490}
+  - component: {fileID: 527551355}
   m_Layer: 0
   m_Name: NE_Pancarte6
   m_TagString: Untagged
@@ -82,8 +82,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!60 &-6229661886856149490
-PolygonCollider2D:
+--- !u!61 &527551355
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,7 +95,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.017580032, y: -0.87787247}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.6}
@@ -105,14 +105,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.048327446, y: 0.79065704}
-      - {x: -0.140625, y: 0.6387558}
-      - {x: -0.140625, y: -1.0005722}
-      - {x: 0.140625, y: -1.2687502}
-      - {x: 0.140625, y: -0.19062519}
-      - {x: 0.04378128, y: -0.13248444}
-      - {x: 0.036147118, y: 0.34996033}
-      - {x: 0.14271355, y: 0.46369934}
-      - {x: 0.140625, y: 0.8874998}
+  serializedVersion: 2
+  m_Size: {x: 0.41270065, y: 1.0030441}
+  m_EdgeRadius: 0

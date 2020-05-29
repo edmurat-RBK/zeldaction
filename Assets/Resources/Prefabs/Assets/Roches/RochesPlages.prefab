@@ -173,6 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9013507554090650272}
+  - component: {fileID: 48882873}
   m_Layer: 0
   m_Name: RochesPlages
   m_TagString: Untagged
@@ -214,6 +215,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &48882873
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165535300992989445}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.1544712, y: 0.051685333}
+      - {x: 1.0051059, y: 0.36402893}
+      - {x: -0.47576028, y: 0.13821411}
+      - {x: -1.6746893, y: -0.4083252}
+      - {x: -1.845302, y: -1.107544}
+      - {x: -1.7888334, y: -1.4835472}
+      - {x: -1.0340176, y: -1.2837753}
+      - {x: -0.37892032, y: -1.6016045}
+      - {x: 1.0925573, y: -1.4653397}
+      - {x: 1.1578331, y: -0.9595871}
+      - {x: 1.7188711, y: -0.47995758}
 --- !u!1 &302580489891480668
 GameObject:
   m_ObjectHideFlags: 0
