@@ -4,18 +4,35 @@ using UnityEngine;
 
 public class DestectionPlayer : MonoBehaviour
 {
-    public GameObject audioClip;
+    public AudioSource source;
+    public AudioClip fireDeath;
 
-    private void Start()
+    public bool isFire;
+
+    public DestructibleByWater scrpit;
+
+
+
+    private void Update()
     {
-        audioClip.SetActive(false);
+        if (isFire == true)
+        {
+            if (scrpit.canDeathSong == true)
+            {
+                isFire = false;
+                source.Stop();
+                source.volume = 1f;
+                source.clip = fireDeath;
+                source.Play();
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            audioClip.SetActive(true);
+            source.Play();
         }
     }
 
@@ -23,7 +40,7 @@ public class DestectionPlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            audioClip.SetActive(false);
+            source.Stop();
         }
     }
 }

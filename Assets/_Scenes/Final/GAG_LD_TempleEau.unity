@@ -17843,6 +17843,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3842681876926265265, guid: 748690715eb2a8b44ab4aae13713209d,
+        type: 3}
+      propertyPath: speedRemplissageKhameo
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3842681876926265266, guid: 748690715eb2a8b44ab4aae13713209d,
         type: 3}
       propertyPath: m_LocalPosition.x

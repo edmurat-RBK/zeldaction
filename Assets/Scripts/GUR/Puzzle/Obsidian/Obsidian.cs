@@ -21,9 +21,11 @@ public class Obsidian : MonoBehaviour
 
     public GameObject respawnPoint;
 
+    private AudioSource source;
+
     void Start()
     {
-        Debug.Log("OBSI");
+        source = GetComponent<AudioSource>();
         state = timeBeforeDestrcution / sprite.Length;
         hitDetection = GetComponent<BoxCollider2D>();
         obsiSprite = GetComponent<SpriteRenderer>();
@@ -43,6 +45,7 @@ public class Obsidian : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        source.Play();
         obsiHitBox.enabled = false;
         hitDetection.enabled = false;
         obsiSprite.enabled = true;

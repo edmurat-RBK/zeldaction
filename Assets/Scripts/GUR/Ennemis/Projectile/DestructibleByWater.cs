@@ -7,6 +7,8 @@ public class DestructibleByWater : MonoBehaviour
     public float timeAnimation;
     private Animator anim;
 
+    [HideInInspector]
+    public bool canDeathSong;
 
     [HideInInspector]
     public bool khameoDetection;
@@ -23,6 +25,7 @@ public class DestructibleByWater : MonoBehaviour
     {
         if (khameoDetection == true)
         {
+            canDeathSong = true;
             anim.SetBool("IsDead", true);
             Destroy(gameObject, timeAnimation);
         }
@@ -32,6 +35,7 @@ public class DestructibleByWater : MonoBehaviour
     {
         if (particuleCanDestroy == true)
         {
+            canDeathSong = true;
             anim.SetBool("IsDead", true);
             Destroy(gameObject, timeAnimation);
         }

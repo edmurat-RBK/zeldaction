@@ -218,7 +218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be905cfebf2c7648be9a4368f9badb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAnimation: 0
+  timeAnimation: 0.6
+  canDeathSong: 0
   khameoDetection: 0
   particuleCanDestroy: 1
 --- !u!1 &7539229535004885689
@@ -275,6 +276,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7539229533797217237}
     m_Modifications:
+    - target: {fileID: 3658425424096656494, guid: f2fbbf013f0798840a2437174ed1c17a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d35d3c18f5314744b610ba386643931, type: 3}
+    - target: {fileID: 3658425424096656494, guid: f2fbbf013f0798840a2437174ed1c17a,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3658425424096656494, guid: f2fbbf013f0798840a2437174ed1c17a,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7228295462377633884, guid: f2fbbf013f0798840a2437174ed1c17a,
         type: 3}
       propertyPath: m_PlayOnAwake
@@ -288,6 +304,31 @@ PrefabInstance:
     - target: {fileID: 9047625892306999314, guid: f2fbbf013f0798840a2437174ed1c17a,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047625892306999316, guid: f2fbbf013f0798840a2437174ed1c17a,
+        type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7d35d3c18f5314744b610ba386643931, type: 3}
+    - target: {fileID: 9047625892306999316, guid: f2fbbf013f0798840a2437174ed1c17a,
+        type: 3}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 3248319358145352674}
+    - target: {fileID: 9047625892306999316, guid: f2fbbf013f0798840a2437174ed1c17a,
+        type: 3}
+      propertyPath: scrpit
+      value: 
+      objectReference: {fileID: 7539229533797217240}
+    - target: {fileID: 9047625892306999316, guid: f2fbbf013f0798840a2437174ed1c17a,
+        type: 3}
+      propertyPath: fireDeath
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f9c3d1ddae21434e9a5dfbacf8f5bfa, type: 3}
+    - target: {fileID: 9047625892306999316, guid: f2fbbf013f0798840a2437174ed1c17a,
+        type: 3}
+      propertyPath: isFire
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9047625892306999317, guid: f2fbbf013f0798840a2437174ed1c17a,
@@ -350,6 +391,12 @@ PrefabInstance:
 --- !u!4 &7088261625791870873 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9047625892306999317, guid: f2fbbf013f0798840a2437174ed1c17a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2292630954093490060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3248319358145352674 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3658425424096656494, guid: f2fbbf013f0798840a2437174ed1c17a,
     type: 3}
   m_PrefabInstance: {fileID: 2292630954093490060}
   m_PrefabAsset: {fileID: 0}

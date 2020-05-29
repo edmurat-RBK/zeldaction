@@ -282,3 +282,52 @@ MonoBehaviour:
     spatialisation: 0.5
     loop: 0
     source: {fileID: 0}
+  - name: Boss attaque
+    clip: {fileID: 8300000, guid: 5691064b73727e84c9cec47cceac91c2, type: 3}
+    volume: 0.2
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss totem
+    clip: {fileID: 8300000, guid: aba87f7427b97e74abd19018307be4a4, type: 3}
+    volume: 0.2
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss death
+    clip: {fileID: 8300000, guid: 29d601eee04111345983a4d91de6bad2, type: 3}
+    volume: 0.5
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss hit
+    clip: {fileID: 8300000, guid: 218f0c38b669650438e28544ce695893, type: 3}
+    volume: 0.2
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss chaine
+    clip: {fileID: 8300000, guid: 19f200ac404a8c1489a232d947aa1d4f, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss rire
+    clip: {fileID: 8300000, guid: 54c0cf12fd6560a46a77e20c177a31f3, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Boss musique
+    clip: {fileID: 8300000, guid: 967604515a6dd774f978c962e59bc792, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 1
+    source: {fileID: 0}
