@@ -133,6 +133,7 @@ public class Totem : MonoBehaviour
 
     public IEnumerator ReturnAtPoint()
     {
+        FindObjectOfType<AudioManager>().Play("Boss totem");
         totemRenderer.GetComponent<SpriteRenderer>().sortingOrder = 10;
         yield return new WaitForSeconds(timeOnGround);
         canUp = true;

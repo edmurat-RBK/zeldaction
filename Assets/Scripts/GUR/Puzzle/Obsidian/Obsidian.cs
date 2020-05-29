@@ -23,6 +23,7 @@ public class Obsidian : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("OBSI");
         state = timeBeforeDestrcution / sprite.Length;
         hitDetection = GetComponent<BoxCollider2D>();
         obsiSprite = GetComponent<SpriteRenderer>();

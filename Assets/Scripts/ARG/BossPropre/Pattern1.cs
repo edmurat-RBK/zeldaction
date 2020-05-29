@@ -56,7 +56,10 @@ public class Pattern1 : MonoBehaviour
     private IEnumerator CreateWave() //fire multiple waves of fire
     {
         anim.SetBool("BossFireBall", true);
+
+
         yield return new WaitForSeconds(0.717f);
+        FindObjectOfType<AudioManager>().Play("Boss attaque");
         canFire = false;
         var dir = new Vector2(player.transform.position.x - shotPoint.transform.position.x, player.transform.position.y - shotPoint.transform.position.y); // Permet d'orienter le shotPoint vers le joueur
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;

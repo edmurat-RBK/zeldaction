@@ -13,8 +13,9 @@ public class DeactivateAnimator : MonoBehaviour
 
     void Start()
     {
-               
-     }
+        FindObjectOfType<AudioManager>().Play("Boss rire");
+        FindObjectOfType<AudioManager>().Play("Boss musique");
+    }
 
     // Update is called once per frame
     void Update()
@@ -24,6 +25,7 @@ public class DeactivateAnimator : MonoBehaviour
 
     public void StopAnimator()
     {
+        //FindObjectOfType<AudioManager>().Play("Boss rire");
         BossCinematique.enabled=false;
         BossManager.enabled=true;
         boss.GetComponent<BossManagerP>().LunchPhase1();

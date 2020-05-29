@@ -110,6 +110,7 @@ public class Totem2 : MonoBehaviour
 
     public IEnumerator FallCD()
     {
+        FindObjectOfType<AudioManager>().Play("Boss totem");
         totemRenderer.GetComponent<SpriteRenderer>().sortingOrder = 10;
         yield return new WaitForSeconds(timeOnGround);
         canUp = true;

@@ -41,6 +41,7 @@ public class BossManagerP : MonoBehaviour
     [SerializeField]
     private int numberOfScene = 6;
 
+
     private void Awake()
     {
         if (instance == null)
@@ -52,6 +53,9 @@ public class BossManagerP : MonoBehaviour
 
     private void Start()
     {
+        clepsydreOn = true;
+
+
         animPorte = porte.GetComponent<Animator>();
         anim = GetComponent<Animator>();
 
@@ -62,6 +66,9 @@ public class BossManagerP : MonoBehaviour
 
         positionBaseL = clepsydreL.transform.position;
         positionBaseR = clepsydreR.transform.position;
+
+        papaObsidian.SetActive(false);
+        mamanObsidian.SetActive(false);
     }
 
     private void Update()
@@ -100,6 +107,9 @@ public class BossManagerP : MonoBehaviour
         anim.SetBool("BossStun", true);
         anim.SetBool("BossVulnerable", false);
         animPorte.SetBool("IsOpen", false);
+
+        FindObjectOfType<AudioManager>().Play("Boss hit");
+
         phaseCounter += 1;
         switch (phaseCounter)
         {
@@ -111,6 +121,10 @@ public class BossManagerP : MonoBehaviour
                 break;
             case 3:
                 anim.SetBool("BossDeath", true);
+
+                FindObjectOfType<AudioManager>().Play("Boss death");
+                FindObjectOfType<AudioManager>().Stop("Boss musique");
+
                 StartCoroutine(CutsceneLaunch());  //cinématique (avec du délai)
                 break;
             default:Debug.Log("out of range");
@@ -123,6 +137,9 @@ public class BossManagerP : MonoBehaviour
     {
         anim.SetBool("BossVulnerable", true);
         anim.SetBool("BossFireBall", false);
+
+        FindObjectOfType<AudioManager>().Play("Eteindre ennemi");
+
         switch (phaseCounter)
         {
             case 0:pattern1.StopAllCoroutines();
@@ -186,6 +203,7 @@ public class BossManagerP : MonoBehaviour
     [ContextMenu("clepsydre activeé")]
     public void ActivateClepsydre()
     {
+        StartCoroutine(PlayChaineSong());
         //clepsydre qui descend 
         clepsydreOn = true;
         foreach (ClepsydreBoss clepsydre in allclepsydre)
@@ -201,6 +219,8 @@ public class BossManagerP : MonoBehaviour
     [ContextMenu("clepsydre desactiveé")]
     public void DesactivateClepsydre()
     {
+        StartCoroutine(PlayChaineSong());
+
         clepsydreOn = false;
         foreach (ClepsydreBoss clepsydre in allclepsydre)
         {
@@ -214,5 +234,13 @@ public class BossManagerP : MonoBehaviour
     {
         yield return new WaitForSeconds(6f);
         SceneManager.LoadScene(numberOfScene);
+    }
+
+
+    private IEnumerator PlayChaineSong()
+    {
+        FindObjectOfType<AudioManager>().Play("Boss chaine");
+        yield return new WaitForSeconds(2f);
+        FindObjectOfType<AudioManager>().Stop("Boss chaine");
     }
 }
