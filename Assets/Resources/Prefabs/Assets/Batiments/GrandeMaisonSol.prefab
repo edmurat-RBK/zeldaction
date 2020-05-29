@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6253228199179203559}
   - component: {fileID: 2719612361619333171}
   - component: {fileID: 2297596757535854358}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GrandeMaisonSol
   m_TagString: Untagged
   m_Icon: {fileID: 0}

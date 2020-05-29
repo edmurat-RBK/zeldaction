@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2264343647394754367}
   - component: {fileID: 5663201750945418353}
   - component: {fileID: 5650550265849880459}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MiniMaisonFace2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

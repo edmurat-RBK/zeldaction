@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4006472663124698226}
   - component: {fileID: 5572214642768321129}
   - component: {fileID: 6935260165784114298}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_BotUmbrella
   m_TagString: Untagged
   m_Icon: {fileID: 0}

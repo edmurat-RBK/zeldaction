@@ -666,7 +666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9053951760985032849}
   - component: {fileID: 426729884}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RochesVolcan
   m_TagString: Untagged
   m_Icon: {fileID: 0}

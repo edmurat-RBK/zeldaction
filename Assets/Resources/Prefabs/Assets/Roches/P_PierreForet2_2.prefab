@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 2542733938080719692}
   - component: {fileID: 3779773020245364101}
   - component: {fileID: 6729917912581474683}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_PierreForet2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

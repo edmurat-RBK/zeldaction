@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6588637222036291475}
   - component: {fileID: 692009882577716721}
   - component: {fileID: 2353567123859693262}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MiniMaisonDos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

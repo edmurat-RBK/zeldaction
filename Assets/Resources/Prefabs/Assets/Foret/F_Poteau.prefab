@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2218360706725058316}
   - component: {fileID: 1317028006620959046}
   - component: {fileID: 3970017157233294516}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: F_Poteau
   m_TagString: Untagged
   m_Icon: {fileID: 0}

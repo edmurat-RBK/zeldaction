@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7d2ab04c64b544b835bde80550316d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savePoint: 0
   speed: 50
   hitBox: {fileID: 8830860538084823279}
   timeForOpen: 1
@@ -151,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3020180412847281397}
   - component: {fileID: 8603919879545018493}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: HitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

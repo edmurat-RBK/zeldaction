@@ -39,7 +39,7 @@ TagManager:
   - Checkpoint
   - Attack
   - CamCollider
-  - WallCollide
+  - SceneryCollid
   - Totem
   - KamehoHit
   - BodyBlock

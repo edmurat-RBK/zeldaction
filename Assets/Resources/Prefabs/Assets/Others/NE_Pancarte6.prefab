@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2698252842124557374}
   - component: {fileID: 1104237355702241684}
   - component: {fileID: 527551355}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: NE_Pancarte6
   m_TagString: Untagged
   m_Icon: {fileID: 0}

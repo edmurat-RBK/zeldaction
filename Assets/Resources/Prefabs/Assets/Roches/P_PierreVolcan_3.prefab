@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 2191639941239739290}
   - component: {fileID: 115795900706651379}
   - component: {fileID: 5521339879140978354}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_PierreVolcan_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

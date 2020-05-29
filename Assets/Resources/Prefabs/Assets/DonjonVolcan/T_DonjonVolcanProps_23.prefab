@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 704947833563955200}
   - component: {fileID: 2797116208561886460}
   - component: {fileID: -6409784145782052239}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: T_DonjonVolcanProps_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 1487655087709458205}
   - component: {fileID: 9068532269589814464}
   - component: {fileID: 7825854336209577419}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: F_Tonneau1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

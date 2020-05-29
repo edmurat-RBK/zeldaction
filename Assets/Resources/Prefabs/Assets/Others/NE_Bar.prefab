@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7760886461296723379}
   - component: {fileID: 3120462723227174998}
   - component: {fileID: 3728676212161864160}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: NE_Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

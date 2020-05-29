@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7240054186401590543}
   - component: {fileID: 7240054186401590542}
   - component: {fileID: 7240054186401590540}
-  m_Layer: 0
-  m_Name: Sand controls2
+  m_Layer: 13
+  m_Name: Tuto PLage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

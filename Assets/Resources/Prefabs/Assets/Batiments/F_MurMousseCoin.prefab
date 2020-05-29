@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7964466104704673051}
   - component: {fileID: 7786279901716032189}
   - component: {fileID: 7098617671016218187}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: F_MurMousseCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}

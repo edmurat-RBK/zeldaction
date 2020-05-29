@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 263227553986248038}
   - component: {fileID: 1251152922129906788}
   - component: {fileID: 5446477582738911819}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MiniMiasonFace1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

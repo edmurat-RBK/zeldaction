@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6484049744839630926}
   - component: {fileID: 2601093647970300455}
   - component: {fileID: -1653800811023866017}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DJV_MurCoin
   m_TagString: Untagged
   m_Icon: {fileID: 0}

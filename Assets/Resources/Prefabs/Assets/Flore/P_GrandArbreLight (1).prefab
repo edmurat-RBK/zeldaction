@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 5999611129222335114}
   - component: {fileID: 4884337689828845288}
   - component: {fileID: 1933873712453933118}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_GrandArbreLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

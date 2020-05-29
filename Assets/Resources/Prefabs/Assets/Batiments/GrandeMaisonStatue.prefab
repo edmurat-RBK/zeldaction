@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8889047945862710979}
   - component: {fileID: 7425255514885481322}
   - component: {fileID: 1028168202936702066}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GrandeMaisonStatue
   m_TagString: Untagged
   m_Icon: {fileID: 0}

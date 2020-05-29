@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2856538600394023447}
   - component: {fileID: 9006128976128610718}
   - component: {fileID: 473482794260549265}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DJV_BarrereL
   m_TagString: Untagged
   m_Icon: {fileID: 0}

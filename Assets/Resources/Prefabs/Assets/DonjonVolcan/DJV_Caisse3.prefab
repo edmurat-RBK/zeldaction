@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3466067793521196977}
   - component: {fileID: 4530431480431639550}
   - component: {fileID: 1121343440735904807}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DJV_Caisse3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5139786108085759231}
   - component: {fileID: 8762540994499678714}
   - component: {fileID: 7719625443793953454}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_Village_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

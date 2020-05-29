@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 5079540673846623401}
   - component: {fileID: 1395197851517263762}
   - component: {fileID: 8306855258488179341}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_Piege
   m_TagString: Untagged
   m_Icon: {fileID: 0}

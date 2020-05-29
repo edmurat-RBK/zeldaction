@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 6731315570790433864}
   - component: {fileID: 433988978379567345}
   - component: {fileID: 3276777278415185569}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DJV_Tonneau1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

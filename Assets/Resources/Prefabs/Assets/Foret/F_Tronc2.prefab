@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5439642880403373102}
   - component: {fileID: 2339461022960574001}
   - component: {fileID: 7901534224033862361}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: F_Tronc2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

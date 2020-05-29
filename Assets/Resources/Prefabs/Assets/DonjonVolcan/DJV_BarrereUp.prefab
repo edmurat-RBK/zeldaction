@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4050492311585331659}
   - component: {fileID: 6560300835059540048}
   - component: {fileID: 8932419686504178510}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DJV_BarrereUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1341663193802388769}
   - component: {fileID: 7806287330059695261}
   - component: {fileID: 4703763763757496731}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_BuissonGrand3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

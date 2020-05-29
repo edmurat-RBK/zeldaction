@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2693073659956780908}
   - component: {fileID: 6791936894537241338}
   - component: {fileID: 4358170968317180786}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DJV_Statuette2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

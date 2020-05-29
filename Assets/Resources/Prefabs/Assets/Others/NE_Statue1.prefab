@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5589506658815196774}
   - component: {fileID: 582394293480510480}
   - component: {fileID: 5758381460724953279}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: NE_Statue1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

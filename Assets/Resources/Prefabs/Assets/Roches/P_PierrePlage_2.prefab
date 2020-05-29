@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6057825723152527064}
   - component: {fileID: 5435704263865475547}
   - component: {fileID: 5394595912313623413}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_PierrePlage_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

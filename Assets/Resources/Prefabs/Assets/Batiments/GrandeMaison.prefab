@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 693497978268687987}
   - component: {fileID: 5808372180076871773}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GrandeMaison
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,6 +150,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrandeMaisonStatue
       objectReference: {fileID: 0}
+    - target: {fileID: 5406974432405345294, guid: c4c9b468e04eaf348bac99edee2a762d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8889047945862710979, guid: c4c9b468e04eaf348bac99edee2a762d,
         type: 3}
       propertyPath: m_SortingOrder
@@ -179,6 +184,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GrandeMaisonSol
+      objectReference: {fileID: 0}
+    - target: {fileID: 3252151607463302979, guid: 1ad0afc2b3385c84399e57be1f8ed2e5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6253228199179203559, guid: 1ad0afc2b3385c84399e57be1f8ed2e5,
         type: 3}

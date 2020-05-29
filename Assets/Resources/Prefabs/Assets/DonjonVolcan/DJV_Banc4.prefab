@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 288027123760344918}
   - component: {fileID: 3111069678092312780}
   - component: {fileID: 355239009138212704}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DJV_Banc4
   m_TagString: Untagged
   m_Icon: {fileID: 0}

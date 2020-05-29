@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 6452436115664576768}
   - component: {fileID: 6517076802347484299}
   - component: {fileID: 4216341807360055697}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DJV_Poteau
   m_TagString: Untagged
   m_Icon: {fileID: 0}

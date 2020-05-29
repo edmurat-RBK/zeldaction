@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8890811995902798410}
   - component: {fileID: 8735221012285777032}
   - component: {fileID: 359115918441101220}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_Totems_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 184560498137061770}
   - component: {fileID: 2629628214618529394}
   - component: {fileID: 6561960605389269996}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_Caisse7
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 2864771154757281814}
   - component: {fileID: 4564541684809164369}
   - component: {fileID: 7821413567278915868}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: "For\xEAt 4_6"
   m_TagString: Untagged
   m_Icon: {fileID: 0}

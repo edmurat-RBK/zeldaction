@@ -3053,7 +3053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7071305505897224713}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Village
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5542,6 +5542,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MiniMaisonFace
       objectReference: {fileID: 0}
+    - target: {fileID: 8621527105611189942, guid: a34e8d7522befe34e9412cd12376270e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a34e8d7522befe34e9412cd12376270e, type: 3}
 --- !u!4 &4175328697747322709 stripped
@@ -5646,6 +5651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MiniMaisonDos
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998213139502223022, guid: 00981aef50d5b614d9d6b3eb047faa61,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6588637222036291475, guid: 00981aef50d5b614d9d6b3eb047faa61,
         type: 3}
@@ -5862,6 +5872,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrandeMaison
       objectReference: {fileID: 0}
+    - target: {fileID: 8261844074163560873, guid: 15133500470e0c146b718724efa620b4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9030330468914817788, guid: 15133500470e0c146b718724efa620b4,
         type: 3}
       propertyPath: m_SortingOrder
@@ -5886,6 +5901,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MiniMaisonFace2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285744563881746368, guid: f119823c2bfe4d14ea01fda67bc03d57,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2264343647394754367, guid: f119823c2bfe4d14ea01fda67bc03d57,
         type: 3}
@@ -6026,6 +6046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MiniMaisonFace (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621527105611189942, guid: a34e8d7522befe34e9412cd12376270e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a34e8d7522befe34e9412cd12376270e, type: 3}
@@ -6371,6 +6396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MiniMaisonDos (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998213139502223022, guid: 00981aef50d5b614d9d6b3eb047faa61,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6588637222036291475, guid: 00981aef50d5b614d9d6b3eb047faa61,
         type: 3}
@@ -6846,6 +6876,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MiniMaisonFace2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285744563881746368, guid: f119823c2bfe4d14ea01fda67bc03d57,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2264343647394754367, guid: f119823c2bfe4d14ea01fda67bc03d57,
         type: 3}
@@ -7626,6 +7661,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MiniMiasonFace1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522124485494637105, guid: 14f4c294a0892ee489848302b979d51c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f4c294a0892ee489848302b979d51c, type: 3}

@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 163386812030919344}
   - component: {fileID: 2921732025998561412}
   - component: {fileID: 2925127180073080366}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: F_Statuette
   m_TagString: Untagged
   m_Icon: {fileID: 0}

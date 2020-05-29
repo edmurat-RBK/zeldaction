@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 7724649074511973004}
   - component: {fileID: 1586716749075385802}
   - component: {fileID: 8045909713265275717}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_Banc
   m_TagString: Untagged
   m_Icon: {fileID: 0}

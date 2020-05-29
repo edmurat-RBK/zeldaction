@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 3666268647105997891}
   - component: {fileID: 4838060165356215241}
   - component: {fileID: 3380583978711599837}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_Bois2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

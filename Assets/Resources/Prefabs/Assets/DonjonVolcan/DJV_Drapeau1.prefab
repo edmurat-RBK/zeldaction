@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5312205325253492224}
   - component: {fileID: 2816363494539258930}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DJV_Drapeau1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

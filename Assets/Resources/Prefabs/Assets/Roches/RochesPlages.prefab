@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9013507554090650272}
   - component: {fileID: 48882873}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RochesPlages
   m_TagString: Untagged
   m_Icon: {fileID: 0}

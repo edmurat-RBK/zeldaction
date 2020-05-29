@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3329877387856310811}
   - component: {fileID: 5666592066116970592}
   - component: {fileID: 7086900596519709752}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_BarriereUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

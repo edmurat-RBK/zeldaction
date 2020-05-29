@@ -529,7 +529,7 @@ GameObject:
   - component: {fileID: 5080235010661771912}
   - component: {fileID: 6780638604028391620}
   - component: {fileID: 7733711663552680195}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: ExtDJS
   m_TagString: Untagged
   m_Icon: {fileID: 0}

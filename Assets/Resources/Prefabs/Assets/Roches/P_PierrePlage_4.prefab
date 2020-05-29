@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 1104365542047796379}
   - component: {fileID: 5708918987553876965}
   - component: {fileID: 3087359421567886336}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: P_PierrePlage_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
