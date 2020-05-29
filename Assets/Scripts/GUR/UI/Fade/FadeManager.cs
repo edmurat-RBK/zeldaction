@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Management;
 
 
-public class FadeManager : Singleton<CowManager>
+public class FadeManager : Singleton<FadeManager>
 {
     private float fadeValue;
 
@@ -30,6 +30,6 @@ public class FadeManager : Singleton<CowManager>
 
     public void FadeIn(Image blackScreen)
     {
-       
+        
     }
 }
