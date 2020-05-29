@@ -41,6 +41,8 @@ public class BossManagerP : MonoBehaviour
     [SerializeField]
     private int numberOfScene = 6;
 
+    private GameObject player;
+    private GameObject line;
 
     private void Awake()
     {
@@ -52,7 +54,10 @@ public class BossManagerP : MonoBehaviour
     }
 
     private void Start()
-    {
+    { 
+        player = GameObject.FindWithTag("Player");
+        line = GameObject.FindWithTag("Line");
+
         clepsydreOn = true;
 
 
@@ -233,6 +238,8 @@ public class BossManagerP : MonoBehaviour
     private IEnumerator CutsceneLaunch()
     {
         yield return new WaitForSeconds(6f);
+        //Destroy(player);
+        //Destroy(line);
         SceneManager.LoadScene(numberOfScene);
     }
 

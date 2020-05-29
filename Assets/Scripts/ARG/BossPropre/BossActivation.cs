@@ -10,8 +10,11 @@ public class BossActivation : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        boss.SetActive(true);
-        pathBlock.SetActive(true);
+        if (collision.gameObject.tag == "Player")
+        {
+            boss.SetActive(true);
+            pathBlock.SetActive(true);
+        }
     }
 
 

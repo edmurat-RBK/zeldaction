@@ -27133,6 +27133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Line Kameomeo
       objectReference: {fileID: 0}
+    - target: {fileID: 5354462167631956446, guid: 0cf97fd013f5f754d9f71574aa8b7d17,
+        type: 3}
+      propertyPath: m_TagString
+      value: Line
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf97fd013f5f754d9f71574aa8b7d17, type: 3}
 --- !u!4 &607678619 stripped
@@ -32365,12 +32370,12 @@ PrefabInstance:
     - target: {fileID: 233719348461128793, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}
       propertyPath: m_TagString
-      value: Heart
+      value: Heart4
       objectReference: {fileID: 0}
     - target: {fileID: 233719348859922988, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}
       propertyPath: m_TagString
-      value: Heart
+      value: Heart3
       objectReference: {fileID: 0}
     - target: {fileID: 233719348859922989, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}
@@ -32380,7 +32385,7 @@ PrefabInstance:
     - target: {fileID: 1342069961798046750, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}
       propertyPath: m_TagString
-      value: Heart
+      value: Heart2
       objectReference: {fileID: 0}
     - target: {fileID: 1342069961798046751, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}
@@ -32565,7 +32570,7 @@ PrefabInstance:
     - target: {fileID: 5613042776226066001, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}
       propertyPath: m_TagString
-      value: Heart
+      value: Heart1
       objectReference: {fileID: 0}
     - target: {fileID: 5613042776288279802, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}
@@ -32581,7 +32586,7 @@ PrefabInstance:
     - target: {fileID: 6161627553987743474, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}
       propertyPath: m_TagString
-      value: Heart
+      value: Heart5
       objectReference: {fileID: 0}
     - target: {fileID: 6161627553987743475, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}

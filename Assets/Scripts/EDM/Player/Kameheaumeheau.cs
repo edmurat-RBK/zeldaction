@@ -24,6 +24,7 @@ public class Kameheaumeheau : MonoBehaviour
 
     //for kameaumeau renderer
     public LineRenderer lineRenderer;
+    private GameObject lineObject;
     private Transform endPointTransform;
 
     private Vector2 kameoHit;
@@ -40,6 +41,8 @@ public class Kameheaumeheau : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        lineObject = GameObject.FindWithTag("Line");
+        lineRenderer = lineObject.GetComponent<LineRenderer>();
         manager = GetComponent<PlayerManager>();
         anim = GetComponent<Animator>();         playerSpeed = manager.speed;
 

@@ -8,10 +8,15 @@ public class GestionMenu : MonoBehaviour
 {
     public Button[] mainButton;
 
+    private GameObject player;
+    private GameObject lineRenderer;
 
     private bool isActivate;
     void Start()
     {
+        player = GameObject.FindWithTag("Player");
+        lineRenderer = GameObject.FindWithTag("Line");
+
         isActivate = false;
 
         for (int i = 0; i < mainButton.Length; i++)
@@ -73,6 +78,9 @@ public class GestionMenu : MonoBehaviour
         {
             mainButton[i].gameObject.SetActive(false);
         }
+
+        Destroy(player);
+
         SceneManager.LoadScene(0);
 
     }

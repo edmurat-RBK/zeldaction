@@ -25,6 +25,7 @@ TagManager:
   - Heart3
   - Heart4
   - Heart5
+  - Line
   layers:
   - Default
   - TransparentFX
