@@ -13,7 +13,7 @@ public class MouvDetection : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 16)
+        if (collision.gameObject.layer == 21)
         {
             canMakeMove = true;
         }
@@ -21,7 +21,7 @@ public class MouvDetection : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 16)
+        if (collision.gameObject.layer == 21)
         {
             canMakeMove = false;
         }

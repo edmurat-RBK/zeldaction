@@ -22,6 +22,7 @@ public class CubeBois : MonoBehaviour
     public BoxCollider2D boxTrigger;
     public GameObject bodyBlock;
     public GameObject moveDetection;
+    public GameObject hugeBodyBlock;
 
     [Header ("Mettre la vitesse de déplacement du courant")]
     public float speedOfWater;
@@ -35,21 +36,31 @@ public class CubeBois : MonoBehaviour
 
     private Vector2 direction;
     private GameObject[] courantEau;
-    private Animator anim;
+
+    [HideInInspector]
+    public Animator anim;
 
     [HideInInspector]
     public bool outWater;
 
     private SpriteRenderer sprite;
 
+    [HideInInspector]
+    public Rigidbody2D cubeRb;
     
+    [HideInInspector]
     public bool playerOnIt;
+
+    [HideInInspector]
+    public bool caisseDeath;
     #endregion
 
 
     
     private void Start()
     {
+        hugeBodyBlock.SetActive(false);
+        cubeRb = gameObject.GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         notStop = true;
@@ -72,11 +83,21 @@ public class CubeBois : MonoBehaviour
 
             anim.SetBool("out", true);
         }
+
+
+        if (caisseDeath == true)
+        {
+            caisseDeath = false;
+            hugeBodyBlock.SetActive(true);
+            anim.SetBool("IsDead", true);
+            cubeRb.velocity = Vector2.zero;
+           
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 31) // 31 = layer Player
+        if (collision.gameObject.layer == 21) // 31 = layer Player
         {
             playerOnIt = true;
 
@@ -126,7 +147,7 @@ public class CubeBois : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 31) // 29 = layer Player
+        if (collision.gameObject.layer == 21) // 29 = layer Player
         {
             playerOnIt = false;
 

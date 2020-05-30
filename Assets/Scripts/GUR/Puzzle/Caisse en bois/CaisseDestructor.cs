@@ -23,8 +23,9 @@ public class CaisseDestructor : MonoBehaviour
                 PlayerManager.Instance.playerTransform.position = respawnPoint.transform.position;
                 PlayerManager.Instance.playerRigidBody.velocity = Vector2.zero;
             }
+            collision.gameObject.GetComponent<CubeBois>().caisseDeath = true;
 
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject , 1f);
         }
 
         if (collision.gameObject.tag == "CaissePierre")
