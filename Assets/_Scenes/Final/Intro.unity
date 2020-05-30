@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -397,7 +397,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808507246}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: c598a22f28c054f46b6efbf0d7a2202b, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: f4ea759d64a72ac40b28cb2be59dcda0, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -413,7 +413,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0.3
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a485fef5ae303408cb296c059b50b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeOfCutscene: 48
+  timeOfCutscene: 192
   videoPlayer: {fileID: 808507246}
   numberOfScene: 2
   isOutro: 0
