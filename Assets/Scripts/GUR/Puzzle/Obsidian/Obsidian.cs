@@ -39,6 +39,8 @@ public class Obsidian : MonoBehaviour
         if (playerOn == true &&  isObsi == false)
         {
             PlayerManager.Instance.transform.position = respawnPoint.transform.position;
+            PlayerManager.Instance.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
+            PlayerManager.Instance.gameObject.GetComponent<HealthBar>().HealthSysteme();
         }
     }
 

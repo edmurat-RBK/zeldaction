@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DVillageoisSave3
   m_EditorClassIdentifier: 
   phraseList:
-  - {fileID: 11400000, guid: 68c7340441387f84b8272993b6f9435a, type: 2}
+  - {fileID: 11400000, guid: 5937ffb7243b7ac4b8308d1ea1067957, type: 2}

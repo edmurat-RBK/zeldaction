@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class TriggerCendre : MonoBehaviour
 {
-    [SerializeField]
-    private bool enter;
 
     // Start is called before the first frame update
     public  ParticleSystem cendre;
@@ -23,15 +21,16 @@ public class TriggerCendre : MonoBehaviour
     {
         if (colid.gameObject.tag == "Player")
         {
-            if (enter == true)
-            {
                 cendre.Play();
-            }
-            else
-            {
-                cendre.Stop();
-            }
             
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            cendre.Stop();
         }
     }
 }

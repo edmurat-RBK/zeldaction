@@ -7,6 +7,13 @@ using Manager;
 
 public class DeathMenu : MonoBehaviour
 {
+    private GameObject player;
+
+    private void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+    }
+
     private void Update()
     {
         if (Input.GetButtonDown("A"))
@@ -16,7 +23,8 @@ public class DeathMenu : MonoBehaviour
 
         if (Input.GetButtonDown("B"))
         {
-            SceneManager.LoadScene(4);
+            Destroy(player);
+            SceneManager.LoadScene(0);
         }
     }
 }
