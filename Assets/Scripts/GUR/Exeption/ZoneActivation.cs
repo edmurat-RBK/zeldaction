@@ -6,6 +6,7 @@ public class ZoneActivation : MonoBehaviour
 {
     public GameObject[] objectsToActivate;
 
+    public bool activeObject;
     private void Start()
     {
         for (int i = 0; i < objectsToActivate.Length; i++)
@@ -14,14 +15,31 @@ public class ZoneActivation : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void Update()
     {
-        if (collision.gameObject.tag == "Player")
+        if (activeObject == true)
         {
             for (int i = 0; i < objectsToActivate.Length; i++)
             {
                 objectsToActivate[i].SetActive(true);
             }
+        }
+        else if (activeObject == false)
+        {
+            for (int i = 0; i < objectsToActivate.Length; i++)
+            {
+                objectsToActivate[i].SetActive(false);
+            }
+        }
+    }
+
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            activeObject = true;
         }
     }
 
@@ -30,10 +48,7 @@ public class ZoneActivation : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            for (int i = 0; i < objectsToActivate.Length; i++)
-            {
-                objectsToActivate[i].SetActive(false);
-            }
+            activeObject = false;
         }
     }
 }

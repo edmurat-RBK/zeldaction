@@ -13,12 +13,21 @@ public class SpawnerCaisse : MonoBehaviour
     #region Variable
     public float spawnRate;
     public GameObject caissePrefab;
-    private bool canSpawn;
+    private bool canSpawn = true;
     #endregion
     private void Start()
     {
-        canSpawn = true;
+        //canSpawn = true;
     }
+
+    private void OnEnable()
+    {
+        if (canSpawn == false)
+        {
+            StartCoroutine(Initialisation());
+        }
+    }
+
     void Update()
     {
         if (canSpawn == true)
@@ -34,4 +43,10 @@ public class SpawnerCaisse : MonoBehaviour
         yield return new WaitForSeconds(spawnRate);
         canSpawn = true;
     } // Permet de faire spawn une caisse toute les x seconde
+
+    IEnumerator Initialisation()
+    {
+        yield return new WaitForSeconds(1f);
+        canSpawn = true;
+    }
 }
