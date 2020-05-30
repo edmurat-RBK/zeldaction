@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 4767242566905782090}
   - component: {fileID: 4767242566905782095}
   - component: {fileID: 4770918032543696148}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Mur mouvant Haut
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7996431328171765765}
   - component: {fileID: 5383548758002525201}
   - component: {fileID: -7714424795342462588}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Pieu_mouvant Gauche
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 555283240326627007}
   - component: {fileID: 555283240326627002}
   - component: {fileID: 552203727707759841}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Mur mouvant Droit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

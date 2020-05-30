@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5258033933257326619}
   - component: {fileID: 5258033933257326622}
   - component: {fileID: 447591439599312045}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Mur mouvant Bas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

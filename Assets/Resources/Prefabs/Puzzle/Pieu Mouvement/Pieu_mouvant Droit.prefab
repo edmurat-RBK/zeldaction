@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6096637764230089683}
   - component: {fileID: 8130309326648467399}
   - component: {fileID: 3355823659686337106}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Pieu_mouvant Droit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
