@@ -291,7 +291,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Boss totem
     clip: {fileID: 8300000, guid: aba87f7427b97e74abd19018307be4a4, type: 3}
-    volume: 0.2
+    volume: 0.8
     pitch: 1
     spatialisation: 0.5
     loop: 0
@@ -333,6 +333,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Fontaine
     clip: {fileID: 8300000, guid: 5ab23d9a2a2f0bd4b80b16f73c2b2365, type: 3}
+    volume: 0.3
+    pitch: 1
+    spatialisation: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Checkpoint
+    clip: {fileID: 8300000, guid: f9dd42e74af24c846a740c7a0ee5aba1, type: 3}
     volume: 0.3
     pitch: 1
     spatialisation: 0.5

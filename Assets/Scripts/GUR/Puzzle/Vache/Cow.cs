@@ -6,6 +6,8 @@ public class Cow : MonoBehaviour
 {
     public float timeBtwBroutage;
 
+    public GameObject ui;
+
     private bool canActivate;
 
     [HideInInspector]
@@ -17,8 +19,12 @@ public class Cow : MonoBehaviour
     private Animator anim;
 
     private bool lockBroutage;
+    private bool lockUi;
     void Start()
     {
+        
+
+        ui.SetActive(false);
         circle = GetComponent<CircleCollider2D>();
         box = GetComponent<BoxCollider2D>();
 
@@ -33,6 +39,7 @@ public class Cow : MonoBehaviour
         {
             if (lockCow == false)
             {
+                lockUi = true;
                 lockCow = true;
                 anim.SetBool("Water", true);
 
@@ -53,9 +60,10 @@ public class Cow : MonoBehaviour
     {
         if (canActivate == true && lockCow == false)
         {
-            if (Input.GetButton("B"))
+            if (Input.GetButton("X"))
             {
                 lockCow = true;
+                lockUi = true;
                 anim.SetBool("Water", true);
 
                 gameObject.GetComponent<SpriteRenderer>().sortingOrder -= 1;
@@ -79,6 +87,11 @@ public class Cow : MonoBehaviour
     {
         if (collision.gameObject.layer == 31)
         {
+            if (lockUi == false)
+            {
+                ui.SetActive(true);
+            }
+
             anim.SetBool("Player", true);
             canActivate = true;
         }
@@ -88,6 +101,7 @@ public class Cow : MonoBehaviour
     {
         if (collision.gameObject.layer == 31)
         {
+            ui.SetActive(false);
             anim.SetBool("Player", false);
             canActivate = false;
         }

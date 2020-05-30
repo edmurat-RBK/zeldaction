@@ -6127,11 +6127,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Totems_5
       objectReference: {fileID: 0}
-    - target: {fileID: 8643262446915524748, guid: 74a73dc88fbfd944987b55ac0337c13d,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 9
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a73dc88fbfd944987b55ac0337c13d, type: 3}
 --- !u!4 &4607750931285946248 stripped
@@ -6366,11 +6361,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: F_Tonneau1 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9068532269589814464, guid: c7a40f162e4ed5640b19cd2fec48ec70,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7a40f162e4ed5640b19cd2fec48ec70, type: 3}
@@ -7687,11 +7677,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: F_Statuette4
       objectReference: {fileID: 0}
-    - target: {fileID: 3790125492181872868, guid: 896b0e9d817455c4a8cba5ead81a9f89,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 6960427546051796215, guid: 896b0e9d817455c4a8cba5ead81a9f89,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8007,11 +7992,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: F_Statuette3
       objectReference: {fileID: 0}
-    - target: {fileID: 4808311325360923044, guid: bfad7080c9e750740a1a46f1f8d981d7,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 6538455459850515079, guid: bfad7080c9e750740a1a46f1f8d981d7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8082,11 +8062,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7071305505897224713}
     m_Modifications:
-    - target: {fileID: 2031538937360949415, guid: 203f23bda01662247a795ebabfb04289,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 3251099739309035365, guid: 203f23bda01662247a795ebabfb04289,
         type: 3}
       propertyPath: m_LocalPosition.x

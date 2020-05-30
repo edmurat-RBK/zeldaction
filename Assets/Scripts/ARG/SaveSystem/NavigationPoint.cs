@@ -95,6 +95,8 @@ public class NavigationPoint : MonoBehaviour
 			if (!isCheckpoint)
 				isOn = false;
 
+            FindObjectOfType<AudioManager>().Play("Checkpoint");
+
             otherColl.GetComponent<PlayerHealth>().health = otherColl.GetComponent<PlayerHealth>().maximumHealth;
             otherColl.GetComponent<HealthBar>().HealthSysteme();
             anim.SetBool("IsSaved", true);
