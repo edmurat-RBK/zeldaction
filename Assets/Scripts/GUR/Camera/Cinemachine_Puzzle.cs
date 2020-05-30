@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using Manager;  
 
 public class Cinemachine_Puzzle : MonoBehaviour
 {
@@ -135,9 +136,11 @@ public class Cinemachine_Puzzle : MonoBehaviour
 
     IEnumerator TransitionCam()
     {
+        PlayerManager.Instance.playerInvulnerable = true;
         canWatch = false;
         cam.Priority += 5;
         yield return new WaitForSeconds(watchingTime);
         cam.Priority -= 5;
+        PlayerManager.Instance.playerInvulnerable = false;
     }
 }

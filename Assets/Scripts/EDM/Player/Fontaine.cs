@@ -23,6 +23,8 @@ public class Fontaine : MonoBehaviour
     private bool isActif;
     private bool isCooldown;
 
+    private bool lockSon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,11 +73,18 @@ public class Fontaine : MonoBehaviour
            
             else if (isCooldown == false)
             {
+                if (lockSon == false)
+                {
+                    lockSon = true;
+                    FindObjectOfType<AudioManager>().Play("Fontaine");
+                }
+
                 isActif = true;
                 cooldown += Time.fixedDeltaTime;
                 effectTime -= Time.fixedDeltaTime;
                 if (effectTime < 0)
                 {
+                    FindObjectOfType<AudioManager>().Stop("Fontaine");
                     cooldown = maxCooldown;
                     effectTime = 0;
                     active = false;
@@ -85,6 +94,7 @@ public class Fontaine : MonoBehaviour
                     PlayerManager.Instance.isFontaine = false;
                     PlayerManager.Instance.playerCanMove = true;
                     isActif = false;
+                    lockSon = false;
                 }
             }
 
