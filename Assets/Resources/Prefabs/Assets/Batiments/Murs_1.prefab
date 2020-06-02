@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8890439102128485902}
   - component: {fileID: 7166001210584196764}
   - component: {fileID: 4182379495116175028}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Murs_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

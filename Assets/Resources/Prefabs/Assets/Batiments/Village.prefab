@@ -7832,11 +7832,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: A_Assise
       objectReference: {fileID: 0}
-    - target: {fileID: 5967431875724265085, guid: b7c630c5fba38cc4ebdafcc86edce30d,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 8076177166394403227, guid: b7c630c5fba38cc4ebdafcc86edce30d,
         type: 3}
       propertyPath: m_LocalPosition.x
