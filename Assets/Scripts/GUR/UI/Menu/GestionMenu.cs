@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Manager;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -33,6 +34,10 @@ public class GestionMenu : MonoBehaviour
             if (Input.GetButtonDown("Pause"))
             {
                 isActivate = true;
+                PlayerManager.Instance.playerCanMove = false;
+                PlayerManager.Instance.horizontal = 0f;
+                PlayerManager.Instance.vertical = 0f;
+                PlayerManager.Instance.playerRigidBody.velocity = Vector2.zero;
                 Time.timeScale = 0;
 
                 for (int i = 0; i < mainButton.Length; i++)
@@ -47,6 +52,7 @@ public class GestionMenu : MonoBehaviour
             {
                 isActivate = false;
                 Time.timeScale = 1;
+                PlayerManager.Instance.playerCanMove = true;
 
                 for (int i = 0; i < mainButton.Length; i++)
                 {
@@ -60,6 +66,7 @@ public class GestionMenu : MonoBehaviour
     public void ResumeButton()
     {
         isActivate = false;
+        PlayerManager.Instance.playerCanMove = true;
         Time.timeScale = 1;
 
         for (int i = 0; i < mainButton.Length; i++)
