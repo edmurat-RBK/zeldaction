@@ -118,7 +118,7 @@ namespace MovementPlayer
                     }
                 }
 
-                if (vertical==0 && horizontal == 0) 
+                if (vertical == 0 && horizontal == 0) 
                 {
                     if (lockBDPSand == true)
                     {
