@@ -38,14 +38,17 @@ public class SceneLoader : MonoBehaviour
     {
         if (canSwitch == true)
         {
-            if (Input.GetButtonDown("X"))
+            if (PlayerManager.Instance.lockcUseBucket == false)
             {
-                canSwitch = false;
+                if (Input.GetButtonDown("X"))
+                {
+                    canSwitch = false;
 
-                player.GetComponent<HealthBar>().lockCanTake = false;
-                PlayerManager.Instance.playerTransform.position = new Vector2(axeX, axeY);
-                SceneManager.LoadScene(numberOfScene);
+                    player.GetComponent<HealthBar>().lockCanTake = false;
+                    PlayerManager.Instance.playerTransform.position = new Vector2(axeX, axeY);
+                    SceneManager.LoadScene(numberOfScene);
 
+                }
             }
         }
     }

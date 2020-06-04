@@ -39,6 +39,8 @@ namespace Manager
 
 
         // Bool pour détecter les différentes ations du joueur
+        public bool lockcUseBucket;
+
         public bool isAttacking;
         public bool isArroisoir;
         public bool isKhameau;

@@ -33,10 +33,6 @@ namespace Attack
         private float timeReset;
         #endregion
 
-        void Awake()
-        {
-            
-        }
         
         void Start()
         {
@@ -45,50 +41,51 @@ namespace Attack
        
         void Update()
         {
-            AtatckPos();
-            ennemisInRange.RemoveAll(list_item => list_item == null); //remove
-            destructibleElement.RemoveAll(list_item => list_item == null);
-
-            if (PlayerManager.Instance.isFontaine == false && PlayerManager.Instance.isArroisoir == false && PlayerManager.Instance.isKhameau == false)
+            if (PlayerManager.Instance.lockcUseBucket == false)
             {
-                if (Input.GetButtonDown("X") && timestamp < Time.time) //get l'input
+                AtatckPos();
+                ennemisInRange.RemoveAll(list_item => list_item == null); //remove
+                destructibleElement.RemoveAll(list_item => list_item == null);
+
+                if (PlayerManager.Instance.isFontaine == false && PlayerManager.Instance.isArroisoir == false && PlayerManager.Instance.isKhameau == false)
                 {
-                    PlayerManager.Instance.isAttacking = true;
-
-                    int varSon = Random.Range(1, 4);
-
-                    switch (varSon)
+                    if (Input.GetButtonDown("X") && timestamp < Time.time) //get l'input
                     {
-                        case 1:
-                            FindObjectOfType<AudioManager>().Play("Frappe 1");
-                            break;
+                        PlayerManager.Instance.isAttacking = true;
 
-                        case 2:
-                            FindObjectOfType<AudioManager>().Play("Frappe 2");
-                            break;
+                        int varSon = Random.Range(1, 4);
 
-                        case 3:
-                            FindObjectOfType<AudioManager>().Play("Frappe 3");
-                            break;
+                        switch (varSon)
+                        {
+                            case 1:
+                                FindObjectOfType<AudioManager>().Play("Frappe 1");
+                                break;
+
+                            case 2:
+                                FindObjectOfType<AudioManager>().Play("Frappe 2");
+                                break;
+
+                            case 3:
+                                FindObjectOfType<AudioManager>().Play("Frappe 3");
+                                break;
+                        }
+
+                        ApplyDammage();
+                        CrateDestruction();
                     }
+                }
 
-                    ApplyDammage();
-                    CrateDestruction();
+
+                if (Input.GetButtonUp("X"))
+                {
+                    PlayerManager.Instance.isAttacking = false;
+                }
+
+                if (timestampAuto < Time.time)
+                {
+                    attackCount = 0;
                 }
             }
-
-
-            if (Input.GetButtonUp("X"))
-            {
-                PlayerManager.Instance.isAttacking = false;
-            }
-
-            if (timestampAuto < Time.time)
-            {
-                attackCount = 0;
-            }
-
-         
         }
 
         public void Attack1Done()  //cree event dans animation pour ramener meleeattack a false apres 1 cp
