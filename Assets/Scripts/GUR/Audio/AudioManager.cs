@@ -47,4 +47,12 @@ public class AudioManager : MonoBehaviour
         s.source.Stop();
     }
     
+    public void StopAll()
+    {
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            sounds[i].source.Stop();
+        }
+    }
+
 }

@@ -39,8 +39,10 @@ public class GestionMenu : MonoBehaviour
 
                 PlayerManager.Instance.lockcUseBucket = true;
 
-                //PlayerManager.Instance.horizontal = 0f;
-                //PlayerManager.Instance.vertical = 0f;
+                FindObjectOfType<AudioManager>().Stop("Fontaine");
+                FindObjectOfType<AudioManager>().Stop("Arrosoire");
+                FindObjectOfType<AudioManager>().Stop("Khameau");
+
                 PlayerManager.Instance.playerRigidBody.velocity = Vector2.zero;
                 Time.timeScale = 0;
 
@@ -57,7 +59,8 @@ public class GestionMenu : MonoBehaviour
                 isActivate = false;
                 Time.timeScale = 1;
 
-                PlayerManager.Instance.lockcUseBucket = false;
+                //PlayerManager.Instance.lockcUseBucket = false;
+                StartCoroutine(SmallcoolDown());
 
                 PlayerManager.Instance.playerCanMove = true;
                 PlayerManager.Instance.playerCanRotate = true;
@@ -74,7 +77,9 @@ public class GestionMenu : MonoBehaviour
     public void ResumeButton()
     {
         isActivate = false;
-        PlayerManager.Instance.lockcUseBucket = false;
+        //PlayerManager.Instance.lockcUseBucket = false;
+        StartCoroutine(SmallcoolDown());
+
         PlayerManager.Instance.playerCanMove = true;
         PlayerManager.Instance.playerCanRotate = true;
         Time.timeScale = 1;
@@ -99,6 +104,11 @@ public class GestionMenu : MonoBehaviour
         Destroy(player);
 
         SceneManager.LoadScene(0);
+    }
 
+    IEnumerator SmallcoolDown()
+    {
+        yield return new WaitForSeconds(0.1f);
+        PlayerManager.Instance.lockcUseBucket = false;
     }
 }
