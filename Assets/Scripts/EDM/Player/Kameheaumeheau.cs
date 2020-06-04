@@ -51,10 +51,13 @@ public class Kameheaumeheau : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerManager.Instance.isArroisoir == false && PlayerManager.Instance.isAttacking == false && PlayerManager.Instance.isFontaine == false)
+        if (PlayerManager.Instance.lockcUseBucket == false)
         {
-            CheckLoading();
-            LaunchKameheaumeheau();
+            if (PlayerManager.Instance.isArroisoir == false && PlayerManager.Instance.isAttacking == false && PlayerManager.Instance.isFontaine == false)
+            {
+                CheckLoading();
+                LaunchKameheaumeheau();
+            }
         }
     }
     

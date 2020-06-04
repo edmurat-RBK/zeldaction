@@ -32,32 +32,35 @@ namespace WateringCan
         
         void Update()
         {
-            if (PlayerManager.Instance.isKhameau == false && PlayerManager.Instance.isFontaine == false && PlayerManager.Instance.isAttacking == false)
+            if (PlayerManager.Instance.lockcUseBucket == false)
             {
-                if (Input.GetButtonDown("B"))
+                if (PlayerManager.Instance.isKhameau == false && PlayerManager.Instance.isFontaine == false && PlayerManager.Instance.isAttacking == false)
                 {
-                    FindObjectOfType<AudioManager>().Play("Arrosoire");
-                }
+                    if (Input.GetButtonDown("B"))
+                    {
+                        FindObjectOfType<AudioManager>().Play("Arrosoire");
+                    }
 
-                if (Input.GetButton("B"))
-                {
-                    PlayerManager.Instance.isArroisoir = true;
+                    if (Input.GetButton("B"))
+                    {
+                        PlayerManager.Instance.isArroisoir = true;
 
-                    Watering();
-                    anim.SetBool("IsWatering", true);
-                }
+                        Watering();
+                        anim.SetBool("IsWatering", true);
+                    }
 
-                else
-                {
-                    water.gameObject.SetActive(false); //set off the particule system
-                    anim.SetBool("IsWatering", false);
-                }
+                    else
+                    {
+                        water.gameObject.SetActive(false); //set off the particule system
+                        anim.SetBool("IsWatering", false);
+                    }
 
-                if (Input.GetButtonUp("B"))
-                {
-                    FindObjectOfType<AudioManager>().Stop("Arrosoire");
-                    PlayerManager.Instance.isArroisoir = false;
-                    PlayerManager.Instance.playerCanMove = true;
+                    if (Input.GetButtonUp("B"))
+                    {
+                        FindObjectOfType<AudioManager>().Stop("Arrosoire");
+                        PlayerManager.Instance.isArroisoir = false;
+                        PlayerManager.Instance.playerCanMove = true;
+                    }
                 }
             }
         }

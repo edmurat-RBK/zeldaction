@@ -53,60 +53,66 @@ public class Fontaine : MonoBehaviour
             }
         }
 
-        if (PlayerManager.Instance.isAttacking == false && PlayerManager.Instance.isArroisoir == false && PlayerManager.Instance.isKhameau == false)
+        if (PlayerManager.Instance.lockcUseBucket == false)
         {
-            if (!active && cooldown == 0)
+            if (PlayerManager.Instance.isAttacking == false && PlayerManager.Instance.isArroisoir == false && PlayerManager.Instance.isKhameau == false)
             {
-                if (Input.GetButton("A"))
+                if (!active && cooldown == 0)
                 {
-                    PlayerManager.Instance.isFontaine = true;
-                    anim.SetBool("IsShielding", true);
-                    fontaineShootPoint.SetActive(true);
-                    effectTime = maxEffectTime;
-                    active = true;
-                    manager.playerInvulnerable = true;
-                    manager.playerCanMove = false;
-                    manager.playerRigidBody.velocity = Vector2.zero;
-                }
-            }
-
-           
-            else if (isCooldown == false)
-            {
-                if (lockSon == false)
-                {
-                    lockSon = true;
-                    FindObjectOfType<AudioManager>().Play("Fontaine");
+                    if (Input.GetButton("A"))
+                    {
+                        PlayerManager.Instance.isFontaine = true;
+                        anim.SetBool("IsShielding", true);
+                        fontaineShootPoint.SetActive(true);
+                        effectTime = maxEffectTime;
+                        active = true;
+                        manager.playerInvulnerable = true;
+                        manager.playerCanMove = false;
+                        manager.playerRigidBody.velocity = Vector2.zero;
+                    }
                 }
 
-                isActif = true;
-                cooldown += Time.fixedDeltaTime;
-                effectTime -= Time.fixedDeltaTime;
-                if (effectTime < 0)
+
+                else if (isCooldown == false)
                 {
-                    FindObjectOfType<AudioManager>().Stop("Fontaine");
-                    cooldown = maxCooldown;
-                    effectTime = 0;
-                    active = false;
-                    manager.playerInvulnerable = false;
-                    anim.SetBool("IsShielding", false);
-                    fontaineShootPoint.SetActive(false);
-                    PlayerManager.Instance.isFontaine = false;
-                    PlayerManager.Instance.playerCanMove = true;
-                    isActif = false;
-                    lockSon = false;
+                    if (lockSon == false)
+                    {
+                        lockSon = true;
+                        FindObjectOfType<AudioManager>().Play("Fontaine");
+                    }
+
+                    isActif = true;
+                    cooldown += Time.fixedDeltaTime;
+                    effectTime -= Time.fixedDeltaTime;
+                    if (effectTime < 0)
+                    {
+                        FindObjectOfType<AudioManager>().Stop("Fontaine");
+                        cooldown = maxCooldown;
+                        effectTime = 0;
+                        active = false;
+                        manager.playerInvulnerable = false;
+                        anim.SetBool("IsShielding", false);
+                        fontaineShootPoint.SetActive(false);
+                        PlayerManager.Instance.isFontaine = false;
+                        PlayerManager.Instance.playerCanMove = true;
+                        isActif = false;
+                        lockSon = false;
+                    }
                 }
-            }
 
-            if (Input.GetButtonUp("A"))
-            {
-
-                if (effectTime == 0)
+                if (Input.GetButtonUp("A"))
                 {
-                    PlayerManager.Instance.isFontaine = false;
+
+                    if (effectTime == 0)
+                    {
+                        PlayerManager.Instance.isFontaine = false;
+                    }
                 }
             }
         }
+
+
+        
     }
 
 }
