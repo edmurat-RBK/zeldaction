@@ -166,7 +166,7 @@ public class PlayerHealth : MonoBehaviour
     //Function for respawn at the actual checkpoint with full health
     public void respawn()
     {
-        Debug.Log("oui");
+       
         Time.timeScale = 1;
         deathScreen[0].SetActive(false);
 

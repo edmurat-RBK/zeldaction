@@ -78,7 +78,9 @@ public class Kameheaumeheau : MonoBehaviour
                     PlayerManager.Instance.isKhameau = false;
                 }             }         }         // If Kameheaumeheau is loaded         else         {             //When input released             if (Input.GetButtonUp("Y"))             {
                 //Start Kameheau
-                anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                 kameheaumeheau = true;                 manager.playerCanMove = false;                                  loaded = false;                 inputHoldTime = 0;             }
+                manager.playerCanMove = false;
+                kameheaumeheau = true;
+                anim.SetBool("IsKameomeo", true);                 anim.SetBool("IsWalking", false);                                  loaded = false;                 inputHoldTime = 0;             }
         }
     }
 

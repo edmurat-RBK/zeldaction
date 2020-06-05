@@ -15,5 +15,5 @@ MonoBehaviour:
   interlocuteur: {fileID: 21300000, guid: 1136d976df7ccf54897b55e42e70dbcf, type: 3}
   nameInterlocuteur: Chaman
   _phrase:
-  - "Il faut que tu sauves le monde. Traverse la for\xEAt, atteints le volcan et
-    arr\xEAte le Culte de la Flamme avant qu\u2019il ne r\xE9veille totalement P\xE9lo. "
+  - "Il faut que tu sauves le monde. Traverse la for\xEAt, atteins le volcan et arr\xEAte
+    le Culte de la Flamme avant qu\u2019il ne r\xE9veille totalement P\xE9lo. "
