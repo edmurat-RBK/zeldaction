@@ -61,6 +61,7 @@ namespace Manager
         public bool onSand;
         public bool onDirt;
         public bool onConcrete;
+        private float angleDir;
 
         #endregion
 
@@ -116,8 +117,8 @@ namespace Manager
                 {
                     getBucket = true;
                     obtainBucket();
+                    GetComponent<UpgradeObject>().Gotcha();
                     anim.SetBool("HasBucket", true);
-
                 }
 
         }
@@ -178,62 +179,66 @@ namespace Manager
         /// </summary>
         void PlayerDirection()
         {
-            float angleDir;
+            //float angleDir;
             if (playerCanRotate)
             {
                 //if input is used
                 if (vertical > 0.01 || horizontal > 0.01 || vertical < -0.01 || horizontal < -0.01)
                 {
 
-                    //find the angle with cos/sin
-                    angleDir = Mathf.Atan2(horizontal, vertical);
+                    angleDir = Mathf.Atan2(vertical, horizontal) * Mathf.Rad2Deg;
 
-                    if (angleDir > (Mathf.PI / 3) && angleDir < ((2 * Mathf.PI) / 3))
-                    {//RIGHT
-
-                        dirPlayer = direction.right;
+                    if (angleDir < 0)
+                    {
+                        angleDir += 360;
                     }
 
-                    else if (angleDir > -((2 * Mathf.PI) / 3) && angleDir < -(Mathf.PI / 3))
-                    {//LEFT
-
-                        dirPlayer = direction.left;
-                    }
-
-                    else if (angleDir > -(Mathf.PI / 6) && angleDir < (Mathf.PI / 6))
-                    {//UP
-
-                        dirPlayer = direction.up;
-                    }
-
-                    else if (angleDir > ((2 * Mathf.PI) / 3) && angleDir < ((5 * Mathf.PI) / 6))
-                    {//DOWN RIGHT
-
-                        dirPlayer = direction.downRight;
-                    }
-
-                    else if (angleDir > (Mathf.PI / 6) && angleDir < (Mathf.PI / 3))
+                    if (angleDir > 22.5f && angleDir <67.5f)
                     {//UP RIGHT
 
                         dirPlayer = direction.upRight;
                     }
 
-                    else if (angleDir > -((5 * Mathf.PI) / 6) && angleDir < -((2 * Mathf.PI) / 3))
+                    else if (angleDir > 67.5f && angleDir < 112.5f)
+                    {//RIGHT
+
+                        dirPlayer = direction.up;
+                    }
+
+                    else if (angleDir > 112.5f && angleDir < 157.5f)
+                    {//DOWN RIGHT
+
+                        dirPlayer = direction.upLeft;
+                    }
+
+                    else if (angleDir > 157.5f && angleDir < 202.5f)
+                    {//DONW
+
+                        dirPlayer = direction.left;
+                    }
+
+                    else if (angleDir > 202.5f && angleDir < 247.5f)
                     {//DOWN LEFT
 
                         dirPlayer = direction.downLeft;
                     }
 
-                    else if (angleDir > -(Mathf.PI / 3) && angleDir < -(Mathf.PI / 6))
+                    else if (angleDir > 247.5F && angleDir < 295.5F)
+                    {//LEFT
+
+                        dirPlayer = direction.down;
+                    }
+
+                    else if (angleDir > 292.5f && angleDir < 337.5f)
                     {//UP LEFT
 
-                        dirPlayer = direction.upLeft;
+                        dirPlayer = direction.downRight;
                     }
 
                     else
-                    {//DOWN
+                    {//UP
 
-                        dirPlayer = direction.down;
+                        dirPlayer = direction.right;
                     }
                 }
            

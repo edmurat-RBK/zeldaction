@@ -87,10 +87,11 @@ namespace Dialogue
 
                 if (isAuto == false)
                 {
-                    if (!Input.GetButtonDown("RB"))
-                    {
-                        yield return new WaitForSeconds(DelayBetweenLetters);
-                    }
+                    yield return new WaitForSeconds(DelayBetweenLetters);
+                    //if (!Input.GetButton("RB"))
+                    //{
+                    //    yield return new WaitForSeconds(DelayBetweenLetters);
+                    //}
                 }
                 else yield return new WaitForSeconds(DelayBetweenLetters);
 

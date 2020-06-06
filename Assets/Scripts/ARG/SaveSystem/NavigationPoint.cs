@@ -20,6 +20,7 @@ public class NavigationPoint : MonoBehaviour
     [SerializeField]
     private Sprite newSprite;
     private Animator anim;
+    private bool canHeal;
 
 	/// <summary>
 	/// true when the PC has been some distance away from it (to avoid trigger when the PC just spawns in it)
@@ -58,11 +59,13 @@ public class NavigationPoint : MonoBehaviour
         {
             anim.SetBool("IsSaved", true);
             anim.SetBool("IsReset", false);
+            canHeal = false;
         }
         else
         {
             anim.SetBool("IsSaved", false);
             anim.SetBool("IsReset", true);
+            canHeal = true;
         }
 
     }
@@ -97,8 +100,12 @@ public class NavigationPoint : MonoBehaviour
 
             FindObjectOfType<AudioManager>().Play("Checkpoint");
 
-            otherColl.GetComponent<PlayerHealth>().health = otherColl.GetComponent<PlayerHealth>().maximumHealth;
-            otherColl.GetComponent<HealthBar>().HealthSysteme();
+            if (canHeal)
+            {
+                otherColl.GetComponent<PlayerHealth>().health += 1;
+                otherColl.GetComponent<HealthBar>().HealthSysteme();
+            }
+
             anim.SetBool("IsSaved", true);
             GetComponent<SpriteRenderer>().sprite = newSprite;
 

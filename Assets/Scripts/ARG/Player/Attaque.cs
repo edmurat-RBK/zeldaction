@@ -37,6 +37,10 @@ namespace Attack
         void Start()
         {
             anim = GetComponent<Animator>();
+            if (PlayerManager.Instance.lockcUseBucket == false)
+            {
+                AtatckPos();
+            }
         }
        
         void Update()
