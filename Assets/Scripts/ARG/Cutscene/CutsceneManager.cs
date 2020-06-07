@@ -22,7 +22,7 @@ public class CutsceneManager : MonoBehaviour
     {
         if (isOutro)
         {
-            PlayerManager.Instance.gameObject.SetActive(false);
+            Destroy(PlayerManager.Instance.gameObject);
         }
 
         videoPlayer.SetActive(true);
