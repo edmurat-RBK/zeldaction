@@ -34,10 +34,10 @@ namespace Dialogue
 
         private void Update()
         {
-            if (Input.GetButtonDown("X"))
-            {
-                dialogManag.NextEchange();
-            }
+            //if (Input.GetButtonDown("X"))
+            //{
+            //    dialogManag.NextEchange();
+            //}
 
             if (dialogManag.haveEnd)
             {

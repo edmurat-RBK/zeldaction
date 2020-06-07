@@ -30,10 +30,23 @@ namespace Dialogue
         private float tempsLectParLettre = 0.1f;
         public bool haveEnd = false;
         public bool isAuto = false;
+        public bool canSkip = false;
 
         void Start()
         {
             //_input = GameObject.FindGameObjectWithTag("GameController").GetComponent<InputManager>();
+        }
+
+        private void Update()
+        {
+            if (canSkip)
+            {
+                if (Input.GetButtonDown("X"))
+                {
+                    NextEchange();
+                }
+
+            }
         }
 
         public void BeginCoversation(Conversation conversation)
@@ -87,31 +100,49 @@ namespace Dialogue
 
                 if (isAuto == false)
                 {
-                    yield return new WaitForSeconds(DelayBetweenLetters);
-                    //if (!Input.GetButton("RB"))
-                    //{
-                    //    yield return new WaitForSeconds(DelayBetweenLetters);
-                    //}
+                    //yield return new WaitForSeconds(DelayBetweenLetters);
+                    if (!Input.GetButton("X"))
+                    {
+                        yield return new WaitForSeconds(DelayBetweenLetters);
+                    }
+                    yield return new WaitForSeconds(DelayBetweenLetters / 2);
                 }
                 else yield return new WaitForSeconds(DelayBetweenLetters);
-
+                
             }
-
+            canSkip = true;
 
             float wait = phrase.Length * tempsLectParLettre;
 
-            if (!Input.GetButtonDown("X"))
+            if (isAuto)
             {
                 yield return new WaitForSeconds(wait);
+                DisplayNextSentence();
             }
+           
 
-            yield return new WaitForSeconds(0.1f);
+            //if (canSkip)
+            //{
+            //    if (Input.GetButtonDown("X"))
+            //    {
+            //        Debug.Log(wait);
+            //        NextEchange();
+            //    }
 
-            DisplayNextSentence();
+            //    //canSkip = false;
+            //    //yield return new WaitForSeconds(0.1f);
+
+            //}
+            ////DisplayNextSentence();
+
+
+
         }
 
         public void DisplayNextSentence()
         {
+            canSkip = false;
+
             if (_SentanceCounter >= _actualPhrase._phrase.Length)
             {
                 if (isAuto)
@@ -138,6 +169,7 @@ namespace Dialogue
 
         public void NextEchange()
         {
+            canSkip = false;
             if (_PhraseCounter >= _actualConversation.phraseList.Length)
             {
                 EndDialogue();

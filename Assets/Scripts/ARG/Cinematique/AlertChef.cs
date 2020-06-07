@@ -31,9 +31,13 @@ public class AlertChef : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetButton("X"))
+        if (other.gameObject.tag == "Player")
         {
-            GetComponentInChildren<SpriteRenderer>().enabled = false;
+            if (Input.GetButton("X"))
+            {
+                GetComponentInChildren<SpriteRenderer>().enabled = false;
+            }
         }
+
     }
 }
