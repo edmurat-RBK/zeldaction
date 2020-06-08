@@ -249,7 +249,7 @@ MonoBehaviour:
   attackBox: {fileID: 5987844329921033346}
   ennemisInRange: []
   destructibleElement: []
-  dammage: 3
+  dammage: 1
   timeBetweenAttack: 0.3
   timeReset: 0.5
 --- !u!114 &1097937794574312931

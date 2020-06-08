@@ -125,8 +125,8 @@ MonoBehaviour:
   mage: 0
   golemLave: 1
   pv: 10
-  waterForVulnerable: 10
-  timeOfVulnerability: 3
+  waterForVulnerable: 20
+  timeOfVulnerability: 4
   damageParticule: 1
   kameoHit: 0
 --- !u!95 &5057459119621083436
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1468f437970411d4b958149106f81554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chanceDrop: 25
+  chanceDrop: 75
   potion: {fileID: 4905183266195303027, guid: 594f87892c2fa094c9c5a6255281c868, type: 3}
 --- !u!1 &4269345970957266582
 GameObject:
