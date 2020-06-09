@@ -5,16 +5,5 @@ using UnityEngine.UI;
 
 public class TesteFade : MonoBehaviour
 {
-    public Image blackScreen;
-    public FadeManager fadeManager;
-
-    private void Start()
-    {
-        
-    }
-
-    public void ActiveFadeIn()
-    {
-        fadeManager.FadeIn(blackScreen);
-    }
+   
 }
