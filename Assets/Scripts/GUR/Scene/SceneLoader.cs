@@ -8,13 +8,19 @@ public class SceneLoader : MonoBehaviour
 {
     public GameObject sprite;
 
-    private bool canSwitch;
-    public int numberOfScene;
+    [Header("Gestion Fade")]
+    public float timeForFade;
+    public float timeBeforeTp;
 
+    private bool canSwitch;
+    [Space]
+    public int numberOfScene;
     public float axeX;
     public float axeY;
 
-    public GameObject player;
+    private GameObject player;
+
+    private GameObject fadeScreen;
 
     void Start()
     {
@@ -27,7 +33,7 @@ public class SceneLoader : MonoBehaviour
         PlayerManager.Instance.onSand = false;
         PlayerManager.Instance.onConcrete = false;
 
-
+        fadeScreen = GameObject.FindWithTag("Fade");
         player = GameObject.FindWithTag("Player");
         sprite.SetActive(false);
         canSwitch = false;
@@ -43,11 +49,8 @@ public class SceneLoader : MonoBehaviour
                 if (Input.GetButtonDown("X"))
                 {
                     canSwitch = false;
-
-                    player.GetComponent<HealthBar>().lockCanTake = false;
-                    PlayerManager.Instance.playerTransform.position = new Vector2(axeX, axeY);
-                    SceneManager.LoadScene(numberOfScene);
-
+                    FadeManager.Instance.FadeIn(fadeScreen, timeBeforeTp);
+                    StartCoroutine(CoolDownTp());
                 }
             }
         }
@@ -71,4 +74,12 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
+
+    IEnumerator CoolDownTp()
+    {
+        yield return new WaitForSeconds(timeBeforeTp);
+        player.GetComponent<HealthBar>().lockCanTake = false;
+        PlayerManager.Instance.playerTransform.position = new Vector2(axeX, axeY);
+        SceneManager.LoadScene(numberOfScene);
+    }
 }

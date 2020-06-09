@@ -9,12 +9,18 @@ public class GestionMenu : MonoBehaviour
 {
     public Button[] mainButton;
 
+    [Header("Gestion Fade")]
+    public float timeOfFade;
+    public float timeBeforeSceneChange;
+
     private GameObject player;
     private GameObject lineRenderer;
+    private GameObject fadeScreen;
 
     private bool isActivate;
     void Start()
     {
+        fadeScreen = GameObject.FindWithTag("Fade");
         player = GameObject.FindWithTag("Player");
         lineRenderer = GameObject.FindWithTag("Line");
 
@@ -101,14 +107,20 @@ public class GestionMenu : MonoBehaviour
             mainButton[i].gameObject.SetActive(false);
         }
 
-        Destroy(player);
-
-        SceneManager.LoadScene(0);
+        FadeManager.Instance.FadeIn(fadeScreen, timeOfFade);
+        StartCoroutine(CoolDOwnQuitButton());
     }
 
     IEnumerator SmallcoolDown()
     {
         yield return new WaitForSeconds(0.1f);
         PlayerManager.Instance.lockcUseBucket = false;
+    }
+
+    IEnumerator CoolDOwnQuitButton()
+    {
+        yield return new WaitForSeconds(timeBeforeSceneChange);
+        Destroy(player);
+        SceneManager.LoadScene(0);
     }
 }
