@@ -25,6 +25,8 @@ public class Bassin : MonoBehaviour
 
     public float remplissage;
 
+    public bool isDestructible;
+
     [HideInInspector]
     public bool actifBassin;
 
@@ -35,7 +37,7 @@ public class Bassin : MonoBehaviour
     public bool fullDestroy;
 
     private SpriteRenderer bassinRenderer;
-    private float bassinState;
+    public float bassinState;
     private bool canEmpty;
 
 
@@ -71,65 +73,142 @@ public class Bassin : MonoBehaviour
 
     void GestionVisuel()
     {
-        if (remplissage <= 0)
+        if (isDestructible == false)
         {
-            bassinRenderer.sprite = spriteBassin[0];
+            if (remplissage <= 0)
+            {
+                bassinRenderer.sprite = spriteBassin[0];
+            }
+
+            else if (remplissage > 0 && remplissage < bassinState)
+            {
+                bassinRenderer.sprite = spriteBassin[1];
+            }
+
+            else if (remplissage > bassinState && remplissage < bassinState * 2)
+            {
+                bassinRenderer.sprite = spriteBassin[2];
+            }
+
+            else if (remplissage > bassinState * 2 && remplissage < bassinState * 3)
+            {
+                bassinRenderer.sprite = spriteBassin[3];
+            }
+
+            else if (remplissage > bassinState * 3 && remplissage < bassinState * 4)
+            {
+                bassinRenderer.sprite = spriteBassin[4];
+            }
+
+            else if (remplissage > bassinState * 4 && remplissage < bassinState * 5)
+            {
+                bassinRenderer.sprite = spriteBassin[5];
+            }
+
+            else if (remplissage > bassinState * 5 && remplissage < bassinState * 6)
+            {
+                bassinRenderer.sprite = spriteBassin[6];
+            }
+
+            else if (remplissage > bassinState * 7 && remplissage < bassinState * 8)
+            {
+                bassinRenderer.sprite = spriteBassin[7];
+            }
+
+            else if (remplissage > bassinState * 9 && remplissage < bassinState * 10)
+            {
+                bassinRenderer.sprite = spriteBassin[8];
+            }
+
+            else if (remplissage > bassinState * 10 && remplissage < bassinState * 11)
+            {
+                bassinRenderer.sprite = spriteBassin[9];
+            }
+
+            else if (remplissage > bassinState * 11 && remplissage < bassinState * 12)
+            {
+                bassinRenderer.sprite = spriteBassin[10];
+            }
+
+            else if (remplissage > bassinState * 12)
+            {
+                bassinRenderer.sprite = spriteBassin[11];
+            }
         }
 
-        else if (remplissage > 0 && remplissage < bassinState)
+        if (isDestructible == true)
         {
-            bassinRenderer.sprite = spriteBassin[1];
+            if (remplissage <= 0)
+            {
+                bassinRenderer.sprite = spriteBassin[0];
+            }
+
+            else if (remplissage > 0 && remplissage < bassinState)
+            {
+                bassinRenderer.sprite = spriteBassin[1];
+            }
+
+            else if (remplissage > bassinState && remplissage < bassinState * 2)
+            {
+                bassinRenderer.sprite = spriteBassin[2];
+            }
+
+            else if (remplissage > bassinState * 2 && remplissage < bassinState * 3)
+            {
+                bassinRenderer.sprite = spriteBassin[3];
+            }
+
+            else if (remplissage > bassinState * 3 && remplissage < bassinState * 4)
+            {
+                bassinRenderer.sprite = spriteBassin[4];
+            }
+
+            else if (remplissage > bassinState * 4 && remplissage < bassinState * 5)
+            {
+                bassinRenderer.sprite = spriteBassin[5];
+            }
+
+            else if (remplissage > bassinState * 5 && remplissage < bassinState * 6)
+            {
+                bassinRenderer.sprite = spriteBassin[6];
+            }
+
+            else if (remplissage > bassinState * 7 && remplissage < bassinState * 8)
+            {
+                bassinRenderer.sprite = spriteBassin[7];
+            }
+
+            else if (remplissage > bassinState * 9 && remplissage < bassinState * 10)
+            {
+                bassinRenderer.sprite = spriteBassin[8];
+            }
+
+            else if (remplissage > bassinState * 10 && remplissage < bassinState * 11)
+            {
+                bassinRenderer.sprite = spriteBassin[9];
+            }
+
+            else if (remplissage > bassinState * 11 && remplissage < bassinState * 12)
+            {
+                bassinRenderer.sprite = spriteBassin[10];
+            }
+
+            else if (remplissage > bassinState * 12 && remplissage < bassinState * 13)
+            {
+                bassinRenderer.sprite = spriteBassin[11];
+            }
+
+            else if (remplissage > bassinState * 13 && remplissage < bassinState * 14)
+            {
+                bassinRenderer.sprite = spriteBassin[12];
+            }
+
+            else if (remplissage > bassinState * 14 && remplissage < bassinState * 15)
+            {
+                bassinRenderer.sprite = spriteBassin[13];
+            }
         }
 
-        else if (remplissage > bassinState && remplissage < bassinState * 2)
-        {
-            bassinRenderer.sprite = spriteBassin[2];
-        }
-
-        else if (remplissage > bassinState * 2 && remplissage < bassinState * 3)
-        {
-            bassinRenderer.sprite = spriteBassin[3];
-        }
-
-        else if (remplissage > bassinState * 3 && remplissage < bassinState * 4)
-        {
-            bassinRenderer.sprite = spriteBassin[4];
-        }
-
-        else if (remplissage > bassinState * 4 && remplissage < bassinState * 5)
-        {
-            bassinRenderer.sprite = spriteBassin[5];
-        }
-
-        else if (remplissage > bassinState * 5 && remplissage < bassinState * 6)
-        {
-            bassinRenderer.sprite = spriteBassin[6];
-        }
-
-        else if (remplissage > bassinState * 7 && remplissage < bassinState * 8)
-        {
-            bassinRenderer.sprite = spriteBassin[7];
-        }
-
-        else if (remplissage > bassinState * 9 && remplissage < bassinState * 10)
-        {
-            bassinRenderer.sprite = spriteBassin[8];
-        }
-
-        else if (remplissage > bassinState * 10 && remplissage < bassinState * 11)
-        {
-            bassinRenderer.sprite = spriteBassin[9];
-        }
-
-        else if (remplissage > bassinState * 11 && remplissage < bassinState * 12)
-        {
-            bassinRenderer.sprite = spriteBassin[10];
-        }
-
-        else if (remplissage > bassinState * 12)
-        {
-            bassinRenderer.sprite = spriteBassin[11];
-        }
     }
 
     void VidageBassin()
