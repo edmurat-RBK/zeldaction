@@ -128,6 +128,7 @@ public class PvEnnemis : MonoBehaviour
         {
             if (flammeche == true)
             {
+                flammeche = false;
                 waterDetection.enabled = false;
                 bodyBlock.enabled = false;
                 contactDomage.enabled = false;
@@ -142,6 +143,7 @@ public class PvEnnemis : MonoBehaviour
 
             if (mage == true)
             {
+                mage = false;
                 anim.SetBool("IsDead", true); //YS MageDeath Timer pour laisser le temps a l'anim de mort de passer non?
 
                 FindObjectOfType<AudioManager>().Play("DeathMage");
@@ -153,6 +155,7 @@ public class PvEnnemis : MonoBehaviour
 
             if (golemLave == true) 
             {
+                golemLave = false;
                 anim.SetBool("IsDead",true);
 
                 FindObjectOfType<AudioManager>().Play("DeathGolem");
@@ -206,7 +209,7 @@ public class PvEnnemis : MonoBehaviour
 
     public void EnnemiTakeDammage(int dammage)
     {
-        if (golemLave == true)
+        if (golemLave == true && pv > 0)
         {
             if (gameObject.GetComponent<GolemLaveMouvement>().vunerableGolem == true)
             {
@@ -218,7 +221,7 @@ public class PvEnnemis : MonoBehaviour
             }
         }
 
-        if (mage == true)
+        if (mage == true && pv > 0)
         {         
             if (gameObject.GetComponent<MageMovement>().vunerableMage == true)
             {

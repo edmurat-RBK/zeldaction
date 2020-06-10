@@ -67,6 +67,7 @@ public class GolemLaveMouvement : MonoBehaviour
         if (GetComponentInChildren<ZoneAggro>().canAggro == false)
         {
             rbGolem.velocity = Vector2.zero;
+            anim.SetBool("IsWalking", false);
         }
 
         if (vunerableGolem == true)
