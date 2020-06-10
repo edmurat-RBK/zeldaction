@@ -7,11 +7,12 @@ public class BassinDestructible : Singleton<CowManager>
 {
     public List<GameObject> caisseDestructible = new List<GameObject>();
 
+    public GameObject waterParticule;
     public GameObject bassin;
 
     void Start()
     {
-        
+        waterParticule.SetActive(false);
     }
 
     
@@ -21,6 +22,7 @@ public class BassinDestructible : Singleton<CowManager>
 
         if (caisseDestructible.Count == 0)
         {
+            waterParticule.SetActive(true);
             bassin.GetComponent<Bassin>().fullDestroy = true;
         }
     }
