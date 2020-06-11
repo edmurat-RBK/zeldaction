@@ -105,13 +105,13 @@ namespace Manager
             vertical = Input.GetAxis("Vertical");
             PlayerDirection();
 
-                if (Input.GetKeyDown(KeyCode.N))
-                {
-                    getBucket = false;
-                    obtainBucket();
-                    anim.SetBool("HasBucket", false);
+                //if (Input.GetKeyDown(KeyCode.N))
+                //{
+                //    getBucket = false;
+                //    obtainBucket();
+                //    anim.SetBool("HasBucket", false);
 
-                }
+                //}
 
                 if (Input.GetKeyDown(KeyCode.B))
                 {

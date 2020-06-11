@@ -98,10 +98,11 @@ public class NavigationPoint : MonoBehaviour
 			if (!isCheckpoint)
 				isOn = false;
 
-            FindObjectOfType<AudioManager>().Play("Checkpoint");
+            
 
             if (canHeal)
             {
+                FindObjectOfType<AudioManager>().Play("Checkpoint");
                 otherColl.GetComponent<PlayerHealth>().health += 1;
                 otherColl.GetComponent<HealthBar>().HealthSysteme();
             }

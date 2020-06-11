@@ -18,5 +18,6 @@ public class DeletPlayerPref : MonoBehaviour
     public void ResetSave()
     {
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("F2MV2018New");
     }
 }

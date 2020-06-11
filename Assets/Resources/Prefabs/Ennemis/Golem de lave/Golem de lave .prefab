@@ -124,7 +124,7 @@ MonoBehaviour:
   flammeche: 0
   mage: 0
   golemLave: 1
-  pv: 10
+  pv: 5
   waterForVulnerable: 20
   timeOfVulnerability: 4
   damageParticule: 1

@@ -71,15 +71,15 @@ public class PlayerHealth : MonoBehaviour
         //health = playerManager.healthPlayer;
         //maximumHealth = playerManager.healthMax;
 
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            health += 1;
-            gameObject.GetComponent<HealthBar>().HealthSysteme();
-        }
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-           TakeDamage(1);
-        }
+        //if (Input.GetKeyDown(KeyCode.U))
+        //{
+        //    health += 1;
+        //    gameObject.GetComponent<HealthBar>().HealthSysteme();
+        //}
+        //if (Input.GetKeyDown(KeyCode.Y))
+        //{
+        //   TakeDamage(1);
+        //}
     }
 
     // Function that check player vulnerability before taking damage

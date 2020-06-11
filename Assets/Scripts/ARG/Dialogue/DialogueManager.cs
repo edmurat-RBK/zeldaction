@@ -105,7 +105,7 @@ namespace Dialogue
                     {
                         yield return new WaitForSeconds(DelayBetweenLetters);
                     }
-                    yield return new WaitForSeconds(DelayBetweenLetters / 2);
+                    yield return new WaitForSeconds(DelayBetweenLetters / 4);
                 }
                 else yield return new WaitForSeconds(DelayBetweenLetters);
                 

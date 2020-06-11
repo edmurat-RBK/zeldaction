@@ -19,7 +19,7 @@ public class ButtonMainMenu : MonoBehaviour
     {
         if (controlActif == true)
         {
-            if (Input.GetButtonDown("X"))
+            if (Input.GetButtonDown("B"))
             {
                 controlActif = false;
                 controlSprite.SetActive(false);
