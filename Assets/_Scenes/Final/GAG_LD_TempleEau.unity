@@ -9399,6 +9399,14 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1450411571, guid: 1a3e13d4015cc9745ac83b95ea8f51dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Option
+      objectReference: {fileID: 0}
+    - target: {fileID: 1450411571, guid: 1a3e13d4015cc9745ac83b95ea8f51dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1634727513, guid: 1a3e13d4015cc9745ac83b95ea8f51dd, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 3
@@ -9421,7 +9429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2073404838, guid: 1a3e13d4015cc9745ac83b95ea8f51dd, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 14048673360594111, guid: 1a3e13d4015cc9745ac83b95ea8f51dd,
         type: 3}

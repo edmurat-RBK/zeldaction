@@ -13,13 +13,19 @@ public class GestionMenu : MonoBehaviour
     public float timeOfFade;
     public float timeBeforeSceneChange;
 
+
+    public GameObject optionControl;
+
     private GameObject player;
     private GameObject lineRenderer;
     private GameObject fadeScreen;
 
     private bool isActivate;
+
+    private bool optionActivate;
     void Start()
     {
+        optionControl.SetActive(false);
         fadeScreen = GameObject.FindWithTag("Fade");
         player = GameObject.FindWithTag("Player");
         lineRenderer = GameObject.FindWithTag("Line");
@@ -77,6 +83,22 @@ public class GestionMenu : MonoBehaviour
                 }
             }
         }
+
+
+        if (optionActivate == true)
+        {
+            if (Input.GetButtonDown("B"))
+            {
+                optionActivate = false;
+                optionControl.SetActive(false);
+
+                for (int i = 0; i < mainButton.Length; i++)
+                {
+                    mainButton[i].enabled = true;
+                }
+
+            }
+        }
     }
 
 
@@ -96,6 +118,21 @@ public class GestionMenu : MonoBehaviour
         }
     }
 
+
+    public void Option()
+    {
+        if (optionActivate == false)
+        {
+            optionControl.SetActive(true);
+            optionActivate = true;
+
+            for (int i = 0; i < mainButton.Length; i++)
+            {
+                mainButton[i].enabled = false;
+            }
+        }
+
+    }
 
     public void QuitButton()
     {
