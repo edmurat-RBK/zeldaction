@@ -8,9 +8,12 @@ using Manager;
 public class DeathMenu : MonoBehaviour
 {
     private GameObject player;
+    private GameObject fadeScreen;
 
+    private bool lockCoroutine;
     private void Start()
     {
+        fadeScreen = GameObject.FindWithTag("Fade");
         player = GameObject.FindWithTag("Player");
     }
 
@@ -23,8 +26,23 @@ public class DeathMenu : MonoBehaviour
 
         if (Input.GetButtonDown("B"))
         {
-            Destroy(player);
-            SceneManager.LoadScene(0);
+            if (lockCoroutine == false)
+            {
+                lockCoroutine = true;
+                StartCoroutine(Delay());
+            }
+            
         }
+    }
+
+
+
+    IEnumerator Delay()
+    {
+        Time.timeScale = 1;
+        FadeManager.Instance.FadeIn(fadeScreen, 1f);
+        yield return new WaitForSecondsRealtime(1.1f);
+        Destroy(player);
+        SceneManager.LoadScene(0);
     }
 }
