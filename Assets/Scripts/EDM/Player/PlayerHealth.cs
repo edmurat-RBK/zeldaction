@@ -61,7 +61,6 @@ public class PlayerHealth : MonoBehaviour
 
         deathScreen.RemoveAll(list_item => list_item == null);        if (deathScreen.Count == 0)
         {
-            Debug.Log("Je trouve deathscreen");
             deathScreen.AddRange(GameObject.FindGameObjectsWithTag("DeathScreen"));
             deathScreen[0].SetActive(false);
         }
