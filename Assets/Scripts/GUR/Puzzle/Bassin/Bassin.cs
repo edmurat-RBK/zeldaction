@@ -26,6 +26,7 @@ public class Bassin : MonoBehaviour
     public float remplissage;
 
     public bool isDestructible;
+    public bool canVapeur;
 
     [HideInInspector]
     public bool actifBassin;
@@ -39,6 +40,7 @@ public class Bassin : MonoBehaviour
     private SpriteRenderer bassinRenderer;
     public float bassinState;
     private bool canEmpty;
+    public GameObject particule;
 
 
     private bool alreadyInList;
@@ -49,6 +51,8 @@ public class Bassin : MonoBehaviour
     {
         bassinRenderer = GetComponent<SpriteRenderer>();
         bassinState = maxStockage / spriteBassin.Length;
+
+        particule.SetActive(false);
 
         fullDestroy = false;
         alreadyInList = false;
@@ -68,6 +72,14 @@ public class Bassin : MonoBehaviour
         if (fullDestroy == true && remplissage < maxStockage)
         {
             remplissage += Time.fixedDeltaTime * 2;
+        }
+
+        if (canVapeur == true)
+        {
+            if (enemyInRange.Count == 0)
+            {
+                particule.SetActive(false);
+            }
         }
     }
 
@@ -217,6 +229,10 @@ public class Bassin : MonoBehaviour
         {
             if (remplissage > 0 && enemyInRange.Count >= 1 && lockBassin == false)
             {
+                if (canVapeur == true)
+                {
+                    particule.SetActive(true);
+                }
                 remplissage -= Time.fixedDeltaTime * speedVidage;
             }
         }
