@@ -35,7 +35,7 @@ public class SpawnerMob : MonoBehaviour
    
     void Update()
     {
-        isAlive.RemoveAll(list_item => list_item == null);
+        //isAlive.RemoveAll(list_item => list_item == null);
         numOfEnemy = isAlive.Count;
 
         if (numOfEnemy < maxMob)
@@ -55,6 +55,7 @@ public class SpawnerMob : MonoBehaviour
             {
                 isAlive.Remove(gameObject);
                 StartCoroutine(SpawnCoolDown());
+                isAlive.RemoveAll(list_item => list_item == null);
             }
         }
     }

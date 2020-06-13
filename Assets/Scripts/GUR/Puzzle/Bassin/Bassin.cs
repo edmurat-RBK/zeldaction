@@ -52,7 +52,10 @@ public class Bassin : MonoBehaviour
         bassinRenderer = GetComponent<SpriteRenderer>();
         bassinState = maxStockage / spriteBassin.Length;
 
-        particule.SetActive(false);
+        if (canVapeur == true)
+        {
+            particule.SetActive(false);
+        }
 
         fullDestroy = false;
         alreadyInList = false;
@@ -269,7 +272,6 @@ public class Bassin : MonoBehaviour
         {
             foreach (GameObject enemy in enemyInRange)
             {
-                Debug.Log(alreadyInList);
                 if (collision.gameObject == enemy)
                 {
                     alreadyInList = true;
